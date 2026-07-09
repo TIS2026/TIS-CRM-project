@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Dashboard() {
   const [activeTab, setActiveTab] = useState<'moduleA' | 'moduleB'>('moduleA');
@@ -11,12 +12,19 @@ export default function Dashboard() {
   const [availableCourses, setAvailableCourses] = useState<string[]>([]);
   const [availableStudents, setAvailableStudents] = useState<string[]>([]);
   const [loadingA, setLoadingA] = useState(false);
+  const [showCustomFilters, setShowCustomFilters] = useState(false);
+  const [filterStage, setFilterStage] = useState('');
+  const [filterOwner, setFilterOwner] = useState('');
+  const [filterLeadSource, setFilterLeadSource] = useState('');
+  const [filterBucket, setFilterBucket] = useState('');
   const [selectedRows, setSelectedRows] = useState<string[]>([]);
   const [users, setUsers] = useState<any[]>([]);
   const [bulkStage, setBulkStage] = useState('');
   const [bulkOwner, setBulkOwner] = useState('');
   const [bulkCourse, setBulkCourse] = useState('');
+  const [bulkBucket, setBulkBucket] = useState('');
   const [bulkLoading, setBulkLoading] = useState(false);
+  const [customFields, setCustomFields] = useState<any[]>([]);
   // --- Module B State ---
   const [pasteText, setPasteText] = useState('');
   const [pasteMode, setPasteMode] = useState('Parent Contact Number Only');
@@ -28,7 +36,15 @@ export default function Dashboard() {
     setLoadingA(true);
     setSelectedRows([]); // Clear selections on new search
     try {
-      const res = await fetch(`/api/opportunities?studentName=${filterStudentName}&courseName=${filterCourseName}`);
+      const params = new URLSearchParams();
+      if (filterStudentName) params.append('studentName', filterStudentName);
+      if (filterCourseName) params.append('courseName', filterCourseName);
+      if (filterStage) params.append('stage', filterStage);
+      if (filterOwner) params.append('ownerId', filterOwner);
+      if (filterLeadSource) params.append('leadSource', filterLeadSource);
+      if (filterBucket) params.append('bucket', filterBucket);
+
+      const res = await fetch(`/api/opportunities?${params.toString()}`);
       const data = await res.json();
       setOpportunities(data);
     } catch (e) {
@@ -40,15 +56,20 @@ export default function Dashboard() {
 
   const fetchCoursesAndStudents = async () => {
     try {
-      const [coursesRes, studentsRes, usersRes] = await Promise.all([
+      const [coursesRes, studentsRes, usersRes, customFieldsRes] = await Promise.all([
         fetch('/api/courses'),
         fetch('/api/students'),
-        fetch('/api/users')
+        fetch('/api/users'),
+        fetch('/api/custom-fields')
       ]);
       const coursesData = await coursesRes.json();
       const studentsData = await studentsRes.json();
       const usersData = await usersRes.json();
+      const cfData = await customFieldsRes.json();
       setAvailableCourses(coursesData);
+      setAvailableStudents(studentsData);
+      setUsers(usersData);
+      setCustomFields(cfData);
       setAvailableStudents(studentsData);
       setUsers(usersData);
     } catch (e) {
@@ -99,6 +120,7 @@ export default function Dashboard() {
       if (bulkStage) updates.stage = bulkStage;
       if (bulkOwner) updates.ownerId = bulkOwner;
       if (bulkCourse) updates.courseName = bulkCourse;
+      if (bulkBucket) updates.bucket = bulkBucket;
 
       await fetch('/api/opportunities/bulk', {
         method: 'PUT',
@@ -111,6 +133,7 @@ export default function Dashboard() {
       setBulkStage('');
       setBulkOwner('');
       setBulkCourse('');
+      setBulkBucket('');
     } catch (e) {
       console.error(e);
     } finally {
@@ -128,10 +151,12 @@ export default function Dashboard() {
       'Parent Name', 'Parent Email', 'Parent Contact',
       'Parent 2 Name', 'Parent 2 Email', 'Parent 2 Contact',
       'School', 'Student Grade', 'Lead Type', 'Lead Created Source',
-      'Course Name', 'Stage', 'Owner', 'Lead Source', 'Opportunity Type',
+      'Course Name', 'Stage', 'Bucket', 'Remarks', 'Owner', 'Lead Source', 'Opportunity Type',
       'Enrollment Date', 'Enrollment Center', 'Grade At Enrollment',
       'Lost Reason', 'Lost At Stage', 'Is Data Incomplete', 'Created Date'
     ];
+    
+    customFields.forEach(cf => headers.push(cf.name));
     
     const csvRows = [headers.join(',')];
     
@@ -161,6 +186,7 @@ export default function Dashboard() {
         escapeCSV(opp.lead?.createdSource),
         escapeCSV(opp.courseName),
         escapeCSV(opp.stage),
+        escapeCSV(opp.bucket),
         escapeCSV(opp.owner?.name),
         escapeCSV(opp.leadSource),
         escapeCSV(opp.opportunityType),
@@ -172,6 +198,11 @@ export default function Dashboard() {
         escapeCSV(opp.isDataIncomplete),
         escapeCSV(opp.createdDate ? new Date(opp.createdDate).toISOString() : '')
       ];
+      
+      customFields.forEach(cf => {
+        row.push(escapeCSV(opp.customFields?.[cf.id] || ''));
+      });
+      
       csvRows.push(row.join(','));
     });
 
@@ -233,11 +264,66 @@ export default function Dashboard() {
                 ))}
               </datalist>
             </div>
+            <button className="btn btn-secondary" onClick={() => setShowCustomFilters(!showCustomFilters)}>
+              {showCustomFilters ? 'Hide Custom Filters' : 'Custom Filters'}
+            </button>
             <button className="btn" onClick={fetchModuleA} disabled={loadingA}>Search</button>
             <button className="btn btn-secondary" onClick={handleDownloadCSV} disabled={opportunities.length === 0}>
               Download CSV
             </button>
           </div>
+
+          {showCustomFilters && (
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1.5rem', padding: '1.5rem', background: 'rgba(0,0,0,0.2)', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
+              <div>
+                <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Stage</label>
+                <select value={filterStage} onChange={e => setFilterStage(e.target.value)} style={{ width: '100%' }}>
+                  <option value="">All Stages</option>
+                  <option value="New">New</option>
+                  <option value="Attempted">Attempted</option>
+                  <option value="Connected">Connected</option>
+                  <option value="Qualified">Qualified</option>
+                  <option value="Lost">Lost</option>
+                </select>
+              </div>
+              <div>
+                <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Owner</label>
+                <select value={filterOwner} onChange={e => setFilterOwner(e.target.value)} style={{ width: '100%' }}>
+                  <option value="">All Owners</option>
+                  {users.map(u => <option key={u.id} value={u.id}>{u.name}</option>)}
+                </select>
+              </div>
+              <div>
+                <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Lead Source</label>
+                <select value={filterLeadSource} onChange={e => setFilterLeadSource(e.target.value)} style={{ width: '100%' }}>
+                  <option value="">All Sources</option>
+                  <option value="Referral">Referral</option>
+                  <option value="Walk-in">Walk-in</option>
+                  <option value="Website Inquiry">Website Inquiry</option>
+                  <option value="Ad Campaign">Ad Campaign</option>
+                  <option value="Repeat - Inbound">Repeat - Inbound</option>
+                  <option value="Agent Outreach">Agent Outreach</option>
+                  <option value="Event/Workshop">Event/Workshop</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div>
+                <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Bucket</label>
+                <input 
+                  value={filterBucket}
+                  onChange={e => setFilterBucket(e.target.value)}
+                  placeholder="e.g. Hot"
+                  list="bucket-suggestions-filter"
+                  style={{ width: '100%' }}
+                />
+                <datalist id="bucket-suggestions-filter">
+                  <option value="Hot" />
+                  <option value="Warm" />
+                  <option value="Cold" />
+                </datalist>
+              </div>
+            </div>
+          )}
 
           {selectedRows.length > 0 && (
             <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem', padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '8px', alignItems: 'center' }}>
@@ -255,6 +341,12 @@ export default function Dashboard() {
                 <option value="">Change Owner...</option>
                 {users.map(u => <option key={u.id} value={u.id}>{u.name}</option>)}
               </select>
+              <select value={bulkBucket} onChange={e => setBulkBucket(e.target.value)}>
+                <option value="">Change Bucket...</option>
+                <option value="Hot">Hot</option>
+                <option value="Warm">Warm</option>
+                <option value="Cold">Cold</option>
+              </select>
               <input 
                 placeholder="Change Course..." 
                 value={bulkCourse}
@@ -267,7 +359,7 @@ export default function Dashboard() {
               <button 
                 className="btn" 
                 onClick={handleBulkUpdate} 
-                disabled={bulkLoading || (!bulkStage && !bulkOwner && !bulkCourse)}
+                disabled={bulkLoading || (!bulkStage && !bulkOwner && !bulkCourse && !bulkBucket)}
               >
                 {bulkLoading ? 'Applying...' : 'Apply Bulk Edit'}
               </button>
@@ -289,6 +381,9 @@ export default function Dashboard() {
                   <th>Parent Contact</th>
                   <th>Course</th>
                   <th>Stage</th>
+                  <th>Bucket</th>
+                  <th>Remarks</th>
+                  {customFields.map(cf => <th key={cf.id}>{cf.name}</th>)}
                   <th>Owner</th>
                   <th>Lead Source</th>
                 </tr>
@@ -303,20 +398,28 @@ export default function Dashboard() {
                         onChange={() => toggleRow(opp.id)}
                       />
                     </td>
-                    <td>{opp.lead?.studentName || '-'}</td>
+                    <td>
+                      <Link href={`/leads/${opp.lead?.id}`} style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
+                        {opp.lead?.studentName || '-'}
+                      </Link>
+                    </td>
                     <td>{opp.lead?.parentContactNumber}</td>
                     <td>{opp.courseName || '-'}</td>
                     <td><span className={`badge badge-${opp.stage.toLowerCase().replace(' ', '-')}`}>{opp.stage}</span></td>
+                    <td>{opp.bucket ? <span className="badge" style={{background: 'var(--accent)', color: 'white'}}>{opp.bucket}</span> : '-'}</td>
+                    <td>{opp.remarks || '-'}</td>
+                    {customFields.map(cf => <td key={cf.id}>{opp.customFields?.[cf.id] || '-'}</td>)}
                     <td>{opp.owner?.name}</td>
                     <td>{opp.leadSource}</td>
                   </tr>
                 ))}
                 {opportunities.length === 0 && (
-                  <tr><td colSpan={7} style={{textAlign: 'center', padding: '2rem'}}>No opportunities found</td></tr>
+                  <tr><td colSpan={8} style={{textAlign: 'center', padding: '2rem'}}>No opportunities found</td></tr>
                 )}
               </tbody>
             </table>
           </div>
+
         </div>
       )}
 

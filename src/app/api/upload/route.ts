@@ -73,12 +73,14 @@ export async function POST(request: Request) {
         if (user) ownerId = user.id;
       }
 
-      // Prevent duplicate opportunities
+      const bucketName = row['Bucket'] || null;
+
+      // Prevent duplicate opportunities by checking courseName and Bucket
       const duplicateWhere = courseName 
-        ? { leadId: lead.id, courseName: courseName }
+        ? { leadId: lead.id, courseName: courseName, bucket: bucketName }
         : enrollmentDate 
-          ? { leadId: lead.id, enrollmentDate: enrollmentDate }
-          : { leadId: lead.id, courseName: null, enrollmentDate: null };
+          ? { leadId: lead.id, enrollmentDate: enrollmentDate, bucket: bucketName }
+          : { leadId: lead.id, courseName: null, enrollmentDate: null, bucket: bucketName };
 
       const existingOpp = await prisma.opportunity.findFirst({ where: duplicateWhere });
       if (existingOpp) {
@@ -98,7 +100,8 @@ export async function POST(request: Request) {
           leadSource: 'Unknown - Historical',
           opportunityType: oppType,
           isDataIncomplete: isDataIncomplete || (!courseName),
-          lostReason: inferredStage === 'Lost' ? 'Other (Free Text)' : null
+          lostReason: inferredStage === 'Lost' ? 'Other (Free Text)' : null,
+          bucket: bucketName
         }
       });
 

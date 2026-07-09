@@ -19,6 +19,9 @@ export async function PUT(request: Request) {
     if (updates.stage !== undefined) validUpdates.stage = updates.stage;
     if (updates.ownerId !== undefined) validUpdates.ownerId = updates.ownerId;
     if (updates.courseName !== undefined) validUpdates.courseName = updates.courseName;
+    if (updates.bucket !== undefined) validUpdates.bucket = updates.bucket;
+    if (updates.remarks !== undefined) validUpdates.remarks = updates.remarks;
+    if (updates.customFields !== undefined) validUpdates.customFields = updates.customFields;
 
     if (Object.keys(validUpdates).length === 0) {
       return NextResponse.json({ success: false, error: 'No valid update fields provided.' }, { status: 400 });

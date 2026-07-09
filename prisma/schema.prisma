@@ -5,6 +5,7 @@ generator client {
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 model User {
@@ -54,7 +55,19 @@ model Opportunity {
   lostAtStage        String?   // Auto-Captured System Field
   createdDate        DateTime  @default(now())
 
+  bucket             String?   // User-defined grouping (e.g. Hot, Warm, Cold)
+  remarks            String?   // Free-text remarks
+  customFields       Json?     @default("{}") // Stores dynamic data fields
+  
   calls              Call[]
+}
+
+model CustomFieldDefinition {
+  id          String   @id @default(uuid())
+  name        String   @unique
+  type        String   @default("text") // text, number, date, etc.
+  isActive    Boolean  @default(true)
+  createdDate DateTime @default(now())
 }
 
 model Call {

@@ -11,17 +11,26 @@ export default function NewLeadPage() {
     courseName: '',
     studentGrade: '',
     ownerId: '',
-    leadSource: ''
+    leadSource: '',
+    bucket: '',
+    remarks: ''
   });
+  const [customFieldsData, setCustomFieldsData] = useState<any>({});
   
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<any>(null);
   const [users, setUsers] = useState<any[]>([]);
+  const [customFields, setCustomFields] = useState<any[]>([]);
 
   useEffect(() => {
     fetch('/api/users')
       .then(res => res.json())
       .then(data => setUsers(data))
+      .catch(console.error);
+      
+    fetch('/api/custom-fields')
+      .then(res => res.json())
+      .then(data => setCustomFields(data))
       .catch(console.error);
   }, []);
 
@@ -30,8 +39,12 @@ export default function NewLeadPage() {
     'Repeat - Inbound', 'Agent Outreach', 'Event/Workshop', 'Other'
   ];
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleCustomFieldChange = (id: string, value: string) => {
+    setCustomFieldsData({ ...customFieldsData, [id]: value });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -40,10 +53,15 @@ export default function NewLeadPage() {
     setResult(null);
 
     try {
+      const payload = {
+        ...formData,
+        customFields: customFieldsData
+      };
+      
       const response = await fetch('/api/leads', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(payload),
       });
       const data = await response.json();
       setResult(data);
@@ -51,8 +69,9 @@ export default function NewLeadPage() {
         setFormData({
           parentContactNumber: '', studentName: '', studentEmail: '',
           parentName: '', school: '', courseName: '', studentGrade: '',
-          ownerId: '', leadSource: ''
+          ownerId: '', leadSource: '', bucket: '', remarks: ''
         });
+        setCustomFieldsData({});
       }
     } catch (error: any) {
       setResult({ success: false, error: error.message });
@@ -148,13 +167,60 @@ export default function NewLeadPage() {
           </div>
         </div>
 
-        <div>
-          <label>Lead Source *</label>
-          <select required name="leadSource" value={formData.leadSource} onChange={handleChange}>
-            <option value="">Select a Source...</option>
-            {leadSources.map(src => <option key={src} value={src}>{src}</option>)}
-          </select>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+          <div>
+            <label>Lead Source *</label>
+            <select required name="leadSource" value={formData.leadSource} onChange={handleChange}>
+              <option value="">Select a Source...</option>
+              {leadSources.map(src => <option key={src} value={src}>{src}</option>)}
+            </select>
+          </div>
+          <div>
+            <label>Bucket</label>
+            <input 
+              name="bucket"
+              value={formData.bucket}
+              onChange={handleChange}
+              placeholder="e.g. Hot, Warm, Cold"
+              list="bucket-suggestions"
+            />
+            <datalist id="bucket-suggestions">
+              <option value="Hot" />
+              <option value="Warm" />
+              <option value="Cold" />
+            </datalist>
+          </div>
         </div>
+
+        <div>
+          <label>Remarks</label>
+          <textarea 
+            name="remarks"
+            value={formData.remarks}
+            onChange={handleChange}
+            rows={3}
+            placeholder="Add any additional remarks here..."
+            style={{ width: '100%', resize: 'vertical' }}
+          />
+        </div>
+
+        {customFields.length > 0 && (
+          <div style={{ marginTop: '1rem', paddingTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+            <h3 style={{ marginBottom: '1rem', color: 'var(--accent)' }}>Additional Data Fields</h3>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+              {customFields.map(cf => (
+                <div key={cf.id}>
+                  <label>{cf.name}</label>
+                  <input 
+                    type={cf.type === 'date' ? 'date' : cf.type === 'number' ? 'number' : 'text'}
+                    value={customFieldsData[cf.id] || ''}
+                    onChange={e => handleCustomFieldChange(cf.id, e.target.value)}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         <button type="submit" className="btn" disabled={loading} style={{ alignSelf: 'flex-start' }}>
           {loading ? 'Saving...' : 'Save Lead'}

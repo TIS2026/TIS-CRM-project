@@ -7,7 +7,7 @@ import { createInitialCall } from '@/services/callService';
 export async function POST(request: Request) {
   try {
     const data = await request.json();
-    const { studentName, parentContactNumber, studentEmail, parentName, school, courseName, studentGrade, ownerId, leadSource } = data;
+    const { studentName, parentContactNumber, studentEmail, parentName, school, courseName, studentGrade, ownerId, leadSource, bucket, remarks, customFields } = data;
 
     if (!parentContactNumber) {
       return NextResponse.json({ success: false, error: 'Parent Contact Number is mandatory.' }, { status: 400 });
@@ -53,7 +53,10 @@ export async function POST(request: Request) {
         leadSource: leadSource || 'Manual',
         opportunityType: oppType,
         gradeAtEnrollment: studentGrade || null,
-        isDataIncomplete: !courseName
+        isDataIncomplete: !courseName,
+        bucket: bucket || null,
+        remarks: remarks || null,
+        customFields: customFields || {}
       }
     });
 
