@@ -1,5 +1,11 @@
 {
   "name": "crm",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "postinstall": "prisma generate"
+  },
   "dependencies": {
     "next": "^16.2.10",
     "react": "^19.2.7",
