@@ -8,6 +8,7 @@ export default function Dashboard() {
   const [opportunities, setOpportunities] = useState<any[]>([]);
   const [filterStudentName, setFilterStudentName] = useState('');
   const [filterCourseName, setFilterCourseName] = useState('');
+  const [availableCourses, setAvailableCourses] = useState<string[]>([]);
   const [loadingA, setLoadingA] = useState(false);
 
   // --- Module B State ---
@@ -30,8 +31,19 @@ export default function Dashboard() {
     }
   };
 
+  const fetchCourses = async () => {
+    try {
+      const res = await fetch('/api/courses');
+      const data = await res.json();
+      setAvailableCourses(data);
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
   useEffect(() => {
     fetchModuleA();
+    fetchCourses();
   }, []);
 
   const handlePasteSearch = async () => {
@@ -82,8 +94,14 @@ export default function Dashboard() {
             <input 
               placeholder="Filter by Course Name" 
               value={filterCourseName} 
-              onChange={e => setFilterCourseName(e.target.value)} 
+              onChange={e => setFilterCourseName(e.target.value)}
+              list="course-suggestions"
             />
+            <datalist id="course-suggestions">
+              {availableCourses.map((course, idx) => (
+                <option key={idx} value={course} />
+              ))}
+            </datalist>
             <button className="btn" onClick={fetchModuleA} disabled={loadingA}>Search</button>
           </div>
 
