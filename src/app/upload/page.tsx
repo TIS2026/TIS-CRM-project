@@ -18,7 +18,8 @@ export default function BulkUpload() {
       header: true,
       skipEmptyLines: true,
       complete: async (results) => {
-        const CHUNK_SIZE = 5;
+        const CHUNK_SIZE = 10;
+        const CONCURRENCY = 5;
         const totalRows = results.data.length;
         const chunks = [];
         for (let i = 0; i < totalRows; i += CHUNK_SIZE) {
@@ -32,35 +33,42 @@ export default function BulkUpload() {
         // Initialize progress tracker
         setResult({ processed: 0, total: totalRows, exceptions: [], isUploading: true });
 
-        for (let i = 0; i < chunks.length; i++) {
-          try {
+        for (let i = 0; i < chunks.length; i += CONCURRENCY) {
+          if (hasError) break;
+          const currentBatch = chunks.slice(i, i + CONCURRENCY);
+          
+          const promises = currentBatch.map(async (chunk) => {
             const response = await fetch('/api/upload', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify(chunks[i]),
+              body: JSON.stringify(chunk),
             });
             const data = await response.json();
-            
             if (!response.ok) throw new Error(data.error || 'Upload failed');
-            
-            totalProcessed += data.processed || 0;
-            if (data.exceptions) {
-              allExceptions = [...allExceptions, ...data.exceptions];
-            }
+            return data;
+          });
 
-            // Update UI with progress
+          try {
+            const batchResults = await Promise.all(promises);
+            for (const data of batchResults) {
+              totalProcessed += data.processed || 0;
+              if (data.exceptions) {
+                allExceptions = [...allExceptions, ...data.exceptions];
+              }
+            }
+            
+            // Update UI with progress after batch finishes
             setResult({
               processed: totalProcessed,
               total: totalRows,
               exceptions: allExceptions,
-              isUploading: i < chunks.length - 1
+              isUploading: i + CONCURRENCY < chunks.length
             });
-            
           } catch (error: any) {
             hasError = true;
             setResult(prev => ({
               ...(prev || {}),
-              error: error.message || 'An unknown error occurred during chunk upload.',
+              error: error.message || 'An error occurred during concurrent batch upload.',
               isUploading: false
             }));
             break; // Stop uploading further chunks on fatal error
