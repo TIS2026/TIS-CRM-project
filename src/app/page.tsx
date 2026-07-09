@@ -9,6 +9,7 @@ export default function Dashboard() {
   const [filterStudentName, setFilterStudentName] = useState('');
   const [filterCourseName, setFilterCourseName] = useState('');
   const [availableCourses, setAvailableCourses] = useState<string[]>([]);
+  const [availableStudents, setAvailableStudents] = useState<string[]>([]);
   const [loadingA, setLoadingA] = useState(false);
 
   // --- Module B State ---
@@ -31,11 +32,16 @@ export default function Dashboard() {
     }
   };
 
-  const fetchCourses = async () => {
+  const fetchCoursesAndStudents = async () => {
     try {
-      const res = await fetch('/api/courses');
-      const data = await res.json();
-      setAvailableCourses(data);
+      const [coursesRes, studentsRes] = await Promise.all([
+        fetch('/api/courses'),
+        fetch('/api/students')
+      ]);
+      const coursesData = await coursesRes.json();
+      const studentsData = await studentsRes.json();
+      setAvailableCourses(coursesData);
+      setAvailableStudents(studentsData);
     } catch (e) {
       console.error(e);
     }
@@ -43,7 +49,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     fetchModuleA();
-    fetchCourses();
+    fetchCoursesAndStudents();
   }, []);
 
   const handlePasteSearch = async () => {
@@ -86,22 +92,32 @@ export default function Dashboard() {
       {activeTab === 'moduleA' && (
         <div>
           <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem' }}>
-            <input 
-              placeholder="Filter by Student Name" 
-              value={filterStudentName} 
-              onChange={e => setFilterStudentName(e.target.value)} 
-            />
-            <input 
-              placeholder="Filter by Course Name" 
-              value={filterCourseName} 
-              onChange={e => setFilterCourseName(e.target.value)}
-              list="course-suggestions"
-            />
-            <datalist id="course-suggestions">
-              {availableCourses.map((course, idx) => (
-                <option key={idx} value={course} />
-              ))}
-            </datalist>
+            <div>
+              <input 
+                placeholder="Filter by Student Name" 
+                value={filterStudentName} 
+                onChange={e => setFilterStudentName(e.target.value)} 
+                list="student-suggestions"
+              />
+              <datalist id="student-suggestions">
+                {availableStudents.map((student, idx) => (
+                  <option key={idx} value={student} />
+                ))}
+              </datalist>
+            </div>
+            <div>
+              <input 
+                placeholder="Filter by Course Name" 
+                value={filterCourseName} 
+                onChange={e => setFilterCourseName(e.target.value)}
+                list="course-suggestions"
+              />
+              <datalist id="course-suggestions">
+                {availableCourses.map((course, idx) => (
+                  <option key={idx} value={course} />
+                ))}
+              </datalist>
+            </div>
             <button className="btn" onClick={fetchModuleA} disabled={loadingA}>Search</button>
           </div>
 
