@@ -120,17 +120,57 @@ export default function Dashboard() {
 
   const handleDownloadCSV = () => {
     if (opportunities.length === 0) return;
-    const headers = ['Student Name', 'Parent Contact', 'Course', 'Stage', 'Owner', 'Lead Source'];
+    
+    // Comprehensive headers matching all fields from Lead and Opportunity models
+    const headers = [
+      'Opportunity ID', 'Lead ID', 
+      'Student Name', 'Student Email', 'Student Contact', 
+      'Parent Name', 'Parent Email', 'Parent Contact',
+      'Parent 2 Name', 'Parent 2 Email', 'Parent 2 Contact',
+      'School', 'Student Grade', 'Lead Type', 'Lead Created Source',
+      'Course Name', 'Stage', 'Owner', 'Lead Source', 'Opportunity Type',
+      'Enrollment Date', 'Enrollment Center', 'Grade At Enrollment',
+      'Lost Reason', 'Lost At Stage', 'Is Data Incomplete', 'Created Date'
+    ];
+    
     const csvRows = [headers.join(',')];
+    
+    // Helper to safely escape CSV strings containing quotes or commas
+    const escapeCSV = (val: any) => {
+      if (val === null || val === undefined) return '""';
+      const str = String(val).replace(/"/g, '""');
+      return `"${str}"`;
+    };
     
     opportunities.forEach(opp => {
       const row = [
-        `"${opp.lead?.studentName || ''}"`,
-        `"${opp.lead?.parentContactNumber || ''}"`,
-        `"${opp.courseName || ''}"`,
-        `"${opp.stage || ''}"`,
-        `"${opp.owner?.name || ''}"`,
-        `"${opp.leadSource || ''}"`
+        escapeCSV(opp.id),
+        escapeCSV(opp.lead?.id),
+        escapeCSV(opp.lead?.studentName),
+        escapeCSV(opp.lead?.studentEmail),
+        escapeCSV(opp.lead?.studentContactNumber),
+        escapeCSV(opp.lead?.parentName),
+        escapeCSV(opp.lead?.parentEmail),
+        escapeCSV(opp.lead?.parentContactNumber),
+        escapeCSV(opp.lead?.parent2Name),
+        escapeCSV(opp.lead?.parent2Email),
+        escapeCSV(opp.lead?.parent2ContactNumber),
+        escapeCSV(opp.lead?.school),
+        escapeCSV(opp.lead?.studentGrade),
+        escapeCSV(opp.lead?.leadType),
+        escapeCSV(opp.lead?.createdSource),
+        escapeCSV(opp.courseName),
+        escapeCSV(opp.stage),
+        escapeCSV(opp.owner?.name),
+        escapeCSV(opp.leadSource),
+        escapeCSV(opp.opportunityType),
+        escapeCSV(opp.enrollmentDate ? new Date(opp.enrollmentDate).toISOString() : ''),
+        escapeCSV(opp.enrollmentCenter),
+        escapeCSV(opp.gradeAtEnrollment),
+        escapeCSV(opp.lostReason),
+        escapeCSV(opp.lostAtStage),
+        escapeCSV(opp.isDataIncomplete),
+        escapeCSV(opp.createdDate ? new Date(opp.createdDate).toISOString() : '')
       ];
       csvRows.push(row.join(','));
     });
