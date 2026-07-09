@@ -4,7 +4,7 @@ import Papa from 'papaparse';
 
 export default function BulkUpload() {
   const [loading, setLoading] = useState(false);
-  const [result, setResult] = useState<{ processed?: number, exceptions?: any[], error?: string } | null>(null);
+  const [result, setResult] = useState<{ processed?: number, total?: number, isUploading?: boolean, exceptions?: any[], error?: string } | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -18,22 +18,67 @@ export default function BulkUpload() {
       header: true,
       skipEmptyLines: true,
       complete: async (results) => {
-        try {
-          const response = await fetch('/api/upload', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(results.data),
-          });
-          const data = await response.json();
-          setResult(data);
-        } catch (error: any) {
-          setResult({ error: error.message || 'An unknown error occurred during upload.' });
-        } finally {
-          setLoading(false);
+        const CHUNK_SIZE = 50;
+        const totalRows = results.data.length;
+        const chunks = [];
+        for (let i = 0; i < totalRows; i += CHUNK_SIZE) {
+          chunks.push(results.data.slice(i, i + CHUNK_SIZE));
         }
+
+        let totalProcessed = 0;
+        let allExceptions: any[] = [];
+        let hasError = false;
+        
+        // Initialize progress tracker
+        setResult({ processed: 0, total: totalRows, exceptions: [], isUploading: true });
+
+        for (let i = 0; i < chunks.length; i++) {
+          try {
+            const response = await fetch('/api/upload', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(chunks[i]),
+            });
+            const data = await response.json();
+            
+            if (!response.ok) throw new Error(data.error || 'Upload failed');
+            
+            totalProcessed += data.processed || 0;
+            if (data.exceptions) {
+              allExceptions = [...allExceptions, ...data.exceptions];
+            }
+
+            // Update UI with progress
+            setResult({
+              processed: totalProcessed,
+              total: totalRows,
+              exceptions: allExceptions,
+              isUploading: i < chunks.length - 1
+            });
+            
+          } catch (error: any) {
+            hasError = true;
+            setResult(prev => ({
+              ...(prev || {}),
+              error: error.message || 'An unknown error occurred during chunk upload.',
+              isUploading: false
+            }));
+            break; // Stop uploading further chunks on fatal error
+          }
+        }
+        
+        if (!hasError) {
+          setResult({
+            processed: totalProcessed,
+            total: totalRows,
+            exceptions: allExceptions,
+            isUploading: false
+          });
+        }
+        setLoading(false);
       },
       error: (error) => {
-        setResult({ error: error.message });
+        setResult({ error: error.message, isUploading: false });
         setLoading(false);
       }
     });
@@ -70,7 +115,9 @@ export default function BulkUpload() {
           
           {result.processed !== undefined && (
             <div style={{ color: 'var(--success)', marginBottom: '1rem', fontSize: '1.2rem' }}>
-              Successfully processed: {result.processed} records.
+              {result.isUploading 
+                ? `Uploading... Processed ${result.processed} out of ${result.total} records.`
+                : `Finished! Successfully processed ${result.processed} records.`}
             </div>
           )}
 
