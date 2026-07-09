@@ -73,6 +73,19 @@ export async function POST(request: Request) {
         if (user) ownerId = user.id;
       }
 
+      // Prevent duplicate opportunities
+      const duplicateWhere = courseName 
+        ? { leadId: lead.id, courseName: courseName }
+        : enrollmentDate 
+          ? { leadId: lead.id, enrollmentDate: enrollmentDate }
+          : { leadId: lead.id, courseName: null, enrollmentDate: null };
+
+      const existingOpp = await prisma.opportunity.findFirst({ where: duplicateWhere });
+      if (existingOpp) {
+        exceptions.push({ row, reason: 'Skipped: Identical opportunity already exists for this lead' });
+        continue;
+      }
+
       const opportunity = await prisma.opportunity.create({
         data: {
           leadId: lead.id,
