@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function NewLeadPage() {
   const [formData, setFormData] = useState({
@@ -9,11 +9,21 @@ export default function NewLeadPage() {
     parentName: '',
     school: '',
     courseName: '',
+    studentGrade: '',
+    ownerId: '',
     leadSource: ''
   });
   
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<any>(null);
+  const [users, setUsers] = useState<any[]>([]);
+
+  useEffect(() => {
+    fetch('/api/users')
+      .then(res => res.json())
+      .then(data => setUsers(data))
+      .catch(console.error);
+  }, []);
 
   const leadSources = [
     'Referral', 'Walk-in', 'Website Inquiry', 'Ad Campaign', 
@@ -40,7 +50,8 @@ export default function NewLeadPage() {
       if (data.success) {
         setFormData({
           parentContactNumber: '', studentName: '', studentEmail: '',
-          parentName: '', school: '', courseName: '', leadSource: ''
+          parentName: '', school: '', courseName: '', studentGrade: '',
+          ownerId: '', leadSource: ''
         });
       }
     } catch (error: any) {
@@ -113,6 +124,27 @@ export default function NewLeadPage() {
               value={formData.courseName}
               onChange={handleChange}
             />
+          </div>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+          <div>
+            <label>Student Grade</label>
+            <input 
+              name="studentGrade"
+              value={formData.studentGrade}
+              onChange={handleChange}
+              placeholder="e.g. 8"
+            />
+          </div>
+          <div>
+            <label>Owner</label>
+            <select name="ownerId" value={formData.ownerId} onChange={handleChange}>
+              <option value="">Unassigned (System Default)</option>
+              {users.map(user => (
+                <option key={user.id} value={user.id}>{user.name} ({user.role})</option>
+              ))}
+            </select>
           </div>
         </div>
 

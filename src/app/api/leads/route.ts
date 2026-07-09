@@ -7,7 +7,7 @@ import { createInitialCall } from '@/services/callService';
 export async function POST(request: Request) {
   try {
     const data = await request.json();
-    const { studentName, parentContactNumber, studentEmail, parentName, school, courseName, leadSource } = data;
+    const { studentName, parentContactNumber, studentEmail, parentName, school, courseName, studentGrade, ownerId, leadSource } = data;
 
     if (!parentContactNumber) {
       return NextResponse.json({ success: false, error: 'Parent Contact Number is mandatory.' }, { status: 400 });
@@ -42,21 +42,24 @@ export async function POST(request: Request) {
         unassignedUser = await prisma.user.findFirst();
     }
 
+    const finalOwnerId = ownerId || unassignedUser?.id!;
+
     const opportunity = await prisma.opportunity.create({
       data: {
         leadId: lead.id,
         courseName: courseName || null,
-        ownerId: unassignedUser?.id!,
+        ownerId: finalOwnerId,
         stage: 'New',
         leadSource: leadSource || 'Manual',
         opportunityType: oppType,
+        gradeAtEnrollment: studentGrade || null,
         isDataIncomplete: !courseName
       }
     });
 
     await evaluateLeadType(lead.id);
     await rollupStudentGrade(lead.id);
-    await createInitialCall(opportunity.id, unassignedUser?.id!);
+    await createInitialCall(opportunity.id, finalOwnerId);
 
     return NextResponse.json({ success: true, leadId: lead.id, opportunityId: opportunity.id, isNewLead });
   } catch (error: any) {
