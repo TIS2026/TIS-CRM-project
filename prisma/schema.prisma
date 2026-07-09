@@ -1,0 +1,72 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String        @id @default(uuid())
+  name          String
+  role          String        // Admin, Sales Rep
+  opportunities Opportunity[]
+  calls         Call[]
+}
+
+model Lead {
+  id                   String        @id @default(uuid())
+  studentName          String?
+  studentEmail         String?
+  studentContactNumber String?
+  parentName           String?
+  parentEmail          String?
+  parentContactNumber  String        // Strictly Mandatory
+  parent2Name          String?
+  parent2Email         String?
+  parent2ContactNumber String?
+  school               String?
+  studentGrade         String?       // System-Derived, Read-Only
+  leadType             String        // Enum: New, Repeat. System-Derived
+  dedupKey             String        @unique // Hidden System Field, Index Key
+  createdDate          DateTime      @default(now())
+  createdSource        String        // Enum: Bulk Upload, Manual Entry
+
+  opportunities        Opportunity[]
+}
+
+model Opportunity {
+  id                 String    @id @default(uuid())
+  leadId             String
+  lead               Lead      @relation(fields: [leadId], references: [id])
+  courseName         String?   // Mandatory for new, nullable for historical
+  enrollmentDate     DateTime? // Mandatory if Stage = Won
+  enrollmentCenter   String?
+  gradeAtEnrollment  String?
+  ownerId            String
+  owner              User      @relation(fields: [ownerId], references: [id])
+  stage              String    // Enum: New, In Progress, Won, Lost
+  leadSource         String    // Custom Editable Picklist
+  opportunityType    String    // Enum: New, Repeat, Reactivated-Lost (System-Derived)
+  isDataIncomplete   Boolean   @default(false)
+  lostReason         String?   // Picklist + Free Text field. Mandatory if Stage = Lost
+  lostAtStage        String?   // Auto-Captured System Field
+  createdDate        DateTime  @default(now())
+
+  calls              Call[]
+}
+
+model Call {
+  id                 String    @id @default(uuid())
+  opportunityId      String
+  opportunity        Opportunity @relation(fields: [opportunityId], references: [id])
+  callType           String    // Enum (Sales Call, Sales Follow-up Call, etc.)
+  status             String    // Enum: Scheduled, Completed, Cancelled
+  scheduledDate      DateTime
+  completedDate      DateTime?
+  callOutcome        String?   // Enum: Connected, No Answer, Busy, Invalid Number
+  disposition        String?   // Conditional selection rules apply
+  ownerId            String
+  owner              User      @relation(fields: [ownerId], references: [id])
+}
