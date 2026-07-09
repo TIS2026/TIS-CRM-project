@@ -19,7 +19,7 @@ export default function BulkUpload() {
       skipEmptyLines: true,
       complete: async (results) => {
         const CHUNK_SIZE = 10;
-        const CONCURRENCY = 5;
+        const CONCURRENCY = 3;
         const totalRows = results.data.length;
         const chunks = [];
         for (let i = 0; i < totalRows; i += CHUNK_SIZE) {
@@ -43,7 +43,13 @@ export default function BulkUpload() {
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify(chunk),
             });
-            const data = await response.json();
+            const text = await response.text();
+            let data;
+            try {
+              data = JSON.parse(text);
+            } catch (e) {
+              throw new Error(`Server Error: ${text.substring(0, 100)}`);
+            }
             if (!response.ok) throw new Error(data.error || 'Upload failed');
             return data;
           });
