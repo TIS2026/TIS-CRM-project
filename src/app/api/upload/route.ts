@@ -16,11 +16,17 @@ export async function POST(request: Request) {
     }
 
     for (const row of data) {
-      const parentContact = row['Parent Contact Number'];
+      let parentContact = row['Parent Contact Number'];
+      const studentContact = row['Student Contact Number'];
       const studentName = row['Student Name'];
+
+      // Fallback: If parent contact is empty, use student contact
+      if (!parentContact && studentContact) {
+        parentContact = studentContact;
+      }
       
       if (!parentContact) {
-        exceptions.push({ row, reason: 'Parent Contact Number is blank' });
+        exceptions.push({ row, reason: 'Parent Contact and Student Contact are both blank' });
         continue;
       }
 
