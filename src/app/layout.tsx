@@ -21,6 +21,7 @@ export default function RootLayout({
           <Link href="/" style={{ color: 'var(--text-primary)', textDecoration: 'none' }}>Dashboard</Link>
           <Link href="/upload" style={{ color: 'var(--text-primary)', textDecoration: 'none' }}>Bulk Upload</Link>
           <Link href="/leads/new" style={{ color: 'var(--text-primary)', textDecoration: 'none' }}>+ Add Lead</Link>
+          <Link href="/settings" style={{ color: 'var(--text-primary)', textDecoration: 'none', marginLeft: 'auto' }}>⚙️ Settings</Link>
         </nav>
         <main style={{ padding: '2rem', maxWidth: '1400px', margin: '0 auto' }}>
           {children}
