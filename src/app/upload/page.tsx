@@ -18,7 +18,7 @@ export default function BulkUpload() {
       header: true,
       skipEmptyLines: true,
       complete: async (results) => {
-        const CHUNK_SIZE = 50;
+        const CHUNK_SIZE = 5;
         const totalRows = results.data.length;
         const chunks = [];
         for (let i = 0; i < totalRows; i += CHUNK_SIZE) {
