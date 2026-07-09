@@ -1,0 +1,148 @@
+'use client';
+import { useState } from 'react';
+
+export default function NewLeadPage() {
+  const [formData, setFormData] = useState({
+    parentContactNumber: '',
+    studentName: '',
+    studentEmail: '',
+    parentName: '',
+    school: '',
+    courseName: '',
+    leadSource: ''
+  });
+  
+  const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState<any>(null);
+
+  const leadSources = [
+    'Referral', 'Walk-in', 'Website Inquiry', 'Ad Campaign', 
+    'Repeat - Inbound', 'Agent Outreach', 'Event/Workshop', 'Other'
+  ];
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    setResult(null);
+
+    try {
+      const response = await fetch('/api/leads', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      const data = await response.json();
+      setResult(data);
+      if (data.success) {
+        setFormData({
+          parentContactNumber: '', studentName: '', studentEmail: '',
+          parentName: '', school: '', courseName: '', leadSource: ''
+        });
+      }
+    } catch (error: any) {
+      setResult({ success: false, error: error.message });
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="glass-panel" style={{ padding: '2rem', maxWidth: '800px', margin: '0 auto' }}>
+      <h1 style={{ marginBottom: '1.5rem', fontWeight: 600 }}>Add New Lead</h1>
+      
+      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+        
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+          <div>
+            <label>Parent Contact Number *</label>
+            <input 
+              required
+              name="parentContactNumber"
+              value={formData.parentContactNumber}
+              onChange={handleChange}
+              placeholder="+1 234 567 8900"
+            />
+          </div>
+          <div>
+            <label>Student Name</label>
+            <input 
+              name="studentName"
+              value={formData.studentName}
+              onChange={handleChange}
+            />
+          </div>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+          <div>
+            <label>Parent Name</label>
+            <input 
+              name="parentName"
+              value={formData.parentName}
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <label>Student Email</label>
+            <input 
+              type="email"
+              name="studentEmail"
+              value={formData.studentEmail}
+              onChange={handleChange}
+            />
+          </div>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+          <div>
+            <label>School</label>
+            <input 
+              name="school"
+              value={formData.school}
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <label>Interested Course</label>
+            <input 
+              name="courseName"
+              value={formData.courseName}
+              onChange={handleChange}
+            />
+          </div>
+        </div>
+
+        <div>
+          <label>Lead Source *</label>
+          <select required name="leadSource" value={formData.leadSource} onChange={handleChange}>
+            <option value="">Select a Source...</option>
+            {leadSources.map(src => <option key={src} value={src}>{src}</option>)}
+          </select>
+        </div>
+
+        <button type="submit" className="btn" disabled={loading} style={{ alignSelf: 'flex-start' }}>
+          {loading ? 'Saving...' : 'Save Lead'}
+        </button>
+      </form>
+
+      {result && (
+        <div style={{ marginTop: '2rem', padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '8px' }}>
+          {result.success ? (
+            <div style={{ color: 'var(--success)' }}>
+              Successfully {result.isNewLead ? 'created a new lead' : 'appended an opportunity to an existing lead'}! 
+              <br/>Opportunity ID: {result.opportunityId}
+            </div>
+          ) : (
+            <div style={{ color: 'var(--danger)' }}>
+              Error: {result.error}
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
