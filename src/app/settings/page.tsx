@@ -94,6 +94,27 @@ export default function SettingsPage() {
     }
   };
 
+  const handleDeleteUser = async (id: string) => {
+    if (!window.confirm('Are you sure you want to remove this owner?')) return;
+    
+    setLoading(true);
+    setResult(null);
+    try {
+      const response = await fetch(`/api/users/${id}`, { method: 'DELETE' });
+      const data = await response.json();
+      if (!data.success) {
+        setResult({ success: false, error: data.error });
+      } else {
+        setResult({ success: true, message: 'Owner removed successfully!' });
+        fetchUsers();
+      }
+    } catch (e: any) {
+      setResult({ success: false, error: e.message });
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="glass-panel" style={{ padding: '2rem', maxWidth: '800px', margin: '0 auto' }}>
       <h1 style={{ marginBottom: '1.5rem', fontWeight: 600 }}>Settings</h1>
@@ -107,6 +128,7 @@ export default function SettingsPage() {
               <th>Name</th>
               <th>Role</th>
               <th>System ID</th>
+              <th>Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -115,6 +137,15 @@ export default function SettingsPage() {
                 <td style={{ fontWeight: 500 }}>{user.name}</td>
                 <td><span className={`badge badge-${user.role.toLowerCase()}`}>{user.role}</span></td>
                 <td style={{ opacity: 0.5, fontSize: '0.85rem' }}>{user.id}</td>
+                <td>
+                  <button 
+                    onClick={() => handleDeleteUser(user.id)} 
+                    style={{ background: 'transparent', color: 'var(--danger)', border: '1px solid var(--danger)', padding: '0.2rem 0.5rem', borderRadius: '4px', cursor: 'pointer', fontSize: '0.85rem' }}
+                    disabled={loading}
+                  >
+                    Remove
+                  </button>
+                </td>
               </tr>
             ))}
             {users.length === 0 && (
