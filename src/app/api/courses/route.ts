@@ -5,7 +5,7 @@ export async function GET() {
   try {
     const courses = await prisma.opportunity.findMany({
       where: {
-        courseName: { not: null, not: "" }
+        courseName: { not: null }
       },
       distinct: ['courseName'],
       select: {
@@ -16,7 +16,9 @@ export async function GET() {
       }
     });
 
-    return NextResponse.json(courses.map(c => c.courseName));
+    return NextResponse.json(
+      courses.map(c => c.courseName).filter(c => c && c.trim() !== "")
+    );
   } catch (error: any) {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
