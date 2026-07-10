@@ -12,8 +12,8 @@ export default function LogCallModal({ activeCall, onCancel, onSuccess }: any) {
   const [error, setError] = useState('');
 
   const submitCall = async () => {
-    if (!remarks.trim()) {
-      setError('Remarks are strictly mandatory.');
+    if (outcome === 'Connected' && !remarks.trim()) {
+      setError('Remarks are strictly mandatory for connected calls.');
       return;
     }
 
@@ -23,8 +23,6 @@ export default function LogCallModal({ activeCall, onCancel, onSuccess }: any) {
     let finalDisposition = undefined;
     if (outcome === 'Connected') {
       finalDisposition = `${disposition} | Remark: ${remarks}`;
-    } else {
-      finalDisposition = `Remark: ${remarks}`;
     }
 
     try {
@@ -136,22 +134,24 @@ export default function LogCallModal({ activeCall, onCancel, onSuccess }: any) {
           </div>
         )}
 
-        <div style={{ marginBottom: '1rem' }}>
-          <label>Remarks * (Mandatory)</label>
-          <textarea 
-            rows={3}
-            value={remarks} 
-            onChange={e => setRemarks(e.target.value)} 
-            style={{ width: '100%', padding: '0.5rem' }} 
-            placeholder="Detailed notes from the call..."
-          />
-        </div>
+        {outcome === 'Connected' && (
+          <div style={{ marginBottom: '1rem' }}>
+            <label>Remarks * (Mandatory)</label>
+            <textarea 
+              rows={3}
+              value={remarks} 
+              onChange={e => setRemarks(e.target.value)} 
+              style={{ width: '100%', padding: '0.5rem' }} 
+              placeholder="Detailed notes from the call..."
+            />
+          </div>
+        )}
 
         <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '1rem', marginTop: '2rem' }}>
           <button onClick={onCancel} style={{ padding: '0.5rem 1rem', background: 'transparent', border: '1px solid rgba(255,255,255,0.2)', color: '#fff', borderRadius: '4px' }}>Cancel</button>
           <button 
             onClick={submitCall} 
-            disabled={loading || !outcome || !remarks.trim() || (outcome === 'Connected' && !disposition) || (['No Answer', 'Busy'].includes(outcome) && !nextScheduledDate) || (disposition && disposition.startsWith('Schedule') && !nextScheduledDate) || (disposition === 'Close - Not Interested' && !lostReason) || (disposition === 'Close - Onboarded' && !enrollmentDate)} 
+            disabled={loading || !outcome || (outcome === 'Connected' && !remarks.trim()) || (outcome === 'Connected' && !disposition) || (['No Answer', 'Busy'].includes(outcome) && !nextScheduledDate) || (disposition && disposition.startsWith('Schedule') && !nextScheduledDate) || (disposition === 'Close - Not Interested' && !lostReason) || (disposition === 'Close - Onboarded' && !enrollmentDate)} 
             style={{ padding: '0.5rem 1rem', background: 'var(--accent)', border: 'none', color: '#fff', borderRadius: '4px', cursor: 'pointer' }}
           >
             {loading ? 'Saving...' : 'Complete Call'}
