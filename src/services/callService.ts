@@ -7,7 +7,7 @@ export async function processCallOutcome(
   const call = await prisma.call.findUnique({ where: { id: callId }, include: { opportunity: true } });
   if (!call) throw new Error('Call not found');
 
-  if (['No Answer', 'Busy', 'Invalid Number'].includes(data.outcome)) {
+  if (['No Answer', 'Busy'].includes(data.outcome)) {
     if (!data.scheduledDate) throw new Error('Must schedule a follow-up for non-connected calls');
 
     await prisma.call.update({
@@ -23,6 +23,19 @@ export async function processCallOutcome(
         scheduledDate: data.scheduledDate,
         ownerId: call.ownerId,
       },
+    });
+    return;
+  }
+
+  if (data.outcome === 'Invalid Number') {
+    await prisma.call.update({
+      where: { id: callId },
+      data: { status: 'Completed', completedDate: new Date(), callOutcome: data.outcome },
+    });
+
+    await prisma.opportunity.update({
+      where: { id: call.opportunityId },
+      data: { stage: 'Lost', lostReason: 'Invalid Number', lostAtStage: call.callType },
     });
     return;
   }

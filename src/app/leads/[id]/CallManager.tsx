@@ -185,7 +185,7 @@ export default function CallManager({ oppId, initialCalls = [], ownerId, onCallU
               </div>
             )}
 
-            {((outcome && outcome !== 'Connected') || (disposition && disposition.startsWith('Schedule'))) && (
+            {((outcome && !['Connected', 'Invalid Number'].includes(outcome)) || (disposition && disposition.startsWith('Schedule'))) && (
               <div style={{ marginBottom: '1rem' }}>
                 <label>Next Scheduled Date/Time *</label>
                 <input type="datetime-local" value={nextScheduledDate} onChange={e => setNextScheduledDate(e.target.value)} style={{ width: '100%', padding: '0.5rem' }} />
@@ -195,7 +195,11 @@ export default function CallManager({ oppId, initialCalls = [], ownerId, onCallU
 
             <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '1rem', marginTop: '2rem' }}>
               <button onClick={() => setActiveCall(null)} style={{ padding: '0.5rem 1rem', background: 'transparent', border: '1px solid rgba(255,255,255,0.2)', color: '#fff', borderRadius: '4px' }}>Cancel</button>
-              <button onClick={submitCall} disabled={loading || !outcome || (outcome === 'Connected' && !disposition)} style={{ padding: '0.5rem 1rem', background: 'var(--accent)', border: 'none', color: '#fff', borderRadius: '4px' }}>
+              <button 
+                onClick={submitCall} 
+                disabled={loading || !outcome || (outcome === 'Connected' && !disposition) || (['No Answer', 'Busy'].includes(outcome) && !nextScheduledDate) || (disposition && disposition.startsWith('Schedule') && !nextScheduledDate) || (disposition === 'Close - Not Interested' && !lostReason) || (disposition === 'Close - Onboarded' && !enrollmentDate)} 
+                style={{ padding: '0.5rem 1rem', background: 'var(--accent)', border: 'none', color: '#fff', borderRadius: '4px', cursor: 'pointer' }}
+              >
                 {loading ? 'Saving...' : 'Complete Call'}
               </button>
             </div>
