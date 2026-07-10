@@ -70,6 +70,8 @@ export async function POST(request: Request) {
   }
 }
 
+export const dynamic = 'force-dynamic';
+
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   
@@ -110,6 +112,9 @@ export async function GET(request: Request) {
       prisma.lead.findMany({
         where,
         include: {
+          opportunities: {
+            select: { bucket: true }
+          },
           _count: {
             select: { opportunities: true }
           }
