@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --bg-primary: #0f172a;
-  --bg-secondary: #1e293b;
-  --glass-bg: rgba(30, 41, 59, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --accent-primary: #3b82f6;
-  --accent-hover: #2563eb;
-  --success: #10b981;
-  --warning: #f59e0b;
-  --danger: #ef4444;
-  --radius: 12px;
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --glass-bg: #ffffff;
+  --glass-border: #e2e8f0;
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  --accent-primary: #2563eb;
+  --accent-hover: #1d4ed8;
+  --success: #059669;
+  --warning: #d97706;
+  --danger: #dc2626;
+  --radius: 8px;
   --font-sans: 'Inter', sans-serif;
+  
+  --border-light: rgba(0, 0, 0, 0.05);
+  --bg-highlight: rgba(0, 0, 0, 0.02);
+  --bg-highlight-strong: rgba(0, 0, 0, 0.05);
 }
 
 * {
@@ -28,20 +32,13 @@ body {
   color: var(--text-primary);
   line-height: 1.5;
   min-height: 100vh;
-  background-image: 
-    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
-    radial-gradient(at 50% 0%, hsla(225,39%,30%,0.2) 0, transparent 50%), 
-    radial-gradient(at 100% 0%, hsla(339,49%,30%,0.2) 0, transparent 50%);
-  background-attachment: fixed;
 }
 
 .glass-panel {
   background: var(--glass-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
 }
 
 .btn {
@@ -67,17 +64,18 @@ body {
 
 .btn-secondary {
   background: transparent;
+  color: var(--text-primary);
   border: 1px solid var(--glass-border);
 }
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--bg-highlight);
 }
 
 input, select, textarea {
   width: 100%;
   padding: 0.5rem 0.75rem;
-  background: rgba(15, 23, 42, 0.6);
-  border: 1px solid var(--glass-border);
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
   border-radius: 6px;
   color: var(--text-primary);
   font-family: var(--font-sans);
@@ -99,20 +97,22 @@ th {
   text-align: left;
   padding: 1rem;
   color: var(--text-secondary);
-  font-weight: 500;
-  font-size: 0.875rem;
+  font-weight: 600;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   border-bottom: 1px solid var(--glass-border);
+  background: var(--bg-primary);
 }
 
 td {
   padding: 1rem;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid var(--border-light);
+  font-size: 0.875rem;
 }
 
 tr:hover td {
-  background: rgba(255,255,255,0.02);
+  background: var(--bg-highlight);
 }
 
 .badge {
@@ -122,6 +122,6 @@ tr:hover td {
   font-weight: 600;
 }
 
-.badge-won { background: rgba(16, 185, 129, 0.2); color: var(--success); }
-.badge-lost { background: rgba(239, 68, 68, 0.2); color: var(--danger); }
-.badge-new { background: rgba(59, 130, 246, 0.2); color: var(--accent-primary); }
+.badge-won { background: #d1fae5; color: var(--success); }
+.badge-lost { background: #fee2e2; color: var(--danger); }
+.badge-new { background: #dbeafe; color: var(--accent-primary); }

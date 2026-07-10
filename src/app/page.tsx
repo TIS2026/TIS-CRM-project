@@ -306,7 +306,7 @@ export default function Dashboard() {
               <select 
                 value={filterBucket} 
                 onChange={e => setFilterBucket(e.target.value)} 
-                style={{ height: '100%', padding: '0.5rem', borderRadius: '4px', border: '1px solid rgba(255,255,255,0.1)', background: 'var(--bg-secondary)', color: 'white' }}
+                style={{ height: '100%', padding: '0.5rem', borderRadius: '4px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'var(--text-primary)' }}
               >
                 <option value="">All Buckets</option>
                 {availableBuckets.map((bucket, idx) => (
@@ -324,7 +324,7 @@ export default function Dashboard() {
           </div>
 
           {showCustomFilters && (
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1.5rem', padding: '1.5rem', background: 'rgba(0,0,0,0.2)', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1.5rem', padding: '1.5rem', background: 'var(--bg-highlight)', borderRadius: '8px', border: '1px solid var(--border-light)' }}>
               <div>
                 <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Stage</label>
                 <select value={filterStage} onChange={e => setFilterStage(e.target.value)} style={{ width: '100%' }}>
@@ -354,9 +354,9 @@ export default function Dashboard() {
           )}
 
           {selectedRows.length > 0 && (
-            <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem', padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '8px', alignItems: 'center' }}>
+            <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem', padding: '1rem', background: 'var(--bg-highlight-strong)', borderRadius: '8px', alignItems: 'center', flexWrap: 'wrap' }}>
               <span style={{ fontWeight: 600, color: 'var(--accent)' }}>{selectedRows.length} selected</span>
-              <div style={{ width: '1px', height: '24px', background: 'rgba(255,255,255,0.2)' }}></div>
+              <div style={{ width: '1px', height: '24px', background: 'var(--border-light)' }}></div>
               <select value={bulkStage} onChange={e => setBulkStage(e.target.value)}>
                 <option value="">Change Stage...</option>
                 {availableStages.map((stage, idx) => (
@@ -424,7 +424,7 @@ export default function Dashboard() {
               </thead>
               <tbody>
                 {opportunities.map(opp => (
-                  <tr key={opp.id} style={{ background: selectedRows.includes(opp.id) ? 'rgba(0,122,255,0.1)' : 'transparent' }}>
+                  <tr key={opp.id} style={{ background: selectedRows.includes(opp.id) ? '#eff6ff' : 'transparent' }}>
                     <td>
                       <input 
                         type="checkbox" 
@@ -454,7 +454,7 @@ export default function Dashboard() {
             </table>
           </div>
 
-          <div style={{ padding: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(255,255,255,0.02)', borderTop: '1px solid rgba(255,255,255,0.05)', flexWrap: 'wrap', gap: '1rem' }}>
+          <div style={{ padding: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'var(--bg-highlight)', borderTop: '1px solid var(--border-light)', flexWrap: 'wrap', gap: '1rem' }}>
             <div style={{ color: 'var(--text-secondary)' }}>
               Showing {totalRecords === 0 ? 0 : (page - 1) * 50 + 1}-{Math.min(page * 50, totalRecords)} of {totalRecords} records
             </div>
@@ -562,7 +562,7 @@ export default function Dashboard() {
                 {pasteOrphans.length > 0 ? (
                   <ul style={{ listStyle: 'none', padding: 0 }}>
                     {pasteOrphans.map((orphan, idx) => (
-                      <li key={idx} style={{ padding: '0.5rem', borderBottom: '1px solid rgba(255,255,255,0.05)', color: 'var(--text-secondary)' }}>
+                      <li key={idx} style={{ padding: '0.5rem', borderBottom: '1px solid var(--border-light)', color: 'var(--text-secondary)' }}>
                         {orphan}
                       </li>
                     ))}
