@@ -51,15 +51,29 @@ export async function POST(request: Request) {
         const name = cols[0] ? cols[0].trim() : '';
         const contact = cols[1] ? normalizePhoneNumber(cols[1]) : '';
         
-        const whereClause: any = {};
-        if (contact) whereClause.parentContactNumber = { contains: contact };
-        if (name) whereClause.studentName = { contains: name, mode: 'insensitive' };
+        const whereClause: any = { OR: [] };
+        if (contact) whereClause.OR.push({ parentContactNumber: { contains: contact } });
+        if (name) whereClause.OR.push({ studentName: { contains: name, mode: 'insensitive' } });
         
-        if (Object.keys(whereClause).length > 0) {
+        if (whereClause.OR.length > 0) {
           const leads = await prisma.lead.findMany({ 
             where: whereClause, 
           });
-          if (leads.length > 0) dbMatch = leads;
+
+          // Strict in-memory filtering to avoid false positives from the OR query
+          // while still catching typos and spacing differences that Prisma AND would miss.
+          const strictMatches = leads.filter(l => {
+            const dbContact = normalizePhoneNumber(l.parentContactNumber);
+            const inputContact = normalizePhoneNumber(contact);
+            
+            const dbName = normalizeName(l.studentName);
+            const inputName = normalizeName(name);
+
+            // Both must match to be considered the same unique identifier
+            return dbContact === inputContact && dbName === inputName;
+          });
+
+          if (strictMatches.length > 0) dbMatch = strictMatches;
         }
       }
       return { row, dbMatch };
