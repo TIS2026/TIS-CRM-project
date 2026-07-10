@@ -51,11 +51,11 @@ export async function POST(request: Request) {
         const name = cols[0] ? cols[0].trim() : '';
         const contact = cols[1] ? normalizePhoneNumber(cols[1]) : '';
         
-        const whereClause: any = { OR: [] };
-        if (contact) whereClause.OR.push({ parentContactNumber: { contains: contact } });
-        if (name) whereClause.OR.push({ studentName: { contains: name, mode: 'insensitive' } });
+        const whereClause: any = {};
+        if (contact) whereClause.parentContactNumber = { contains: contact };
+        if (name) whereClause.studentName = { contains: name, mode: 'insensitive' };
         
-        if (whereClause.OR.length > 0) {
+        if (Object.keys(whereClause).length > 0) {
           const leads = await prisma.lead.findMany({ 
             where: whereClause, 
           });
@@ -75,11 +75,16 @@ export async function POST(request: Request) {
   }
 
   // Deduplicate matches to prevent the same lead from showing multiple times
+  // We deduplicate by both lead ID and a normalized dedupKey to handle cases 
+  // where the database might have slight variations of the same lead.
   const uniqueMatches = [];
   const seenIds = new Set();
+  const seenDedup = new Set();
   for (const m of matches) {
-    if (!seenIds.has(m.id)) {
+    const dedup = m.dedupKey || generateDedupKey(m.parentContactNumber || '', m.studentName || '');
+    if (!seenIds.has(m.id) && !seenDedup.has(dedup)) {
       seenIds.add(m.id);
+      seenDedup.add(dedup);
       uniqueMatches.push(m);
     }
   }
