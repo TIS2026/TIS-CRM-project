@@ -13,9 +13,11 @@ const files = fs.readdirSync(uploadDir).filter(f => f.endsWith('.csv'));
 
 const fieldMapping = {
     'student name': 'studentName',
+    'student': 'studentName',
     'student ': 'studentName',
     'student emailid': 'studentEmail',
     'student number': 'studentContactNumber',
+    'student_contact_number': 'studentContactNumber',
     'parent name': 'parentName',
     'parent': 'parentName',
     'parent emailid': 'parentEmail',
@@ -36,8 +38,6 @@ const fieldMapping = {
     'scheduled_hours': 'courseHours',
     'enrollment date': 'enrollmentDate',
     'enrolled_date': 'enrollmentDate',
-    'emrollment month': 'enrollmentDate',
-    'emrollment month2': 'enrollmentDate',
     'enrolment_center': 'enrollmentCenter',
     'counselor name': 'counselorName',
     'mentor_name': 'mentorName',
@@ -55,7 +55,7 @@ const fieldMapping = {
     'active?': 'currentStatus'
 };
 
-const ignoredFields = ['sessions completed', 'sessions pending', 'revenue', 'completed_hours', 'pending_hours'];
+const ignoredFields = ['sessions completed', 'sessions pending', 'revenue', 'completed_hours', 'pending_hours', 'emrollment month', 'emrollment month2'];
 
 files.forEach(file => {
     console.log(`Processing: ${file}`);

@@ -6,6 +6,14 @@ const papaparse = require('papaparse');
 const prisma = new PrismaClient();
 const uploadDir = path.join(__dirname, '..', 'Data Uploads', 'Standardized');
 
+function chunkArray(array, size) {
+    const result = [];
+    for (let i = 0; i < array.length; i += size) {
+        result.push(array.slice(i, i + size));
+    }
+    return result;
+}
+
 async function main() {
     console.log('Ensuring Admin user exists...');
     let adminUser = await prisma.user.findFirst({
@@ -19,9 +27,6 @@ async function main() {
                 role: 'Admin'
             }
         });
-        console.log('Created System Admin user:', adminUser.id);
-    } else {
-        console.log('Found Admin user:', adminUser.id);
     }
 
     const files = fs.readdirSync(uploadDir).filter(f => f.endsWith('.csv'));
@@ -34,35 +39,34 @@ async function main() {
         let successCount = 0;
         let errorCount = 0;
 
-        for (let i = 0; i < parsed.data.length; i++) {
-            const row = parsed.data[i];
-            try {
-                // LOGIC: Use student contact where parent contact is empty
-                let parentContactNumber = row.parentContactNumber;
-                if (!parentContactNumber || parentContactNumber.trim() === '') {
-                    parentContactNumber = row.studentContactNumber;
-                }
-                if (!parentContactNumber || parentContactNumber.trim() === '') {
-                    parentContactNumber = '0000000000';
-                }
-                
-                // Create a unique deterministic dedup key based on parent contact and student name
-                const dedupStr = `${parentContactNumber}_${row.studentName || ''}`.trim();
-                
-                let leadType = 'New';
-                if (row.leadType && row.leadType.toLowerCase() === 'repeat') leadType = 'Repeat';
+        const chunks = chunkArray(parsed.data, 2000); // Larger chunks for createMany
 
-                // UPSERT Lead so we don't crash on duplicates
-                const lead = await prisma.lead.upsert({
-                    where: { dedupKey: dedupStr },
-                    update: {}, // Don't override existing lead data
-                    create: {
+        for (const chunk of chunks) {
+            try {
+                const leadsToCreate = [];
+                const rowData = [];
+
+                // Prepare Leads
+                for (const row of chunk) {
+                    let pContact = (row.parentContactNumber || '').trim();
+                    let sContact = (row.studentContactNumber || '').trim();
+                    if (!pContact && sContact) pContact = sContact;
+                    if (!sContact && pContact) sContact = pContact;
+                    if (!pContact) pContact = '0000000000';
+                    if (!sContact) sContact = '0000000000';
+                    
+                    const dedupStr = `${pContact}_${row.studentName || ''}`.trim();
+                    
+                    let leadType = 'New';
+                    if (row.leadType && row.leadType.toLowerCase() === 'repeat') leadType = 'Repeat';
+
+                    leadsToCreate.push({
                         studentName: row.studentName,
                         studentEmail: row.studentEmail,
-                        studentContactNumber: row.studentContactNumber,
+                        studentContactNumber: sContact,
                         parentName: row.parentName,
                         parentEmail: row.parentEmail,
-                        parentContactNumber: parentContactNumber,
+                        parentContactNumber: pContact,
                         parent2Name: row.parent2Name,
                         parent2ContactNumber: row.parent2ContactNumber,
                         school: row.school,
@@ -73,19 +77,52 @@ async function main() {
                         leadType: leadType,
                         createdSource: 'Bulk Upload',
                         dedupKey: dedupStr,
-                    }
-                });
-
-                let enrollmentDate = null;
-                if (row.enrollmentDate) {
-                    const parsedDate = new Date(row.enrollmentDate);
-                    if (!isNaN(parsedDate)) enrollmentDate = parsedDate;
+                    });
+                    
+                    rowData.push({
+                        dedupStr,
+                        row
+                    });
                 }
 
-                // Create Opportunity
-                await prisma.opportunity.create({
-                    data: {
-                        leadId: lead.id,
+                // 1. Bulk insert leads (skipping duplicates)
+                await prisma.lead.createMany({
+                    data: leadsToCreate,
+                    skipDuplicates: true
+                });
+
+                // 2. Fetch the Lead IDs we just created/already existed
+                const dedupKeys = rowData.map(r => r.dedupStr);
+                const existingLeads = await prisma.lead.findMany({
+                    where: { dedupKey: { in: dedupKeys } },
+                    select: { id: true, dedupKey: true }
+                });
+
+                // Map dedupKey to Lead ID
+                const leadIdMap = {};
+                for (const l of existingLeads) {
+                    leadIdMap[l.dedupKey] = l.id;
+                }
+
+                const oppsToCreate = [];
+
+                // Prepare Opportunities
+                for (const item of rowData) {
+                    const leadId = leadIdMap[item.dedupStr];
+                    if (!leadId) {
+                        errorCount++;
+                        continue;
+                    }
+                    
+                    const row = item.row;
+                    let enrollmentDate = null;
+                    if (row.enrollmentDate) {
+                        const parsedDate = new Date(row.enrollmentDate);
+                        if (!isNaN(parsedDate)) enrollmentDate = parsedDate;
+                    }
+
+                    oppsToCreate.push({
+                        leadId: leadId,
                         ownerId: adminUser.id,
                         courseName: row.courseName,
                         enrollmentDate: enrollmentDate,
@@ -104,16 +141,20 @@ async function main() {
                         niEnrolled: row.niEnrolled,
                         latestRemarkDate: row.latestRemarkDate,
                         mentorName: row.mentorName,
-                    }
-                });
-
-                successCount++;
-                if (successCount % 100 === 0) {
-                    console.log(`  ...processed ${successCount} rows in ${file}`);
+                    });
                 }
+
+                // 3. Bulk insert opportunities
+                await prisma.opportunity.createMany({
+                    data: oppsToCreate,
+                    skipDuplicates: true
+                });
+                
+                successCount += oppsToCreate.length;
+                console.log(`  ...processed chunk of ${chunk.length} rows`);
             } catch (err) {
-                console.error(`Error importing row ${i} in ${file}:`, err.message);
-                errorCount++;
+                console.error(`Error in chunk:`, err.message);
+                errorCount += chunk.length;
             }
         }
         

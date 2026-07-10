@@ -1,9 +1,10 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import LogCallModal from '@/components/LogCallModal';
 
 export default function Dashboard() {
-  const [activeTab, setActiveTab] = useState<'moduleA' | 'moduleB'>('moduleA');
+  const [activeTab, setActiveTab] = useState<'pendingCalls' | 'moduleA' | 'moduleB'>('pendingCalls');
 
   const [opportunities, setOpportunities] = useState<any[]>([]);
   const [leads, setLeads] = useState<any[]>([]);
@@ -41,6 +42,8 @@ export default function Dashboard() {
   const [schedulingCallFor, setSchedulingCallFor] = useState<any>(null);
   const [newCallDate, setNewCallDate] = useState('');
   const [newCallType, setNewCallType] = useState('Sales Call');
+  const [activeCallForModal, setActiveCallForModal] = useState<any>(null);
+  const [pendingCallOwnerFilter, setPendingCallOwnerFilter] = useState('');
 
   // --- Module B State ---
   const [pasteText, setPasteText] = useState('');
@@ -421,6 +424,9 @@ a.click();
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '1rem' }}>
         <h1 style={{ margin: 0, fontWeight: 600 }}>CRM Dashboard</h1>
         <div style={{ display: 'flex', gap: '0.5rem' }}>
+          <button className={`btn ${activeTab === 'pendingCalls' ? '' : 'btn-secondary'}`} onClick={() => setActiveTab('pendingCalls')}>
+            Pending Calls
+          </button>
           <button className={`btn ${activeTab === 'moduleA' ? '' : 'btn-secondary'}`} onClick={() => setActiveTab('moduleA')}>
             Data View
           </button>
@@ -430,44 +436,78 @@ a.click();
         </div>
       </div>
 
-      <div style={{ marginBottom: '2rem', padding: '1.5rem', background: pendingCalls.length > 0 ? 'rgba(255, 0, 0, 0.05)' : 'var(--bg-highlight)', borderRadius: '8px', borderLeft: pendingCalls.length > 0 ? '4px solid var(--danger)' : '4px solid var(--border-light)' }}>
-        <h2 style={{ marginBottom: '1rem', color: pendingCalls.length > 0 ? 'var(--danger)' : 'var(--text-secondary)', fontSize: '1.2rem' }}>
-          {pendingCalls.length > 0 ? `Action Required: Pending Calls (${pendingCalls.length})` : 'Pending Calls (0)'}
-        </h2>
-        
-        {loadingCalls ? (
-          <p style={{ color: 'var(--text-secondary)' }}>Loading pending calls...</p>
-        ) : pendingCalls.length > 0 ? (
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1rem' }}>
-            {pendingCalls.map(c => (
-              <div key={c.id} style={{ background: 'var(--bg-highlight)', padding: '1rem', borderRadius: '4px', border: '1px solid var(--border-light)' }}>
-                <div style={{ fontWeight: 600, color: 'var(--accent)', marginBottom: '0.5rem' }}>{c.callType}</div>
-                <div style={{ marginBottom: '0.25rem' }}>
-                  <strong>Student:</strong> <Link href={`/leads/${c.opportunity?.leadId}`} style={{ textDecoration: 'underline', color: 'var(--accent)' }}>{c.opportunity?.lead?.studentName || 'Unknown'}</Link>
-                </div>
-                <div style={{ marginBottom: '0.25rem' }}>
-                  <strong>Course:</strong> {c.opportunity?.courseName || '-'}
-                </div>
-                <div style={{ marginBottom: '0.5rem' }}>
-                  <strong>Owner:</strong> {c.owner?.name || '-'}
-                </div>
-                <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
-                  Scheduled: {new Date(c.scheduledDate).toLocaleString()}
-                </div>
-                <Link 
-                  href={`/leads/${c.opportunity?.leadId}`} 
-                  className="btn" 
-                  style={{ display: 'flex', width: '100%', justifyContent: 'center', textDecoration: 'none', padding: '0.5rem', fontSize: '0.9rem' }}
-                >
-                  Log Call ➔
-                </Link>
-              </div>
-            ))}
+      {activeTab === 'pendingCalls' && (
+        <div style={{ marginBottom: '2rem', padding: '1.5rem', background: pendingCalls.length > 0 ? 'rgba(255, 0, 0, 0.05)' : 'var(--bg-highlight)', borderRadius: '8px', borderLeft: pendingCalls.length > 0 ? '4px solid var(--danger)' : '4px solid var(--border-light)' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap', gap: '1rem' }}>
+            <h2 style={{ margin: 0, color: pendingCalls.length > 0 ? 'var(--danger)' : 'var(--text-secondary)', fontSize: '1.2rem' }}>
+              {pendingCalls.length > 0 ? `Action Required: Pending Calls (${pendingCalls.length})` : 'Pending Calls (0)'}
+            </h2>
+            <select value={pendingCallOwnerFilter} onChange={e => setPendingCallOwnerFilter(e.target.value)} style={{ padding: '0.5rem', borderRadius: '4px' }}>
+              <option value="">Filter by Owner (All)</option>
+              {users.map(u => <option key={u.id} value={u.id}>{u.name}</option>)}
+            </select>
           </div>
-        ) : (
-          <p style={{ color: 'var(--text-secondary)' }}>You have no scheduled pending calls.</p>
-        )}
-      </div>
+          
+          {loadingCalls && pendingCalls.length === 0 ? (
+            <p style={{ color: 'var(--text-secondary)' }}>Loading pending calls...</p>
+          ) : pendingCalls.length > 0 ? (
+            <div style={{ overflowX: 'auto' }}>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Call Type</th>
+                    <th>Student Name</th>
+                    <th>Course</th>
+                    <th>Owner</th>
+                    <th>Scheduled Date</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {pendingCalls.filter(c => !pendingCallOwnerFilter || c.ownerId === pendingCallOwnerFilter).map(c => (
+                    <tr key={c.id}>
+                      <td style={{ fontWeight: 600, color: 'var(--accent)' }}>{c.callType}</td>
+                      <td>
+                        <Link href={`/leads/${c.opportunity?.leadId}`} style={{ textDecoration: 'underline', color: 'var(--accent)' }}>
+                          {c.opportunity?.lead?.studentName || 'Unknown'}
+                        </Link>
+                      </td>
+                      <td>{c.opportunity?.courseName || '-'}</td>
+                      <td>{c.owner?.name || '-'}</td>
+                      <td style={{ color: 'var(--text-secondary)' }}>
+                        {new Date(c.scheduledDate).toLocaleString()}
+                      </td>
+                      <td>
+                        <button 
+                          className="btn"
+                          onClick={() => setActiveCallForModal(c)}
+                          style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}
+                        >
+                          Log Call ➔
+                        </button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          ) : (
+            <p style={{ color: 'var(--text-secondary)' }}>You have no scheduled pending calls matching the filter.</p>
+          )}
+        </div>
+      )}
+
+      {activeCallForModal && (
+        <LogCallModal
+          activeCall={activeCallForModal}
+          onCancel={() => setActiveCallForModal(null)}
+          onSuccess={() => {
+            setActiveCallForModal(null);
+            fetchPendingCalls();
+            fetchModuleA();
+          }}
+        />
+      )}
 
       {activeTab === 'moduleA' && (
         <div>

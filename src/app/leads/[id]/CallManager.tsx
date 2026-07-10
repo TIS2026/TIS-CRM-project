@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import LogCallModal from '@/components/LogCallModal';
 
 export default function CallManager({ oppId, initialCalls = [], ownerId, onCallUpdated }: any) {
   const calls = initialCalls;
@@ -130,8 +131,17 @@ export default function CallManager({ oppId, initialCalls = [], ownerId, onCallU
             {completedCalls.map((c: any) => (
               <li key={c.id} style={{ padding: '0.75rem', background: 'rgba(255,255,255,0.02)', marginBottom: '0.5rem', borderRadius: '4px' }}>
                 <strong>{c.callType}</strong> - <span style={{ color: c.callOutcome === 'Connected' ? 'var(--success)' : 'orange' }}>{c.callOutcome}</span>
-                {c.disposition && <span style={{ marginLeft: '10px', fontSize: '0.85rem', padding: '0.1rem 0.5rem', background: 'rgba(255,255,255,0.1)', borderRadius: '12px' }}>{c.disposition}</span>}
+                {c.disposition && !c.disposition.startsWith('Remark:') && (
+                  <span style={{ marginLeft: '10px', fontSize: '0.85rem', padding: '0.1rem 0.5rem', background: 'rgba(255,255,255,0.1)', borderRadius: '12px' }}>
+                    {c.disposition.split(' | Remark:')[0]}
+                  </span>
+                )}
                 <br/><small style={{ opacity: 0.6 }}>Completed: {new Date(c.completedDate).toLocaleString()} by {c.owner?.name}</small>
+                {c.disposition?.includes('Remark: ') && (
+                  <div style={{ marginTop: '0.5rem', padding: '0.5rem', background: 'rgba(255,255,255,0.05)', borderRadius: '4px', fontSize: '0.9rem', fontStyle: 'italic', borderLeft: '2px solid var(--accent)' }}>
+                    "{c.disposition.split('Remark: ')[1]}"
+                  </div>
+                )}
               </li>
             ))}
           </ul>
@@ -145,70 +155,14 @@ export default function CallManager({ oppId, initialCalls = [], ownerId, onCallU
       )}
 
       {activeCall && (
-        <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.8)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
-          <div style={{ background: 'var(--bg)', padding: '2rem', borderRadius: '8px', maxWidth: '500px', width: '100%', border: '1px solid rgba(255,255,255,0.1)' }}>
-            <h3>Log {activeCall.callType}</h3>
-            {error && <p style={{ color: 'var(--danger)', marginBottom: '1rem' }}>{error}</p>}
-            
-            <div style={{ marginBottom: '1rem' }}>
-              <label>Call Outcome *</label>
-              <select value={outcome} onChange={e => { setOutcome(e.target.value); setDisposition(''); }} style={{ width: '100%', padding: '0.5rem' }}>
-                <option value="">Select Outcome...</option>
-                <option value="Connected">Connected</option>
-                <option value="No Answer">No Answer</option>
-                <option value="Busy">Busy</option>
-                <option value="Invalid Number">Invalid Number</option>
-              </select>
-            </div>
-
-            {outcome === 'Connected' && (
-              <div style={{ marginBottom: '1rem' }}>
-                <label>Disposition *</label>
-                <select value={disposition} onChange={e => setDisposition(e.target.value)} style={{ width: '100%', padding: '0.5rem' }}>
-                  <option value="">Select Disposition...</option>
-                  {renderDispositionOptions(activeCall.callType)}
-                </select>
-              </div>
-            )}
-
-            {disposition === 'Close - Not Interested' && (
-              <div style={{ marginBottom: '1rem' }}>
-                <label>Lost Reason *</label>
-                <input type="text" value={lostReason} onChange={e => setLostReason(e.target.value)} style={{ width: '100%', padding: '0.5rem' }} placeholder="Why did we lose them?" />
-              </div>
-            )}
-
-            {disposition === 'Close - Onboarded' && (
-              <div style={{ marginBottom: '1rem' }}>
-                <label>Enrollment Date *</label>
-                <input type="date" value={enrollmentDate} onChange={e => setEnrollmentDate(e.target.value)} style={{ width: '100%', padding: '0.5rem' }} />
-              </div>
-            )}
-
-            {((outcome && !['Connected', 'Invalid Number'].includes(outcome)) || (disposition && disposition.startsWith('Schedule'))) && (
-              <div style={{ marginBottom: '1.5rem', padding: '1rem', background: 'rgba(255, 165, 0, 0.1)', border: '2px solid orange', borderRadius: '8px' }}>
-                <label style={{ color: 'orange', fontWeight: 'bold', fontSize: '1.1rem', marginBottom: '0.5rem', display: 'block' }}>
-                  {outcome !== 'Connected' ? '⚠️ PROMPT: Mandatory Follow-up Required' : '⚠️ PROMPT: Schedule Next Step'}
-                </label>
-                <p style={{ margin: '0 0 1rem 0', fontSize: '0.9rem', opacity: 0.9 }}>
-                  Please select the date and time for the follow-up call to proceed.
-                </p>
-                <input type="datetime-local" value={nextScheduledDate} onChange={e => setNextScheduledDate(e.target.value)} style={{ width: '100%', padding: '0.75rem', fontSize: '1rem', border: '1px solid orange', borderRadius: '4px' }} />
-              </div>
-            )}
-
-            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '1rem', marginTop: '2rem' }}>
-              <button onClick={() => setActiveCall(null)} style={{ padding: '0.5rem 1rem', background: 'transparent', border: '1px solid rgba(255,255,255,0.2)', color: '#fff', borderRadius: '4px' }}>Cancel</button>
-              <button 
-                onClick={submitCall} 
-                disabled={loading || !outcome || (outcome === 'Connected' && !disposition) || (['No Answer', 'Busy'].includes(outcome) && !nextScheduledDate) || (disposition && disposition.startsWith('Schedule') && !nextScheduledDate) || (disposition === 'Close - Not Interested' && !lostReason) || (disposition === 'Close - Onboarded' && !enrollmentDate)} 
-                style={{ padding: '0.5rem 1rem', background: 'var(--accent)', border: 'none', color: '#fff', borderRadius: '4px', cursor: 'pointer' }}
-              >
-                {loading ? 'Saving...' : 'Complete Call'}
-              </button>
-            </div>
-          </div>
-        </div>
+        <LogCallModal 
+          activeCall={activeCall} 
+          onCancel={() => setActiveCall(null)} 
+          onSuccess={() => {
+            setActiveCall(null);
+            onCallUpdated();
+          }} 
+        />
       )}
     </div>
   );

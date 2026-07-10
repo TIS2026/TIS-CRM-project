@@ -48,7 +48,7 @@ export async function processCallOutcome(
       data: { status: 'Completed', completedDate: new Date(), callOutcome: data.outcome, disposition: data.disposition },
     });
 
-    if (data.disposition === 'Close - Onboarded') {
+    if (data.disposition.startsWith('Close - Onboarded')) {
       if (!data.enrollmentDate) throw new Error('Enrollment Date is required when Onboarded');
       await prisma.opportunity.update({
         where: { id: call.opportunityId },
@@ -57,7 +57,7 @@ export async function processCallOutcome(
       return;
     }
 
-    if (data.disposition === 'Close - Not Interested') {
+    if (data.disposition.startsWith('Close - Not Interested')) {
       if (!data.lostReason) throw new Error('Lost Reason is required when Not Interested');
       await prisma.opportunity.update({
         where: { id: call.opportunityId },
@@ -69,11 +69,11 @@ export async function processCallOutcome(
     if (!data.scheduledDate) throw new Error('Scheduled date required for follow-up dispositions');
 
     let nextCallType = '';
-    if (data.disposition === 'Schedule Sales Follow-up') nextCallType = 'Sales Follow-up Call';
-    if (data.disposition === 'Schedule Assessment Call') nextCallType = 'Assessment Call';
-    if (data.disposition === 'Schedule Assessment Follow-up') nextCallType = 'Assessment Follow-up Call';
-    if (data.disposition === 'Schedule Payment Confirmation Call') nextCallType = 'Payment Confirmation Call';
-    if (data.disposition === 'Schedule Payment Confirmation Follow-up') nextCallType = 'Payment Confirmation Follow-up Call';
+    if (data.disposition.startsWith('Schedule Sales Follow-up')) nextCallType = 'Sales Follow-up Call';
+    if (data.disposition.startsWith('Schedule Assessment Call')) nextCallType = 'Assessment Call';
+    if (data.disposition.startsWith('Schedule Assessment Follow-up')) nextCallType = 'Assessment Follow-up Call';
+    if (data.disposition.startsWith('Schedule Payment Confirmation Call')) nextCallType = 'Payment Confirmation Call';
+    if (data.disposition.startsWith('Schedule Payment Confirmation Follow-up')) nextCallType = 'Payment Confirmation Follow-up Call';
 
     if (nextCallType) {
       await prisma.call.create({
