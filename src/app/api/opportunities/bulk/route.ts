@@ -39,3 +39,24 @@ export async function PUT(request: Request) {
     return NextResponse.json({ success: false, error: error.message }, { status: 500 });
   }
 }
+
+export async function DELETE(request: Request) {
+  try {
+    const data = await request.json();
+    const { opportunityIds } = data;
+
+    if (!Array.isArray(opportunityIds) || opportunityIds.length === 0) {
+      return NextResponse.json({ success: false, error: 'No opportunities selected.' }, { status: 400 });
+    }
+
+    const result = await prisma.opportunity.deleteMany({
+      where: {
+        id: { in: opportunityIds }
+      }
+    });
+
+    return NextResponse.json({ success: true, count: result.count });
+  } catch (error: any) {
+    return NextResponse.json({ success: false, error: error.message }, { status: 500 });
+  }
+}

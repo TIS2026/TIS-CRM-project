@@ -24,6 +24,7 @@ export default function Dashboard() {
   const [bulkCourse, setBulkCourse] = useState('');
   const [bulkBucket, setBulkBucket] = useState('');
   const [bulkLoading, setBulkLoading] = useState(false);
+  const [bulkDeleteLoading, setBulkDeleteLoading] = useState(false);
   const [customFields, setCustomFields] = useState<any[]>([]);
   
   const [availableStages, setAvailableStages] = useState<string[]>([]);
@@ -62,11 +63,11 @@ export default function Dashboard() {
   const fetchCoursesAndStudents = async () => {
     try {
       const [coursesRes, studentsRes, usersRes, customFieldsRes, filtersRes] = await Promise.all([
-        fetch('/api/courses'),
-        fetch('/api/students'),
-        fetch('/api/users'),
-        fetch('/api/custom-fields'),
-        fetch('/api/filters')
+        fetch('/api/courses?t=' + Date.now()),
+        fetch('/api/students?t=' + Date.now()),
+        fetch('/api/users?t=' + Date.now()),
+        fetch('/api/custom-fields?t=' + Date.now()),
+        fetch('/api/filters?t=' + Date.now())
       ]);
       const coursesData = await coursesRes.json();
       const studentsData = await studentsRes.json();
@@ -147,6 +148,26 @@ export default function Dashboard() {
       console.error(e);
     } finally {
       setBulkLoading(false);
+    }
+  };
+
+  const handleBulkDelete = async () => {
+    if (selectedRows.length === 0) return;
+    if (!confirm(`Are you sure you want to delete ${selectedRows.length} selected leads? This cannot be undone.`)) return;
+    
+    setBulkDeleteLoading(true);
+    try {
+      await fetch('/api/opportunities/bulk', {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ opportunityIds: selectedRows })
+      });
+      
+      await fetchModuleA();
+    } catch (e) {
+      console.error(e);
+    } finally {
+      setBulkDeleteLoading(false);
     }
   };
 
@@ -273,6 +294,18 @@ export default function Dashboard() {
                 ))}
               </datalist>
             </div>
+            <div>
+              <select 
+                value={filterBucket} 
+                onChange={e => setFilterBucket(e.target.value)} 
+                style={{ height: '100%', padding: '0.5rem', borderRadius: '4px', border: '1px solid rgba(255,255,255,0.1)', background: 'var(--bg-secondary)', color: 'white' }}
+              >
+                <option value="">All Buckets</option>
+                {availableBuckets.map((bucket, idx) => (
+                  <option key={idx} value={bucket}>{bucket}</option>
+                ))}
+              </select>
+            </div>
             <button className="btn btn-secondary" onClick={() => setShowCustomFilters(!showCustomFilters)}>
               {showCustomFilters ? 'Hide Custom Filters' : 'Custom Filters'}
             </button>
@@ -306,15 +339,6 @@ export default function Dashboard() {
                   <option value="">All Sources</option>
                   {availableLeadSources.map((source, idx) => (
                     <option key={idx} value={source}>{source}</option>
-                  ))}
-                </select>
-              </div>
-              <div>
-                <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Bucket</label>
-                <select value={filterBucket} onChange={e => setFilterBucket(e.target.value)} style={{ width: '100%' }}>
-                  <option value="">All Buckets</option>
-                  {availableBuckets.map((bucket, idx) => (
-                    <option key={idx} value={bucket}>{bucket}</option>
                   ))}
                 </select>
               </div>
@@ -356,6 +380,14 @@ export default function Dashboard() {
                 disabled={bulkLoading || (!bulkStage && !bulkOwner && !bulkCourse && !bulkBucket)}
               >
                 {bulkLoading ? 'Applying...' : 'Apply Bulk Edit'}
+              </button>
+              <button 
+                className="btn" 
+                onClick={handleBulkDelete} 
+                disabled={bulkDeleteLoading}
+                style={{ marginLeft: 'auto', background: 'var(--danger, #dc3545)', color: 'white' }}
+              >
+                {bulkDeleteLoading ? 'Deleting...' : 'Delete Selected'}
               </button>
             </div>
           )}
