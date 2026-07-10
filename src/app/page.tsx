@@ -554,6 +554,7 @@ export default function Dashboard() {
                     {customFields.map(cf => <th key={cf.id}>{cf.name}</th>)}
                     <th>Owner</th>
                     <th>Lead Source</th>
+                    <th>Quick Action</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -579,6 +580,22 @@ export default function Dashboard() {
                       {customFields.map(cf => <td key={cf.id}>{opp.customFields?.[cf.id] || '-'}</td>)}
                       <td>{opp.owner?.name}</td>
                       <td>{opp.leadSource}</td>
+                      <td>
+                        <button 
+                          onClick={async () => {
+                             await fetch('/api/calls', {
+                               method: 'POST',
+                               headers: { 'Content-Type': 'application/json' },
+                               body: JSON.stringify({ opportunityId: opp.id, callType: 'Sales Call', ownerId: opp.ownerId })
+                             });
+                             fetchModuleA(page);
+                             fetchPendingCalls();
+                          }}
+                          style={{ padding: '0.25rem 0.5rem', background: 'var(--accent)', border: 'none', color: '#fff', borderRadius: '4px', cursor: 'pointer', fontSize: '0.85rem' }}
+                        >
+                          + Call
+                        </button>
+                      </td>
                     </tr>
                   ))}
                   {opportunities.length === 0 && (
