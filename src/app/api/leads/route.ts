@@ -69,3 +69,46 @@ export async function POST(request: Request) {
     return NextResponse.json({ success: false, error: error.message }, { status: 500 });
   }
 }
+
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url);
+  
+  const studentName = searchParams.get('studentName');
+  const sort = searchParams.get('sort'); // 'az' or 'newest'
+  const page = parseInt(searchParams.get('page') || '1');
+  const limit = parseInt(searchParams.get('limit') || '50');
+
+  const where: any = {};
+  
+  if (studentName) {
+    where.studentName = { contains: studentName, mode: 'insensitive' };
+  }
+
+  let orderBy: any = { createdDate: 'desc' };
+  if (sort === 'az') {
+    orderBy = { studentName: 'asc' };
+  }
+
+  const skip = (page - 1) * limit;
+
+  try {
+    const [leads, total] = await Promise.all([
+      prisma.lead.findMany({
+        where,
+        include: {
+          _count: {
+            select: { opportunities: true }
+          }
+        },
+        orderBy,
+        skip,
+        take: limit,
+      }),
+      prisma.lead.count({ where })
+    ]);
+
+    return NextResponse.json({ leads, total, page, limit });
+  } catch (error: any) {
+    return NextResponse.json({ error: error.message }, { status: 500 });
+  }
+}

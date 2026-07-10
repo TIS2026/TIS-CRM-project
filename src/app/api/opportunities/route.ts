@@ -10,6 +10,7 @@ export async function GET(request: Request) {
   const ownerId = searchParams.get('ownerId');
   const leadSource = searchParams.get('leadSource');
   const bucket = searchParams.get('bucket');
+  const sort = searchParams.get('sort'); // 'az' or 'newest'
   const page = parseInt(searchParams.get('page') || '1');
   const limit = parseInt(searchParams.get('limit') || '50');
 
@@ -26,6 +27,11 @@ export async function GET(request: Request) {
   if (leadSource) where.leadSource = leadSource;
   if (bucket) where.bucket = bucket;
 
+  let orderBy: any = { createdDate: 'desc' };
+  if (sort === 'az') {
+    orderBy = { lead: { studentName: 'asc' } };
+  }
+
   const skip = (page - 1) * limit;
 
   const [opportunities, total] = await Promise.all([
@@ -35,7 +41,7 @@ export async function GET(request: Request) {
         lead: true,
         owner: true,
       },
-      orderBy: { createdDate: 'desc' },
+      orderBy,
       skip,
       take: limit,
     }),

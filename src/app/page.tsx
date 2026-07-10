@@ -6,6 +6,9 @@ export default function Dashboard() {
   const [activeTab, setActiveTab] = useState<'moduleA' | 'moduleB'>('moduleA');
 
   const [opportunities, setOpportunities] = useState<any[]>([]);
+  const [leads, setLeads] = useState<any[]>([]);
+  const [viewMode, setViewMode] = useState<'opportunities' | 'leads'>('opportunities');
+  const [sortOrder, setSortOrder] = useState<'newest' | 'az'>('newest');
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [totalRecords, setTotalRecords] = useState(0);
@@ -52,14 +55,23 @@ export default function Dashboard() {
       if (filterOwner) params.append('ownerId', filterOwner);
       if (filterLeadSource) params.append('leadSource', filterLeadSource);
       if (filterBucket) params.append('bucket', filterBucket);
+      params.append('sort', sortOrder);
       params.append('page', targetPage.toString());
       params.append('limit', '50');
 
-      const res = await fetch(`/api/opportunities?${params.toString()}`);
-      const data = await res.json();
-      setOpportunities(data.opportunities || []);
-      setTotalPages(Math.ceil((data.total || 0) / 50));
-      setTotalRecords(data.total || 0);
+      if (viewMode === 'opportunities') {
+        const res = await fetch(`/api/opportunities?${params.toString()}`);
+        const data = await res.json();
+        setOpportunities(data.opportunities || []);
+        setTotalPages(Math.ceil((data.total || 0) / 50));
+        setTotalRecords(data.total || 0);
+      } else {
+        const res = await fetch(`/api/leads?${params.toString()}`);
+        const data = await res.json();
+        setLeads(data.leads || []);
+        setTotalPages(Math.ceil((data.total || 0) / 50));
+        setTotalRecords(data.total || 0);
+      }
       setPage(targetPage);
     } catch (e) {
       console.error(e);
@@ -97,6 +109,9 @@ export default function Dashboard() {
 
   useEffect(() => {
     fetchModuleA(1);
+  }, [viewMode, sortOrder]);
+
+  useEffect(() => {
     fetchCoursesAndStudents();
   }, []);
 
@@ -258,7 +273,7 @@ export default function Dashboard() {
     <div className="glass-panel" style={{ padding: '2rem' }}>
       <h1 style={{ marginBottom: '1.5rem', fontWeight: 600 }}>CRM Dashboard</h1>
       
-      <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem' }}>
+      <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
         <button 
           className={`btn ${activeTab === 'moduleA' ? '' : 'btn-secondary'}`}
           onClick={() => setActiveTab('moduleA')}
@@ -271,6 +286,18 @@ export default function Dashboard() {
         >
           Module B: Paste-to-Search
         </button>
+        
+        {activeTab === 'moduleA' && (
+          <div style={{ marginLeft: 'auto', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+            <select className="btn btn-secondary" style={{ padding: '0.5rem', background: 'transparent', cursor: 'pointer' }} value={viewMode} onChange={e => setViewMode(e.target.value as any)}>
+              <option value="opportunities">Opportunities View</option>
+              <option value="leads">Unique Leads View</option>
+            </select>
+            <button className="btn btn-secondary" onClick={() => setSortOrder(sortOrder === 'newest' ? 'az' : 'newest')}>
+              {sortOrder === 'newest' ? 'Sort: Newest First' : 'Sort: Alphabetical (A-Z)'}
+            </button>
+          </div>
+        )}
       </div>
 
       {activeTab === 'moduleA' && (
@@ -353,7 +380,7 @@ export default function Dashboard() {
             </div>
           )}
 
-          {selectedRows.length > 0 && (
+          {selectedRows.length > 0 && viewMode === 'opportunities' && (
             <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem', padding: '1rem', background: 'var(--bg-highlight-strong)', borderRadius: '8px', alignItems: 'center', flexWrap: 'wrap' }}>
               <span style={{ fontWeight: 600, color: 'var(--accent)' }}>{selectedRows.length} selected</span>
               <div style={{ width: '1px', height: '24px', background: 'var(--border-light)' }}></div>
@@ -401,57 +428,95 @@ export default function Dashboard() {
           )}
 
           <div style={{ overflowX: 'auto' }}>
-            <table>
-              <thead>
-                <tr>
-                  <th style={{ width: '40px' }}>
-                    <input 
-                      type="checkbox" 
-                      checked={opportunities.length > 0 && selectedRows.length === opportunities.length}
-                      onChange={toggleAllRows}
-                    />
-                  </th>
-                  <th>Student Name</th>
-                  <th>Parent Contact</th>
-                  <th>Course</th>
-                  <th>Stage</th>
-                  <th>Bucket</th>
-                  <th>Remarks</th>
-                  {customFields.map(cf => <th key={cf.id}>{cf.name}</th>)}
-                  <th>Owner</th>
-                  <th>Lead Source</th>
-                </tr>
-              </thead>
-              <tbody>
-                {opportunities.map(opp => (
-                  <tr key={opp.id} style={{ background: selectedRows.includes(opp.id) ? '#eff6ff' : 'transparent' }}>
-                    <td>
+            {viewMode === 'opportunities' ? (
+              <table>
+                <thead>
+                  <tr>
+                    <th style={{ width: '40px' }}>
                       <input 
                         type="checkbox" 
-                        checked={selectedRows.includes(opp.id)}
-                        onChange={() => toggleRow(opp.id)}
+                        checked={opportunities.length > 0 && selectedRows.length === opportunities.length}
+                        onChange={toggleAllRows}
                       />
-                    </td>
-                    <td>
-                      <Link href={`/leads/${opp.lead?.id}`} style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
-                        {opp.lead?.studentName || '-'}
-                      </Link>
-                    </td>
-                    <td>{opp.lead?.parentContactNumber}</td>
-                    <td>{opp.courseName || '-'}</td>
-                    <td><span className={`badge badge-${opp.stage.toLowerCase().replace(' ', '-')}`}>{opp.stage}</span></td>
-                    <td>{opp.bucket ? <span className="badge" style={{background: 'var(--accent)', color: 'white'}}>{opp.bucket}</span> : '-'}</td>
-                    <td>{opp.remarks || '-'}</td>
-                    {customFields.map(cf => <td key={cf.id}>{opp.customFields?.[cf.id] || '-'}</td>)}
-                    <td>{opp.owner?.name}</td>
-                    <td>{opp.leadSource}</td>
+                    </th>
+                    <th>Student Name</th>
+                    <th>Parent Contact</th>
+                    <th>Course</th>
+                    <th>Stage</th>
+                    <th>Bucket</th>
+                    <th>Remarks</th>
+                    {customFields.map(cf => <th key={cf.id}>{cf.name}</th>)}
+                    <th>Owner</th>
+                    <th>Lead Source</th>
                   </tr>
-                ))}
-                {opportunities.length === 0 && (
-                  <tr><td colSpan={8} style={{textAlign: 'center', padding: '2rem'}}>No opportunities found</td></tr>
-                )}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {opportunities.map(opp => (
+                    <tr key={opp.id} style={{ background: selectedRows.includes(opp.id) ? '#eff6ff' : 'transparent' }}>
+                      <td>
+                        <input 
+                          type="checkbox" 
+                          checked={selectedRows.includes(opp.id)}
+                          onChange={() => toggleRow(opp.id)}
+                        />
+                      </td>
+                      <td>
+                        <Link href={`/leads/${opp.lead?.id}`} style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
+                          {opp.lead?.studentName || '-'}
+                        </Link>
+                      </td>
+                      <td>{opp.lead?.parentContactNumber}</td>
+                      <td>{opp.courseName || '-'}</td>
+                      <td><span className={`badge badge-${opp.stage.toLowerCase().replace(' ', '-')}`}>{opp.stage}</span></td>
+                      <td>{opp.bucket ? <span className="badge" style={{background: 'var(--accent)', color: 'white'}}>{opp.bucket}</span> : '-'}</td>
+                      <td>{opp.remarks || '-'}</td>
+                      {customFields.map(cf => <td key={cf.id}>{opp.customFields?.[cf.id] || '-'}</td>)}
+                      <td>{opp.owner?.name}</td>
+                      <td>{opp.leadSource}</td>
+                    </tr>
+                  ))}
+                  {opportunities.length === 0 && (
+                    <tr><td colSpan={10} style={{textAlign: 'center', padding: '2rem'}}>No opportunities found</td></tr>
+                  )}
+                </tbody>
+              </table>
+            ) : (
+              <table>
+                <thead>
+                  <tr>
+                    <th>Student Name</th>
+                    <th>Parent Contact</th>
+                    <th>Parent Email</th>
+                    <th>School</th>
+                    <th>Grade</th>
+                    <th>Type</th>
+                    <th>Created Source</th>
+                    <th>Total Opportunities</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {leads.map(lead => (
+                    <tr key={lead.id}>
+                      <td>
+                        <Link href={`/leads/${lead.id}`} style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
+                          {lead.studentName || '-'}
+                        </Link>
+                      </td>
+                      <td>{lead.parentContactNumber}</td>
+                      <td>{lead.parentEmail || '-'}</td>
+                      <td>{lead.school || '-'}</td>
+                      <td>{lead.studentGrade || '-'}</td>
+                      <td><span className={`badge badge-${lead.leadType.toLowerCase()}`}>{lead.leadType}</span></td>
+                      <td>{lead.createdSource}</td>
+                      <td>{lead._count?.opportunities || 0}</td>
+                    </tr>
+                  ))}
+                  {leads.length === 0 && (
+                    <tr><td colSpan={8} style={{textAlign: 'center', padding: '2rem'}}>No leads found</td></tr>
+                  )}
+                </tbody>
+              </table>
+            )}
           </div>
 
           <div style={{ padding: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'var(--bg-highlight)', borderTop: '1px solid var(--border-light)', flexWrap: 'wrap', gap: '1rem' }}>
