@@ -356,9 +356,14 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {pendingCalls.length > 0 && (
-        <div style={{ marginBottom: '2rem', padding: '1.5rem', background: 'rgba(255, 0, 0, 0.05)', borderRadius: '8px', borderLeft: '4px solid var(--danger)' }}>
-          <h2 style={{ marginBottom: '1rem', color: 'var(--danger)', fontSize: '1.2rem' }}>Action Required: Pending Calls ({pendingCalls.length})</h2>
+      <div style={{ marginBottom: '2rem', padding: '1.5rem', background: pendingCalls.length > 0 ? 'rgba(255, 0, 0, 0.05)' : 'var(--bg-highlight)', borderRadius: '8px', borderLeft: pendingCalls.length > 0 ? '4px solid var(--danger)' : '4px solid var(--border-light)' }}>
+        <h2 style={{ marginBottom: '1rem', color: pendingCalls.length > 0 ? 'var(--danger)' : 'var(--text-secondary)', fontSize: '1.2rem' }}>
+          {pendingCalls.length > 0 ? `Action Required: Pending Calls (${pendingCalls.length})` : 'Pending Calls (0)'}
+        </h2>
+        
+        {loadingCalls ? (
+          <p style={{ color: 'var(--text-secondary)' }}>Loading pending calls...</p>
+        ) : pendingCalls.length > 0 ? (
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1rem' }}>
             {pendingCalls.map(c => (
               <div key={c.id} style={{ background: 'var(--bg-highlight)', padding: '1rem', borderRadius: '4px', border: '1px solid var(--border-light)' }}>
@@ -378,8 +383,10 @@ export default function Dashboard() {
               </div>
             ))}
           </div>
-        </div>
-      )}
+        ) : (
+          <p style={{ color: 'var(--text-secondary)' }}>You have no scheduled pending calls.</p>
+        )}
+      </div>
 
       {activeTab === 'moduleA' && (
         <div>
