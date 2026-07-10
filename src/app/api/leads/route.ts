@@ -74,6 +74,11 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   
   const studentName = searchParams.get('studentName');
+  const courseName = searchParams.get('courseName');
+  const stage = searchParams.get('stage');
+  const ownerId = searchParams.get('ownerId');
+  const leadSource = searchParams.get('leadSource');
+  const bucket = searchParams.get('bucket');
   const sort = searchParams.get('sort'); // 'az' or 'newest'
   const page = parseInt(searchParams.get('page') || '1');
   const limit = parseInt(searchParams.get('limit') || '50');
@@ -82,6 +87,15 @@ export async function GET(request: Request) {
   
   if (studentName) {
     where.studentName = { contains: studentName, mode: 'insensitive' };
+  }
+
+  if (courseName || stage || ownerId || leadSource || bucket) {
+    where.opportunities = { some: {} };
+    if (courseName) where.opportunities.some.courseName = { contains: courseName, mode: 'insensitive' };
+    if (stage) where.opportunities.some.stage = stage;
+    if (ownerId) where.opportunities.some.ownerId = ownerId;
+    if (leadSource) where.opportunities.some.leadSource = leadSource;
+    if (bucket) where.opportunities.some.bucket = bucket;
   }
 
   let orderBy: any = { createdDate: 'desc' };
