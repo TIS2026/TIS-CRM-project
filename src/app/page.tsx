@@ -491,7 +491,6 @@ export default function Dashboard() {
                     <th>Type</th>
                     <th>Created Source</th>
                     <th>Total Opportunities</th>
-                    <th>Buckets</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -509,15 +508,10 @@ export default function Dashboard() {
                       <td><span className={`badge badge-${lead.leadType.toLowerCase()}`}>{lead.leadType}</span></td>
                       <td>{lead.createdSource}</td>
                       <td>{lead._count?.opportunities || 0}</td>
-                      <td>
-                        {lead.opportunities?.map((o: any) => o.bucket).filter(Boolean).filter((v: any, i: any, a: any) => a.indexOf(v) === i).map((b: any, idx: number) => (
-                          <span key={idx} className="badge" style={{background: 'var(--accent)', color: 'white', marginRight: '4px', display: 'inline-block', marginBottom: '2px'}}>{b}</span>
-                        ))}
-                      </td>
                     </tr>
                   ))}
                   {leads.length === 0 && (
-                    <tr><td colSpan={9} style={{textAlign: 'center', padding: '2rem'}}>No leads found</td></tr>
+                    <tr><td colSpan={8} style={{textAlign: 'center', padding: '2rem'}}>No leads found</td></tr>
                   )}
                 </tbody>
               </table>
