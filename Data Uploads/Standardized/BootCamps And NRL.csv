@@ -1,0 +1,745 @@
+studentName,studentEmail,parentName,parentEmail,enrollmentDate,currentStatus,leadType,enrollmentCenter,school,parentContactNumber,studentGrade,country,lastCourse,courseCategory,courseHours,bucket
+Adarsh Kumar Jha,20240150646@tis.com,Lalit Mohan Jha,20240150646@tis.com,June 2026,Active,student,Delhi NCR,Not Assigned,8826150214,11,IN,FutureMakers India Fellowship 2026,Bootcamps,140,BootCamps And NRL
+Rudraksh Sharma,20230202378@tis.com,Neelima Sharma,20230202378@tis.com,June 2026,Active,student,Delhi NCR,Not Assigned,9958689342,12,IN,FutureMakers India Fellowship 2026,Bootcamps,140,BootCamps And NRL
+Shubh Gupta,20180248801@tis.com,Pinki Gupta,20180248801@tis.com,June 2026,Active,student,Delhi NCR,Not Assigned,9999388465,9,IN,FutureMakers India Fellowship 2026,Bootcamps,140,BootCamps And NRL
+Krishika Garg,20210473734@tis.com,Hemant gupta,20210473734@tis.com,June 2026,Active,student,Delhi NCR,Not Assigned,9643092908,10,IN,FutureMakers India Fellowship 2026,Bootcamps,140,BootCamps And NRL
+Mayank Prasad,20220362138@tis.com,Ishwari Prasad,20220362138@tis.com,June 2026,Active,student,Delhi NCR,Not Assigned,7982781667,10,IN,FutureMakers India Fellowship 2026,Bootcamps,140,BootCamps And NRL
+Atharv Chaubey,20230187831@tis.com,Rishi Chaubey,20230187831@tis.com,June 2026,Active,student,Delhi NCR,Not Assigned,7088111060,12,IN,FutureMakers India Fellowship 2026,Bootcamps,140,BootCamps And NRL
+Prashuk Jain,20170215329@tis.com,Rahul jain,20170215329@tis.com,June 2026,Active,student,Delhi NCR,Not Assigned,9319645058,12,IN,FutureMakers India Fellowship 2026,Bootcamps,140,BootCamps And NRL
+Vivaan Kedia,vivaankedia2010@gmail.com,Amit Kedia,askedia@gmail.com,June 2026,Active,student,Not Assigned,JBCN international - Parel,9820319685,10,IN,NextGen@IITB,Bootcamps,36,BootCamps And NRL
+Neel Iyer,neel.r.iyer@outlook.com,Ramanathan Iyer,ramanathan.iyer@outlook.com,June 2026,Active,student,Mumbai Dadar,Indus International School Pune,9823833690,8,IN,NextGen@IITB,Bootcamps,36,BootCamps And NRL
+Rayyaan Shetty,rayyaan.shetty@gmail.com,Mr Shetty,shabana.rayyaan@gmail.com,May 2026,Active,student,School Premises,Dhirubhai Ambani International School,9920775888,11,IN,NextGen@IITB,Bootcamps,36,BootCamps And NRL
+Bhavvyya Dubey,imtacidi@gmail.com,Riccha Dubey,ricchadubey@gmail.com,May 2026,Active,student,Bengaluru,Not Assigned,9820012703,10,IN,NextGen@IITB,Bootcamps,36,BootCamps And NRL
+SAMPURNAA BANERJEE,banerjeesampurnaa@gmail.com,SUDEB BANERJEE,sudebbanerjee1976@gmail.com,May 2026,Active,student,School Premises,Not Assigned,9864033361,12,IN,NextGen@IITB,Bootcamps,36,BootCamps And NRL
+Vir Dalmeida,dalmeidavir@gmail.com,Rinki Ganguli,rinkiganguli@outlook.com,May 2026,Active,student,Mumbai Bandra,Oberoi International School OGC,9833701893,6,IN,Innovation Sprint (Junior),Bootcamps,24,BootCamps And NRL
+Sara Raman,ramansara99@gmail.com,Ranjita Raman,rr@jaro.in,May 2026,Active,student,Mumbai Dadar,RN Podar School,8007152085,11,IN,NextGen@IITB,Bootcamps,36,BootCamps And NRL
+Vihaan Varma,shyamlap79@gmail.com,Shyam,shyamvarma05@gmail.com,May 2026,Active,student,Mumbai Bandra,Chatrabhuj Narsee International School,9705010900,7,IN,Innovation Sprint (Junior),Bootcamps,24,BootCamps And NRL
+Ahana Dhawan,aarnad@ascendinternational.org.in,Dheeraj Dhawan,dheeraj.k.dhawan@gmail.com,May 2026,Active,student,Mumbai Bandra,ASCEND International School,9619181356,6,IN,Innovation Sprint (Junior),Bootcamps,24,BootCamps And NRL
+Aarnav Puri,aarnavp@ascendinternational.org.in,Smriti,simu555@yahoo.com,May 2026,Active,student,Mumbai Bandra,ASCEND International School,9322511223,8,IN,Innovation Sprint (Senior),Bootcamps,24,BootCamps And NRL
+Dhruv Mehrotra,dhruvee.27@gmail.com,Bhooma,bhoomachutani@gmail.com,May 2026,Active,student,Mumbai Bandra,ASCEND International School,9833366973,9,IN,Innovation Sprint (Senior),Bootcamps,24,BootCamps And NRL
+Raphael Lobo,raphaell@ascendinternational.org.in,Gayatri Nair Lobo,gayatri.lobo@gmail.com,May 2026,Active,student,Mumbai Bandra,ASCEND International School,9820430014,8,IN,Innovation Sprint (Senior),Bootcamps,24,BootCamps And NRL
+Mikhail Lobo,mikhaill@ascendinternational.org.in,Savino Lobo,savino.lobo@gmail.com,May 2026,Active,student,Mumbai Bandra,ASCEND International School,9820296350,8,IN,Innovation Sprint (Senior),Bootcamps,24,BootCamps And NRL
+Rudransh Mittal,deepamittalaol@gmail.com,deepa mittal,prunnu@yahoo.com,April 2026,Active,student,Delhi NCR,Not Assigned,9810933807,8,IN,Mechatronics Intermediate (Summer Camp - Delhi),Bootcamps,40,BootCamps And NRL
+AIFYGI 5,aifygis5@gmail.com,AI,aifygis5@gmail.com,April 2026,Active,student,Mumbai Bandra,Not Assigned,9999999999,9,IN,FutureMakers India Fellowship 2026,Bootcamps,140,BootCamps And NRL
+AIFYGI 3,aifygis3@gmail.com,AI,aifygis3@gmail.com,April 2026,Active,student,Mumbai Bandra,Not Assigned,9999999999,9,IN,FutureMakers India Fellowship 2026,Bootcamps,140,BootCamps And NRL
+AIFYGI 4,aifygis4@gmail.com,AI,aifygis4@gmail.com,April 2026,Active,student,Mumbai Bandra,Not Assigned,9999999999,9,IN,FutureMakers India Fellowship 2026,Bootcamps,140,BootCamps And NRL
+AIFYGI 1,aifygis1@gmail.com,AI,aifygis1@gmail.com,April 2026,Active,student,Mumbai Bandra,Not Assigned,9999999999,9,IN,FutureMakers India Fellowship 2026,Bootcamps,140,BootCamps And NRL
+AIFYGI 2,aifygis2@gmail.com,AI,aifygis1@gmail.com,April 2026,Active,student,Mumbai Bandra,Not Assigned,9999999999,9,IN,FutureMakers India Fellowship 2026,Bootcamps,140,BootCamps And NRL
+Atharv Rai,atharvrai1212@gmail.com,Rachitta Rai,rachittapriyanka@gmail.com,April 2026,Active,student,Delhi NCR,Not Assigned,9899876056,8,IN,Mechatronics Intermediate (Summer Camp - Delhi),Bootcamps,40,BootCamps And NRL
+Ranveer sehgal,dee1409@gmail.com,Puneet sehgal,puneetsehgal9@gmail.com,March 2026,Active,student,Mumbai Bandra,ASCEND International School,9821084929,3,IN,Innovation Sprint (Junior),Bootcamps,24,BootCamps And NRL
+Ari D’Almeida,lilyganguli@gmail.com,Lionel D’Almeida,lionel83@gmail.com,December 2025,Active,student,Mumbai Bandra,Oberoi International School OGC,9833200991,2,IN,Innovation Sprint (Junior),Bootcamps,24,BootCamps And NRL
+Aaradhya Srivastava,srivastvishal@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Arnav Pande,arnpande@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Nivedita Pillai,nivipillai6@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aesha Mayankkumar Jalela,Mayank.jalela@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Eshan Patil,pankaj9682@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Triyansh Rathi,rathitriyansh@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Rizwan khan,Rizwansaj31@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,10,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Durgesh vishwakarma,durgesh.vishwakarma200627@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,10,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Faizan Khan,fk3191844@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,10,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Nikhil kori,ns6110861@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,10,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+zeeshan kazi,zeeshankazi030@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,10,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aarav sharma,aaravsharma234@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,10,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Areeba Taj,adduarru01081@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aishwarya P S,aishwaryaps620@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Kruthika K,tk2398403@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Janavi S,chitrasudbkchitra@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Rachita J,jvijayalaksmi060@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Sameeksha M Bendigeri,sameekshambendegeri@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Adeeba Taj,adduarru0108@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Brinda Rachel F,brindaifs1410@gmail.comm,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Joyati Maji,tanusri1012@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Kirtana Gogoi,smritigogoi.borgohain@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Noura Fathima,sadiyasyed68@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Rifa Yusuf,shaistharr@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Saqib Majgaonkar,saqibmajgaonkar1@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,10,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Javed Shaikh,jakirshaikh99@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,10,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Arsad Sayyad,sharafshayyad@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,10,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Amir hamza Shaikh,ts0825363@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Amir Shaikh,amirhaiderali@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SAHIL ANSARI,riorajput4061@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SACHIN HARIJAN,riorajput4062@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+KRISHNA RAJBHAR,kr9696308@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+MANSI YADAV,ysabhajit9@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ANSH YADAV,riorajput406@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Jilisha Rathod,sharmilarthd@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Suchi Kadam,suchikadam1917@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Durva Patkar,patkarmanisha82@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Anushree Chavan,chavanshraddha635@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+RAJU JAISWAL,rajujaiswal4500@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,10,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+USMAAN SHAIKH,usmanshaikh1012011@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,10,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SANDESH CHAUDHARY,sandesh8230op@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,10,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+GAJANAND JHA,snjha2499@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,10,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+KHUSHBOO PAL,palanita8657@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,10,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Ravi Krishna Ackermann,ravi.ackermann@indusschoolpune.com,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,11,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aditya Jogadia,mukjog@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Faizal Ansari,faisalop9820@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Mutaiyeb mansoori,yasmeenmehtabali@gmail.como,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Ram Khatate,ramrajendrakhatate@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Arham Ansari,ansariarhamz4u@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Sawyam Nagare,sawyamriteshnagare.03@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,11,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Vedanth Vinay Kedia,kediav4040@mayoboys.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Rishabh Khunthia,khuntiar4083@mayoboys.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aveer Pratap Singh,singha4076@mayoboys.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Pranit Vashistha,vashisthap3595@mayoboys.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Dhruv Maheshwari,maheshwarid4116@mayoboys.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Adheeyaan Pareek,pareeka3355@mayoboys.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aarav Gupta,aaravgupta2029@sfhs.in,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Zamyrah Mejie,zamyrahmejie2029@sfhs.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Gobind Singh,gobindsingh2029@sfhs.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Akshit Jindal,akshitjindal2029@sfhs.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Amishi Sharma,amishisharma2027@sfhs.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,11,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aarav Gupta,guptaaarav2029@sfhs.in,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Parth Sharma,Parth1sharma70@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Garvit Gupta,garvit.gupta7064@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Namit Pandita Raghavan,Namit.raghavan@outlook.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Utkarsh Chaddah,ila.kapoor@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Karnik Garg,karnikgarg07@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+RACHIT RUKHARIYAR,rukhariyar@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SAIISH MANISH PENDSE,drgayatripendse@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+TULIP LAKHWANI,sweetsunitaindia@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Daksh Mehta,renumehta9@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Abhigyan Gupta,shashibhushan72319@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+NIKUNJ AGRAWAL,anjuagrawal86@gmail.com,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SOHAM NAGARKAR,nagarkarsoham07@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ADVIK BANDI,vanita.bandi@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+AADITYANSH SRIVASTAVA,preetiapu@gmail.com,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+IDHIKA GARG,idhika.garg@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+AARNA MALIK,mail4ashu@yahoo.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+VIVAAN SANDEEP MHATRE,sandumhatre@yahoo.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+HEER T AILSINGHANI,ailsinghaniheer2@gmail.com,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ADVEY BHOIR,adveybhoir@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+AARAV KUMAR,avinash7784@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+KRISHIV GUPTA,asheeshg@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ARNAV SURYAVANSHI,mynameg@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+EKAANSH PRASAD,ekaansh2708@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ANIRUDDH WAKTE,manishawakte@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SNEHANGSHU MALLICK,snehangshu.nsc@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+AARYAV MISHRA,aaryavmishra7@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+RANIYA MUMTAZ,ayeshali.eng@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SNIGDHA CHARKRAVORTY,snigdhachakravorty13official@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+GAURI NAIR,geethuags@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SUHAANI SHARMA,suhaani1617@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+MOKSHITA ANAND,anand0019@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+RAGHAVENDRA NARAIN,nehasaxena26121987@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SUMUKH GUPT,cavrishali@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+RUTUJ GURUJI,Renukajoshi18@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+DEVANSH THAKUR,kumar.sahej84@gmail.com,DEVANSH,kumar.sahej84@gmail.com,November 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9819861884,7,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+DHRUV JAIN,ankitasept@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ARYADIPTO BANERJEE,aryadipto.b@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+AAHAN VINOD BHARNE,anubhargav1981@gmail.com,AAHAN VINOD,anubhargav1981@gmail.com,November 2025,Inactive,student,Mumbai Dadar,Dhirubhai Ambani International School,9975442227,9,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ADITYA SINHA,Shiney.sinha@yahoo.co.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ARADHY SHUKLA,saradhy12@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ATHARV LAL,anaghlal@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+TEJAS GOEL,amonika881@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ISHAYU SEN,skydg2003@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+RUDRANSH GARG,nisha.r.sharma@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ADITYA PAUL,adityapaul0112@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ANVITA AGRAWAL,renu.141100@gmail.com,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SAANVI MAURYA,savitamaurya82@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SAARANYA SHARMA,durgesh.prabhakar@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+TURVI JAIN,neetijain0709@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+TANVI KAUR,brinder11@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+GANAKSHI MITTAL,mganakshi@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SAANCHI RATHORE,kaltickets18@gmail.com,SAANCHI,kaltickets18@gmail.com,November 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9757109182,7,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ANAM AYUB SAYYAD,anjumasayyad14@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+BHUMIKA MEENA,rmeena884@gmail.com,BHUMIKA,rmeena884@gmail.com,November 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9326738216,8,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+KHANAK KUMAWAT,samtakaloya@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+PARTH CHOUBEY,skranjan585@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+NIDISH EKLAHARE,nidishre25@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+JUVENTUS KALLARAKKAL,juventusjimmy22@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ISHAN GADEGAONKAR,ishanverse@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+KRITHICK ARTHIRAVI,cu.arthi@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+PAABAN MONDAL,paaban.mondal@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+RUCHIR KUMAR,ruchirbbps@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ARSH LUCKMAN,arshstudy434@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SHIVANG MODI,sonal.pharma@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SIMAT KAUR BATH,simrat10@yahoo.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+JAYANTIKA SINGH,jayantikasingh11@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+DARSH SHARMA,darsh.sharma1116@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ARJUN SHARMA,arjun.artistic@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SHOMSHUBHRO NIYOGI,subhalaxmi.niyogi@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+AISHI BOSE,apurbabose@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+RAMITH R,crohith86@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+RANVEER PAWAR,cameli.Pawar@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SIDDHARTH S,soilitwithsiddhu6411@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+RISHIT MISHRA,mishrarishit64@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SARTHAK SINHA,sangitasameersinha@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+HARSH LULLA,harshlulla13@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+PRITYUSH NARULA,prityusshnarula24@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+VIHAAN GARG,vihaan.7garg@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+AARUSH SHARMA,aarush.3111sharma@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ARJUN PANSARE,arjunvpansare@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Sutapa Saha,sutapa76@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Praneel u. Patel,naihavi@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Dhwani varma,veena.k.varma@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Hassan Ahmadkhan,kaleem.sarah@gmail.com,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+keertana Chincholi,ramesh.sc@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Jyotsna Deshpande,deshpande.chetan@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Arnav Sharma,sharma.951753@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aarush Hitesh Shah,hiteshshah14@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Evan Mathew,matplayjazz@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Ria Yusuf,drrinshifm@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Trisha manoj Nelavagal,divya.mmanoj@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Joel Joby John,joby.john@outlook.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+B Dhararmik Abhuyudaya,sungirl99@gmail.com,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Reanssh Rohit dalaya,rohit.dalaya@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Animesh Tiwari,tiwariashutosh2100@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shirisha Renuguntla,renuguntlas@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Agastya Kapadia,085-2018-19@cajcs.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Jaikrishna Modi,mprprasad@cuk.ac.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,10,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Chetan Tata,tatasrinivasgoud@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Paarthu Chowdary Sandhireddy,lakshminarayana.sr32@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Midhil Reddy,swathireddymavilla@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Vedansh Medam,vedansh.medam15@gmail.com,Vedansh,vedansh.medam15@gmail.com,November 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,8125813592,7,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Surya Vijaya Vikhyath Neerugatti,ndheeraj582@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shrija Roy,royshrija08@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,11,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Maanas Desai,maanasdesai702@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,11,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Sandilya Challa,a.s.h.sandilyachalla@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,11,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Advik Puri,advikpuri900@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Arhaan Mohammad,anjumashraque@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Arhaan Sharma,arhaanveer23@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Zoya Bharmal,ztfbharmal@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Nysa Mehta,nysam0705@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Sankalp Ravinuthala,prosank0609@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Achintya Aras,achpro06@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Nivaan Mehta,nivaan0705@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Dhrea Vora,dhrea.vora@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Diya Ashar,diyaashar1005@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Rhidayesh Kirdat,rhidayesh.kirdat@indusschoolpune.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aryan Soniminde,aryan.soniminde@indusschoolpune.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Vivaan Shende,vivaan.shende@indusschoolpune.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Sathya Sathish,jehaanagarwal@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Jehaan Agarwal,jehaan.agarwal@indusschoolpune.com,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Daksh Manore,daksh.manore@indusschoolpune.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Mahi Shah,rashmi.charate@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Hridhaan Tembhekar,drkrupa.tembhekar@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Renit Mehta,rekhasingh2000@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Krishiv Maniyar,arvindmaniyar@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Hridhaan Agrawal,priyanka.gupta2909@gmail.com,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Anshu Batra,anshupahwa@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Yaashna Batra,yaashna.batra@avmschools.ac.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Gauransh Bisaria,capoojabisaria@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Prasad Karad,prasad01555.pk@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Archit Hase,hasearchit22@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aditya Patil,ap6245772@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Kalash Phophaliya,nirmala.vic.kalash.phophaliya.8205@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shubh Shinde,shubhshinde.nky@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Vaibhav Jadhav,vaibhavjadhav0812@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Rushabh Thawani,thawanirushabh0805@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Jatin Patel,jatinp22117@gmail.com,Jatin,jatinp22117@gmail.com,November 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,8087857108,2,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Ranbeer Jagota,nrs_1983@rediffmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Preetisha Bodke,komalshashikantbodke@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shreyas Pathak,shreyas.pathak@ashokaglobalacademy.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Rudra Ugale,ugalegt@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Charan Girase,mahipalrajput1@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Anish Kulkarni,chetancoolkarni@gmail.com,Anish,chetancoolkarni@gmail.com,November 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9921102333,2,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Janhvi Korde,janhvi03030@gmail.com,Janhvi,janhvi03030@gmail.com,November 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,7767981888,2,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Prasad Karad,prasadk_basc@bkc.met.edu,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aarya Borade,boradeaarya16@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aarushi Kalantri,aarushikalantri2009@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aditi Shirsat,kailasvshirsat@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Vaishnavi Ugale,vaishuugale711@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Divya Khandekar,vimalkhandekar280@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+AARAV KADAM,16mis2867@student.mes.ac.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SAMARVEER PATIL,16mis2875@student.mes.ac.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+MALKA SHAIKH,malkashaikh@mes.ac.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+KASHISH THAKKAR,16mis2857@student.mes.ac.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+KIMAYA WALKE,kimayawalke@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+AARYA DESHMUKH,16mis2841@student.mes.ac.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+AAYUSH DABKE,16mis2861@student.mes.ac.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ARNAV KADU,16mis2868@student.mes.ac.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Karman Singh Bhasin,kavleen.bhasin30@gmail.com,Karmansingh,kavleen.bhasin30@gmail.com,November 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,8149163624,2,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Lavya Bhojak,bhojak.praveen@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shreyas Pathak,pathak.shreyas.s@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Maheeka Bijlani,kunalbijlani@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Ayaan Shah,ar.anaghashah@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Rashi Amin,shweta_amin@icloud.com,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ATHARV DALE,atharvdale953@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+MOHIT BISHNOI,mohit02mvp@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+YADUKRISHNAN N.R,18mis0209@student.mes.ac.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+KOMAL YADAV,komalyadav@mes.ac.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+RIYA LAWAND,riyalawand0912@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+VEDIKA ZELE,16mis2720@student.mes.ac.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SUDIKSHA MITRA,16mis2666@student.mes.ac.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Srithan Katukuri,srithan.katukuri@indusschoolhyd.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aanya Vallapureddy,aanya.vallapureddy@indusschoolhyd.com,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Rithvik Reddy Dandu,rithvik.dandu@indusschoolhyd.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Arjun Naidu Boyidi,boyidiarjun.naidu@indusschoolhyd.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Ashmi Velicheti,ashmi.velicheti@indusschoolhyd.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Anvik Reddy Peesari,venugopalreddy6789@gmail.com,Anvik Reddy,venugopalreddy6789@gmail.com,November 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9182322898,8,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Naga sharan sathwik Gollapalli,gollapalli.sathwik@indusschoolhyd.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Arjun Patil,arjun3107patil@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Trisha Karnavat,karnavattrisha@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Varchasv Biyani,varchasv.biyani@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Radha Yewale,radha.yewale@podar.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aharsi Majumdar,aharsipico@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Anushrut Pimple,anushrut.pimple1@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Rashmi Ruhela,rashmi.ruhela@hfspowai.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Adhrit Das,adhritdas29@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Arushi Ganguly,arushig2020@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Advika Sharma,sharmaadvika737@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aarav Mohata,komaltanihalani@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Akshan Shahdeo,akshanshahdeo.cis@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Arhata Kanhekar,arhatakanhekar2008@giclm.edu.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Naman Barola,namanbarola2008@giclm.edu.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Sharad Khandelwal,sharad_k@outlook.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shaurya Singh Doherey,shauryadoherey2010@giclm.edu.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Jiya Doshi,jiyadoshi2010@giclm.edu.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Anay Vartak,anayvartak2010@giclm.edu.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Vihaan Lakhpatwala,vihaanlakhpatwala2010@giclm.edu.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Nilanjana Mukherjee,sanghamitra@gmail.com,Nilanjana,sanghamitra@gmail.com,November 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9820096482,2,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Diya Agarwal,siddhi.agarwal1@gmail.com,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Hiyaa Gandhi,hiyaagandhi2013@giclm.edu.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shalet Crasto,shaletcrasto80@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Kyra Crasto,crastokyra@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Rashi Assar,sheetalassar@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Saanvi Shukal,deepali.shukla@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Priscaa Shah,shahhinkel@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Navya Gupta,navyavishalgupta@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Anay Bhandari,rashmi.ruhelahfsi@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Veidaant Hariprasad,veidaant.hari.prasad@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Smita Gupta,smita.gupta@hfspowai.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aariv Sanghvi,aarivsanghvi@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Nirvan Teckchandani,nirvan.teckchandani24hfs@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Anshita Singh,anshita.singh@indusschoolpune.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Atharva Wagh,atharva.wagh@indusschoolpune.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Rithvik Thachappilly,rithvik.thachappilly@indusschoolpune.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aakriti Gupta,aakriti.gupta@indusschoolpune.com,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Sathya Sathish,sathya.sathish@indusschoolpune.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shreya Trivedi,shreya.trivedi@indusschoolpune.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shrivats Tirumalai,shrivats.tm@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Anuja Shah,mittal.barkha@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Sharanya Agarwal,sharanyasagarwal@gmail.com,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Myra Shah,myrashah2012@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Arjun Uniyal,arjun17.uniyal@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Reyansh saket tripathy,reyanshtripathy063@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Amit Anil Landage,amitlandage@mes.ac.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Mahit Yudhish Chirayil,mahit16dpga0060@student.mes.ac.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Rudra Ghoshal,subhodeepghoshal@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Arnav Sangwan,arnav16dpga0051@student.mes.ac.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Agastya Ankit Sakhare,agastya16dpga0096@student.mes.ac.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Siddharth Santosh Nair,siddharth16dpga0115@student.mes.ac.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Yohan Alexander Mathew,divya.mathew@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+vivek bhaskar,vivek.bhaskar.oracle@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Udit Bhaskar,uditiaf4@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Vedanta Desikan Thathachari,vedantadesikan.t@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Dhairya Singhal,dhairyasinghal2011@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shriyans Ramaswami,shriyans.ramas@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aatmik Pant,aatmik975@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Harsh Patel,harsh.patel@nesinternational.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shubh Khare,shubh.khare@nesinternational.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Chintan Chauhan,chintan.chauhan@nesinternational.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Dhruv Shetty,dhruv.shetty@nesinternational.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Amey Vidwans,amey.vidwans@nesinternational.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Jayam Vora,jayam.vora@nesinternational.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shubh Adhatrao,shubh.adhatrao@nesinternational.org,Shubh,shubh.adhatrao@nesinternational.org,November 2025,Inactive,student,Mumbai Dadar,Dhirubhai Ambani International School,7039000500,2,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Sumedh Shah,sumedh.shah@nesinternational.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Adyy Shah,shamatabrez14@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Tawheed Mukri,mukriafreen@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Ahsan Ahmed,sadafazmi@gmail.com,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Amaaz Ansari,ansarisamir27.maa@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Reshma Nandola,reshma.nandola@dfsthane.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shaarif Shaikh,heena6068@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Niharika Shah,niharikashah2009@giclm.edu.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Rajveer Sanghvi,rajveersanghvi2012@giclm.edu.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Sharad Khandelwal,sharad.khandelwal@giclm.edu.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Hugo Vidal,hugovidal2009@giclm.edu.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shreya Singh,shreyasingh2009@giclm.edu.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Piya Punjabi,piyapunjabi2009@giclm.edu.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Manav Oza,manavoza2009@giclm.edu.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Rayan Dobani,sd8890@kanakiais.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Rajveer Rajpurohit,sd2840@kanakiais.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Viraj Kumar,sd9338@kanakiais.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Gaurav Chauhan,optom.laxmi30@gmail.com,Gaurav,optom.laxmi30@gmail.com,November 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9819640350,7,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Abyan Maredia,sd2097@kanakiais.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aakhya Patki,sd2147@kanakiais.org,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Tanishka Sadhu,sd2163@kanakiais.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shreesha Jangam,sd8472@kanakiais.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Anashwi Mengane,sd2566@kanakiais.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Bhuvi Dubey,sd10815@kanakiais.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Zoya Budhwani,sd4688@kanakiais.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Yati Agrawal,agrawal.apeksa@gmail.com,Yati,agrawal.apeksa@gmail.com,November 2025,Inactive,student,Mumbai Dadar,Dhirubhai Ambani International School,8454878889,8,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+AVNI RAUT,rautanvi2805@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+EKANSH SONI,kiransoni90098@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+YUVRAJ GANDHARAVE,poonamgandharave1985@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ARAV SHAH,ashish@vistait.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+PRIYANSHU PRASAD,VKPRSD10@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+NAISHE JAIN,jain.arpan1981@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+KRITHIKA VENKATESAN,kalaivenkat16may@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ESHITA GUPTA,neha2040@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ATHARVA MORE,mrvinodkmore@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+VED HANKARE,tagtoamit@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+NAVNEET VASANT,meeravasanth12@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SAI MAYURESH RAO,hpandarinath123@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SHAURYA SINGH,yuvrajsom05@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+MITANSH PAUNIKAR,nitinpaunikar@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+BAVYESH NADAR,venisha.nadar@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SHRESHT BHANDARY,shreshtbhandary@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+TRYAMBAKESH BALAJI,reachgbalaji@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SHARVARI PARPILLEWAR,girish.parpillewar@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+TISYA KAPOOR,pranoykapoor@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+AARIYA PANDAYAN,shabanaravipandayan@icloud.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+OJASVEE DESAI,rajan262@yahoo.co.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+AGASTHYA SUJIR,poonamhh@yahoo.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+AARAV SABHARWAL,abhineet20@yahoo.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+MIHIR LOKEGAONKAR,bipinloke1981@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Devansh Chirmade,devanshmanishchirmade25@singhaniaschools.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Riddhi Toshniwal,riddhitoshniwal25@singhaniaschools.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shivam Shinde,shivamshinde25@singhaniaschools.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Ketaki Bhate,ketakirabhate@singhaniaschools.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Rishveer Arora,rishveersingharora25@singhaniaschools.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Raam Korgaonkar,raamkorgaonkar25@singhaniaschools.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aabhas Swar,aabhasswar25@singhaniaschools.org,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Kashvi Singh,kashvisingh25@singhaniaschools.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ARADHYA JAIN,sneha.ksg@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+JYOTSNA ANAND,dkanmani200@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+DAFNE MOSES,mamboo7@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+MOHNISH DALIBANI,skdalibani@hpcl.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+MRIDAKSH DALBANI,sarikasehgal1@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+RIDA CHISHTI,raisa.mushrif@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+DEEYAAN JAIN,deeyyaan.jain@bombayscottish.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+ABHIGAIL DANIEL,abhigail.daniel@bombayscottish.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+AMAR KANADE,amar.kanade@bombayscottish.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+JATIN DIXIT,jatin.dixit@bombayscottish.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+VIDIT SHUKLA,vidit.shukla@bombayscottish.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+AWANI UGHADE,awani.ughade@bombayscottish.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Roshan Chandiramani,rockytpz@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shirali Parsai,shirali.parsai@cygnusworldschool.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aditya Nareshbhai Gianchandani,chinkydubey22@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Dhriti Mohta,raghavmohta@hotmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Krishna Ashok Bhambhani,ahbhambhani@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Vivaan Nikhil Diwakar,nikhil@jaynix.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Evan Xavier,evanxdsouza@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Kevin Anthony,anthonykevin780@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Asher Thomas,asherjoseph262@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Tiruvuri Lalit,lalit.tiruvuri@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Stephen K Nebu,ltc@sjbhs.edu.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Adhrit Rai,adhrit.rai711@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Ashwin Senthil,ashwinsenthil20011310@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Daniel Anand,2dananand@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aprameya Dutta,aprameya.dutta@indusschool.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Neeti Chadha,neeti.chadha@indusschool.com,Neeti,neeti.chadha@indusschool.com,November 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9823206367,2,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aarush Pillai,aarush.pillai@indusschool.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Raajveer Chakraborthy,raajveer.chakraborthy@indusschool.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Sai Manav Pradeep Kumar,sai.pradeep@indusschool.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aarav Mehrotra,aarav.mehrotra@indusschool.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Priyansh Shaw,gkr.shaw@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Piyush Sundesha,Arjunksundesha@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shivansh Singh,anandrsingh74@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Swastik Dash,manshimishra@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Krish Upadhyay,starniku@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Mahanyas Sai,mahanyas2013@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Adeshwar singh,aashisingh4150@gmail.com,Adeshwar,aashisingh4150@gmail.com,November 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,7704085744,7,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Kashvi Kumar,kumar0705.kashvi@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shivangi Deora,deora.shivangi@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Hunar Periwal,periwalhunar@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Era Raj,eraraj2@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shifa Shaikh,shifashaikh2022@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Tanishka Chandankar,truptiz86@gmail.com,Tanishka,truptiz86@gmail.com,November 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,8369540723,8,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Atharva Patil,atharvapatilrbk@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Harshiv Bhaskar,harshivbhaskar1@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Sushant Jain,sushiljain6@rediffmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Ashwin Hegde,vidyaniru@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Ayush Yadav,manishayadav1065@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Maanveersingh Pardeshi,neerjapardeshi@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Tanish Trivedi,nipa14@gimail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Kshitij Mhatre,kshitijmhatre738@outlook.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Saanvi Pai,saanvipai1608@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Daanish Venkatesh,kvvenkatesh2006@yahoo.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Nahush Thakur,nahushthakurper@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Utsav Saraogi,utsavsaraogi999@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Bhavya Kumar,bhavyakumar6840@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Om Padhy,janakipadhy@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Kyro Raut,RBKIA1413.ib@kanakiais.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shaurya Kakkar,RBKIA1013.ib@kanakiais.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Riyansh Bendrey,RBKIA787.ib@kanakiais.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shivaansh Jaisingh,RBKIA902.ib@kanakiais.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Riyaan Karthik,RBKIA838.ib@kanakiais.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Abhigya Nahar,rbkia1383.ib@kanakiais.org,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Rashme Rajesh,rrashme@npskrm.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Yohaan Abraham,abe.abrahamcpc@gmail.com,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Muhammed Izhan,muhammedizhan10@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Kapil Kalidasan,kapilkalidasan111@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Dev Arya Rao,devaryarao@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Jayanth Devendran Sobha,jayanthdevendranedu@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shlok Alva,alvashlok@gmail.com,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shivansh Tiwari,shivansh.m.tiwari2010@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Kavin Senthur,aknimulchandani@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Manan Sharma,manan.jou@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Sathya Sathish,sathyasathishals@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Govind Mulchandani,mulchandaniakshay39@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Rohin Wadhwa,rohinwadhwa2010@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Vinayak Jangam,Jangampandurang969@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Sarthak Gorathe,gorathe.shweta27@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Ganesh Ambulkar,shrutiambulkar404@gmail.com,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,7,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Janhvi Banilkar,sujalbanilkar7@gmail.com,Janhvi,sujalbanilkar7@gmail.com,November 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9702490827,9,IN,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Kimaya Mhatre,kimyamhatre18@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Sanskruti Javlekar,javalekarsanskruti@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,9,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Gayatri Indap,suhasindap1982@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Aaradhy Badjatya,aaradhybarkha@gmail.com,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Tvisha Goenka,146-2018-19@cajcs.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shahab Kazi,drnuzhatkazi123@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Sabrina Khan,sabrinajavedkhan@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Safaa Sayyed,safaas@rassazschool.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Tazmeen Shaikh,tazmeenshaikh@rassazschool.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Afifa Shaikh,afifa@rassazschool.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shoaib Khan,shoaibk@rassazschool.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Sohum Arora,115-2018-19@cajcs.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Viaan Padliya,122-2018-19@cajcs.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shivanya Maheshwari,063-2017-18@cajcs.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Palaksi Agrawal,096-2018-19@cajcs.in,,,November 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Ansh Aggarwal,ai@roboticsir.com,,,November 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shaurya Sharma,shauryasharma68092@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aryan Choudhary,aryanchoudhary42496@gmail.com,Aryan,aryanchoudhary42496@gmail.com,November 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9870212799,2,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Arit Jain,yuuvarit@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Abhijeet Mukherjee,mukherjeeabhijeet259@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Sumanta Bera,mitali9818@gmail.com,,,November 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Yogesh Sonawane,galaxy151008@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,12,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Somya Mantry,mantrysomya@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,10,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Kranti Naik,krantin29@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,12,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Nisar Pathan,pathannisar605@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,10,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Mirajul Sardar,mirajulsardar2850@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,10,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Prince Rajkumar Gupta,princegupta04112010@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,10,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Deepak Shukla,deepakshukla8886857@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,12,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Sanjeet Prasad,sanjeetprasad611@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,12,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Sneha Gujuri,gujurisneha05@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,9,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Janmajay Saha,bsaha6883@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,9,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Alfiya Chunnu Shaikh,alfiyashk022@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,9,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Prince Dilip Gupta,pg5764678@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,10,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Aatiqa Shaikh,aatiqashaikh555@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,11,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Suraj Gupta,guptasima1008@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,10,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Alfiya Dilshad Shaikh,alfsha30911@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,8,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Aliza Khan,alikha110411@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,8,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Anmol Yadav,anmyad240811@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,9,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Raunak Jaiswar,raujai071011@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,9,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Sahbaj Shaikh,mohsha211211@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,9,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Rehnuma Shaikh,rehsha210612@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,9,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Saba Idrisi,sabidr280212@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,9,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Nancy Maurya,Nanmau240811@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,9,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Sonam Sharma,Sonsha221111@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,9,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Kinjal Purohit,Kinpur220911@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,9,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Anurag Sharma,anusha220111@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,9,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Swatantra Pal,Swapal030211@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,9,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Ayush Chaurasiya,ayucha121111@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,9,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Nargis Shaik,narsek301112@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Saanvi Rathi,saanvirathi1109@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Suresh Rajput,sureshrajput19777@gmail.com,,,October 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Kabir Gureja,kabirgureja08@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aahaan Tugnawat,aahaan.0918@gmail.com,,,October 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Swarit Sawarkar,sawarkarswarit@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aryansh Jajoo,aryanshjajoo7@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Anayaditya Singh Chauhan,anayadityasingh@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Parth Khakhadia,patkha210413@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shripad Salgaonkar,shrsal241113@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Divyansh Gupta,divgup160713@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Pal Gohil,palgoh280213@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Mrunali Nikar,mrunik0201013@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Malhar Falekar,malfal021013@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Gaurav Sonar,gauson200312@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Anjali Sharma,anjsha070812@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Vihaan Chouhan,noctyrnrblx@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Swara Karle,swakar250212@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Adarsh Singh,adasin280812@akanksha.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aryan Yadav,nitroblex9987@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,8,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Trived Singh,trived.singh@orchids.edu.in,Trived Singh,trived.singh@orchids.edu.in,October 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9874561233,2,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aanya Bhimrajka,aanya.1213055@bdsint-students.org,,,October 2025,Inactive,student,Not Assigned,Not Assigned,,11,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Diksha Kori,koridiksha245@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,9,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Jaweriya Idrisi,jaweriyaidrisi@gmail.com,,,October 2025,Inactive,student,Not Assigned,Not Assigned,,11,,Robotics Foundation Program,Bootcamps,40,BootCamps And NRL
+Reyansh Govindaraju,reyansh.govindaraju@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Atharv Sinha,Atharva.sinha27@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Ira Raghavan,satyarags@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shaurya Jain,shauryakjain@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Nandini Chatterjee,nandinikchatterjee@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Yannick Lokur,yannicklokur@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Ria Sanghavi,riasanghavi4@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Riana Arenja,riana.arenja@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aarit Gopalkrishnan,aaritgopalkrishnan@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aarush Kadakia,aarushkadakia@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,7,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Mahika Garg,mahikagarg.1211@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Vivan Sheth,shethvivan18@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Reyansh Gandhi,Reyanshgandhiv@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,8,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Mahir Thadani,mahirthadani1@gmail.com,mahir thadani,mahirthadani1@gmail.com,October 2025,Active,student,Mumbai Bandra,Dhirubhai Ambani International School,7900042081,8,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Kamal Jit Kaur,kamaljit.kaur@dais.edu.in,,,October 2025,Active,student,Not Assigned,Not Assigned,,12,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Sahaj Agrawal,sahajagrawal63@gmail.com,,,October 2025,Inactive,student,Not Assigned,Not Assigned,,11,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Nuhail Damudi,nuhaildamudi@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,12,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Gargi Sharma,bhardwaj.vivekkumar@gmail.com,,,October 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Manav Varshney,ca.sanjeevvarshney@gmail.com,,,October 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aarav Shah,notaaravshah22@gmail.com,Aarav,notaaravshah22@gmail.com,October 2025,Inactive,student,Mumbai Dadar,Dhirubhai Ambani International School,9810369970,2,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Vidushi Dixit,vidushi@dpskpv.com,,,October 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Vyaan Bhardwaj,meghalohani123@gmail.com,,,October 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Akshat Chauhan,akshatchauhan2402@gmail.com,,,October 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Vivan Gaur,manishgaur730@gmail.com,,,October 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Ashi Garg,gargashi74@gmail.com,,,October 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Khushbu Mathur,khushbu@aadhaarassociation.org,,,October 2025,Active,student,Not Assigned,Not Assigned,,12,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Badal Prajapati,shrip9713@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,8,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Prashant Rajput,prashantrajput8882@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,8,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Rohit Kumar,rohitkumar756rohit@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,8,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Brijesh Brijesh,sray92875@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,8,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Somnath Sarkar,somnathsarkar@123gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,8,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Devendra Devendra,varmalaikhraj@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,8,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aadil Khan,khan052.aadil@gmail.com,,,October 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Siddharth Bidarkar,manjubidarkar1979@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Adnan Khan,adnkhan.e@gmail.com,Test,test@gmail.com,October 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,8888999911,7,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Abhishek Singe,abhisheksinge0@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Kashif Ahmed,md1894227@gmail.com,,,October 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Nauman Kaleem,naumankaleem20@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Yahya Ali,yahyaali.glb@gmail.com,Yahya,yahyaali.glb@gmail.com,October 2025,Inactive,student,Mumbai Dadar,Dhirubhai Ambani International School,7899910748,10,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aarit Gopalkrishnan,aarit.gopalkrishnan@gmail.com,Archana Ram,archana.ram@egonzehnder.com,October 2025,Active,student,Mumbai Bandra,Dhirubhai Ambani International School,9029064003,7,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Ryan Oberoi,ryan.oberoi@inventureacademy.com,Varun Oberoi,varunoberoi82@gmail.com,October 2025,Active,student,Bengaluru,Inventure Academy,9833717735,7,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Divit Pradhan,divit.pradhan@gmail.com,Nishant Pradhan,nishant.pradhan82@gmail.com,October 2025,Active,student,Bengaluru,Inventure Academy,8971888500,7,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Latha P Srinivas,latha.p.srinivasmurthy@gmail.com,x,latha.p.srinivasmurthy@gmail.com,October 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9597966792,2,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Rishi Kommineni,rishi.kommineni@inventureacademy.com,Balaji Kommineni,komminenibalaji@gmail.com,October 2025,Active,student,Bengaluru,Inventure Academy,7901009009,7,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Daksh Singh,daksh.singh@inventureacademy.com,Sharad Singh,singhsharad001@gmail.com,October 2025,Active,student,Bengaluru,Inventure Academy,8528733226,11,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Dhriti Mani,dhriti.mani@inventureacademy.com,Balaji Mani,balajimani82@yahoo.com,October 2025,Active,student,Bengaluru,Inventure Academy,7618776369,8,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Kyra Shewani,kyra.shewani@gmail.com,Rajesh Shwani,rajesh.shewani@gmail.com,October 2025,Active,student,Pune,Inventure Academy,9820410312,8,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Abel Mario Joseph,abel.joseph@inventureacademy.com,Murali Naidu,muralinaidu.t@gmail.com,October 2025,Active,student,Bengaluru,Inventure Academy,9900094530,8,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Dia Tarun,dia.tarun@gmail.com,Tarun keshav,tarun.keshav@gmail.com,October 2025,Active,student,Bengaluru,Inventure Academy,9980166231,9,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Anya Patnaik,anya.patnaik@inventureacademy.com,Amit Patnaik,amyt.patnaik@gmail.com,October 2025,Active,student,Bengaluru,Inventure Academy,9972787700,9,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Arth Swaroop,arth.swaroop@inventureacademy.com,Prayank Swaroop,prayank.swaroop@gmail.com,October 2025,Active,student,Bengaluru,Inventure Academy,9945307938,7,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aria Nandi,garimasatijanandi@gmail.com,Richik Nandi,richik@gmail.com,October 2025,Active,student,Bengaluru,Inventure Academy,9916101292,7,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Ansh Khandelwal,ansh.khandelwal@inventureacademy.com,Abhinav Khandelwal,abhinavk@gmail.com,October 2025,Active,student,Bengaluru,Inventure Academy,9986081230,7,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Akshat Vangala,akshat.vangala@inventureacademy.com,Praveen Vangala,pvangala@gmail.com,October 2025,Active,student,Pune,Inventure Academy,9902100550,7,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+SIDDHANTH PATHI AJAY,sidpathi@gmail.com,Pathi Ajay Narayan,ajay@siddhanthmotors.com,October 2025,Active,student,Bengaluru,Inventure Academy,9880081000,9,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Nabhya Gupta,nabhya.gupta@inventureacademy.com,x,nabhya.gupta@inventureacademy.com,October 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9686591222,2,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Latha P Srinivas,latha@inventureacademy.com,xz,latha@inventureacademy.com,October 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9597966792,2,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aditya Rao,aditya.rao@inventureacademy.com,Shiva Rao,sraoblr2019@gmail.com,October 2025,Active,student,Pune,Inventure Academy,9606602728,7,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Anvay Rajan,anvay.rajan@inventureacademy.com,Abhishek Rajan,abhishekrajan@gmail.com,October 2025,Active,student,Pune,Inventure Academy,9591449001,7,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Pranay Mehta,pranay.mehta@inventureacademy.com,Shekhar Mehta,mehta.shekhar@gmail.com,October 2025,Active,student,Bengaluru,Inventure Academy,8619361736,8,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Adhvay Satish,adhvay.s@inventureacademy.com,K Satish Narayan,satishnarayan@gmail.com,October 2025,Active,student,Bengaluru,Inventure Academy,9840796097,7,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Krishnav Mohanty,krishnav.mohanty@inventureacademy.com,Biplab Kumar Mohanty,mohantybiplab@gmail.com,October 2025,Active,student,Pune,Inventure Academy,9818129507,7,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shreya Jindia,shreyajindia@gmail.com,Rajneesh Kumar,rajneeshjindia@gmail.com,October 2025,Active,student,Bengaluru,Inventure Academy,9845734211,11,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Samreen Shaikh,samreen.shaikh@bdsint.org,s,raginim3112@gmail.com,October 2025,Active,student,Mumbai Dadar,B D Somani International School,9664791872,12,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Zubin Jhaveri,zubin.jhaveri@bdsint.org,s,raginim3112@gmail.com,October 2025,Active,student,Mumbai Dadar,B D Somani International School,9820115902,12,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Anusha Sharma,anusha.2425115@bdsint-students.org,s,raginim3112@gmail.com,October 2025,Active,student,Mumbai Dadar,B D Somani International School,9000000006,7,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aryaman Shah,aryaman.1819012@bdsint-students.org,s,raginim3112@gmail.com,October 2025,Active,student,Mumbai Dadar,B D Somani International School,9000000005,7,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Armaan Baliga,armaan.1415007@bdsint-students.org,z,raginim3112@gmail.com,October 2025,Active,student,Mumbai Dadar,B D Somani International School,9892322922,2,IS,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Reza Merchant,reza.2526040@bdsint-students.org,s,raginim3112@gmail.com,October 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9892322922,2,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Arav Jain,arav.2324146@bdsint-students.org,s,raginim3112@gmail.com,October 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9892322922,2,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aditya Parikh,aditya.1415032@bdsint-students.org,zx,raginim3112@gmail.com,October 2025,Active,student,Mumbai Dadar,B D Somani International School,9892322922,2,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Arham Sethi,arhamsethi09@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Siya Agrawal,siyaagrawal292@gmail.com,,,October 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Utkarsh Deshpande,deshpande.utkarsh.21@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aryav Shah,shaharyav85@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Ayaana Soni,ayaanasoni@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Mohammed Zaid Fareed,mohammedzaid6714@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Ahmed Irfan Akrami,ahmedirfan2018b@gmail.com,,,October 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shamveel Khateeb,shamveelkhateeb84@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Omer Ruknuddin,omruk5689@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Abdullah Saami Sada,saamisada02@gmail.com,Mohammed Abdul Jaleel Sada,,October 2025,Active,student,Not Assigned,Not Assigned,,12,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Mohiddin Ahmed Motiya,motiyamohiddinahmed@gmail.com,,,October 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Anusha Gulati,anusha.gulati5158@mhsi.edu.in,,,October 2025,Active,student,Not Assigned,Not Assigned,,9,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Abir Ghosh,abir.ghosh@mhsi.edu.in,,,October 2025,Active,student,Not Assigned,Not Assigned,,12,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Nabhya Gupta,nabhya.gupta@inventureacademy.comy,Vikash Gupta,vikashgupta.aca@gmail.com,October 2025,Inactive,student,Bengaluru,Inventure Academy,9740911000,9,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Varish Ganeriwala,varish.ganeriwala5156@mhsi.edu.in,,,October 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Abir Roy,abirkumar.roy@mhsi.edu.in,,,October 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aradhya Jain,aaradhay.jain1314@mhsi.edu.in,,,October 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Samaira Sett,samaira.sett5142@mhsi.edu.in,,,October 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Vivaan Mohta,vivaan.mohta5235@mhsi.edu.in,,,October 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Arya Kulkarni,arya.kulkarni5252@mhsi.edu.in,Arjun,arya.kulkarni5252@mhsi.edu.in,September 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9836054354,2,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Deetya Rathi,deetya.rathi5150@mhsi.edu.in,Deetya,deetya.rathi5150@mhsi.edu.in,September 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9800077788,2,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Revant Sanghvi,revant.sanghvi5138@mhsi.edu.in,Revant,revant.sanghvi5138@mhsi.edu.in,September 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9831847482,2,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Soham Beriwala,soham.beriwala5140@mhsi.edu.in,Soham,soham.beriwala5140@mhsi.edu.in,September 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9830195510,2,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Mehher Bhattacharjee,mehher.bhattacharjee5143@mhsi.edu.in,,,September 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Krishha Sarda,krishha.sarda5603@mhsi.edu.in,,,September 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Paramita Banerjee,paramita.banerjee@mhsi.edu.in,,,September 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Utkarsh Bajoria,utkarsh.bajoria0030@mhsi.edu.in,,,September 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Vivaan Ghosal,vivaankumar.ghosal0027@mhsi.edu.in,,,September 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Aayush Dugar,aayush.dugar4473@mhsi.edu.in,,,September 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Nirgun Bhotika,nirgun.bhotika1502@mhsi.edu.in,,,September 2025,Active,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Rishit Gupta,1009953@emeraldheights.edu.in,,,September 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Asmi Hemnani,1010713@gmail.com,Asmi,1010713@gmail.com,September 2025,Inactive,student,Mumbai Dadar,Dhirubhai Ambani International School,9893175811,2,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Suresh Rajput,sureshrajput1977@gmail.com,,,September 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Raunak Agrawal,mailraunak000@gmail.com,,,September 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Arnav Agrawal,arnavagrawalambikapur@gmail.com,,,September 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Shourya Kedia,1012354@emeraldheights.edu.in,,,September 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Rutraj Jain,1010791@emeraldheights.edu.in,,,September 2025,Inactive,student,Not Assigned,Not Assigned,,,,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+arjun Agarwal,arjun@theinnovationstory.com,Amit Agarwal,arjun@theinnovationstory.com,August 2025,Active,student,Mumbai Dadar,Woodside Priory-Palo Alto CA USA,9999999999,9,IN,FutureMakers India Fellowship 2026,Bootcamps,140,BootCamps And NRL
+Ananya Subramanyam,ananyaasubramanyam@gmail.com,Dr Anand Subramanyam,mumbairetinadoc@gmail.com,July 2025,Active,student,Mumbai Dadar,Singapore International School - Mumbai,9820800018,9,IN,Innovation Sprint (Senior),Bootcamps,24,BootCamps And NRL
+Hetaksh Jindal,prqr@gmail.com,Hetaksh,prqr@gmail.com,July 2025,Active,student,Not Assigned,Strawberry Field High School,9888000669,5,IN,Camps - Mechatronics Intermediate,Bootcamps,40,BootCamps And NRL
+Asankh Kamboj,asankhkamboj2033@sfhs.in,Asankh,asankhkamboj2033@sfhs.in,July 2025,Active,student,Not Assigned,Strawberry Field High School,7009444805,6,IN,Camps - Mechatronics Intermediate,Bootcamps,40,BootCamps And NRL
+Sabar Chandhoke,sabarchandhoke2034@sfhs.in,Sabar,sabarchandhoke2034@sfhs.in,July 2025,Active,student,Not Assigned,Strawberry Field High School,9878051799,4,IN,Camps - Mechatronics Intermediate,Bootcamps,40,BootCamps And NRL
+Avyukt Garg,avyuktgarg2033@sfhs.in,Avyukt,avyuktgarg2033@sfhs.in,July 2025,Active,student,Not Assigned,Strawberry Field High School,9992020673,5,IN,Camps - Mechatronics Intermediate,Bootcamps,40,BootCamps And NRL
+Krisha Jain,abc@gmail.com,Krisha,abc@gmail.com,July 2025,Active,student,Not Assigned,Strawberry Field High School,9876455601,4,IN,Camps - Mechatronics Intermediate,Bootcamps,40,BootCamps And NRL
+Adhiraj Jindal Jindal,adhirajjindal2033@sfhs.in,Adhiraj Jindal,adhirajjindal2033@sfhs.in,July 2025,Active,student,Not Assigned,Strawberry Field High School,9650063999,5,IN,Camps - Mechatronics Intermediate,Bootcamps,40,BootCamps And NRL
+Jayansh Goyal,jayanshgoyal2034@sfhs.in,Jayansh,jayanshgoyal2034@sfhs.in,July 2025,Active,student,Not Assigned,Strawberry Field High School,9646288888,4,IN,Camps - Mechatronics Intermediate,Bootcamps,40,BootCamps And NRL
+Reyan Batra,reyanbatra2033@sfhs.in,Reyan,reyanbatra2033@sfhs.in,July 2025,Active,student,Not Assigned,Strawberry Field High School,9888145981,5,IN,Camps - Mechatronics Intermediate,Bootcamps,40,BootCamps And NRL
+Avyaan Pratap Saini,avyaanpratapsingh2034@sfhs.in,Avyaan Pratap,avyaanpratapsingh2034@sfhs.in,July 2025,Active,student,Not Assigned,Strawberry Field High School,9650081181,4,IN,Camps - Mechatronics Intermediate,Bootcamps,40,BootCamps And NRL
+Ajunee Singla,ajuneesingla2034@sfhs.in,Ajunee,ajuneesingla2034@sfhs.in,July 2025,Active,student,Not Assigned,Strawberry Field High School,9988300637,4,IN,Camps - Mechatronics Intermediate,Bootcamps,40,BootCamps And NRL
+Sahiba Aujla,sahibaujla2034@sfhs.in,Sahiba,sahibaujla2034@sfhs.in,July 2025,Active,student,Not Assigned,Strawberry Field High School,1234567890,4,IN,Camps - Mechatronics Intermediate,Bootcamps,40,BootCamps And NRL
+Abir Singh,abirsingh2033@sfhs.in,Abir,abirsingh2033@sfhs.in,July 2025,Active,student,Not Assigned,Strawberry Field High School,9082751707,5,IN,Camps - Mechatronics Intermediate,Bootcamps,40,BootCamps And NRL
+Vedansh Jindal,vedanshjindal2033@shfs.in,Vedansh,vedanshjindal2033@shfs.in,July 2025,Active,student,Not Assigned,Strawberry Field High School,9779930502,5,IN,Camps - Mechatronics Intermediate,Bootcamps,40,BootCamps And NRL
+Jasmyrah kaur Kharoud,jasmyrahkharoud2033@sfhs.in,Jasmyrah kaur,jasmyrahkharoud2033@sfhs.in,July 2025,Active,student,Not Assigned,Strawberry Field High School,7347556045,5,IN,Camps - Mechatronics Intermediate,Bootcamps,40,BootCamps And NRL
+Vivaan Dawar,vivaandawar2032@sfhs.in,Vivaan,vivaandawar2032@sfhs.in,July 2025,Active,student,Not Assigned,Strawberry Field High School,8283886804,6,IN,Camps - Mechatronics Intermediate,Bootcamps,40,BootCamps And NRL
+Ranbir Dhanoa,ranbirdhanoa2032@sfhs.in,Ranbir,ranbirdhanoa2032@sfhs.in,July 2025,Active,student,Not Assigned,Strawberry Field High School,9876073333,6,IN,Camps - Mechatronics Intermediate,Bootcamps,40,BootCamps And NRL
+Aadvik Singh,aadviksingh2034@sfhs.in,Aadvik,aadviksingh2034@sfhs.in,July 2025,Active,student,Not Assigned,Strawberry Field High School,9130560001,4,IN,Camps - Mechatronics Intermediate,Bootcamps,40,BootCamps And NRL
+Shahaan Grover,shahaangrover2033@sfhs.in,Shahaan,shahaangrover2033@sfhs.in,July 2025,Active,student,Not Assigned,Strawberry Field High School,9888451799,5,IN,Camps - Mechatronics Intermediate,Bootcamps,40,BootCamps And NRL
+Sahraj Singh,sahrajsingh2034@sfhs.in,Sahraj,sahrajsingh2034@sfhs.in,July 2025,Active,student,Not Assigned,Strawberry Field High School,9592926456,4,IN,Camps - Mechatronics Intermediate,Bootcamps,40,BootCamps And NRL
+Reyansh Jain,jainreyansh2033@sfhs.in,Reyansh,jainreyansh2033@sfhs.in,July 2025,Active,student,Not Assigned,Strawberry Field High School,8295845544,5,IN,Camps - Mechatronics Intermediate,Bootcamps,40,BootCamps And NRL
+Jaksh Chopra,jakshchopra2033@sfhs.in,Jaksh,jakshchopra2033@sfhs.in,July 2025,Active,student,Not Assigned,Strawberry Field High School,8872000097,5,IN,Camps - Mechatronics Intermediate,Bootcamps,40,BootCamps And NRL
+Anaya Anand,anayaanand2034@sfhs.in,Anaya,anayaanand2034@sfhs.in,July 2025,Active,student,Not Assigned,Strawberry Field High School,9878913590,4,IN,Camps - Mechatronics Intermediate,Bootcamps,40,BootCamps And NRL
+Armaan Singh Rattan,armaanrattan2032@sfhs.in,Armaan Singh,armaanrattan2032@sfhs.in,July 2025,Active,student,Not Assigned,Strawberry Field High School,9417290000,6,IN,Camps - Mechatronics Intermediate,Bootcamps,40,BootCamps And NRL
+Ria Sanghavi,ria.1601007@dais.edu.in,Kejal Sanghavi,riasanghavi4@gmail.com,July 2025,Active,student,Pune,Dhirubhai Ambani International School,8779696272,8,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Vedant Kanchan,vedantkanchan8766@gmail.com,Ashish Kanchan,ashishkanchan1001@gmail.com,July 2025,Active,student,Not Assigned,British International School,84903038677,9,IN,Emerging Innovators Program,Bootcamps,70,BootCamps And NRL
+Aryan Sharma,sharma.aryan1607@gmail.com,Ashwani Sharma,ashwani_bhu@yahoo.com,June 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,7738070484,11,IN,Emerging Innovators Program,Bootcamps,70,BootCamps And NRL
+Agasthya Bhatia,agasthya7bb@gmail.com,Dhanesh Bhatia,dhaneshbhatia@aryamman.in,June 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9820064060,12,IN,Emerging Innovators Program,Bootcamps,70,BootCamps And NRL
+Hriday Parekh,hriday@parekh.co.in,Parag Parekh,paragp1457@gmail.com,June 2025,Active,student,Mumbai Bandra,Dhirubhai Ambani International School,9833034534,12,IN,Emerging Innovators Program,Bootcamps,70,BootCamps And NRL
+Lavanya Rai,lavanyalrai@gmail.com,Lalit Rai,lalit.rai@gmail.com,June 2025,Active,student,Mumbai Bandra,Dhirubhai Ambani International School,9892194843,11,IN,Emerging Innovators Program,Bootcamps,70,BootCamps And NRL
+Ayaan Agrawal,ayaan.agrawal610@gmail.com,Amit Agrawal,amitpilot@yahoo.com,June 2025,Active,student,Not Assigned,Dubai International Academy - Emirates Hills,9.71509E+11,9,IN,Emerging Innovators Program,Bootcamps,70,BootCamps And NRL
+Kunal Deepak,kunaldeepak1108@gmail.com,Mr. Gaurav Deepak,gaurav.deepak@avendus.com,June 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9821047459,12,IN,Emerging Innovators Program,Bootcamps,70,BootCamps And NRL
+Kaeyan  Sinha,kaeyan.sinha@gmail.com,Kanishka Sinha,kanishka_sinha@hotmail.com,June 2025,Active,student,Mumbai Dadar,ASCEND International School,9920727697,8,IN,Innovation Sprint (Senior),Bootcamps,24,BootCamps And NRL
+Uddish Verma,uddissh.verma@gmail.com,Shiv Vishal,annushivvishal@gmail.com,June 2025,Active,student,Mumbai Dadar,City Montessori School,9415632269,12,IN,Emerging Innovators Program,Bootcamps,70,BootCamps And NRL
+Shiv  Mehta,shivmehtacr7@gmail.com,Rajiv Mehta,rajiv@classykontainers.com,June 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9821068386,11,IN,Emerging Innovators Program,Bootcamps,70,BootCamps And NRL
+Kabir Gupta,kabirg2609@gmail.com,Shivaashish Gupta,shiv.gupta@sanctumwealth.com,June 2025,Active,student,Mumbai Dadar,NSS Hill Spring International School,9930070220,10,IN,Emerging Innovators Program,Bootcamps,70,BootCamps And NRL
+Rian Mujgule,rianmujgule@icloud.com,Indraneel,neelm13@gmail.com,June 2025,Active,student,Mumbai Dadar,Indus international school-Pune,9923599884,11,IN,Emerging Innovators Program,Bootcamps,70,BootCamps And NRL
+Nandini Ved,nandinived29@gmail.com,Pratik Ved,symbolved@gmail.com,June 2025,Active,student,Mumbai Bandra,Oberoi International school JVLR,9167291774,5,IN,Summer Bootcamp - Robotics Hackathon,Bootcamps,10,BootCamps And NRL
+Aabir Mehta,mehta.aabir@gmail.com,Parthiv Mehta,parthivmehta@annapurnaindustry.com,June 2025,Active,student,Delhi NCR,Ahmedabad International School,9904033277,8,IN,Emerging Innovators Program,Bootcamps,70,BootCamps And NRL
+Rishan Sawant,rishans304@gmail.com,Randhir Sawant,randhirsawant@hotmail.com,June 2025,Active,student,Mumbai Bandra,Nahar International School,9820556341,12,IN,Emerging Innovators Program,Bootcamps,70,BootCamps And NRL
+Shiven Shah,shivenmshah19@gmail.com,Manish Shah,manishrshah69@gmail.com,June 2025,Active,student,Mumbai Dadar,ASCEND International School,9867100060,9,IN,Emerging Innovators Program,Bootcamps,70,BootCamps And NRL
+Siddhant Pandit,siddhant.pandit04@gmail.com,Chinmay Pandit,jayada.pandit@kpit.com,June 2025,Active,student,Mumbai Dadar,Huron High School,7343520860,12,IN,AI Essential Training,Bootcamps,40,BootCamps And NRL
+Maitreyee Sen,sen.maitreyee.04@gmail.com,Mainak Sen,mainak.sen@gmail.com,June 2025,Active,student,Not Assigned,Gunn High,6503886197,10,IN,AI Essential Training,Bootcamps,40,BootCamps And NRL
+Keya Rajgarhia,keya.rajgarhia@gmail.com,vivek rajgarhia,vivek.rajgarhia@gmail.com,June 2025,Active,student,Mumbai Dadar,ASCEND International School,7304895805,11,IN,AI Essential Training,Bootcamps,40,BootCamps And NRL
+Aryan Khan,aryankhan1009@hotmail.com,Dr. Arif Khan,khangoa@hotmail.com,June 2025,Active,student,Not Assigned,North London Collegiate School-Dubai,9.71527E+11,9,IN,Emerging Innovators Program,Bootcamps,70,BootCamps And NRL
+Ridhaan Tulsian,tulsianridhaan@gmail.com,AKASH TULSIAN,akash.packedge@gmail.com,June 2025,Active,student,Not Assigned,Delhi Public School-Surat,9825140089,8,IN,Emerging Innovators Program,Bootcamps,70,BootCamps And NRL
+Diviyanaa  Deshmukh,deshmukhdhiraj@gmail.com,Dhiraj Deshmukh,deshmukhdhiraj@gmail.com,June 2025,Active,student,Mumbai Dadar,ASCEND International School,9765699999,4,IN,Summer Bootcamp - Robotics Hackathon,Bootcamps,10,BootCamps And NRL
+Apoorv Gupta,ap7.gupta@outlook.com,Anup Gupta,seems_gupt@yahoo.com,May 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9820806362,11,IN,Emerging Innovators Program,Bootcamps,70,BootCamps And NRL
+Sanvi Choukhani,sanvichoukhani27@gmail.com,Jyoti Choukhani,jchoukhani@gmail.com,May 2025,Active,student,Mumbai Dadar,La Martiniere For Girls,9674746240,12,IN,Emerging Innovators Program,Bootcamps,70,BootCamps And NRL
+Vansh  Deshmukh,deepshikhadeshmukh@me.com,Dhiraj,deepshikhadeshmukh@me.com,May 2025,Active,student,Mumbai Bandra,ASCEND International School,9820194709,4,IN,Summer Bootcamp - Robotics Hackathon,Bootcamps,10,BootCamps And NRL
+Samrudh Gowda,samrudh.gowda23@gmail.com,Deepak Komaregowda,dgowda@gmail.com,May 2025,Active,student,Bengaluru,Neev Academy-Bengaluru,9686448345,11,IN,AI Essential Training,Bootcamps,40,BootCamps And NRL
+Riaan Menon,riaanmenon03@gmail.com,Siddarth Menon,sid_menon78@hotmail.com,May 2025,Active,student,Pune,Step by Step School,9910003036,8,IN,Advanced Mechatronics – Summer Cohort (Delhi),Bootcamps,40,BootCamps And NRL
+Aroosh Krishna,arooshkrishna@gmail.com,Mukesh Kumar Singh,singhmukesh999@gmail.com,May 2025,Active,student,Mumbai Dadar,Oberoi International school JVLR,9967576010,11,IN,AI Essential Training,Bootcamps,40,BootCamps And NRL
+Devishi Bajaj,devishibajaj@gmail.com,Sunit Bajaj,sunit44444@gmail.com,May 2025,Active,student,Mumbai Dadar,La Martiniere For Girls,9830044444,9,IN,Summer Bootcamp - Python Programming,Bootcamps,10,BootCamps And NRL
+Viren Kedia,kedia.viren2010@gmail.com,Vikas Kedia,vmkedia@gmail.com,May 2025,Active,student,Mumbai Dadar,Oberoi International school JVLR,9867386146,9,IN,AI Essential Training,Bootcamps,40,BootCamps And NRL
+Hredhan agarwal,hredhanagarwal@gmail.com,Ankur,ankur659@rediffmail.com,May 2025,Active,student,Mumbai Dadar,JBCN international - Parel,9892880306,9,IN,Emerging Innovators Program,Bootcamps,70,BootCamps And NRL
+Dev Jyotika Suriya,devjyotikasuriya@gmail.com,Suriya Sivakumar,actorsuriya@gmail.com,May 2025,Active,student,Mumbai Bandra,Dhirubhai Ambani International School,9003000355,10,IN,AI Fellowship for Young Global Leaders,Bootcamps,30,BootCamps And NRL
+Inesh Saha,ineshsaha1@gmail.com,Keka Saha,sh.keka@gmail.com,May 2025,Active,student,Mumbai Bandra,Vidyashilp Academy,8120000000,11,IN,AI Essential Training,Bootcamps,40,BootCamps And NRL
+Adhvaith  K,iamadhvaithk@gmail.com,Kartik,sripriya20@yahoo.com,May 2025,Active,student,Mumbai Bandra,RN Podar School,9820111715,9,IN,Summer Bootcamp - Robotics Hackathon,Bootcamps,10,BootCamps And NRL
+Arsh Aditya,arsh.aditya1@gmail.com,Sangeet Kumar,sangeet@addverb.com,May 2025,Active,student,Mumbai Bandra,Shiv Nadar School,9996969609,12,IN,AI Fellowship for Young Global Leaders,Bootcamps,30,BootCamps And NRL
+Advait Gogate,gogateadvait@gmail.com,Adheet Gogate,adheet@gmail.com,May 2025,Active,student,Mumbai Bandra,Singapore International School-Dahisar,9820149436,12,IN,AI Fellowship for Young Global Leaders,Bootcamps,30,BootCamps And NRL
+Siddhant Pandit,pandit.sid24@gmail.com,Chinmay Pandit,jayada.pandit@kpit.com,May 2025,Active,student,Mumbai Bandra,Huron High School,7343520860,12,IN,AI Essential Training,Bootcamps,40,BootCamps And NRL
+Vidushee Shekhar,vidushee.shekhar2008@gmail.com,Shashank Shekhar,sshekhar0380@gmail.com,May 2025,Active,student,Mumbai Dadar,Mallya Aditi International School,9136487799,11,IN,AI Essential Training,Bootcamps,40,BootCamps And NRL
+Shivenn Gupta,shivenn.05.gupta@gmail.com,Aditya Pal,aditya.pal03@gmail.com,May 2025,Active,student,Mumbai Dadar,Delhi Public School International,9818715599,11,IN,AI Essential Training,Bootcamps,40,BootCamps And NRL
+Rohan Manchanda,manchanda.rohan09@gmail.com,Kapil Manchanda,manchanda.kapil@gmail.com,May 2025,Active,student,Mumbai Bandra,Lancers International School,9871292520,11,IN,AI Fellowship for Young Global Leaders,Bootcamps,30,BootCamps And NRL
+Bhavya Goyal,thebhavyagoyal@gmail.com,Amit Goyal,amit@goyalcrafts.com,May 2025,Active,student,Mumbai Dadar,Jayshree Periwal International School,9829052727,10,IN,AI Essential Training,Bootcamps,40,BootCamps And NRL
+Rohan Gupta,rohan.n.gupta718@gmail.com,Parag Gupta,parag.anju@gmail.com,May 2025,Active,student,Mumbai Dadar,Mallya Aditi International School,9663377660,11,IN,AI Essential Training,Bootcamps,40,BootCamps And NRL
+Anora Patel,anorapatel27@gmail.com,Tejash Patel,drsheetal.patel2739@gmail.com,May 2025,Active,student,Mumbai Dadar,NES International School Mumbai IB World School,9819120651,10,IN,AI Essential Training,Bootcamps,40,BootCamps And NRL
+Shivani Desai,shivanidesai462@gmail.com,Nikhil Desai,nikhilpdesai@gmail.com,May 2025,Active,student,Mumbai Bandra,Nahar International School,9769001155,8,IN,Summer Bootcamp - Robotics Hackathon,Bootcamps,10,BootCamps And NRL
+Ved Shrinivas,vedshrinivas1777@gmail.com,Parvathi shrinivas,par2212@yahoo.com,May 2025,Active,student,Pune,American school of Dubai,9.71548E+11,10,IN,Emerging Innovators Program,Bootcamps,70,BootCamps And NRL
+Krishang Mehra,mehra44423@gmail.com,Ruchi Agarwal,ruchi26.agar@gmail.com,May 2025,Active,student,School Premises,Singapore American School-Singapore,6584998086,9,IN,Emerging Innovators Program,Bootcamps,70,BootCamps And NRL
+Shriyan Yalamanchili,yshriyan@icloud.com,Sujit,sujity@gmail.com,May 2025,Active,student,Hyderabad,Dhirubhai Ambani International School,8179169599,9,IN,Emerging Innovators Program,Bootcamps,70,BootCamps And NRL
+Aniket Gaitonde,vbaliga@gmail.com,Vrinda,vbaliga@gmail.com,May 2025,Active,student,Hyderabad,Glendale Academy,9701007084,10,IN,Summer Camp - Robotics Senior,Bootcamps,40,BootCamps And NRL
+Maisha Rawat,mxrx.inbox@gmail.com,Mr Rawat,mxrx.inbox@gmail.com,May 2025,Active,student,Mumbai Dadar,RN Podar School,2261502845,6,IN,Summer Bootcamp - Robotics Hackathon,Bootcamps,10,BootCamps And NRL
+Anya Reddy,kabhishiktareddy@gmail.com,Dolly Reddy,kabhishiktareddy@gmail.com,May 2025,Active,student,Hyderabad,Oakridge,9703799696,5,IN,Summer Camp - Robotics Junior,Bootcamps,40,BootCamps And NRL
+Sohum Arora,sohumarora28@gmail.com,Namit Arora,namit.arora@indgrowth.com,May 2025,Active,student,Mumbai Dadar,Cathedral and John Connon School,9920936937,7,IN,National Robotics League Season 1 (2025),NRL,40,BootCamps And NRL
+Sai Doongursee,gaurang@deetec.in,Gaurang,gaurang@deetec.in,May 2025,Active,student,Mumbai Dadar,Don Bosco International School,9820710926,5,IN,Summer Bootcamp - Robotics Hackathon,Bootcamps,10,BootCamps And NRL
+Arth Marjadi,arth.marjadi@icloud.com,Kunal,kunalmarjadi@gmail.com,May 2025,Active,student,Mumbai Dadar,Dhirubhai Ambani International School,9833614680,5,IN,Summer Bootcamp - Robotics Hackathon,Bootcamps,10,BootCamps And NRL
+Bhuvanyu Kollareddy,uma.midwest@gmail.com,Uma Kollareddy,uma.midwest@gmail.com,May 2025,Active,student,Hyderabad,Chirec International School,9848733333,6,IN,Summer Camp - Robotics Junior,Bootcamps,40,BootCamps And NRL
+Neel lakhamraju,sowmya.lr@gmail.com,Sowmya lakhamraju,sowmya.lr@gmail.com,April 2025,Active,student,Hyderabad,The Shri Ram Academy-Hyderabad,8527209696,5,IN,Summer Camp - Robotics Junior,Bootcamps,40,BootCamps And NRL
+Keshav Rana Tripuraneni,cmdofficebbil15@gmail.com,Dr Jalachari Krishna Murthy Ella,cmdofficebbil15@gmail.com,April 2025,Active,student,Hyderabad,The Shri Ram Academy-Hyderabad,9948033444,5,IN,Summer Camp - Robotics Junior,Bootcamps,40,BootCamps And NRL
+Rohit Reddy Chinthireddy,csandeepreddy@gmail.com,Sandeep Reddy,csandeepreddy@gmail.com,April 2025,Active,student,Hyderabad,Chirec International School,8106371837,5,IN,Summer Camp - Robotics Junior,Bootcamps,40,BootCamps And NRL
+Devaansh Nara,ajy.nandu@gmail.com,Brahmani Nara,ajy.nandu@gmail.com,April 2025,Active,student,Hyderabad,Chirec International School,9502775678,4,IN,Summer Camp - Robotics Junior,Bootcamps,40,BootCamps And NRL
+Yuvana VED,unnati.muni@gmail.com,Unnati ved,unnati.muni@gmail.com,April 2025,Active,student,Hyderabad,Chirec International School,9848882009,5,IN,Summer Camp - Robotics Junior,Bootcamps,40,BootCamps And NRL
+Rayan Reddy,kitts29@gmail.com,Bhargavi Reddy,kitts29@gmail.com,April 2025,Active,student,Hyderabad,The Hyderabad Public School,9642358866,6,IN,Summer Camp - Robotics Junior,Bootcamps,40,BootCamps And NRL
+Vihaan Reddy,varunr@interbiz.in,Varun Reddy,varunr@interbiz.in,April 2025,Active,student,Hyderabad,The Premia Academy,9885500222,5,IN,Summer Camp - Robotics Junior,Bootcamps,40,BootCamps And NRL
+Sai Himesh,danitha0829@gmail.com,Anitha,danitha0829@gmail.com,April 2025,Active,student,Hyderabad,Sri Aurobindo International School,9490933914,7,IN,Summer Camp - Robotics Junior,Bootcamps,40,BootCamps And NRL
+Yuvaan Sethi,yuvaansethi@gmail.com,Prerak Sethi,preraksethi@gmail.com,April 2025,Active,student,Delhi NCR,Step by Step School,9711197066,8,IN,Advanced Mechatronics – Summer Cohort (Delhi),Bootcamps,40,BootCamps And NRL

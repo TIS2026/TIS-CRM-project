@@ -21,6 +21,8 @@ export default function NewLeadPage() {
   const [result, setResult] = useState<any>(null);
   const [users, setUsers] = useState<any[]>([]);
   const [customFields, setCustomFields] = useState<any[]>([]);
+  const [availableBuckets, setAvailableBuckets] = useState<string[]>([]);
+  const [availableLeadSources, setAvailableLeadSources] = useState<string[]>([]);
 
   useEffect(() => {
     fetch('/api/users')
@@ -32,12 +34,15 @@ export default function NewLeadPage() {
       .then(res => res.json())
       .then(data => setCustomFields(data))
       .catch(console.error);
+      
+    fetch('/api/filters')
+      .then(res => res.json())
+      .then(data => {
+        setAvailableBuckets(data.buckets || []);
+        setAvailableLeadSources(data.leadSources || []);
+      })
+      .catch(console.error);
   }, []);
-
-  const leadSources = [
-    'Referral', 'Walk-in', 'Website Inquiry', 'Ad Campaign', 
-    'Repeat - Inbound', 'Agent Outreach', 'Event/Workshop', 'Other'
-  ];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -172,23 +177,15 @@ export default function NewLeadPage() {
             <label>Lead Source *</label>
             <select required name="leadSource" value={formData.leadSource} onChange={handleChange}>
               <option value="">Select a Source...</option>
-              {leadSources.map(src => <option key={src} value={src}>{src}</option>)}
+              {availableLeadSources.map(src => <option key={src} value={src}>{src}</option>)}
             </select>
           </div>
           <div>
             <label>Bucket</label>
-            <input 
-              name="bucket"
-              value={formData.bucket}
-              onChange={handleChange}
-              placeholder="e.g. Hot, Warm, Cold"
-              list="bucket-suggestions"
-            />
-            <datalist id="bucket-suggestions">
-              <option value="Hot" />
-              <option value="Warm" />
-              <option value="Cold" />
-            </datalist>
+            <select name="bucket" value={formData.bucket} onChange={handleChange}>
+              <option value="">Select a Bucket...</option>
+              {availableBuckets.map(bucket => <option key={bucket} value={bucket}>{bucket}</option>)}
+            </select>
           </div>
         </div>
 

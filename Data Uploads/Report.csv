@@ -1,0 +1,1384 @@
+course_name,student_name,mentor_name,enrolled_date,course_duration_hours,scheduled_hours,completed_hours,pending_hours,bucket
+Electronics Junior,Abeer Desai,Aakash Karmarkar,02-June-2025,15,1.5,1.5,0,Report
+Electronics Junior,Nikkhil Malkani,Aakash Karmarkar,28-July-2025,15,3,3,0,Report
+Electronics Junior,Shivansh  Gandhi,Aakash Karmarkar,19-June-2025,15,1.5,1.5,0,Report
+Mechatronics Intermediate,Abeer Desai,Aakash Karmarkar,23-June-2025,24,12,12,0,Report
+AI Essentials 2025-26,Vihan Kumar,Aastha Basu ,09-April-2026,60,92,24,68,Report
+VEX IQ Competition,Abir Daga,Abhishek More,21-August-2025,100,34.5,19,15.5,Report
+VEX IQ Competition,Dazstaan  Rai,Abhishek More,13-September-2025,100,34.5,14.5,20,Report
+VEX IQ Competition,Ira Kumar,Abhishek More,07-August-2025,100,34.5,19,15.5,Report
+VEX IQ Competition,Kiaan Doshi,Abhishek More,30-May-2025,100,34.5,14.5,20,Report
+VEX IQ Competition,Leela Bansal,Abhishek More,25-August-2025,100,34.5,17,17.5,Report
+VEX IQ Competition,Nihira Marathe,Abhishek More,08-August-2025,100,34.5,19,15.5,Report
+VEX IQ Competition,Nivaann Chopra,Abhishek More,29-May-2025,100,34.5,14,20.5,Report
+VEX IQ Competition,Riaan Gowani,Abhishek More,20-August-2025,100,34.5,16,18.5,Report
+VEX IQ Competition,Sara Shah,Abhishek More,31-May-2025,100,34.5,19,15.5,Report
+VEX IQ Competition,SHAHANA BASU,Abhishek More,30-May-2025,100,34.5,14.5,20,Report
+VEX IQ Competition,Srousha  Bisht,Abhishek More,08-August-2025,100,34.5,16,18.5,Report
+VEX IQ Competition,Viraj Chopra,Abhishek More,28-May-2025,100,34.5,11.5,23,Report
+VEX IQ Competition,Zahaan  Vahanvati,Abhishek More,29-May-2025,100,34.5,14.5,20,Report
+Electronics Junior,Vivaan Gupta,Ajinkya Giri,30-May-2026,15,3,0,3,Report
+NI Junior (10 Hours),Riaan Shah,Ajinkya Giri,31-March-2026,10,9.5,9.5,0,Report
+Python Programming - Beginner,Jahangir Cooper,Ajinkya Giri,17-June-2025,24,1,1,0,Report
+Python Programming - Beginner,Sumaya Bhalla,Ajinkya Giri,04-June-2025,24,24,14.5,9.5,Report
+WRO Future Engineers (2026),Rehaan Dhandhia,Ajinkya Giri,18-March-2026,110,29,24,5,Report
+WRO Future Engineers (2026),Shaurya  Sule,Ajinkya Giri,24-March-2026,110,29,23,6,Report
+WRO Future Engineers (2026),Zeus Wadia,Ajinkya Giri,16-March-2026,110,29,25,4,Report
+Electronics Junior,Neha Kallapur,Akhil Menon,10-December-2025,15,15,3,12,Report
+Mechatronics Intermediate,Ananth Dharmaraju,Akhil Menon,30-July-2025,24,12,12,0,Report
+Robotics Foundation Program,Abel Mario Joseph,Akhil Menon,28-September-2025,40,10,0,10,Report
+Robotics Foundation Program,Adhvay Satish,Akhil Menon,02-October-2025,40,10,0,10,Report
+Robotics Foundation Program,Aditya Rao,Akhil Menon,24-September-2025,40,10,0,10,Report
+Robotics Foundation Program,Akshat Vangala,Akhil Menon,27-September-2025,40,10,0,10,Report
+Robotics Foundation Program,Ansh Khandelwal,Akhil Menon,25-September-2025,40,10,0,10,Report
+Robotics Foundation Program,Anvay Rajan,Akhil Menon,25-September-2025,40,10,0,10,Report
+Robotics Foundation Program,Anya Patnaik,Akhil Menon,02-October-2025,40,10,0,10,Report
+Robotics Foundation Program,Aria Nandi,Akhil Menon,26-September-2025,40,10,0,10,Report
+Robotics Foundation Program,Arth Swaroop,Akhil Menon,25-September-2025,40,10,0,10,Report
+Robotics Foundation Program,Daksh Singh,Akhil Menon,25-September-2025,40,10,0,10,Report
+Robotics Foundation Program,Dhriti Mani,Akhil Menon,26-September-2025,40,10,0,10,Report
+Robotics Foundation Program,Dia Tarun,Akhil Menon,01-October-2025,40,10,0,10,Report
+Robotics Foundation Program,Divit Pradhan,Akhil Menon,02-October-2025,40,10,0,10,Report
+Robotics Foundation Program,Krishnav Mohanty,Akhil Menon,25-September-2025,40,10,0,10,Report
+Robotics Foundation Program,Kyra Shewani,Akhil Menon,28-September-2025,40,10,0,10,Report
+Robotics Foundation Program,Nabhya Gupta,Akhil Menon,02-October-2025,40,10,0,10,Report
+Robotics Foundation Program,Pranay Mehta,Akhil Menon,26-September-2025,40,10,0,10,Report
+Robotics Foundation Program,Rishi Kommineni,Akhil Menon,24-September-2025,40,10,0,10,Report
+Robotics Foundation Program,Ryan Oberoi,Akhil Menon,01-October-2025,40,10,0,10,Report
+Robotics Foundation Program,Shreya Jindia,Akhil Menon,08-October-2025,40,10,0,10,Report
+Robotics Foundation Program,SIDDHANTH PATHI AJAY,Akhil Menon,29-September-2025,40,10,0,10,Report
+WRO 2026 - Future Innovators (Cohort of 3),Aarav Jaisingh,Akhil Menon,27-February-2026,45,2,2,0,Report
+WRO 2026 - Future Innovators (Cohort of 3),Devansh Ram Reddy Giddaluru,Akhil Menon,27-February-2026,45,2,2,0,Report
+WRO 2026 - Future Innovators (Cohort of 3),Riya Swamy,Akhil Menon,27-February-2026,45,2,2,0,Report
+3D CAD,Ansh Patel,Akshat Shah,24-April-2026,24,27.5,27.5,0,Report
+3D CAD,Dev Karan Singh,Akshat Shah,30-May-2026,24,24,22,2,Report
+3D CAD,Dhia Ghalla,Akshat Shah,12-September-2025,24,23.5,22.5,1,Report
+3D CAD,Piyansh Kaarthik,Akshat Shah,19-July-2025,24,24,24,0,Report
+3D CAD,Sanjay K Singh,Akshat Shah,30-May-2026,24,24,16.5,7.5,Report
+3D CAD,Vanshika Lamba,Akshat Shah,06-January-2026,24,30,22.5,7.5,Report
+3D CAD,Vedant Baljee,Akshat Shah,17-March-2026,24,18,14,4,Report
+3D CAD,yuvraj somani,Akshat Shah,27-April-2025,24,7.5,4.5,3,Report
+Electronics Junior,Praneet Modi,Akshat Shah,20-April-2026,15,12,6,6,Report
+Electronics Junior,Reyaan Dhulla,Akshat Shah,20-April-2026,15,12,6,6,Report
+Mechatronics Intermediate,Aeyanah Sanganeria,Akshat Shah,10-July-2025,24,12,7.5,4.5,Report
+Mechatronics Intermediate,Aman Goenka,Akshat Shah,12-June-2026,24,22,6,16,Report
+Mechatronics Intermediate,Anay Siraslewala,Akshat Shah,31-March-2026,24,3,3,0,Report
+Mechatronics Intermediate,ARJUN  DEDHIA,Akshat Shah,09-September-2025,24,31.5,28,3.5,Report
+Mechatronics Intermediate,Avika Kedia,Akshat Shah,21-November-2025,24,18,4,14,Report
+Mechatronics Intermediate,Avir Oberoi,Akshat Shah,21-July-2025,24,8,4,4,Report
+Mechatronics Intermediate,Avyaan Singh,Akshat Shah,26-December-2025,24,2,2,0,Report
+Mechatronics Intermediate,Ayush Ladsariya,Akshat Shah,23-December-2025,24,2,2,0,Report
+Mechatronics Intermediate,Devansh Jaju,Akshat Shah,26-November-2025,24,6,6,0,Report
+Mechatronics Intermediate,Diya Chandarana,Akshat Shah,19-June-2025,24,12,6,6,Report
+Mechatronics Intermediate,Hunar Lamba,Akshat Shah,16-March-2026,24,1,1,0,Report
+Mechatronics Intermediate,Kabir Chheda,Akshat Shah,28-January-2026,24,6,4.5,1.5,Report
+Mechatronics Intermediate,Kartikeya  Pandya,Akshat Shah,28-June-2025,24,11,11,0,Report
+Mechatronics Intermediate,Nishkka Siraslewala,Akshat Shah,31-March-2026,24,3,3,0,Report
+Mechatronics Intermediate,Nivaan  Tanna,Akshat Shah,15-September-2025,24,14,14,0,Report
+Mechatronics Intermediate,Reyansh Rathi,Akshat Shah,26-December-2025,24,2,2,0,Report
+Mechatronics Intermediate,Riaan Banerjee,Akshat Shah,26-April-2026,24,22,14,8,Report
+Mechatronics Intermediate,Rudraang Goenka,Akshat Shah,07-February-2026,24,2,2,0,Report
+Mechatronics Intermediate,Shivanya Maheshwari,Akshat Shah,08-October-2025,24,33,21,12,Report
+Mechatronics Intermediate,Shourya Mehta,Akshat Shah,21-July-2025,24,12,12,0,Report
+Mechatronics Intermediate,veer kacker,Akshat Shah,29-June-2026,24,10.5,0,10.5,Report
+Mechatronics Intermediate,Yuvaan Vora,Akshat Shah,04-September-2025,24,1.5,1.5,0,Report
+Mechatronics Intermediate,Yuval Molad,Akshat Shah,14-November-2025,24,22.5,22.5,0,Report
+Mechatronics Intermediate,Yuvraj Jhaveri,Akshat Shah,21-January-2026,24,6,4,2,Report
+Mechatronics Intermediate,Zera Parekh,Akshat Shah,31-May-2025,24,5,5,0,Report
+NI Advanced 20 Hours,HUSAYN MERCHANT,Akshat Shah,05-August-2025,20,1.25,1.25,0,Report
+NI Advanced 40 Hours,Agastya Mundhe,Akshat Shah,26-March-2026,40,23,12.5,10.5,Report
+NI Advanced 40 Hours,Arin Mathew,Akshat Shah,24-April-2026,40,8.5,7,1.5,Report
+NI Advanced 40 Hours,Arjun Jhaveri,Akshat Shah,13-May-2026,40,9,4.5,4.5,Report
+NI Advanced 40 Hours,Dev Karan Singh,Akshat Shah,11-June-2026,40,13.5,1,12.5,Report
+NI Advanced 40 Hours,Niyant Shah,Akshat Shah,17-April-2026,40,3,3,0,Report
+NI Advanced 40 Hours,SHREY SHAH,Akshat Shah,03-April-2026,40,28,27,1,Report
+NI Advanced 40 Hours,Varish Agarwal,Akshat Shah,25-May-2025,40,32.5,24.5,8,Report
+NI Advanced 40 Hours,Vivaan  Bafna,Akshat Shah,26-May-2025,40,11,11,0,Report
+NI Advanced 50 Hours,Naavya garg,Akshat Shah,20-August-2025,50,13.5,13.5,0,Report
+NI Advanced 60 Hours,Vivaan Joshi,Akshat Shah,30-August-2025,60,3.5,3.5,0,Report
+NI Junior,Krishiv Roongta,Akshat Shah,29-January-2026,30,22.5,22.5,0,Report
+NI Junior (20 hours),Arjun Dedhia,Akshat Shah,02-May-2026,20,2,2,0,Report
+WRO 2026 - Future Innovators (Cohort of 2),Sahana Vijay,Akshat Shah,08-April-2026,45,3.5,3.5,0,Report
+WRO 2026 - Future Innovators (Cohort of 2),Zahra Memon,Akshat Shah,15-April-2026,45,3.5,3.5,0,Report
+WRO 2026 - Future Innovators (Cohort of 3),Ayaan  Merchant,Akshat Shah,10-January-2026,45,1.5,1.5,0,Report
+WRO 2026 - Future Innovators (Cohort of 3),Ivaan  Sundesha,Akshat Shah,10-January-2026,45,1.5,1.5,0,Report
+WRO 2026 - Future Innovators (Cohort of 3),Jaiveer Mahadevia,Akshat Shah,10-January-2026,45,1.5,1.5,0,Report
+WRO 2026 - Future Innovators (Cohort of 3),Khush Byramjee,Akshat Shah,20-March-2026,45,53,43.5,9.5,Report
+WRO 2026 - Future Innovators (Cohort of 3),Krishiv Desai,Akshat Shah,11-April-2026,45,53,43.5,9.5,Report
+WRO 2026 - Future Innovators (Cohort of 3),Ohm Shah,Akshat Shah,10-April-2026,45,53,41.5,11.5,Report
+FRC CAD Skill Building,Ishaan  Panicker,Akshay  Marvaniya,16-June-2026,24,20,16,4,Report
+FRC CAD Skill Building - DAIS,Aarav Doshi,Akshay  Marvaniya,25-July-2025,24,14,8,6,Report
+FRC CAD Skill Building - DAIS,Aditya Choudhary,Akshay  Marvaniya,26-July-2025,24,14,8,6,Report
+FRC CAD Skill Building - DAIS,Nandini Agrawal,Akshay  Marvaniya,26-July-2025,24,14,2,12,Report
+FRC CAD Skill Building - DAIS,Rutu Yadav,Akshay  Marvaniya,26-July-2025,24,14,10,4,Report
+FRC CAD Skill Building - DAIS,Saanvie Seth,Akshay  Marvaniya,02-August-2025,24,14,0,14,Report
+FRC CAD Skill Building - DAIS,Tvishaa Prabhu,Akshay  Marvaniya,27-July-2025,24,14,8,6,Report
+FRC CAD Skill Building - DAIS,Vihan Kumar,Akshay  Marvaniya,29-July-2025,24,14,8,6,Report
+Internet of Things Advanced,Avyan Bhojnagarwala,Amir Zakaria,07-October-2025,24,18,18,0,Report
+Electronics Junior,Trikay Kapoor Agarwal,Amir Zakaria,26-September-2025,15,1,1,0,Report
+Electronics Senior - Arduino,Hridaan Jain,Amir Zakaria,13-October-2025,24,16,16,0,Report
+Mechatronics Intermediate,MUDIT SHAH,Amir Zakaria,16-November-2025,24,6,6,0,Report
+Mechatronics Intermediate,Neev Shetye,Amir Zakaria,15-October-2025,24,10.5,10.5,0,Report
+Mechatronics Intermediate,Ridhaan Modi,Amir Zakaria,19-September-2025,24,7,7,0,Report
+NI Advanced 10 Hours,Abir  Chhatwal,Amir Zakaria,15-November-2025,10,1.5,1.5,0,Report
+Electronics Junior,Dhruv Madhusudan,Anant Khadapkar,28-July-2025,15,2,2,0,Report
+Electronics Junior,Prish Hemani,Anant Khadapkar,14-July-2025,15,15,15,0,Report
+Electronics Junior,Ridhaan Modi,Anant Khadapkar,12-August-2025,15,7.5,7.5,0,Report
+Electronics Junior,Tashi Gupta,Anant Khadapkar,30-May-2025,15,12,12,0,Report
+Electronics Junior,Trikay Kapoor Agarwal,Anant Khadapkar,26-September-2025,15,3,3,0,Report
+Mechatronics Intermediate,Abir Daga,Anant Khadapkar,23-May-2025,24,3,3,0,Report
+Mechatronics Intermediate,Avantika Soni,Anant Khadapkar,31-July-2025,24,7.5,7.5,0,Report
+Mechatronics Intermediate,Avyaan Singh,Anant Khadapkar,26-December-2025,24,7.5,5.5,2,Report
+Mechatronics Intermediate,Ayush Ladsariya,Anant Khadapkar,23-December-2025,24,7.5,5.5,2,Report
+Mechatronics Intermediate,Mihir Cooper,Anant Khadapkar,13-June-2025,24,20,20,0,Report
+Mechatronics Intermediate,rayaan maloo,Anant Khadapkar,29-July-2025,24,15,9,6,Report
+Mechatronics Intermediate,Reyansh Rathi,Anant Khadapkar,26-December-2025,24,7.5,5.5,2,Report
+Mechatronics Intermediate,Ridhaan Modi,Anant Khadapkar,19-September-2025,24,4.5,4.5,0,Report
+Mechatronics Intermediate,Shaurya Kathuria,Anant Khadapkar,02-June-2025,24,12,12,0,Report
+Mechatronics Intermediate,Vihaan Chheda,Anant Khadapkar,01-August-2025,24,9,7.5,1.5,Report
+Mechatronics Intermediate,Zayne Malkani,Anant Khadapkar,28-July-2025,24,9,4.5,4.5,Report
+Robotics Foundation Program,Aarit Gopalkrishnan,Anant Khadapkar,17-October-2025,40,15,5,10,Report
+Robotics Foundation Program,Aarush Kadakia,Anant Khadapkar,28-October-2025,40,15,0,15,Report
+Robotics Foundation Program,Atharv Sinha,Anant Khadapkar,17-October-2025,40,15,0,15,Report
+Robotics Foundation Program,Ira Raghavan,Anant Khadapkar,17-October-2025,40,15,0,15,Report
+Robotics Foundation Program,Mahika Garg,Anant Khadapkar,17-October-2025,40,26.5,10,16.5,Report
+Robotics Foundation Program,Mahir Thadani,Anant Khadapkar,17-October-2025,40,26.5,2.5,24,Report
+Robotics Foundation Program,Nandini Chatterjee,Anant Khadapkar,28-October-2025,40,15,0,15,Report
+Robotics Foundation Program,Reyansh Gandhi,Anant Khadapkar,17-October-2025,40,26.5,7.5,19,Report
+Robotics Foundation Program,Reyansh Govindaraju,Anant Khadapkar,17-October-2025,40,15,2.5,12.5,Report
+Robotics Foundation Program,Ria Sanghavi,Anant Khadapkar,28-October-2025,40,15,5,10,Report
+Robotics Foundation Program,Riana Arenja,Anant Khadapkar,17-October-2025,40,15,2.5,12.5,Report
+Robotics Foundation Program,Riddhi Shankar,Anant Khadapkar,17-October-2025,40,15,2.5,12.5,Report
+Robotics Foundation Program,Shaurya Jain,Anant Khadapkar,17-October-2025,40,15,0,15,Report
+Robotics Foundation Program,Siddharth Khanna,Anant Khadapkar,28-October-2025,40,26.5,10,16.5,Report
+Robotics Foundation Program,Vivan Sheth,Anant Khadapkar,17-October-2025,40,26.5,7.5,19,Report
+Robotics Foundation Program,Yannick Lokur,Anant Khadapkar,28-October-2025,40,15,0,15,Report
+Internet of Things Advanced,Avyan Bhojnagarwala,Aniket Karkala,07-October-2025,24,13,13,0,Report
+Electronics Junior,Ari D’Almeida,Aniket Karkala,12-December-2025,15,15,13.5,1.5,Report
+Electronics Junior,Avyay Pant,Aniket Karkala,13-May-2026,15,15,15,0,Report
+Electronics Junior,Ayaan Sunny Shah,Aniket Karkala,06-January-2026,15,1.5,1.5,0,Report
+Electronics Junior,Eeshaan Aggarwal,Aniket Karkala,17-June-2026,15,15,7.5,7.5,Report
+Electronics Junior,Kavya Kumar,Aniket Karkala,22-July-2025,15,6,2,4,Report
+Electronics Junior,Meera Kamat,Aniket Karkala,12-February-2026,15,15,13.5,1.5,Report
+Electronics Junior,Ranveer sehgal,Aniket Karkala,25-November-2025,15,13.5,13.5,0,Report
+Electronics Junior,Reyaan Mehta,Aniket Karkala,13-February-2026,15,18,14,4,Report
+Electronics Junior,Shaurya Goel,Aniket Karkala,18-April-2026,15,15,15,0,Report
+Electronics Junior,Tavish Mundra,Aniket Karkala,25-June-2026,15,15,1.5,13.5,Report
+Electronics Junior,Trikay Kapoor Agarwal,Aniket Karkala,26-September-2025,15,7.5,7.5,0,Report
+Electronics Junior,Vikram Samtani,Aniket Karkala,19-July-2025,15,3,3,0,Report
+Electronics Senior - Arduino,Aariket Bharech,Aniket Karkala,09-May-2026,24,24,24,0,Report
+Electronics Senior - Arduino,Agniv Roy,Aniket Karkala,18-May-2026,24,25,20,5,Report
+Electronics Senior - Arduino,Anaya Gupta,Aniket Karkala,02-December-2025,24,24,24,0,Report
+Electronics Senior - Arduino,Aviraj Damani,Aniket Karkala,09-December-2025,24,23,23,0,Report
+Electronics Senior - Arduino,Ayaan Kapadia,Aniket Karkala,29-January-2026,24,28,28,0,Report
+Electronics Senior - Arduino,Kian Contractor,Aniket Karkala,02-December-2025,24,24,24,0,Report
+Electronics Senior - Arduino,Neev Shetye,Aniket Karkala,26-February-2026,24,24,24,0,Report
+Electronics Senior - Arduino,Nihira Marathe,Aniket Karkala,28-March-2026,24,24,24,0,Report
+Electronics Senior - Arduino,Nysa Shetye,Aniket Karkala,26-February-2026,24,24,24,0,Report
+Electronics Senior - Arduino,Reyansh Chandra,Aniket Karkala,24-April-2026,24,24,24,0,Report
+Electronics Senior - Arduino,Shaurya Goel,Aniket Karkala,09-May-2026,24,24,18,6,Report
+Electronics Senior - Arduino,Shiven Agrawal,Aniket Karkala,14-March-2026,24,24,16,8,Report
+Electronics Senior - Arduino,Viaanraj Singh,Aniket Karkala,12-February-2026,24,20,20,0,Report
+Electronics Senior - Arduino,Vidit Shukla,Aniket Karkala,07-May-2026,24,25,23,2,Report
+Electronics Senior - Arduino,Vir Govani,Aniket Karkala,25-March-2026,24,28,22,6,Report
+Electronics Senior - Arduino,Vivan Khatry,Aniket Karkala,02-December-2025,24,27.5,27.5,0,Report
+Electronics Senior - Arduino,Yuvraj Saraogi,Aniket Karkala,26-May-2026,24,15.5,5.5,10,Report
+Mechatronics Beginner,Amay Bhatter,Aniket Karkala,09-January-2026,24,13.5,12,1.5,Report
+Mechatronics Beginner,Tarsh Chitlangia,Aniket Karkala,12-December-2025,24,10,10,0,Report
+Mechatronics Intermediate,Aria Britto,Aniket Karkala,04-March-2026,24,10,10,0,Report
+Mechatronics Intermediate,Avyaan Singh,Aniket Karkala,26-December-2025,24,2,2,0,Report
+Mechatronics Intermediate,Ayush Ladsariya,Aniket Karkala,23-December-2025,24,2,2,0,Report
+Mechatronics Intermediate,Dev Dwarkadas,Aniket Karkala,06-October-2025,24,12,10.5,1.5,Report
+Mechatronics Intermediate,Hrisha  Badheka,Aniket Karkala,19-May-2025,24,1.5,0,1.5,Report
+Mechatronics Intermediate,MUDIT SHAH,Aniket Karkala,16-November-2025,24,1.5,1.5,0,Report
+Mechatronics Intermediate,Nivaan  Mashru,Aniket Karkala,27-October-2025,24,1,1,0,Report
+Mechatronics Intermediate,Nysa Shetye,Aniket Karkala,15-October-2025,24,18,16.5,1.5,Report
+Mechatronics Intermediate,Parth jain,Aniket Karkala,28-November-2025,24,13.5,13.5,0,Report
+Mechatronics Intermediate,Reyansh Rathi,Aniket Karkala,26-December-2025,24,2,2,0,Report
+Mechatronics Intermediate,Vyom Kamat,Aniket Karkala,12-February-2026,24,13.5,11.5,2,Report
+NI Advanced 20 Hours,Agneya Nair,Aniket Karkala,27-February-2026,20,18,18,0,Report
+NI Advanced 20 Hours,Avyaan Singh,Aniket Karkala,27-February-2026,20,18,18,0,Report
+NI Advanced 20 Hours,Rohit Ferreira,Aniket Karkala,26-June-2026,20,0.5,0.5,0,Report
+NI Junior,Avyan Bhojnagarwala,Aniket Karkala,26-May-2026,30,2,2,0,Report
+NI Junior,Ayaan Kapadia,Aniket Karkala,26-June-2026,30,29,3,26,Report
+NI Junior (10 Hours),Srousha  Bisht,Aniket Karkala,25-April-2026,10,1.5,1.5,0,Report
+Design Foundation,Trikay Kapoor Agarwal,Ankit Chheda,18-June-2025,15,1,1,0,Report
+Electronics Junior,Armaan Kothari,Ankit Chheda,17-May-2025,15,10.5,9,1.5,Report
+Electronics Junior,Ranveer sehgal,Ankit Chheda,25-November-2025,15,1.5,1.5,0,Report
+Electronics Junior,Reyansh Subramanian,Ankit Chheda,04-December-2025,15,15,13.5,1.5,Report
+Electronics Junior,Ridharv Shankar,Ankit Chheda,17-July-2025,15,15,15,0,Report
+Electronics Junior,Shivansh  Gandhi,Ankit Chheda,19-June-2025,15,13.5,13.5,0,Report
+Electronics Junior,Veer Mahajan,Ankit Chheda,22-November-2025,15,15,15,0,Report
+Electronics Junior - AI Extension,Aarav Gupta,Ankit Chheda,05-August-2025,15,15,15,0,Report
+Electronics Senior - Arduino,Aayan Asthana,Ankit Chheda,23-June-2025,24,6,6,0,Report
+Electronics Senior - Arduino,Reyansh Subramanian,Ankit Chheda,26-September-2025,24,5,5,0,Report
+Electronics Senior - Arduino,Ridharv Shankar,Ankit Chheda,26-August-2025,24,24,24,0,Report
+Electronics Senior - Arduino,Saisha Ajmera,Ankit Chheda,27-December-2025,24,14,14,0,Report
+Mechatronics Advance,Arnav Bansal,Ankit Chheda,11-September-2025,24,12,10,2,Report
+Mechatronics Intermediate,Aarna Chandak,Ankit Chheda,30-January-2026,24,9,9,0,Report
+Mechatronics Intermediate,Kush Tyagi,Ankit Chheda,26-December-2025,24,8,6.5,1.5,Report
+Mechatronics Intermediate,MUDIT SHAH,Ankit Chheda,16-November-2025,24,4.5,4.5,0,Report
+Mechatronics Intermediate,Neev Shetye,Ankit Chheda,15-October-2025,24,1.5,1.5,0,Report
+Mechatronics Intermediate,Rajveer Kothari,Ankit Chheda,13-August-2025,24,6,4.5,1.5,Report
+Mechatronics Intermediate,Srousha  Bisht,Ankit Chheda,20-June-2025,24,9.5,9.5,0,Report
+Mechatronics Intermediate,Vihaan Chheda,Ankit Chheda,01-August-2025,24,3,3,0,Report
+NI Advanced 20 Hours,Agneya Nair,Ankit Chheda,27-February-2026,20,2,2,0,Report
+NI Advanced 20 Hours,Avyaan Singh,Ankit Chheda,27-February-2026,20,2,2,0,Report
+NI Advanced 20 Hours,Rohit Ferreira,Ankit Chheda,26-June-2026,20,0.5,0,0.5,Report
+NI Advanced 30 Hours,AMAIRA CHAUHAN,Ankit Chheda,01-September-2025,30,23,23,0,Report
+NI Advanced 40 Hours,Abir  Chhatwal,Ankit Chheda,20-June-2026,40,1,0.5,0.5,Report
+NI Advanced 40 Hours,Aditya Bhura,Ankit Chheda,22-July-2025,40,28.5,26.5,2,Report
+NI Advanced 40 Hours,Ahaan Kapadia,Ankit Chheda,18-April-2026,40,5.5,3.5,2,Report
+NI Advanced 40 Hours,Anoshka Kulkarni,Ankit Chheda,26-December-2025,40,3,3,0,Report
+NI Advanced 40 Hours,Armaan Baliga,Ankit Chheda,18-June-2026,40,0.5,0,0.5,Report
+NI Advanced 40 Hours,Arnav Bansal,Ankit Chheda,11-April-2026,40,1,0.5,0.5,Report
+NI Advanced 40 Hours,Avinandan Sarkar,Ankit Chheda,14-June-2025,40,19,19,0,Report
+NI Advanced 40 Hours,Avir Raisinghani,Ankit Chheda,23-April-2026,40,5.5,5.5,0,Report
+NI Advanced 40 Hours,Ishaan Talati,Ankit Chheda,19-March-2026,40,15,13,2,Report
+NI Advanced 40 Hours,JAINAM KAWEDIA,Ankit Chheda,30-March-2026,40,17,17,0,Report
+NI Advanced 40 Hours,Kaashvi Kumar,Ankit Chheda,12-June-2026,40,1,1,0,Report
+NI Advanced 40 Hours,Nehan Ali,Ankit Chheda,18-June-2026,40,0.5,0.5,0,Report
+NI Advanced 40 Hours,Nivaan Patel,Ankit Chheda,26-June-2026,40,1.5,0,1.5,Report
+NI Advanced 40 Hours,Prerna Goel,Ankit Chheda,04-June-2026,40,1.5,1,0.5,Report
+NI Advanced 40 Hours,Prisha Deshmukh,Ankit Chheda,13-June-2026,40,0.5,0,0.5,Report
+NI Advanced 40 Hours,Raghav Dalvie,Ankit Chheda,29-April-2026,40,2,1,1,Report
+NI Advanced 40 Hours,Rajveer Maheshwari,Ankit Chheda,01-June-2026,40,25,9,16,Report
+NI Advanced 40 Hours,Ria Chavan,Ankit Chheda,18-May-2026,40,14.5,6.5,8,Report
+NI Advanced 40 Hours,Rihaan Sodhani,Ankit Chheda,30-August-2025,40,36.5,36.5,0,Report
+NI Advanced 40 Hours,Rivaan Dalal,Ankit Chheda,24-September-2025,40,5.5,5.5,0,Report
+NI Advanced 40 Hours,Saiesha Malani,Ankit Chheda,04-November-2025,40,40,32,8,Report
+NI Advanced 40 Hours,Samaira goyal,Ankit Chheda,27-April-2026,40,1.5,1.5,0,Report
+NI Advanced 40 Hours,Sanaa Kanchwala,Ankit Chheda,15-June-2026,40,13,0.5,12.5,Report
+NI Advanced 40 Hours,Shaurya Shah,Ankit Chheda,25-February-2026,40,4.5,4.5,0,Report
+NI Advanced 40 Hours,Sparrsh Gupta,Ankit Chheda,22-July-2025,40,26,26,0,Report
+NI Advanced 40 Hours,Vedant Agarwal,Ankit Chheda,27-September-2025,40,12.5,10,2.5,Report
+NI Advanced 40 Hours,Venesha Bharwada,Ankit Chheda,23-June-2025,40,7.5,7.5,0,Report
+NI Advanced 40 Hours,VIHAAN BINAYKIA,Ankit Chheda,22-June-2026,40,8.5,0.5,8,Report
+NI Advanced 40 Hours,Vivaan Dumir,Ankit Chheda,13-June-2026,40,1,0.5,0.5,Report
+NI Advanced 50 Hours,Ashvath Karnad,Ankit Chheda,25-June-2026,50,0.5,0,0.5,Report
+NI Advanced 50 Hours,Paarth Somani,Ankit Chheda,29-January-2026,50,6,4.5,1.5,Report
+NI Advanced 50 Hours,Riya Asthana,Ankit Chheda,05-September-2025,50,42,42,0,Report
+NI Advanced 50 Hours,Shivang Jajodia,Ankit Chheda,02-January-2026,50,40.5,25,15.5,Report
+NI Advanced 50 Hours,Vyom Shah,Ankit Chheda,21-August-2025,50,10.5,9.5,1,Report
+Summer Bootcamp - Robotics Hackathon,Diviyanaa  Deshmukh,Ankit Chheda,01-June-2025,10,10,10,0,Report
+Summer Bootcamp - Robotics Hackathon,Vansh  Deshmukh,Ankit Chheda,31-May-2025,10,10,10,0,Report
+WRO 2026 - Future Innovators (Cohort of 2),Aarav Gupta,Ankit Chheda,02-March-2026,45,14,11,3,Report
+WRO 2026 - Future Innovators (Cohort of 2),Shanaya Gupta,Ankit Chheda,02-March-2026,45,14,11,3,Report
+WRO 2026 - Future Innovators (Cohort of 3),Nivaan  Mashru,Ankit Chheda,18-February-2026,45,45,39.5,5.5,Report
+WRO 2026 - Future Innovators (Cohort of 3),Ridhaan Modi,Ankit Chheda,26-February-2026,45,45,39.5,5.5,Report
+WRO 2026 - Future Innovators (Cohort of 3),Ridharv Shankar,Ankit Chheda,19-February-2026,45,45,39.5,5.5,Report
+Design Foundation,Ari D’Almeida,Anthony Dsouza,25-March-2026,15,19.5,13.5,6,Report
+Design Foundation,Keyaan Shah,Anthony Dsouza,06-May-2026,15,1.5,1.5,0,Report
+Design Foundation,Mahika Ghai,Anthony Dsouza,30-April-2026,15,15,13.5,1.5,Report
+Design Foundation,Vihaan Poddar,Anthony Dsouza,28-February-2026,15,2,2,0,Report
+Electronics Junior,Advait Adukia,Anthony Dsouza,29-April-2026,15,12,2,10,Report
+Electronics Junior,Kabir Kumar,Anthony Dsouza,10-June-2026,15,16.5,4.5,12,Report
+Electronics Junior,Kiah Sharma,Anthony Dsouza,19-May-2026,15,16.5,15,1.5,Report
+Electronics Junior,Mahika Ghai,Anthony Dsouza,27-March-2026,15,15,15,0,Report
+Electronics Junior,Neil Dolwani,Anthony Dsouza,04-March-2026,15,15,15,0,Report
+Electronics Junior,Neil Rana,Anthony Dsouza,21-February-2026,15,15,15,0,Report
+Electronics Junior,Prithvi Ajith Menon,Anthony Dsouza,03-June-2026,15,15,1.5,13.5,Report
+Electronics Junior,Ryan Gandhi,Anthony Dsouza,20-May-2026,15,15,7.5,7.5,Report
+Electronics Junior,Saiyam Bassi,Anthony Dsouza,27-February-2026,15,15,15,0,Report
+Electronics Junior,Samaira Bhansali,Anthony Dsouza,01-June-2026,15,15,9,6,Report
+Electronics Junior - AI Extension,Amay Bhatter,Anthony Dsouza,26-June-2026,15,15,3,12,Report
+Electronics Junior - AI Extension,Ayaan Sunny Shah,Anthony Dsouza,29-May-2026,15,15,4.5,10.5,Report
+Electronics Senior - Arduino,Arhaan Sethi,Anthony Dsouza,03-April-2026,24,10,10,0,Report
+Electronics Senior - Arduino,Arjun Anand,Anthony Dsouza,20-May-2026,24,24,14,10,Report
+Electronics Senior - Arduino,Kian Dinavahi,Anthony Dsouza,02-May-2026,24,24,24,0,Report
+Electronics Senior - Arduino,MUDIT SHAH,Anthony Dsouza,21-February-2026,24,27,24.5,2.5,Report
+Electronics Senior - Arduino,Neel Soman,Anthony Dsouza,23-April-2026,24,24,9,15,Report
+Electronics Senior - Arduino,Saisha Ajmera,Anthony Dsouza,27-December-2025,24,12,12,0,Report
+Electronics Senior - Arduino,Shivaditya Murarka,Anthony Dsouza,01-June-2026,24,24,12,12,Report
+Electronics Senior - Arduino,VIREN SIDHWANI,Anthony Dsouza,24-March-2026,24,24,24,0,Report
+Mechatronics Beginner,Amay Bhatter,Anthony Dsouza,09-January-2026,24,10.5,10.5,0,Report
+Mechatronics Beginner,Tarsh Chitlangia,Anthony Dsouza,12-December-2025,24,12,12,0,Report
+WRO 2026 - Future Innovators (Cohort of 2),Aarav Gupta,Anthony Dsouza,02-March-2026,45,2,2,0,Report
+WRO 2026 - Future Innovators (Cohort of 2),Shanaya Gupta,Anthony Dsouza,02-March-2026,45,2,2,0,Report
+WRO 2026 - Future Innovators (Cohort of 3),Nivaan  Mashru,Anthony Dsouza,18-February-2026,45,1.5,1.5,0,Report
+WRO 2026 - Future Innovators (Cohort of 3),Ridhaan Modi,Anthony Dsouza,26-February-2026,45,1.5,1.5,0,Report
+WRO 2026 - Future Innovators (Cohort of 3),Ridharv Shankar,Anthony Dsouza,19-February-2026,45,1.5,1.5,0,Report
+3D CAD,Arjun Mahansaria,Anuj Rathod,30-October-2025,24,1.5,1.5,0,Report
+3D CAD,Devansh Jaju,Anuj Rathod,12-May-2026,24,23,22,1,Report
+3D CAD,Myra Maggu,Anuj Rathod,27-June-2025,24,18,18,0,Report
+3D CAD,Raghav Tulsyan,Anuj Rathod,07-June-2026,24,24,0,24,Report
+3D CAD,Reyansh Parikh,Anuj Rathod,12-March-2026,24,27,24,3,Report
+3D CAD,Vanshika Lamba,Anuj Rathod,06-January-2026,24,1.5,1.5,0,Report
+AI Junior,Aryan Bakshi,Anuj Rathod,23-September-2025,24,2.5,2.5,0,Report
+Mechatronics Advance,Aadit Mehta,Anuj Rathod,07-March-2026,24,4,4,0,Report
+Mechatronics Intermediate,Adrian Bodlaender,Anuj Rathod,21-July-2025,24,12,12,0,Report
+Mechatronics Intermediate,Agasthya Iyer,Anuj Rathod,14-June-2025,24,12,12,0,Report
+Mechatronics Intermediate,Anay Siraslewala,Anuj Rathod,31-March-2026,24,4.5,3,1.5,Report
+Mechatronics Intermediate,Burhanuddin Hajee,Anuj Rathod,12-August-2025,24,28.5,9,19.5,Report
+Mechatronics Intermediate,Kriti Beswal,Anuj Rathod,06-June-2025,24,12,12,0,Report
+Mechatronics Intermediate,Nirvaan  Merchant,Anuj Rathod,01-August-2025,24,8,8,0,Report
+Mechatronics Intermediate,Nishkka Siraslewala,Anuj Rathod,31-March-2026,24,4.5,3,1.5,Report
+Mechatronics Intermediate,Nivaan  Tanna,Anuj Rathod,15-September-2025,24,1.5,1.5,0,Report
+Mechatronics Intermediate,Reyhan Raj  Sahana,Anuj Rathod,05-July-2025,24,12,12,0,Report
+NI Advanced 20 Hours,HUSAYN MERCHANT,Anuj Rathod,05-August-2025,20,16.5,12.5,4,Report
+NI Advanced 35 Hours,Aryan Dodeja,Anuj Rathod,15-October-2025,35,3,3,0,Report
+NI Advanced 35 Hours,Saksham Gupta,Anuj Rathod,22-September-2025,35,3,3,0,Report
+NI Advanced 40 Hours,Aarav Seksaria,Anuj Rathod,09-May-2026,40,3,0,3,Report
+NI Advanced 40 Hours,Agam Mundra,Anuj Rathod,21-May-2026,40,1,0,1,Report
+NI Advanced 40 Hours,Armaan Murthy,Anuj Rathod,29-July-2025,40,41,39.5,1.5,Report
+NI Advanced 40 Hours,Manish Ganeshan,Anuj Rathod,19-July-2025,40,2,2,0,Report
+NI Advanced 40 Hours,Neel Shah,Anuj Rathod,03-January-2026,40,31.5,17,14.5,Report
+NI Advanced 40 Hours,Rohaan Gajjar,Anuj Rathod,13-April-2026,40,12.5,12.5,0,Report
+NI Advanced 40 Hours,Vedant Richa Agarwal,Anuj Rathod,25-June-2026,40,16.5,0,16.5,Report
+NI Advanced 50 Hours,Arjun Dhavse,Anuj Rathod,13-September-2025,50,14.5,14.5,0,Report
+NI Advanced 50 Hours,Avyukt Chhabra,Anuj Rathod,23-March-2026,50,18.5,15.5,3,Report
+NI Advanced 50 Hours,Ishaan Garg,Anuj Rathod,09-December-2025,50,22.5,22.5,0,Report
+NI Advanced 60 Hours,Agastya Lodha,Anuj Rathod,19-December-2025,60,54.5,21,33.5,Report
+NI Junior,Krishnav Daryanani,Anuj Rathod,02-June-2025,30,11,11,0,Report
+WRO 2026 - Future Innovators (Cohort of 2),Aryan Bakshi,Anuj Rathod,08-April-2026,45,15.25,15.25,0,Report
+WRO 2026 - Future Innovators (Cohort of 2),Parth jain,Anuj Rathod,15-April-2026,45,15.25,15.25,0,Report
+WRO 2026 - Future Innovators (Cohort of 3),Aarnav Shah,Anuj Rathod,22-March-2026,45,22.5,21,1.5,Report
+WRO 2026 - Future Innovators (Cohort of 3),Jatin Dixit,Anuj Rathod,28-March-2026,45,22.5,21,1.5,Report
+WRO 2026 - Future Innovators (Cohort of 3),Riaan parasrampuria,Anuj Rathod,27-March-2026,45,22.5,21,1.5,Report
+AI Essentials 2025-26,Hugo Nelson,Anusha  Vartak,19-February-2026,60,24,24,0,Report
+AI Essentials 2025-26,Shray Tripathi,Anusha  Vartak,20-February-2026,60,24,16,8,Report
+Electronics Junior,Adit Parikh,Anusha  Vartak,04-April-2025,15,6,6,0,Report
+Mobile App Development Foundations,Vanij Periwal,Anusha  Vartak,14-May-2025,24,18,18,0,Report
+NI Advanced 10 Hours,Aarav Aggarwal,Anusha  Vartak,04-September-2025,10,12.5,9.5,3,Report
+Python Programming - Beginner,Advay Dhoot,Anusha  Vartak,12-November-2025,24,28.5,21,7.5,Report
+Python Programming - Beginner,Ananya Subramanyam,Anusha  Vartak,29-July-2025,24,1.5,1.5,0,Report
+Python Programming - Beginner,Eshika Jain,Anusha  Vartak,12-June-2025,24,6,6,0,Report
+Python Programming - Beginner,Rhea Prasanna,Anusha  Vartak,11-August-2025,24,24,24,0,Report
+Python Programming - Beginner,Soutrik Banerjee,Anusha  Vartak,14-June-2025,24,24.5,24.5,0,Report
+Python Programming - Intermediate,Kevin Trivedi,Anusha  Vartak,21-August-2025,24,34.5,25.5,9,Report
+Python Programming - Intermediate,Vivan Jhaveri,Anusha  Vartak,20-August-2025,24,24,16.5,7.5,Report
+AI - Computer Vision,Aarushi Shah,Atharva  Dalvi,11-February-2026,30,32,28,4,Report
+AI - Machine Learning,Jaivardhan  Malkani,Atharva  Dalvi,02-June-2025,30,4,4,0,Report
+AI - Machine Learning,Kahini Desai,Atharva  Dalvi,03-June-2025,30,30,30,0,Report
+AI - Machine Learning,Noel Juby Chandy,Atharva  Dalvi,12-June-2025,30,8,8,0,Report
+AI - Machine Learning,Roansh Desai,Atharva  Dalvi,03-June-2025,30,30,30,0,Report
+AI Essentials 2025-26,Anant Mehta,Atharva  Dalvi,06-February-2026,60,232,232,0,Report
+AI Essentials 2025-26,Arnav Anney,Atharva  Dalvi,06-February-2026,60,12,6,6,Report
+AI Essentials 2025-26,Aryan Kabra,Atharva  Dalvi,10-February-2026,60,144,130,14,Report
+AI Essentials 2025-26,Avika Kedia,Atharva  Dalvi,22-January-2026,60,240,240,0,Report
+AI Essentials 2025-26,Daksh Gupta,Atharva  Dalvi,06-February-2026,60,272,264,8,Report
+AI Essentials 2025-26,Devesh Gupta,Atharva  Dalvi,12-February-2026,60,232,200,32,Report
+AI Essentials 2025-26,Ishaan Jain,Atharva  Dalvi,20-January-2026,60,240,240,0,Report
+AI Essentials 2025-26,Kashvi Mummaneni,Atharva  Dalvi,06-February-2026,60,232,232,0,Report
+AI Essentials 2025-26,Kevin Trivedi,Atharva  Dalvi,03-December-2025,60,232,232,0,Report
+AI Essentials 2025-26,Manika Jhaveri,Atharva  Dalvi,01-June-2026,60,26.5,26.5,0,Report
+AI Essentials 2025-26,Nirvaan Gupta,Atharva  Dalvi,06-February-2026,60,232,232,0,Report
+AI Essentials 2025-26,priyaansh Gupta,Atharva  Dalvi,20-March-2026,60,232,200,32,Report
+AI Essentials 2025-26,Rhea Shah,Atharva  Dalvi,21-February-2026,60,240,240,0,Report
+AI Essentials 2025-26,Roshni Hormazdiyar,Atharva  Dalvi,06-February-2026,60,232,232,0,Report
+AI Essentials 2025-26,Shivanya Maheshwari,Atharva  Dalvi,22-May-2026,60,3,3,0,Report
+AI Essentials 2025-26,Tziona Suissa,Atharva  Dalvi,13-May-2026,60,12,6,6,Report
+AI Essentials 2025-26,Vaanya Kumbhat,Atharva  Dalvi,22-January-2026,60,12,12,0,Report
+AI Essentials 2025-26,veer charan,Atharva  Dalvi,18-February-2026,60,12,12,0,Report
+AI Essentials 2025-26,Vikram Triplicane,Atharva  Dalvi,09-April-2026,60,12,12,0,Report
+AI Essentials 2025-26,Vivan Jhaveri,Atharva  Dalvi,03-December-2025,60,58,58,0,Report
+AI Essentials 2025-26,Yuvraj Jangid,Atharva  Dalvi,06-February-2026,60,232,232,0,Report
+Artificial Intelligence: Concepts to Applications (INT),Devesh Cherukuri,Atharva  Dalvi,27-May-2026,60,54,18,36,Report
+Electronics Junior,Arjun Dani,Atharva  Dalvi,23-June-2025,15,1.5,1.5,0,Report
+FRC Java Skill Building,Neev Shah,Atharva  Dalvi,31-October-2025,24,19.75,15.75,4,Report
+Java Programming Course,Aaliyaah Sohagpurwala,Atharva  Dalvi,27-June-2025,24,17.5,17.5,0,Report
+Java Programming Course,Aarna Haria,Atharva  Dalvi,08-May-2025,24,6,6,0,Report
+Java Programming Course,Vivaan Maheshwari,Atharva  Dalvi,30-April-2026,24,21,12,9,Report
+Java Programming Course,Vivaan Puranik,Atharva  Dalvi,13-May-2026,24,27,18,9,Report
+Mobile App Development - Advanced,Shaun Mehta,Atharva  Dalvi,17-July-2025,30,25.5,24,1.5,Report
+NI Advanced 30 Hours,Ravi Doshi,Atharva  Dalvi,04-August-2025,30,28,28,0,Report
+NI Advanced 50 Hours,Shloka Mehta,Atharva  Dalvi,06-December-2025,50,2,2,0,Report
+Python Programming - Beginner,Aaradhya Tiwari,Atharva  Dalvi,08-December-2025,24,27.5,20.5,7,Report
+Python Programming - Beginner,Abhay Maheshwari,Atharva  Dalvi,15-September-2025,24,5,5,0,Report
+Python Programming - Beginner,Ananya Subramanyam,Atharva  Dalvi,29-July-2025,24,12,10.5,1.5,Report
+Python Programming - Beginner,Arjan Desai,Atharva  Dalvi,08-August-2025,24,8,8,0,Report
+Python Programming - Beginner,Arjun Jhaveri,Atharva  Dalvi,05-July-2025,24,24,24,0,Report
+Python Programming - Beginner,Aryaman Jain,Atharva  Dalvi,15-December-2025,24,32,30,2,Report
+Python Programming - Beginner,Ayush Rao,Atharva  Dalvi,03-June-2025,24,27,27,0,Report
+Python Programming - Beginner,Khushi Shah,Atharva  Dalvi,08-May-2025,24,3,3,0,Report
+Python Programming - Beginner,Mitra Desai,Atharva  Dalvi,09-August-2025,24,8,8,0,Report
+Python Programming - Beginner,Neev Negandhi,Atharva  Dalvi,15-July-2025,24,1.5,0,1.5,Report
+Python Programming - Beginner,Reya Shriram,Atharva  Dalvi,26-June-2025,24,24,24,0,Report
+Python Programming - Beginner,Reyansh Parikh,Atharva  Dalvi,04-August-2025,24,19.5,19.5,0,Report
+Python Programming - Beginner,Samaira Punamia,Atharva  Dalvi,05-August-2025,24,5,2,3,Report
+Python Programming - Beginner,Sharanya Badala,Atharva  Dalvi,09-July-2025,24,20.75,20.75,0,Report
+Python Programming - Beginner,Shreyasi Daga,Atharva  Dalvi,22-April-2025,24,7.5,7.5,0,Report
+Python Programming - Beginner,Yusuf Manasawala,Atharva  Dalvi,31-July-2025,24,21,18,3,Report
+Python Programming - Intermediate,Piyansh Kaarthik,Atharva  Dalvi,13-February-2026,24,2,2,0,Report
+Internet of Things Advanced,Aarav Gang,Ayush Dwivedy,31-January-2026,24,1.5,1.5,0,Report
+Internet of Things Advanced,Anay Bhandari,Ayush Dwivedy,25-February-2026,24,22.5,21,1.5,Report
+Internet of Things Advanced,Kanishk Chainani,Ayush Dwivedy,05-March-2026,24,28.5,12.5,16,Report
+AI Junior,Ishaan  Patel,Ayush Dwivedy,12-February-2026,24,22.5,16.5,6,Report
+Design Foundation,Kabir Chheda,Ayush Dwivedy,08-August-2025,15,1.5,0,1.5,Report
+Electronics Junior,Dev Khandelwal,Ayush Dwivedy,29-October-2025,15,19.5,10.5,9,Report
+Electronics Junior,Ivaan  Sundesha,Ayush Dwivedy,11-September-2025,15,10.5,6,4.5,Report
+Electronics Junior - AI Extension,Kabir Chheda,Ayush Dwivedy,29-September-2025,15,7.5,7.5,0,Report
+Electronics Senior - Arduino,Riaan parasrampuria,Ayush Dwivedy,27-October-2025,24,31,24.5,6.5,Report
+Mechatronics Advance,Arham Kothari,Ayush Dwivedy,05-June-2026,24,12.5,0,12.5,Report
+Mechatronics Advance,Rudraang Goenka,Ayush Dwivedy,14-April-2026,24,26,4,22,Report
+Mechatronics Intermediate,Aahana Dani,Ayush Dwivedy,27-June-2026,24,22,0,22,Report
+Mechatronics Intermediate,Advit Himatsingka,Ayush Dwivedy,05-March-2026,24,15,15,0,Report
+Mechatronics Intermediate,Anay Lohia,Ayush Dwivedy,23-June-2026,24,24,0,24,Report
+Mechatronics Intermediate,Devansh Jaju,Ayush Dwivedy,26-November-2025,24,12,10.5,1.5,Report
+Mechatronics Intermediate,Idhant Lakhotia,Ayush Dwivedy,15-October-2025,24,19.5,18,1.5,Report
+Mechatronics Intermediate,Ishaan  Patel,Ayush Dwivedy,20-August-2025,24,9.5,8,1.5,Report
+Mechatronics Intermediate,Ishita Shah,Ayush Dwivedy,19-September-2025,24,1.5,1.5,0,Report
+Mechatronics Intermediate,KAVISH MAHESHWARI,Ayush Dwivedy,30-March-2026,24,9.5,9.5,0,Report
+Mechatronics Intermediate,Pranava Randeria,Ayush Dwivedy,29-December-2025,24,1.5,1.5,0,Report
+Mechatronics Intermediate,Rishi Deshmukh,Ayush Dwivedy,14-April-2026,24,3.5,3.5,0,Report
+Mechatronics Intermediate,Rudraang Goenka,Ayush Dwivedy,07-February-2026,24,17,17,0,Report
+Mechatronics Intermediate,Yuvraj Jhaveri,Ayush Dwivedy,21-January-2026,24,1.5,0,1.5,Report
+NI Advanced 40 Hours,Aaditya jain,Ayush Dwivedy,14-May-2026,40,12,1.5,10.5,Report
+NI Advanced 40 Hours,Alaina Angrish,Ayush Dwivedy,03-March-2026,40,40.5,6,34.5,Report
+NI Advanced 40 Hours,Aryan Kabra,Ayush Dwivedy,15-September-2025,40,21.5,11.5,10,Report
+NI Advanced 40 Hours,Neel Shah,Ayush Dwivedy,03-January-2026,40,6,4,2,Report
+NI Advanced 40 Hours,Niyant Shah,Ayush Dwivedy,17-April-2026,40,10.5,9,1.5,Report
+NI Advanced 40 Hours,Rajveer Maheshwari,Ayush Dwivedy,01-June-2026,40,1.5,1.5,0,Report
+NI Advanced 40 Hours,Roansh Desai,Ayush Dwivedy,20-May-2026,40,15.25,6.25,9,Report
+NI Advanced 50 Hours,Arjun Dhavse,Ayush Dwivedy,13-September-2025,50,3,2,1,Report
+NI Advanced 50 Hours,Ishaan Garg,Ayush Dwivedy,09-December-2025,50,38.5,32,6.5,Report
+NI Advanced 60 Hours,Vivaan Joshi,Ayush Dwivedy,30-August-2025,60,2,2,0,Report
+NI Junior,Krishnav Daryanani,Ayush Dwivedy,02-June-2025,30,3,3,0,Report
+NI Junior (20 hours),Ohm Shah,Ayush Dwivedy,14-April-2026,20,2,2,0,Report
+Python Programming - Beginner,Avantika Goenka,Ayush Dwivedy,12-June-2026,24,1.5,1.5,0,Report
+Python Programming - Beginner,AVYAHN DALMIA,Ayush Dwivedy,23-June-2026,24,1.5,0,1.5,Report
+Python Programming - Beginner,Reyansh Parikh,Ayush Dwivedy,04-August-2025,24,2.5,2.5,0,Report
+Python Programming - Beginner,Samaya Mubayi Bery,Ayush Dwivedy,26-June-2026,24,4.5,0,4.5,Report
+WRO 2026 - Future Innovators (Cohort of 2),Aryan Bakshi,Ayush Dwivedy,08-April-2026,45,14,14,0,Report
+WRO 2026 - Future Innovators (Cohort of 2),Parth jain,Ayush Dwivedy,15-April-2026,45,14,14,0,Report
+Internet of Things Advanced,Reyansh Parikh,Ayush Patorkar,25-June-2025,24,23,19.5,3.5,Report
+AI  - Data Science,Mihir Garg,Ayushi lowanshi,15-June-2026,30,20,7.5,12.5,Report
+AI Essentials 2025-26,Aaryav Vidya Saju,Ayushi lowanshi,11-April-2026,60,254,174,80,Report
+AI Essentials 2025-26,advay aggarwal,Ayushi lowanshi,16-March-2026,60,216,208,8,Report
+AI Essentials 2025-26,Advik Jain,Ayushi lowanshi,04-March-2026,60,8,8,0,Report
+AI Essentials 2025-26,Aishi Kansal,Ayushi lowanshi,30-March-2026,60,216,176,40,Report
+AI Essentials 2025-26,Arav Vinod Kumar,Ayushi lowanshi,22-February-2026,60,216,128,88,Report
+AI Essentials 2025-26,Arhan Goyal,Ayushi lowanshi,16-March-2026,60,216,184,32,Report
+AI Essentials 2025-26,Arjun Goyal,Ayushi lowanshi,25-February-2026,60,8,8,0,Report
+AI Essentials 2025-26,Arjun Raghavan,Ayushi lowanshi,28-February-2026,60,8,8,0,Report
+AI Essentials 2025-26,Arnav Anney,Ayushi lowanshi,06-February-2026,60,8,0,8,Report
+AI Essentials 2025-26,Aryan Dodeja,Ayushi lowanshi,19-February-2026,60,8,8,0,Report
+AI Essentials 2025-26,Avya Raj Goel,Ayushi lowanshi,25-February-2026,60,8,8,0,Report
+AI Essentials 2025-26,Hrishaan Choudhary,Ayushi lowanshi,20-March-2026,60,216,152,64,Report
+AI Essentials 2025-26,Manika Jhaveri,Ayushi lowanshi,01-June-2026,60,9,6.5,2.5,Report
+AI Essentials 2025-26,Neel Pappu,Ayushi lowanshi,12-February-2026,60,216,192,24,Report
+AI Essentials 2025-26,Rishaan Mour,Ayushi lowanshi,02-February-2026,60,80,56,24,Report
+AI Essentials 2025-26,Sarthak Sekhsaria,Ayushi lowanshi,17-March-2026,60,54,32,22,Report
+AI Essentials 2025-26,Shaurya Jain,Ayushi lowanshi,25-February-2026,60,8,8,0,Report
+AI Essentials 2025-26,Shivanya Maheshwari,Ayushi lowanshi,22-May-2026,60,2,2,0,Report
+AI Essentials 2025-26,Sriranjan Balaji,Ayushi lowanshi,12-March-2026,60,216,208,8,Report
+AI Essentials 2025-26,Tanishk gupta,Ayushi lowanshi,25-February-2026,60,8,8,0,Report
+AI Essentials 2025-26,Trivid Gupta,Ayushi lowanshi,12-March-2026,60,8,8,0,Report
+AI Essentials 2025-26,Tziona Suissa,Ayushi lowanshi,13-May-2026,60,8,0,8,Report
+AI Essentials 2025-26,Vaanya Kumbhat,Ayushi lowanshi,22-January-2026,60,8,8,0,Report
+AI Essentials 2025-26,veer charan,Ayushi lowanshi,18-February-2026,60,8,8,0,Report
+AI Essentials 2025-26,Vihaan Juneja,Ayushi lowanshi,24-February-2026,60,8,8,0,Report
+AI Essentials 2025-26,Vikram Triplicane,Ayushi lowanshi,09-April-2026,60,8,8,0,Report
+AI Essentials 2025-26,Zoe Khanna,Ayushi lowanshi,17-March-2026,60,216,200,16,Report
+AI Junior,Ishaan  Patel,Ayushi lowanshi,12-February-2026,24,1.5,1.5,0,Report
+Artificial Intelligence: Concepts to Applications (INT),Devesh Cherukuri,Ayushi lowanshi,27-May-2026,60,3.5,0,3.5,Report
+Coding Junior,Anika Dharia,Ayushi lowanshi,09-April-2026,12,13,11,2,Report
+NI Advanced 40 Hours,Jahan Jai Nagrath,Ayushi lowanshi,27-May-2026,40,27.5,11.5,16,Report
+NI Advanced 50 Hours,Aarav Viral Shah,Ayushi lowanshi,27-February-2026,50,7,7,0,Report
+Python Programming - Beginner,Anay Gautam,Ayushi lowanshi,19-May-2026,24,24,19.5,4.5,Report
+Python Programming - Beginner,Avantika Goenka,Ayushi lowanshi,12-June-2026,24,20.5,3,17.5,Report
+Python Programming - Beginner,AVYAHN DALMIA,Ayushi lowanshi,23-June-2026,24,9.5,0,9.5,Report
+Python Programming - Beginner,Om Chaitanya Vadkhalkar,Ayushi lowanshi,04-May-2026,24,21,21,0,Report
+Python Programming - Beginner,Raghavi Baheti,Ayushi lowanshi,14-June-2026,24,23.5,10,13.5,Report
+Python Programming - Beginner,SAANVI MAHESHWARI,Ayushi lowanshi,21-April-2026,24,23,5,18,Report
+Python Programming - Beginner,Samaya Mubayi Bery,Ayushi lowanshi,26-June-2026,24,19.5,0,19.5,Report
+Python Programming - Beginner,Yash Chhaparia,Ayushi lowanshi,14-April-2026,24,27,22.5,4.5,Report
+Python Programming - Intermediate,Kabir Chugh Asrani,Ayushi lowanshi,04-June-2026,24,22.5,7.5,15,Report
+3D CAD,Ishaan  Panicker,Chitiz Rai,11-February-2026,24,24,24,0,Report
+3D CAD,Vivan Khatry,Chitiz Rai,11-February-2026,24,21.5,19,2.5,Report
+3D CAD,Yuvraj Saraogi,Chitiz Rai,11-February-2026,24,12,10,2,Report
+AI Essentials 2025-26,Hugo Nelson,Deep Shahane,19-February-2026,60,208,104,104,Report
+AI Essentials 2025-26,Shray Tripathi,Deep Shahane,20-February-2026,60,208,120,88,Report
+Electronics Junior,Jay Shah,Devendra Pawar,23-June-2025,15,12,12,0,Report
+Electronics Junior,Kriti Beswal,Devendra Pawar,12-June-2025,15,1.5,1.5,0,Report
+Mechatronics Intermediate,Aabir Mehta,Devendra Pawar,07-June-2025,24,12,10,2,Report
+Mechatronics Intermediate,Diya Chandarana,Devendra Pawar,19-June-2025,24,2,2,0,Report
+Mechatronics Intermediate,Kriti Beswal,Devendra Pawar,06-June-2025,24,12,12,0,Report
+Mechatronics Intermediate,Nishka Shah,Devendra Pawar,22-January-2026,24,4.5,3,1.5,Report
+Summer Bootcamp - Robotics Hackathon,Nandini Ved,Devendra Pawar,09-June-2025,10,10,10,0,Report
+3D CAD,Neha Mishra,Dhruv Joshi,25-April-2025,24,24,0,24,Report
+Java Programming Course,Shravya Shah,Dhruv Joshi,20-July-2025,24,14,14,0,Report
+Mobile App Development - Advanced,Ishani Datta,Dhruv Joshi,01-July-2025,30,12,12,0,Report
+Mobile App Development - Advanced,Shaun Mehta,Dhruv Joshi,17-July-2025,30,15,15,0,Report
+NI Advanced 40 Hours,Aahwaan Khullar,Dhruv Joshi,03-July-2025,40,24,24,0,Report
+Python Programming - Beginner,Ananya Subramanyam,Dhruv Joshi,29-July-2025,24,9.5,9.5,0,Report
+Python Programming - Beginner,Arjan Desai,Dhruv Joshi,08-August-2025,24,13,13,0,Report
+Python Programming - Beginner,AYMAN  SULEMAN SHAIKH,Dhruv Joshi,25-June-2025,24,24,24,0,Report
+Python Programming - Beginner,Dev Shah,Dhruv Joshi,05-August-2025,24,36.5,36.5,0,Report
+Python Programming - Beginner,Mihir Garg,Dhruv Joshi,07-July-2025,24,10.5,10.5,0,Report
+Python Programming - Beginner,Mitra Desai,Dhruv Joshi,09-August-2025,24,13,13,0,Report
+Python Programming - Beginner,Neev Negandhi,Dhruv Joshi,15-July-2025,24,24,24,0,Report
+Python Programming - Beginner,Ojasvi  Kumar,Dhruv Joshi,12-June-2025,24,22.5,22.5,0,Report
+Python Programming - Beginner,Paarth Somani,Dhruv Joshi,22-August-2025,24,1.5,1.5,0,Report
+Python Programming - Beginner,Radhika Iyer,Dhruv Joshi,12-June-2025,24,1.5,1.5,0,Report
+Python Programming - Beginner,Shivanya Maheshwari,Dhruv Joshi,19-June-2025,24,22.5,22.5,0,Report
+3D CAD,Anant Upadhyay,Dhruval Vachhani,15-July-2025,24,24,22.5,1.5,Report
+3D CAD,Kian  Gaziani,Dhruval Vachhani,25-June-2025,24,4,4,0,Report
+3D CAD,Shanaya Gupta,Dhruval Vachhani,04-August-2025,24,1.5,1.5,0,Report
+3D CAD,Veer Mehta,Dhruval Vachhani,12-March-2026,24,2,2,0,Report
+3D CAD,Vihaan Chheda,Dhruval Vachhani,08-January-2026,24,24,22.5,1.5,Report
+Mechatronics Intermediate,Aarna Chandak,Dhruval Vachhani,30-January-2026,24,15,7.5,7.5,Report
+Mechatronics Intermediate,Abeer Desai,Dhruval Vachhani,23-June-2025,24,12,12,0,Report
+Mechatronics Intermediate,Dhyaana Rohera,Dhruval Vachhani,06-May-2025,24,1,1,0,Report
+Mechatronics Intermediate,Hrisha  Badheka,Dhruval Vachhani,19-May-2025,24,9,7.5,1.5,Report
+Mechatronics Intermediate,Sara GANDHI,Dhruval Vachhani,09-July-2025,24,12,12,0,Report
+Robotics Foundation Program,Aarit Gopalkrishnan,Dhruval Vachhani,17-October-2025,40,19,2.5,16.5,Report
+Robotics Foundation Program,Aarush Kadakia,Dhruval Vachhani,28-October-2025,40,19,0,19,Report
+Robotics Foundation Program,Atharv Sinha,Dhruval Vachhani,17-October-2025,40,19,0,19,Report
+Robotics Foundation Program,Ira Raghavan,Dhruval Vachhani,17-October-2025,40,19,0,19,Report
+Robotics Foundation Program,Nandini Chatterjee,Dhruval Vachhani,28-October-2025,40,19,0,19,Report
+Robotics Foundation Program,Reyansh Govindaraju,Dhruval Vachhani,17-October-2025,40,19,10,9,Report
+Robotics Foundation Program,Ria Sanghavi,Dhruval Vachhani,28-October-2025,40,19,2.5,16.5,Report
+Robotics Foundation Program,Riana Arenja,Dhruval Vachhani,17-October-2025,40,19,2.5,16.5,Report
+Robotics Foundation Program,Riddhi Shankar,Dhruval Vachhani,17-October-2025,40,19,2.5,16.5,Report
+Robotics Foundation Program,Shaurya Jain,Dhruval Vachhani,17-October-2025,40,19,5,14,Report
+Robotics Foundation Program,Yannick Lokur,Dhruval Vachhani,28-October-2025,40,19,2.5,16.5,Report
+Summer Camp - Robotics Senior,Riaan Menon,Disha Goswami,26-May-2025,40,40,0,40,Report
+Summer Camp - Robotics Senior,Yuvaan Sethi,Disha Goswami,26-May-2025,40,40,0,40,Report
+Electronics Senior - Arduino,Viaanraj Singh,Drashti  Shah,12-February-2026,24,2.5,2.5,0,Report
+Python Programming - Beginner,Agastya Marfatia,Drashti  Shah,06-May-2026,24,31.5,31.5,0,Report
+Python Programming - Beginner,Ekagra Bassi,Drashti  Shah,27-February-2026,24,24,18,6,Report
+Python Programming - Beginner,Fateh viir Bedi,Drashti  Shah,28-November-2025,24,19.5,19.5,0,Report
+Python Programming - Beginner,Kian Trehan,Drashti  Shah,30-October-2025,24,18,18,0,Report
+Python Programming - Beginner,Nihira Marathe,Drashti  Shah,09-June-2026,24,1.5,1.5,0,Report
+Python Programming - Beginner,Rudransh Singh,Drashti  Shah,31-March-2026,24,24,21,3,Report
+Python Programming - Beginner,Sarthak Sekhsaria,Drashti  Shah,14-January-2026,24,3,3,0,Report
+Python Programming - Beginner,Srousha  Bisht,Drashti  Shah,31-March-2026,24,8.5,8.5,0,Report
+Python Programming - Beginner,Tiara Kathuria,Drashti  Shah,02-June-2025,24,25,23.5,1.5,Report
+Python Programming - Beginner,Vidit Shukla,Drashti  Shah,25-March-2026,24,2,2,0,Report
+Python Programming - Beginner,Vihaan Rai,Drashti  Shah,01-July-2025,24,7.5,7.5,0,Report
+Python Programming - Intermediate,Shaurya Shah,Drashti  Shah,25-February-2026,24,10.5,10.5,0,Report
+3D CAD,Arjun Mahansaria,Gaurish Vaze,30-October-2025,24,28.5,19,9.5,Report
+3D CAD,Arun Trivedi,Gaurish Vaze,17-April-2026,24,12,8,4,Report
+3D CAD,Hrehaan Shah,Gaurish Vaze,12-September-2025,24,24,24,0,Report
+3D CAD,KSHIVAY DALMIA,Gaurish Vaze,01-July-2025,24,10,8,2,Report
+3D CAD,Myra Maggu,Gaurish Vaze,27-June-2025,24,6,6,0,Report
+3D CAD,Pranava Randeria,Gaurish Vaze,28-April-2026,24,22,20,2,Report
+Design Foundation,AARYAMAAN SAVLA,Gaurish Vaze,14-September-2025,15,15,15,0,Report
+Design Foundation,Arnav Gupta,Gaurish Vaze,20-May-2026,15,8,7,1,Report
+Design Foundation,Ayaan  Merchant,Gaurish Vaze,11-June-2026,15,6,3,3,Report
+Design Foundation,Hridhaan Sundesha,Gaurish Vaze,17-May-2026,15,1.5,1.5,0,Report
+Design Foundation,Kabir Chheda,Gaurish Vaze,08-August-2025,15,13.5,13.5,0,Report
+Mechatronics Advance,Arham Kothari,Gaurish Vaze,05-June-2026,24,12,6.5,5.5,Report
+Mechatronics Intermediate,Aarav Gang,Gaurish Vaze,30-July-2025,24,3,3,0,Report
+Mechatronics Intermediate,Avyaan Singh,Gaurish Vaze,26-December-2025,24,8,8,0,Report
+Mechatronics Intermediate,Ayush Ladsariya,Gaurish Vaze,23-December-2025,24,8,6,2,Report
+Mechatronics Intermediate,Dev Vaghani,Gaurish Vaze,25-April-2026,24,2,2,0,Report
+Mechatronics Intermediate,Eva Bahl,Gaurish Vaze,21-August-2025,24,18,12,6,Report
+Mechatronics Intermediate,Idhant Lakhotia,Gaurish Vaze,15-October-2025,24,10.5,9,1.5,Report
+Mechatronics Intermediate,Ishita Shah,Gaurish Vaze,19-September-2025,24,28.5,21,7.5,Report
+Mechatronics Intermediate,KAVISH MAHESHWARI,Gaurish Vaze,30-March-2026,24,2.5,0,2.5,Report
+Mechatronics Intermediate,Mirka Bhartia,Gaurish Vaze,19-June-2026,24,10,10,0,Report
+Mechatronics Intermediate,Nishka Shah,Gaurish Vaze,22-January-2026,24,12,12,0,Report
+Mechatronics Intermediate,Nivaan  Tanna,Gaurish Vaze,15-September-2025,24,1.5,1.5,0,Report
+Mechatronics Intermediate,Rayaan  Patel,Gaurish Vaze,22-August-2025,24,24,24,0,Report
+Mechatronics Intermediate,Reyansh Rathi,Gaurish Vaze,26-December-2025,24,8,8,0,Report
+Mechatronics Intermediate,Riaan Banerjee,Gaurish Vaze,26-April-2026,24,2,2,0,Report
+Mechatronics Intermediate,Riddhiman Maheshwari,Gaurish Vaze,18-June-2026,24,24,6,18,Report
+Mechatronics Intermediate,Rishi Deshmukh,Gaurish Vaze,14-April-2026,24,22,18,4,Report
+Mechatronics Intermediate,Swara Vijay,Gaurish Vaze,28-April-2026,24,22,22,0,Report
+NI Advanced 40 Hours,Mahir Ranawat,Gaurish Vaze,21-August-2025,40,26,23.5,2.5,Report
+NI Advanced 40 Hours,Manish Ganeshan,Gaurish Vaze,19-July-2025,40,6,3,3,Report
+NI Advanced 40 Hours,Nandini Pangal,Gaurish Vaze,18-May-2026,40,1.5,0,1.5,Report
+NI Advanced 50 Hours,Ansh Thacker,Gaurish Vaze,28-February-2026,50,9,3,6,Report
+NI Advanced 50 Hours,Dev jhaveri,Gaurish Vaze,19-December-2025,50,14,6,8,Report
+WRO 2026 - Future Innovators (Cohort of 3),Ayaan  Merchant,Gaurish Vaze,10-January-2026,45,14,9,5,Report
+WRO 2026 - Future Innovators (Cohort of 3),Dhrish Shah,Gaurish Vaze,13-March-2026,45,22.5,20.5,2,Report
+WRO 2026 - Future Innovators (Cohort of 3),Ishaan Thakurta,Gaurish Vaze,13-March-2026,45,22.5,22.5,0,Report
+WRO 2026 - Future Innovators (Cohort of 3),Ivaan  Sundesha,Gaurish Vaze,10-January-2026,45,14,9,5,Report
+WRO 2026 - Future Innovators (Cohort of 3),Jaiveer Mahadevia,Gaurish Vaze,10-January-2026,45,14,9,5,Report
+WRO 2026 - Future Innovators (Cohort of 3),Kavir Mehta,Gaurish Vaze,13-March-2026,45,22.5,20.5,2,Report
+Summer Bootcamp - Python Programming,Devishi Bajaj,Harsh Navadia,18-May-2025,10,10,10,0,Report
+AI - Computer Vision,Piyansh Kaarthik,Janhavi Karandi,22-March-2026,30,25.5,23.5,2,Report
+AI Essentials 2025-26,Alissa Jhaveri,Janhavi Karandi,24-February-2026,60,238,196,42,Report
+AI Essentials 2025-26,Arav Vinod Kumar,Janhavi Karandi,22-February-2026,60,44,36,8,Report
+AI Essentials 2025-26,Avni Singh,Janhavi Karandi,06-February-2026,60,240,216,24,Report
+AI Essentials 2025-26,Harshal kapoor,Janhavi Karandi,22-April-2026,60,238,70,168,Report
+AI Essentials 2025-26,Hrehaan Shah,Janhavi Karandi,22-January-2026,60,238,196,42,Report
+AI Essentials 2025-26,Kaashvi Agarwal,Janhavi Karandi,06-February-2026,60,238,56,182,Report
+AI Essentials 2025-26,Kashvi Ruparelia,Janhavi Karandi,14-May-2026,60,124,26,98,Report
+AI Essentials 2025-26,Kishan Kannan,Janhavi Karandi,10-February-2026,60,240,240,0,Report
+AI Essentials 2025-26,Manika Jhaveri,Janhavi Karandi,01-June-2026,60,7,7,0,Report
+AI Essentials 2025-26,Nigamanth Srivatsan,Janhavi Karandi,22-May-2026,60,59.5,49,10.5,Report
+AI Essentials 2025-26,Parampreet Singh,Janhavi Karandi,09-April-2026,60,238,182,56,Report
+AI Essentials 2025-26,S. Nandan Kumar,Janhavi Karandi,11-April-2026,60,238,36,202,Report
+AI Essentials 2025-26,Shrugal Vinod,Janhavi Karandi,06-February-2026,60,240,208,32,Report
+AI Essentials 2025-26,Siddharth Khanna,Janhavi Karandi,17-February-2026,60,240,168,72,Report
+AI Essentials 2025-26,Tvishi Sinha,Janhavi Karandi,06-February-2026,60,240,224,16,Report
+AI Essentials 2025-26,Vanya Kumar,Janhavi Karandi,27-May-2026,60,31,20.5,10.5,Report
+AI Essentials 2025-26,Vidur Warikoo,Janhavi Karandi,10-February-2026,60,261,237,24,Report
+AI Essentials 2025-26,Vihaan Gupta,Janhavi Karandi,11-May-2026,60,31,23.5,7.5,Report
+AI Essentials 2025-26,Vivaan Gautam,Janhavi Karandi,05-May-2026,60,124,88,36,Report
+Java Programming Course,HUSAYN MERCHANT,Janhavi Karandi,21-June-2026,24,22.5,0,22.5,Report
+Mobile App Development - Advanced,Aakrit Agarwal,Janhavi Karandi,10-October-2025,30,35.5,27,8.5,Report
+Mobile App Development - Advanced,Alaina Angrish,Janhavi Karandi,04-March-2026,30,1.5,1.5,0,Report
+Mobile App Development - Advanced,Ragini Agrawal,Janhavi Karandi,04-March-2026,30,47,29,18,Report
+Mobile App Development - Advanced,Veer Mehta,Janhavi Karandi,07-March-2026,30,1,1,0,Report
+NI Advanced,Ahana Arenja,Janhavi Karandi,18-December-2025,40,27,27,0,Report
+NI Advanced 20 Hours,Shaurya Singhal,Janhavi Karandi,04-November-2025,20,21.5,15.5,6,Report
+NI Advanced 30 Hours,Ravi Doshi,Janhavi Karandi,04-August-2025,30,2,2,0,Report
+NI Advanced 30 Hours,Sharanya Ganguli,Janhavi Karandi,02-August-2025,30,27.5,27.5,0,Report
+NI Advanced 40 Hours,Aahwaan Khullar,Janhavi Karandi,03-July-2025,40,19,19,0,Report
+NI Advanced 40 Hours,Aakrit Agarwal,Janhavi Karandi,10-October-2025,40,3.5,3.5,0,Report
+NI Advanced 40 Hours,Shaurya Singhal,Janhavi Karandi,11-June-2025,40,55.5,54,1.5,Report
+NI Advanced 40 Hours,Vedant Nair,Janhavi Karandi,15-March-2026,40,11,10,1,Report
+NI Advanced 50 Hours,ASHMIT KATARIA,Janhavi Karandi,11-August-2025,50,37.5,29.5,8,Report
+Python Programming - Beginner,Aanya Chandarana,Janhavi Karandi,19-June-2025,24,24.5,24.5,0,Report
+Python Programming - Beginner,Avika Goyal,Janhavi Karandi,03-July-2025,24,4,4,0,Report
+Python Programming - Beginner,Myra Bose,Janhavi Karandi,19-June-2025,24,26,20,6,Report
+Python Programming - Beginner,Paarth Somani,Janhavi Karandi,22-August-2025,24,34,25,9,Report
+Python Programming - Beginner,Reyaansh Pilani,Janhavi Karandi,24-June-2026,24,14,0,14,Report
+Python Programming - Beginner,Samaira Punamia,Janhavi Karandi,05-August-2025,24,7.5,7.5,0,Report
+Python Programming - Beginner,Viaan Bakliwal,Janhavi Karandi,16-July-2025,24,1.5,1.5,0,Report
+Python Programming - Intermediate,Piyansh Kaarthik,Janhavi Karandi,13-February-2026,24,9,9,0,Report
+Web Development,Pranav Pandya,Janhavi Karandi,06-May-2026,30,32.5,24,8.5,Report
+AI Essentials 2025-26,Aishi Kansal,Jaykumar Patel,30-March-2026,60,8,8,0,Report
+AI Essentials 2025-26,Arjan Desai,Jaykumar Patel,04-December-2025,60,44,44,0,Report
+AI Essentials 2025-26,Aryan Kabra,Jaykumar Patel,10-February-2026,60,12,12,0,Report
+AI Essentials 2025-26,Hrishaan Choudhary,Jaykumar Patel,20-March-2026,60,8,8,0,Report
+AI Essentials 2025-26,Kashvi Ruparelia,Jaykumar Patel,14-May-2026,60,44,22,22,Report
+AI Essentials 2025-26,Mitra Desai,Jaykumar Patel,04-December-2025,60,44,44,0,Report
+AI Essentials 2025-26,Neel Pappu,Jaykumar Patel,12-February-2026,60,8,8,0,Report
+AI Essentials 2025-26,Sarthak Sekhsaria,Jaykumar Patel,17-March-2026,60,2,0,2,Report
+AI Essentials 2025-26,Sriranjan Balaji,Jaykumar Patel,12-March-2026,60,8,0,8,Report
+AI Essentials 2025-26,Vanya Kumar,Jaykumar Patel,27-May-2026,60,11,11,0,Report
+AI Essentials 2025-26,Vihaan Gupta,Jaykumar Patel,11-May-2026,60,11,11,0,Report
+AI Essentials 2025-26,Vivaan Gautam,Jaykumar Patel,05-May-2026,60,44,44,0,Report
+AI Essentials 2025-26,Zoe Khanna,Jaykumar Patel,17-March-2026,60,8,8,0,Report
+Artificial Intelligence: Concepts to Applications,Tvissha Pilani,Jaykumar Patel,23-June-2026,60,11,1.5,9.5,Report
+CREST Research Report (Abroad),arjun Agarwal,Jaykumar Patel,11-September-2025,10,7,7,0,Report
+Mechatronics Intermediate,Krishiv Roongta,Jaykumar Patel,12-August-2025,24,1.5,1.5,0,Report
+Mobile App Development - Advanced,Alaina Angrish,Jaykumar Patel,04-March-2026,30,37.25,31.25,6,Report
+Mobile App Development - Advanced,Ishani Datta,Jaykumar Patel,01-July-2025,30,18,18,0,Report
+Mobile App Development - Advanced,Shaun Mehta,Jaykumar Patel,17-July-2025,30,2,2,0,Report
+Mobile App Development - Advanced,Veer Mehta,Jaykumar Patel,07-March-2026,30,29,27.5,1.5,Report
+NI Advanced 40 Hours,Aaditya jain,Jaykumar Patel,14-May-2026,40,1.75,1.75,0,Report
+NI Advanced 40 Hours,Ahaan Kapadia,Jaykumar Patel,18-April-2026,40,1,1,0,Report
+NI Advanced 40 Hours,Ananya Sharma,Jaykumar Patel,15-November-2025,40,16.75,15.25,1.5,Report
+NI Advanced 40 Hours,Anirudh Jatia,Jaykumar Patel,09-June-2026,40,5,3,2,Report
+NI Advanced 40 Hours,Arin Mathew,Jaykumar Patel,24-April-2026,40,1.5,1.5,0,Report
+NI Advanced 40 Hours,Arjun Jhaveri,Jaykumar Patel,13-May-2026,40,0.75,0.75,0,Report
+NI Advanced 40 Hours,Arya Jha,Jaykumar Patel,10-June-2026,40,1,1,0,Report
+NI Advanced 40 Hours,Aryan  Shah,Jaykumar Patel,25-June-2026,40,1,0,1,Report
+NI Advanced 40 Hours,Aryan Kabra,Jaykumar Patel,15-September-2025,40,3,3,0,Report
+NI Advanced 40 Hours,Atharva Sunkersett,Jaykumar Patel,18-October-2025,40,0.5,0.5,0,Report
+NI Advanced 40 Hours,Ayaan Jain,Jaykumar Patel,04-May-2026,40,2,2,0,Report
+NI Advanced 40 Hours,Daksh Aggarwal,Jaykumar Patel,09-April-2026,40,1.5,1.5,0,Report
+NI Advanced 40 Hours,Dev Karan Singh,Jaykumar Patel,11-June-2026,40,0.5,0.5,0,Report
+NI Advanced 40 Hours,Gauri Khanna,Jaykumar Patel,23-June-2026,40,1.5,1.5,0,Report
+NI Advanced 40 Hours,Ishani Datta,Jaykumar Patel,04-December-2025,40,48,35,13,Report
+NI Advanced 40 Hours,Jahan Jai Nagrath,Jaykumar Patel,27-May-2026,40,2,2,0,Report
+NI Advanced 40 Hours,Nawon Kim,Jaykumar Patel,16-June-2026,40,1.5,1,0.5,Report
+NI Advanced 40 Hours,Neel Shah,Jaykumar Patel,03-January-2026,40,1.5,1.5,0,Report
+NI Advanced 40 Hours,Nehan Ali,Jaykumar Patel,18-June-2026,40,1,0,1,Report
+NI Advanced 40 Hours,Niyant Shah,Jaykumar Patel,17-April-2026,40,2,2,0,Report
+NI Advanced 40 Hours,RACHIT MOHAN,Jaykumar Patel,06-June-2026,40,2,1,1,Report
+NI Advanced 40 Hours,Radhika Beswal,Jaykumar Patel,29-May-2026,40,3.5,3.5,0,Report
+NI Advanced 40 Hours,Rajveer Maheshwari,Jaykumar Patel,01-June-2026,40,1.5,1.5,0,Report
+NI Advanced 40 Hours,Ria Chavan,Jaykumar Patel,18-May-2026,40,6,4.5,1.5,Report
+NI Advanced 40 Hours,Roansh Desai,Jaykumar Patel,20-May-2026,40,2.5,2.5,0,Report
+NI Advanced 40 Hours,Saiesha Malani,Jaykumar Patel,04-November-2025,40,1.75,1.75,0,Report
+NI Advanced 40 Hours,SHREY SHAH,Jaykumar Patel,03-April-2026,40,2,2,0,Report
+NI Advanced 40 Hours,Sophia Andhyarujina,Jaykumar Patel,11-May-2026,40,2,2,0,Report
+NI Advanced 40 Hours,Udbhav Sriramoju,Jaykumar Patel,29-April-2026,40,13,13,0,Report
+NI Advanced 40 Hours,Vaishnavi Renduchintala,Jaykumar Patel,04-June-2026,40,2,1.5,0.5,Report
+NI Advanced 40 Hours,Vedant Richa Agarwal,Jaykumar Patel,25-June-2026,40,0.5,0,0.5,Report
+NI Advanced 50 Hours,Arjun Dhavse,Jaykumar Patel,13-September-2025,50,38.5,24.5,14,Report
+NI Advanced 50 Hours,Shloka Mehta,Jaykumar Patel,06-December-2025,50,0.5,0,0.5,Report
+NI Advanced 60 Hours,Armaan Agarwal,Jaykumar Patel,13-May-2026,60,0.5,0.5,0,Report
+NI Junior,Krishiv Roongta,Jaykumar Patel,29-January-2026,30,9,7.5,1.5,Report
+Nurturing Innovators,Shrihan Reddy Pakala,Jaykumar Patel,29-June-2026,40,0.5,0,0.5,Report
+WRO 2026 - Future Innovators (Cohort of 3),Ayaan  Merchant,Jaykumar Patel,10-January-2026,45,1.5,1.5,0,Report
+WRO 2026 - Future Innovators (Cohort of 3),Ivaan  Sundesha,Jaykumar Patel,10-January-2026,45,1.5,1.5,0,Report
+WRO 2026 - Future Innovators (Cohort of 3),Jaiveer Mahadevia,Jaykumar Patel,10-January-2026,45,1.5,1.5,0,Report
+FIRST Tech Challenge,Aahir Seth,Kashif Khan,09-August-2025,100,11.5,0,11.5,Report
+FIRST Tech Challenge,Aarav  Garga,Kashif Khan,04-June-2025,100,11.5,0,11.5,Report
+FIRST Tech Challenge,Aarav Damodar,Kashif Khan,03-September-2025,100,11.5,0,11.5,Report
+FIRST Tech Challenge,Advik Poddar,Kashif Khan,29-May-2025,100,11.5,0,11.5,Report
+FIRST Tech Challenge,Arjun Jhaveri,Kashif Khan,08-August-2025,100,11.5,0,11.5,Report
+FIRST Tech Challenge,Dhia Ghalla,Kashif Khan,15-September-2025,100,11.5,0,11.5,Report
+FIRST Tech Challenge,Eshika Jain,Kashif Khan,03-October-2025,100,11.5,0,11.5,Report
+FIRST Tech Challenge,Kevin Trivedi,Kashif Khan,21-August-2025,100,11.5,0,11.5,Report
+FIRST Tech Challenge,Radhika Beswal,Kashif Khan,03-September-2025,100,11.5,0,11.5,Report
+FIRST Tech Challenge,Samaira Shah,Kashif Khan,15-August-2025,100,11.5,0,11.5,Report
+FIRST Tech Challenge,Sarthak Sekhsaria,Kashif Khan,17-June-2025,100,11.5,0,11.5,Report
+FIRST Tech Challenge,Shaurya Kothari,Kashif Khan,12-June-2025,100,11.5,0,11.5,Report
+FIRST Tech Challenge,Sohum Arora,Kashif Khan,27-May-2025,100,11.5,0,11.5,Report
+FIRST Tech Challenge,Vaanya Kumbhat,Kashif Khan,26-July-2025,100,11.5,0,11.5,Report
+FIRST Tech Challenge,Venesha Bharwada,Kashif Khan,09-September-2025,100,11.5,0,11.5,Report
+Java Programming Course,Eshika Jain,Kashif Khan,18-December-2025,24,9,0,9,Report
+Electronics Senior - Arduino,Aayan Asthana,Kshitij Palan,23-June-2025,24,10,10,0,Report
+Robotics Foundation Program,Aarit Gopalkrishnan,Kshitij Palan,17-October-2025,40,4,0,4,Report
+Robotics Foundation Program,Aarush Kadakia,Kshitij Palan,28-October-2025,40,4,0,4,Report
+Robotics Foundation Program,Atharv Sinha,Kshitij Palan,17-October-2025,40,4,0,4,Report
+Robotics Foundation Program,Ira Raghavan,Kshitij Palan,17-October-2025,40,4,0,4,Report
+Robotics Foundation Program,Mahika Garg,Kshitij Palan,17-October-2025,40,10,2.5,7.5,Report
+Robotics Foundation Program,Mahir Thadani,Kshitij Palan,17-October-2025,40,10,2.5,7.5,Report
+Robotics Foundation Program,Nandini Chatterjee,Kshitij Palan,28-October-2025,40,4,0,4,Report
+Robotics Foundation Program,Reyansh Gandhi,Kshitij Palan,17-October-2025,40,10,7.5,2.5,Report
+Robotics Foundation Program,Reyansh Govindaraju,Kshitij Palan,17-October-2025,40,4,0,4,Report
+Robotics Foundation Program,Ria Sanghavi,Kshitij Palan,28-October-2025,40,4,0,4,Report
+Robotics Foundation Program,Riana Arenja,Kshitij Palan,17-October-2025,40,4,0,4,Report
+Robotics Foundation Program,Riddhi Shankar,Kshitij Palan,17-October-2025,40,4,0,4,Report
+Robotics Foundation Program,Shaurya Jain,Kshitij Palan,17-October-2025,40,4,0,4,Report
+Robotics Foundation Program,Siddharth Khanna,Kshitij Palan,28-October-2025,40,10,0,10,Report
+Robotics Foundation Program,Vivan Sheth,Kshitij Palan,17-October-2025,40,10,2.5,7.5,Report
+Robotics Foundation Program,Yannick Lokur,Kshitij Palan,28-October-2025,40,4,0,4,Report
+AI - Computer Vision,Piyansh Kaarthik,Latifa Zaman,22-March-2026,30,9,7,2,Report
+AI Essential Training,Rivaan Dalal,Latifa Zaman,14-August-2025,40,1.5,1.5,0,Report
+AI Essentials 2025-26,Advik Jain,Latifa Zaman,04-March-2026,60,200,160,40,Report
+AI Essentials 2025-26,AIFYGI 1,Latifa Zaman,16-May-2026,60,58,0,58,Report
+AI Essentials 2025-26,AIFYGI 2,Latifa Zaman,16-May-2026,60,58,0,58,Report
+AI Essentials 2025-26,Anant Mehta,Latifa Zaman,06-February-2026,60,8,0,8,Report
+AI Essentials 2025-26,Anaya Chokhani,Latifa Zaman,03-December-2025,60,232,232,0,Report
+AI Essentials 2025-26,Arjan Desai,Latifa Zaman,04-December-2025,60,120,120,0,Report
+AI Essentials 2025-26,Arjun Goyal,Latifa Zaman,25-February-2026,60,200,176,24,Report
+AI Essentials 2025-26,Arjun Raghavan,Latifa Zaman,28-February-2026,60,200,160,40,Report
+AI Essentials 2025-26,Arnav Anney,Latifa Zaman,06-February-2026,60,218,94,124,Report
+AI Essentials 2025-26,Aryan Dodeja,Latifa Zaman,19-February-2026,60,200,144,56,Report
+AI Essentials 2025-26,Aryan Kabra,Latifa Zaman,10-February-2026,60,14,14,0,Report
+AI Essentials 2025-26,Avya Raj Goel,Latifa Zaman,25-February-2026,60,200,184,16,Report
+AI Essentials 2025-26,Devesh Gupta,Latifa Zaman,12-February-2026,60,8,8,0,Report
+AI Essentials 2025-26,Kashvi Mummaneni,Latifa Zaman,06-February-2026,60,8,0,8,Report
+AI Essentials 2025-26,Kevin Trivedi,Latifa Zaman,03-December-2025,60,240,24,216,Report
+AI Essentials 2025-26,Kiaan Shah,Latifa Zaman,03-December-2025,60,232,208,24,Report
+AI Essentials 2025-26,Mitra Desai,Latifa Zaman,04-December-2025,60,120,120,0,Report
+AI Essentials 2025-26,Neha Mishra,Latifa Zaman,08-January-2026,60,232,32,200,Report
+AI Essentials 2025-26,Nirvaan Gupta,Latifa Zaman,06-February-2026,60,8,0,8,Report
+AI Essentials 2025-26,priyaansh Gupta,Latifa Zaman,20-March-2026,60,8,8,0,Report
+AI Essentials 2025-26,Riana Shah,Latifa Zaman,03-December-2025,60,232,216,16,Report
+AI Essentials 2025-26,Rishaan Mour,Latifa Zaman,02-February-2026,60,128,112,16,Report
+AI Essentials 2025-26,Roshni Hormazdiyar,Latifa Zaman,06-February-2026,60,8,0,8,Report
+AI Essentials 2025-26,Shaurya Jain,Latifa Zaman,25-February-2026,60,200,152,48,Report
+AI Essentials 2025-26,Shivanya Maheshwari,Latifa Zaman,22-May-2026,60,54.5,49.5,5,Report
+AI Essentials 2025-26,Tanishk gupta,Latifa Zaman,25-February-2026,60,200,200,0,Report
+AI Essentials 2025-26,Trivid Gupta,Latifa Zaman,12-March-2026,60,220,172,48,Report
+AI Essentials 2025-26,Tziona Suissa,Latifa Zaman,13-May-2026,60,218,126,92,Report
+AI Essentials 2025-26,Vaanya Kumbhat,Latifa Zaman,22-January-2026,60,218,184,34,Report
+AI Essentials 2025-26,veer charan,Latifa Zaman,18-February-2026,60,218,154,64,Report
+AI Essentials 2025-26,Viaan Bakliwal,Latifa Zaman,03-December-2025,60,232,216,16,Report
+AI Essentials 2025-26,Vihaan Juneja,Latifa Zaman,24-February-2026,60,200,192,8,Report
+AI Essentials 2025-26,Vikram Triplicane,Latifa Zaman,09-April-2026,60,218,198,20,Report
+AI Essentials 2025-26,Vivan Jhaveri,Latifa Zaman,03-December-2025,60,2,2,0,Report
+AI Essentials 2025-26,Yuvraj Jangid,Latifa Zaman,06-February-2026,60,8,8,0,Report
+AI Essentials Training (Abroad),arjun Agarwal,Latifa Zaman,11-September-2025,40,36,33,3,Report
+Artificial Intelligence: Concepts to Applications,Arin Mathew,Latifa Zaman,24-April-2026,60,58.5,58.5,0,Report
+Blockchain Development,AYMAN  SULEMAN SHAIKH,Latifa Zaman,04-September-2025,30,20.5,20.5,0,Report
+Java Programming Course,Ahaan Dalmia,Latifa Zaman,01-July-2025,24,8,8,0,Report
+Java Programming Course,Shravya Shah,Latifa Zaman,20-July-2025,24,10,9,1,Report
+Machine Learning and NLP Fundamentals,Saksham Loonker,Latifa Zaman,04-August-2025,40,47.5,36,11.5,Report
+NI Advanced 10 Hours,Aarav Viral Shah,Latifa Zaman,12-May-2026,10,6,6,0,Report
+NI Advanced 30 Hours,Nandini Pangal,Latifa Zaman,04-November-2025,30,19.5,15.5,4,Report
+NI Advanced 40 Hours,Aakrit Agarwal,Latifa Zaman,10-October-2025,40,26,24,2,Report
+NI Advanced 40 Hours,Ananya Sharma,Latifa Zaman,15-November-2025,40,1,1,0,Report
+NI Advanced 40 Hours,Daksh Aggarwal,Latifa Zaman,09-April-2026,40,25,6,19,Report
+NI Advanced 40 Hours,Mahir Ranawat,Latifa Zaman,21-August-2025,40,14,12,2,Report
+NI Advanced 40 Hours,Rohan Kohli,Latifa Zaman,31-July-2025,40,22,22,0,Report
+NI Advanced 40 Hours,Sharanya Badala,Latifa Zaman,04-November-2025,40,33.5,33.5,0,Report
+NI Advanced 40 Hours,Taksh Kothari,Latifa Zaman,18-April-2026,40,18,18,0,Report
+NI Advanced 40 Hours,Tvishaa Prabhu,Latifa Zaman,07-May-2026,40,8,0,8,Report
+NI Advanced 50 Hours,Aarav Viral Shah,Latifa Zaman,27-February-2026,50,55,50,5,Report
+NI Advanced 50 Hours,Rishabh Rathi,Latifa Zaman,16-January-2026,50,7,7,0,Report
+NI Advanced 60 Hours,arjun Agarwal,Latifa Zaman,11-August-2025,60,1.5,1.5,0,Report
+NI Advanced 60 Hours,Armaan Agarwal,Latifa Zaman,13-May-2026,60,32,27.5,4.5,Report
+NI Advanced 60 Hours,Vivaan Joshi,Latifa Zaman,30-August-2025,60,6,6,0,Report
+Python Programming - Beginner,Aarush Mittal,Latifa Zaman,11-October-2025,24,22.5,22.5,0,Report
+Python Programming - Beginner,Abhay Maheshwari,Latifa Zaman,15-September-2025,24,18.5,18.5,0,Report
+Python Programming - Beginner,Adrian Bodlaender,Latifa Zaman,26-February-2026,24,16,16,0,Report
+Python Programming - Beginner,Avika Goyal,Latifa Zaman,03-July-2025,24,18,18,0,Report
+Python Programming - Beginner,Mihir Garg,Latifa Zaman,07-July-2025,24,10.5,10.5,0,Report
+Python Programming - Beginner,Reyansh Parikh,Latifa Zaman,04-August-2025,24,2,2,0,Report
+Python Programming - Beginner,Sharanya Badala,Latifa Zaman,09-July-2025,24,4,4,0,Report
+Python Programming - Beginner,Tanish Satpal,Latifa Zaman,07-May-2025,24,12,12,0,Report
+Python Programming - Intermediate,Piyansh Kaarthik,Latifa Zaman,13-February-2026,24,1,1,0,Report
+Internet of Things Advanced,Aavyan Gupta,Lavkush Chaudhary,19-May-2025,24,2,2,0,Report
+Internet of Things Advanced,Rishabh Hariharan,Lavkush Chaudhary,18-September-2025,24,23.5,22.5,1,Report
+Internet of Things Advanced,Veer Mehta,Lavkush Chaudhary,30-June-2025,24,1.5,1.5,0,Report
+AI Junior,Rayaan  Patel,Lavkush Chaudhary,12-February-2026,24,1.5,1.5,0,Report
+Electronics Junior,Agastya  Shah,Lavkush Chaudhary,15-September-2025,15,3,3,0,Report
+Electronics Junior,Ivaan  Sundesha,Lavkush Chaudhary,11-September-2025,15,4.5,4.5,0,Report
+Electronics Junior,Naiyah Mehta,Lavkush Chaudhary,05-August-2025,15,15,1.5,13.5,Report
+Electronics Junior,Rishi Deshmukh,Lavkush Chaudhary,24-February-2026,15,3,3,0,Report
+Electronics Junior,Shaurya Mehta,Lavkush Chaudhary,08-March-2026,15,10.5,1.5,9,Report
+Electronics Junior - AI Extension,Kiyaan Jain,Lavkush Chaudhary,17-July-2025,15,15,15,0,Report
+Mechatronics Intermediate,Aabir Mehta,Lavkush Chaudhary,07-June-2025,24,3.5,3.5,0,Report
+Mechatronics Intermediate,Aarav Gang,Lavkush Chaudhary,30-July-2025,24,19.5,18,1.5,Report
+Mechatronics Intermediate,Arhaan Grover,Lavkush Chaudhary,09-May-2026,24,27.5,23,4.5,Report
+Mechatronics Intermediate,Arsh Ahuja,Lavkush Chaudhary,01-October-2025,24,32.5,27,5.5,Report
+Mechatronics Intermediate,Avir Oberoi,Lavkush Chaudhary,21-July-2025,24,6,6,0,Report
+Mechatronics Intermediate,Avyaan Singh,Lavkush Chaudhary,26-December-2025,24,10,10,0,Report
+Mechatronics Intermediate,Ayush Ladsariya,Lavkush Chaudhary,23-December-2025,24,10,10,0,Report
+Mechatronics Intermediate,Burhanuddin Hajee,Lavkush Chaudhary,12-August-2025,24,1.5,0,1.5,Report
+Mechatronics Intermediate,Diyaan Mehta,Lavkush Chaudhary,22-May-2025,24,4,4,0,Report
+Mechatronics Intermediate,Ishaan  Patel,Lavkush Chaudhary,20-August-2025,24,16.5,16.5,0,Report
+Mechatronics Intermediate,Ishita Shah,Lavkush Chaudhary,19-September-2025,24,1.5,0,1.5,Report
+Mechatronics Intermediate,Kartikeya  Pandya,Lavkush Chaudhary,28-June-2025,24,6,6,0,Report
+Mechatronics Intermediate,Kiaan Shah,Lavkush Chaudhary,05-March-2026,24,24,22.5,1.5,Report
+Mechatronics Intermediate,Nivaan  Tanna,Lavkush Chaudhary,15-September-2025,24,13.5,10.5,3,Report
+Mechatronics Intermediate,Reyansh Rathi,Lavkush Chaudhary,26-December-2025,24,10,10,0,Report
+Mechatronics Intermediate,Rudraang Goenka,Lavkush Chaudhary,07-February-2026,24,5.5,5.5,0,Report
+NI Advanced 35 Hours,Aryan Dodeja,Lavkush Chaudhary,15-October-2025,35,14,2,12,Report
+NI Advanced 35 Hours,Saksham Gupta,Lavkush Chaudhary,22-September-2025,35,14,2,12,Report
+NI Advanced 40 Hours,Aarav Seksaria,Lavkush Chaudhary,09-May-2026,40,2.5,0,2.5,Report
+NI Advanced 40 Hours,Adithi  Venkatesan,Lavkush Chaudhary,09-August-2025,40,33,25,8,Report
+NI Advanced 40 Hours,Anisha Goyal,Lavkush Chaudhary,23-September-2025,40,24.5,15.5,9,Report
+NI Advanced 40 Hours,Arin Mathew,Lavkush Chaudhary,24-April-2026,40,13.5,5,8.5,Report
+NI Advanced 40 Hours,Arya Jha,Lavkush Chaudhary,10-June-2026,40,25.5,0,25.5,Report
+NI Advanced 40 Hours,Manish Ganeshan,Lavkush Chaudhary,19-July-2025,40,22.5,21.5,1,Report
+NI Advanced 40 Hours,Nandini Pangal,Lavkush Chaudhary,18-May-2026,40,15,5,10,Report
+NI Advanced 40 Hours,Nawon Kim,Lavkush Chaudhary,16-June-2026,40,3,0,3,Report
+NI Advanced 40 Hours,Neel Shah,Lavkush Chaudhary,03-January-2026,40,16.5,5.5,11,Report
+NI Advanced 40 Hours,Radhika Beswal,Lavkush Chaudhary,29-May-2026,40,9,0,9,Report
+NI Advanced 40 Hours,Tanya Daniel,Lavkush Chaudhary,05-May-2025,40,19,3,16,Report
+NI Advanced 40 Hours,Varish Agarwal,Lavkush Chaudhary,25-May-2025,40,7.5,3.5,4,Report
+NI Advanced 40 Hours,Vivaan  Bafna,Lavkush Chaudhary,26-May-2025,40,3.5,3.5,0,Report
+NI Advanced 50 Hours,Ansh Thacker,Lavkush Chaudhary,28-February-2026,50,7,4,3,Report
+NI Advanced 50 Hours,Rishabh Rathi,Lavkush Chaudhary,16-January-2026,50,18,12,6,Report
+NI Advanced 50 Hours,Vivaan Agarwal,Lavkush Chaudhary,13-May-2026,50,21,7,14,Report
+NI Advanced 60 Hours,Agastya Lodha,Lavkush Chaudhary,19-December-2025,60,16,11.5,4.5,Report
+NI Advanced 60 Hours,Vivaan Joshi,Lavkush Chaudhary,30-August-2025,60,13.5,6.5,7,Report
+NI Junior,Krishiv Roongta,Lavkush Chaudhary,29-January-2026,30,1.5,1.5,0,Report
+NI Junior,Krishnav Daryanani,Lavkush Chaudhary,02-June-2025,30,15.5,12.5,3,Report
+NI Junior (20 hours),Ohm Shah,Lavkush Chaudhary,14-April-2026,20,11.5,1,10.5,Report
+Python Programming - Beginner,Aaditya Nair,Lavkush Chaudhary,02-December-2025,24,30,19.5,10.5,Report
+Python Programming - Beginner,Adrian Bodlaender,Lavkush Chaudhary,26-February-2026,24,8,8,0,Report
+Python Programming - Beginner,Eshika Jain,Lavkush Chaudhary,12-June-2025,24,18,18,0,Report
+Python Programming - Beginner,Preksh Doshi,Lavkush Chaudhary,09-April-2026,24,24,3,21,Report
+WRO 2026 - Future Innovators (Cohort of 2),Arsh Ahuja,Lavkush Chaudhary,13-April-2026,45,37,21.5,15.5,Report
+WRO 2026 - Future Innovators (Cohort of 2),Ayush Ladsariya,Lavkush Chaudhary,14-April-2026,45,37,21.5,15.5,Report
+WRO 2026 - Future Innovators (Cohort of 3),Aarnav Shah,Lavkush Chaudhary,22-March-2026,45,26.5,18,8.5,Report
+WRO 2026 - Future Innovators (Cohort of 3),Jatin Dixit,Lavkush Chaudhary,28-March-2026,45,26.5,18,8.5,Report
+WRO 2026 - Future Innovators (Cohort of 3),Riaan parasrampuria,Lavkush Chaudhary,27-March-2026,45,26.5,18,8.5,Report
+Electronics Junior,Arjun soni,Mansi Rajgor,31-July-2025,15,15,15,0,Report
+Electronics Junior,Eva Jain,Mansi Rajgor,08-September-2025,15,14.5,14.5,0,Report
+Electronics Junior,Nihira Marathe,Mansi Rajgor,26-June-2025,15,15.5,15.5,0,Report
+Electronics Junior,Shivansh Rai,Mansi Rajgor,20-June-2025,15,15,15,0,Report
+Electronics Junior,Shivom DESAI,Mansi Rajgor,17-June-2025,15,11,11,0,Report
+Electronics Junior,Trikay Kapoor Agarwal,Mansi Rajgor,26-September-2025,15,1,0,1,Report
+Electronics Junior,Vihaan Poddar,Mansi Rajgor,08-October-2025,15,13,13,0,Report
+Electronics Junior,Vikram Samtani,Mansi Rajgor,19-July-2025,15,1.5,1.5,0,Report
+Electronics Junior,Arjun Mehra,Mayur Gaikawad,18-April-2026,15,13.5,10.5,3,Report
+Electronics Junior,Veer Vikram Sharma,Mayur Gaikawad,27-March-2026,15,1.5,0,1.5,Report
+Mechatronics Intermediate,Abir  Chhatwal,Mayur Gaikawad,27-June-2025,24,7.5,1.5,6,Report
+Mechatronics Intermediate,Eva Jain,Mayur Gaikawad,05-February-2026,24,9,9,0,Report
+NI Advanced 40 Hours,Vivaan Dumir,Mayur Gaikawad,13-June-2026,40,6,0,6,Report
+Python Programming - Beginner,Nihira Marathe,Mayur Gaikawad,09-June-2026,24,22,14,8,Report
+Electronics Junior,Ananta Bajaj,Mayur Gosavi,10-June-2025,15,15,15,0,Report
+Electronics Junior,Arya Pandey,Mayur Gosavi,10-June-2025,15,15,15,0,Report
+Electronics Junior,Aveer Khemka,Mayur Gosavi,30-July-2025,15,15,13.5,1.5,Report
+Electronics Junior,Dhruv Madhusudan,Mayur Gosavi,28-July-2025,15,13,13,0,Report
+Electronics Junior,Eva Jain,Mayur Gosavi,08-September-2025,15,1,0,1,Report
+Electronics Junior,Nikkhil Malkani,Mayur Gosavi,28-July-2025,15,7.5,7.5,0,Report
+Electronics Junior,Nivaan  Mashru,Mayur Gosavi,28-August-2025,15,15,15,0,Report
+Electronics Junior,Rohan Maloo,Mayur Gosavi,30-August-2025,15,15,15,0,Report
+Electronics Junior,Shlok  Vazirani,Mayur Gosavi,05-August-2025,15,5.5,5.5,0,Report
+Electronics Junior,Trikay Kapoor Agarwal,Mayur Gosavi,26-September-2025,15,6.5,5.5,1,Report
+Electronics Junior,Veer Vikram Sharma,Mayur Gosavi,27-March-2026,15,1.5,0,1.5,Report
+Electronics Junior,Vihaan Poddar,Mayur Gosavi,08-October-2025,15,2,2,0,Report
+Electronics Junior,Vikram Samtani,Mayur Gosavi,19-July-2025,15,9,9,0,Report
+Electronics Senior - Arduino,Shaurya Shah,Mayur Gosavi,04-June-2025,24,24,24,0,Report
+Innovation Sprint (Junior),Ahana Marwah Dhawan,Mayur Gosavi,21-May-2026,24,22,22,0,Report
+Innovation Sprint (Junior),Ranveer sehgal,Mayur Gosavi,27-May-2026,24,22,8,14,Report
+Innovation Sprint (Junior),Vihaan Varma,Mayur Gosavi,23-May-2026,24,22,22,0,Report
+Innovation Sprint (Junior),Vir Dalmeida,Mayur Gosavi,29-May-2026,24,22,22,0,Report
+Innovation Sprint (Senior),Aarnav Puri,Mayur Gosavi,10-May-2026,24,22,22,0,Report
+Innovation Sprint (Senior),Dhruv Mehrotra,Mayur Gosavi,01-May-2026,24,22,20,2,Report
+Innovation Sprint (Senior),Kaeyan  Sinha,Mayur Gosavi,02-May-2026,24,22,12,10,Report
+Innovation Sprint (Senior),Mikhail Lobo,Mayur Gosavi,01-May-2026,24,22,22,0,Report
+Innovation Sprint (Senior),Raphael Lobo,Mayur Gosavi,01-May-2026,24,22,22,0,Report
+Mechatronics Intermediate,Aanya Waghela,Mayur Gosavi,05-July-2025,24,10.5,10.5,0,Report
+Mechatronics Intermediate,Abir  Chhatwal,Mayur Gosavi,27-June-2025,24,3,3,0,Report
+Mechatronics Intermediate,Adi  Pavoor,Mayur Gosavi,05-October-2025,24,10.5,10.5,0,Report
+Mechatronics Intermediate,Alia Gupta,Mayur Gosavi,26-July-2025,24,13.5,13.5,0,Report
+Mechatronics Intermediate,Aryaveer Agarwal,Mayur Gosavi,22-July-2025,24,13.5,13.5,0,Report
+Mechatronics Intermediate,Avantika Soni,Mayur Gosavi,31-July-2025,24,2,2,0,Report
+Mechatronics Intermediate,Ayaan Agrawal,Mayur Gosavi,21-June-2025,24,12,12,0,Report
+Mechatronics Intermediate,Dhyaana Rohera,Mayur Gosavi,06-May-2025,24,1,1,0,Report
+Mechatronics Intermediate,Hrisha  Badheka,Mayur Gosavi,19-May-2025,24,4.5,4.5,0,Report
+Mechatronics Intermediate,Madhav Jalan,Mayur Gosavi,21-April-2025,24,4,4,0,Report
+Mechatronics Intermediate,Nivaan  Mashru,Mayur Gosavi,27-October-2025,24,10,10,0,Report
+Mechatronics Intermediate,Rajveer Kothari,Mayur Gosavi,13-August-2025,24,6,6,0,Report
+Mechatronics Intermediate,SAARTH KARKERA,Mayur Gosavi,06-June-2025,24,10.5,10.5,0,Report
+Mechatronics Intermediate,Sara GANDHI,Mayur Gosavi,09-July-2025,24,12,12,0,Report
+Mechatronics Intermediate,Vivaan Sanghavi,Mayur Gosavi,01-June-2025,24,10.5,10.5,0,Report
+Python Programming - Beginner,Armaan Mehta,Mayur Gosavi,05-August-2025,24,24,21,3,Report
+Python Programming - Beginner,Avishi Jain,Mayur Gosavi,10-May-2025,24,1.5,1.5,0,Report
+Python Programming - Beginner,Jahangir Cooper,Mayur Gosavi,17-June-2025,24,20.5,20.5,0,Report
+Python Programming - Beginner,Tiara Kathuria,Mayur Gosavi,02-June-2025,24,9,7.5,1.5,Report
+Visual Programming,Nivaann Chopra,Mayur Gosavi,23-July-2025,15,13.5,13.5,0,Report
+3D CAD,Aariket Bharech,Mayuresh Patil,23-June-2026,24,24,0,24,Report
+NI Advanced 40 Hours,Akanksha Mohanty,Mayuresh Patil,13-June-2026,40,3.5,3.5,0,Report
+NI Advanced 40 Hours,Rajveer Maheshwari,Mayuresh Patil,01-June-2026,40,2,2,0,Report
+Internet of Things Advanced,Rishabh Hariharan,Nazeem  Patel,18-September-2025,24,1.5,1.5,0,Report
+Internet of Things Advanced,Veer Mehta,Nazeem  Patel,30-June-2025,24,22.5,22.5,0,Report
+AI Junior,Ayaan Shikari,Nazeem  Patel,15-November-2025,24,4.5,4.5,0,Report
+Electronics Junior,AARYAMAAN SAVLA,Nazeem  Patel,09-May-2025,15,4.5,4.5,0,Report
+Electronics Junior,Abeer Prakash Agarwal,Nazeem  Patel,28-August-2025,15,15,15,0,Report
+Electronics Junior,Agastya  Shah,Nazeem  Patel,15-September-2025,15,13.5,13.5,0,Report
+Electronics Junior,Ayaan Shikari,Nazeem  Patel,18-August-2025,15,15,15,0,Report
+Electronics Junior,Shivansh Tibrewala,Nazeem  Patel,25-August-2025,15,16.5,15,1.5,Report
+Electronics Junior,Viaan Gang,Nazeem  Patel,30-July-2025,15,15,15,0,Report
+Electronics Junior,Zahra Hajee,Nazeem  Patel,12-August-2025,15,12,10.5,1.5,Report
+Electronics Junior,Zian Padia,Nazeem  Patel,18-July-2025,15,13.5,13.5,0,Report
+Mechatronics Intermediate,Aanya Sanghavi,Nazeem  Patel,07-July-2025,24,8.5,8.5,0,Report
+Mechatronics Intermediate,Adrian Bodlaender,Nazeem  Patel,21-July-2025,24,12,12,0,Report
+Mechatronics Intermediate,Aeyanah Sanganeria,Nazeem  Patel,10-July-2025,24,9,9,0,Report
+Mechatronics Intermediate,Agasthya Iyer,Nazeem  Patel,14-June-2025,24,12,12,0,Report
+Mechatronics Intermediate,Avir Oberoi,Nazeem  Patel,21-July-2025,24,2,0,2,Report
+Mechatronics Intermediate,AVYAHN DALMIA,Nazeem  Patel,01-July-2025,24,7.5,7.5,0,Report
+Mechatronics Intermediate,Diyaan Mehta,Nazeem  Patel,22-May-2025,24,3,3,0,Report
+Mechatronics Intermediate,Eva Bahl,Nazeem  Patel,21-August-2025,24,1.5,1.5,0,Report
+Mechatronics Intermediate,Kaeyan  Sinha,Nazeem  Patel,19-June-2025,24,10,10,0,Report
+Mechatronics Intermediate,Kartikeya  Pandya,Nazeem  Patel,28-June-2025,24,7,7,0,Report
+Mechatronics Intermediate,Nirvaan  Merchant,Nazeem  Patel,01-August-2025,24,12,12,0,Report
+Mechatronics Intermediate,Reyhan Raj  Sahana,Nazeem  Patel,05-July-2025,24,12,12,0,Report
+Mechatronics Intermediate,Riaan Ghotikar,Nazeem  Patel,07-May-2025,24,11.5,11.5,0,Report
+Mechatronics Intermediate,Shivanya Maheshwari,Nazeem  Patel,08-October-2025,24,1.5,1.5,0,Report
+Mechatronics Intermediate,SWAR SANJAY RAJOLE,Nazeem  Patel,20-August-2025,24,14,13,1,Report
+NI Advanced 20 Hours,DHRUVA ROJEKAR,Nazeem  Patel,05-August-2025,20,14,14,0,Report
+NI Advanced 40 Hours,Aryan Kabra,Nazeem  Patel,15-September-2025,40,5,5,0,Report
+NI Advanced 40 Hours,Varish Agarwal,Nazeem  Patel,25-May-2025,40,1.5,1.5,0,Report
+NI Advanced 40 Hours,Vivaan  Bafna,Nazeem  Patel,26-May-2025,40,13,13,0,Report
+NI Advanced 60 Hours,Vivaan Joshi,Nazeem  Patel,30-August-2025,60,6.5,0,6.5,Report
+3D CAD,Jatin Dixit,Nirmit Jasani,10-April-2025,24,3,3,0,Report
+3D CAD,Saniddhya Jain,Nirmit Jasani,02-July-2025,24,22.5,19.5,3,Report
+3D CAD,Siddharth Khanna,Nirmit Jasani,14-May-2025,24,14,12,2,Report
+3D CAD,Vaanya Kumbhat,Nirmit Jasani,27-November-2025,24,27.5,19.5,8,Report
+NI Advanced 50 Hours,Avyukt Chhabra,Nirmit Jasani,23-March-2026,50,7.5,6,1.5,Report
+Artificial Intelligence: Concepts to Applications,Mihika Daga,Om Kulkarni,18-June-2026,60,50,6,44,Report
+NI Advanced 40 Hours,Abir  Chhatwal,Om Kulkarni,20-June-2026,40,0.5,0.5,0,Report
+NI Advanced 40 Hours,Ansh Jalan,Om Kulkarni,01-June-2026,40,10.75,0,10.75,Report
+NI Advanced 40 Hours,Avir Raisinghani,Om Kulkarni,23-April-2026,40,4.25,4.25,0,Report
+NI Advanced 40 Hours,Prisha Deshmukh,Om Kulkarni,13-June-2026,40,44.5,2,42.5,Report
+NI Advanced 50 Hours,Paarth Somani,Om Kulkarni,29-January-2026,50,11,5,6,Report
+Python Programming - Beginner,AVYAHN DALMIA,Om Kulkarni,23-June-2026,24,9,6,3,Report
+Python Programming - Beginner,Reyaansh Pilani,Om Kulkarni,24-June-2026,24,3,1.5,1.5,Report
+3D CAD,Prenit Kathuria,Om Mahadeshwar,29-May-2025,24,4,2,2,Report
+3D CAD,Radhika Beswal,Om Mahadeshwar,04-September-2025,24,24,14.5,9.5,Report
+3D CAD,Vanika Bubna,Om Mahadeshwar,29-September-2025,24,17.5,10.5,7,Report
+FIRST Tech Challenge,Aahir Seth,Om Mahadeshwar,09-August-2025,100,6,0,6,Report
+FIRST Tech Challenge,Aarav  Garga,Om Mahadeshwar,04-June-2025,100,6,0,6,Report
+FIRST Tech Challenge,Aarav Damodar,Om Mahadeshwar,03-September-2025,100,6,0,6,Report
+FIRST Tech Challenge,Advik Poddar,Om Mahadeshwar,29-May-2025,100,6,0,6,Report
+FIRST Tech Challenge,Arjun Jhaveri,Om Mahadeshwar,08-August-2025,100,6,0,6,Report
+FIRST Tech Challenge,Dhia Ghalla,Om Mahadeshwar,15-September-2025,100,6,0,6,Report
+FIRST Tech Challenge,Eshika Jain,Om Mahadeshwar,03-October-2025,100,6,0,6,Report
+FIRST Tech Challenge,Kevin Trivedi,Om Mahadeshwar,21-August-2025,100,6,0,6,Report
+FIRST Tech Challenge,Radhika Beswal,Om Mahadeshwar,03-September-2025,100,6,0,6,Report
+FIRST Tech Challenge,Samaira Shah,Om Mahadeshwar,15-August-2025,100,6,0,6,Report
+FIRST Tech Challenge,Sarthak Sekhsaria,Om Mahadeshwar,17-June-2025,100,6,0,6,Report
+FIRST Tech Challenge,Shaurya Kothari,Om Mahadeshwar,12-June-2025,100,6,0,6,Report
+FIRST Tech Challenge,Sohum Arora,Om Mahadeshwar,27-May-2025,100,6,0,6,Report
+FIRST Tech Challenge,Vaanya Kumbhat,Om Mahadeshwar,26-July-2025,100,6,0,6,Report
+FIRST Tech Challenge,Venesha Bharwada,Om Mahadeshwar,09-September-2025,100,6,0,6,Report
+Mechatronics Intermediate,Aabir Mehta,Om Mahadeshwar,07-June-2025,24,10,8,2,Report
+Mechatronics Intermediate,AVYAHN DALMIA,Om Mahadeshwar,01-July-2025,24,10,10,0,Report
+Mechatronics Intermediate,Riaan Ghotikar,Om Mahadeshwar,07-May-2025,24,12,12,0,Report
+Mechatronics Intermediate,Zera Parekh,Om Mahadeshwar,31-May-2025,24,2,2,0,Report
+3D CAD,Aavyan Agarwal,Parth Gade,20-May-2025,24,3,1.5,1.5,Report
+3D CAD,Arya Sabnis,Pratik Panchal,23-June-2026,24,14,0,14,Report
+3D CAD,KSHIVAY DALMIA,Pratik Panchal,01-July-2025,24,22,0,22,Report
+Design Foundation,Abeer Prakash Agarwal,Pratik Panchal,14-June-2025,15,15,0,15,Report
+FRC CAD Skill Building,Ishaan  Panicker,Pratik Panchal,16-June-2026,24,4,4,0,Report
+Mechatronics Intermediate,Aanya Sanghavi,Pratik Panchal,07-July-2025,24,15.5,15.5,0,Report
+Electronics Junior - AI Extension,Rudra Goel,Rajkumar Vishwakarma,23-June-2025,15,4,4,0,Report
+NI Advanced 40 Hours,Samaira goyal,Rohan Gaikwad,27-April-2026,40,22,6,16,Report
+NI Advanced 40 Hours,Viwaan Uttam,Rohan Gaikwad,04-May-2026,40,10,10,0,Report
+NI Advanced 50 Hours,Vedant Lakhani,Rohan Gaikwad,12-August-2025,50,14,12,2,Report
+NI Junior (10 Hours),Srousha  Bisht,Rohan Gaikwad,25-April-2026,10,10,10,0,Report
+Python Programming - Beginner,Ayaan Gupta,Rohan Gaikwad,15-May-2026,24,24,9,15,Report
+Python Programming - Beginner,Vidit Shukla,Rohan Gaikwad,25-March-2026,24,22,22,0,Report
+3D CAD,Vardaan Gupta,Rui Jadhav,17-June-2026,24,24,2,22,Report
+Design Foundation,Abram Vardhan,Rui Jadhav,22-June-2026,15,13.5,7.5,6,Report
+Mechatronics Intermediate,Aahana Dani,Rui Jadhav,27-June-2026,24,2,2,0,Report
+Mechatronics Intermediate,Nevaan Kohli,Rui Jadhav,25-June-2026,24,24,2,22,Report
+Java Programming Course,Sarthak Sekhsaria,Rushabh Lale,04-June-2026,24,28,15,13,Report
+Java Programming Course,Vanshika Lamba,Rushabh Lale,15-May-2026,24,24,4.5,19.5,Report
+Python Programming - Beginner,Kabir Hariani,Rushabh Lale,27-March-2026,24,34,34,0,Report
+Internet of Things Advanced,Aarav Gang,saiyad husain,31-January-2026,24,22.5,22.5,0,Report
+Internet of Things Advanced,Piyansh Kaarthik,saiyad husain,17-June-2026,24,24,12,12,Report
+AI Junior,Abram Vardhan,saiyad husain,25-February-2026,24,1.5,1.5,0,Report
+Design Foundation,Laksh Jain,saiyad husain,02-February-2026,15,16.5,15,1.5,Report
+Java Programming Course,Aarav Pandya,saiyad husain,14-April-2026,24,12,9,3,Report
+Java Programming Course,Amaay Gupta,saiyad husain,30-January-2026,24,22,21,1,Report
+Java Programming Course,Anoushka Kumar,saiyad husain,07-June-2026,24,26,11.5,14.5,Report
+Java Programming Course,Dhrish Parikh,saiyad husain,06-June-2026,24,21.5,17.5,4,Report
+Java Programming Course,Palaksi Agrawal,saiyad husain,24-June-2026,24,23.5,0,23.5,Report
+Java Programming Course,Rishabh Hariharan,saiyad husain,24-March-2026,24,25.5,16,9.5,Report
+Java Programming Course,Vivaan Maheshwari,saiyad husain,30-April-2026,24,2,2,0,Report
+Java Programming Course,Vivaan Suchanti,saiyad husain,02-March-2026,24,29,14,15,Report
+Mechatronics Advance,Aadit Mehta,saiyad husain,07-March-2026,24,4,4,0,Report
+Mechatronics Advance,Anay Bhandari,saiyad husain,11-May-2026,24,24,21,3,Report
+Mechatronics Intermediate,Dev Vaghani,saiyad husain,25-April-2026,24,28,24,4,Report
+Mechatronics Intermediate,Devansh Jaju,saiyad husain,26-November-2025,24,7.5,7.5,0,Report
+Mechatronics Intermediate,Dhrish Shah,saiyad husain,21-January-2026,24,8,8,0,Report
+Mechatronics Intermediate,Kabir Chheda,saiyad husain,28-January-2026,24,6,3,3,Report
+Mechatronics Intermediate,Neil Sancheti,saiyad husain,06-June-2026,24,15,7,8,Report
+Mechatronics Intermediate,Pranava Randeria,saiyad husain,29-December-2025,24,23,21.5,1.5,Report
+Mechatronics Intermediate,SAANVI MAHESHWARI,saiyad husain,30-March-2026,24,1,1,0,Report
+Mechatronics Intermediate,Yuvraj Jhaveri,saiyad husain,21-January-2026,24,8,8,0,Report
+NI Advanced 40 Hours,Agastya Mundhe,saiyad husain,26-March-2026,40,19,18,1,Report
+NI Advanced 40 Hours,Ayaan Jain,saiyad husain,04-May-2026,40,4,0,4,Report
+NI Advanced 40 Hours,Mahir Ranawat,saiyad husain,21-August-2025,40,26.5,15.5,11,Report
+NI Advanced 40 Hours,SHREY SHAH,saiyad husain,03-April-2026,40,2,2,0,Report
+NI Advanced 50 Hours,Dev jhaveri,saiyad husain,19-December-2025,50,12,12,0,Report
+NI Advanced 50 Hours,Rishabh Rathi,saiyad husain,16-January-2026,50,1.5,1.5,0,Report
+NI Junior (20 hours),Ohm Shah,saiyad husain,14-April-2026,20,5.5,3,2.5,Report
+Python Programming - Beginner,SAANVI MAHESHWARI,saiyad husain,21-April-2026,24,2.5,1.5,1,Report
+Visual Programming,ARMAAN THAKER,saiyad husain,11-May-2026,15,13.5,4.5,9,Report
+WRO 2026 - Future Innovators (Cohort of 3),Dhrish Shah,saiyad husain,13-March-2026,45,26,23,3,Report
+WRO 2026 - Future Innovators (Cohort of 3),Ishaan Thakurta,saiyad husain,13-March-2026,45,26,20.5,5.5,Report
+WRO 2026 - Future Innovators (Cohort of 3),Kavir Mehta,saiyad husain,13-March-2026,45,26,26,0,Report
+Electronics Junior,Rishi Deshmukh,Saket Singh,24-February-2026,15,1.5,1.5,0,Report
+Electronics Junior,Vivaan Gupta,Saket Singh,30-May-2026,15,12,0,12,Report
+Electronics Junior,Zian Padia,Saket Singh,18-July-2025,15,15,3,12,Report
+Mechatronics Advance,Aadit Mehta,Saket Singh,07-March-2026,24,20,20,0,Report
+Mechatronics Intermediate,Advit Himatsingka,Saket Singh,05-March-2026,24,1.5,1.5,0,Report
+Mechatronics Intermediate,ARJUN  DEDHIA,Saket Singh,09-September-2025,24,1.5,0,1.5,Report
+Mechatronics Intermediate,Eva Bahl,Saket Singh,21-August-2025,24,10.5,7.5,3,Report
+Mechatronics Intermediate,Ishita Shah,Saket Singh,19-September-2025,24,3,1.5,1.5,Report
+Mechatronics Intermediate,Nirvaan  Merchant,Saket Singh,01-August-2025,24,1.5,0,1.5,Report
+Mechatronics Intermediate,Nirvaan Dasgupta,Saket Singh,01-July-2025,24,1.5,1.5,0,Report
+Mechatronics Intermediate,Nivaan Tanna,Saket Singh,19-June-2026,24,24,1.5,22.5,Report
+Mechatronics Intermediate,SAANVI MAHESHWARI,Saket Singh,30-March-2026,24,11.5,11.5,0,Report
+Mechatronics Intermediate,Swara Vijay,Saket Singh,28-April-2026,24,2,2,0,Report
+NI Advanced 40 Hours,Aarav Seksaria,Saket Singh,09-May-2026,40,1,0,1,Report
+NI Advanced 40 Hours,Agastya Mundhe,Saket Singh,26-March-2026,40,1,1,0,Report
+NI Advanced 40 Hours,Nawon Kim,Saket Singh,16-June-2026,40,10.5,0,10.5,Report
+NI Advanced 50 Hours,Naavya garg,Saket Singh,20-August-2025,50,6.5,6.5,0,Report
+NI Junior (20 hours),Arjun Dedhia,Saket Singh,02-May-2026,20,6.5,6.5,0,Report
+NI Junior (20 hours),Ohm Shah,Saket Singh,14-April-2026,20,6,6,0,Report
+Python Programming - Beginner,Aarush Mittal,Saket Singh,11-October-2025,24,6,1.5,4.5,Report
+Python Programming - Beginner,Dia Raghavan,Saket Singh,29-June-2026,24,24,0,24,Report
+Python Programming - Beginner,Myra Bose,Saket Singh,19-June-2025,24,10,7,3,Report
+Python Programming - Beginner,Samaira Punamia,Saket Singh,05-August-2025,24,3,1.5,1.5,Report
+Python Programming - Intermediate,Piyansh Kaarthik,Saket Singh,13-February-2026,24,16,14,2,Report
+Visual Programming,Viraansh Chavva,Saket Singh,20-June-2026,15,15,0,15,Report
+WRO 2026 - Future Innovators (Cohort of 3),Khush Byramjee,Saket Singh,20-March-2026,45,2,2,0,Report
+WRO 2026 - Future Innovators (Cohort of 3),Krishiv Desai,Saket Singh,11-April-2026,45,2,0,2,Report
+WRO 2026 - Future Innovators (Cohort of 3),Ohm Shah,Saket Singh,10-April-2026,45,2,2,0,Report
+3D CAD,Aarush Bansal,Shashank Bhosale,13-March-2026,24,24,24,0,Report
+3D CAD,Avyan Bhojnagarwala,Shashank Bhosale,20-February-2026,24,24,24,0,Report
+3D CAD,Dev Dwarkadas,Shashank Bhosale,16-April-2026,24,24,17.5,6.5,Report
+3D CAD,Kabir Panjwani,Shashank Bhosale,26-February-2026,24,24,24,0,Report
+3D CAD,Krish Panjwani,Shashank Bhosale,26-February-2026,24,24,24,0,Report
+3D CAD,MISHKA MEHTA,Shashank Bhosale,27-May-2026,24,24,18,6,Report
+3D CAD,Ranveer sehgal,Shashank Bhosale,11-March-2026,24,24,24,0,Report
+3D CAD,Reyansh Chandra,Shashank Bhosale,31-May-2026,24,24,16,8,Report
+3D CAD,Ridharv Shankar,Shashank Bhosale,07-January-2026,24,15,15,0,Report
+3D CAD,Sara GANDHI,Shashank Bhosale,18-November-2025,24,24,24,0,Report
+3D CAD,Sarthak Sekhsaria,Shashank Bhosale,17-November-2025,24,26,26,0,Report
+3D CAD,Soutrik Banerjee,Shashank Bhosale,16-September-2025,24,24,24,0,Report
+3D CAD,Veer Mehta,Shashank Bhosale,12-March-2026,24,22.5,21,1.5,Report
+3D CAD,Vihaan Varma,Shashank Bhosale,04-June-2026,24,24,16,8,Report
+3D CAD,Yuvraj Saraogi,Shashank Bhosale,11-February-2026,24,12,12,0,Report
+3D CAD INT,Ayaan Gupta,Shashank Bhosale,03-January-2026,24,24,24,0,Report
+Design Foundation,Aarav Gupta,Shashank Bhosale,30-October-2025,15,15,15,0,Report
+Design Foundation,Adish Irani,Shashank Bhosale,31-December-2025,15,15,15,0,Report
+Design Foundation,Dhruv Madhusudan,Shashank Bhosale,20-March-2026,15,16,13,3,Report
+Design Foundation,Naiyah Mehta,Shashank Bhosale,05-December-2025,15,16.5,15,1.5,Report
+Design Foundation,Neil Rana,Shashank Bhosale,03-June-2026,15,14,9,5,Report
+Design Foundation,Samar Kumar,Shashank Bhosale,14-June-2026,15,16.5,4,12.5,Report
+Design Foundation,Veer Mahajan,Shashank Bhosale,10-April-2026,15,15,13.5,1.5,Report
+Design Foundation,Vikram Samtani,Shashank Bhosale,07-January-2026,15,15,15,0,Report
+FRC CAD Skill Building,AAVAAN NANAVATY,Shashank Bhosale,09-June-2026,24,24,15,9,Report
+FRC CAD Skill Building,Arhaan Amin,Shashank Bhosale,30-April-2026,24,24,24,0,Report
+FRC CAD Skill Building,Ayaan Shah,Shashank Bhosale,02-May-2026,24,24,22,2,Report
+FRC CAD Skill Building,Nivaan Patel,Shashank Bhosale,29-April-2026,24,24,22,2,Report
+FRC CAD Skill Building,Reyaan Shah,Shashank Bhosale,30-April-2026,24,24,20,4,Report
+FRC CAD Skill Building,Riaan Shah,Shashank Bhosale,30-April-2026,24,24,24,0,Report
+FRC CAD Skill Building,Shanay Patel,Shashank Bhosale,30-April-2026,24,24,24,0,Report
+FRC CAD Skill Building - ABWA,Siddharth Ashok Kumar,Shashank Bhosale,25-February-2026,24,8,2,6,Report
+Mechatronics Intermediate,Aanya Waghela,Shashank Bhosale,05-July-2025,24,10.5,10.5,0,Report
+Mechatronics Intermediate,Aarav Shah,Shashank Bhosale,10-June-2026,24,4,4,0,Report
+Mechatronics Intermediate,Adi  Pavoor,Shashank Bhosale,05-October-2025,24,13.75,13.75,0,Report
+Mechatronics Intermediate,Agastya Marfatia,Shashank Bhosale,02-February-2026,24,12,12,0,Report
+Mechatronics Intermediate,Alia Gupta,Shashank Bhosale,26-July-2025,24,10.5,10.5,0,Report
+Mechatronics Intermediate,Aliya Agarwal,Shashank Bhosale,15-April-2025,24,1.5,1.5,0,Report
+Mechatronics Intermediate,Aria Britto,Shashank Bhosale,04-March-2026,24,16,16,0,Report
+Mechatronics Intermediate,Aryaveer Agarwal,Shashank Bhosale,22-July-2025,24,10.5,10.5,0,Report
+Mechatronics Intermediate,Avantika Soni,Shashank Bhosale,31-July-2025,24,1.5,1.5,0,Report
+Mechatronics Intermediate,Avir Oberoi,Shashank Bhosale,21-July-2025,24,6,6,0,Report
+Mechatronics Intermediate,Ayaan Agrawal,Shashank Bhosale,21-June-2025,24,12,10,2,Report
+Mechatronics Intermediate,Dhyaana Rohera,Shashank Bhosale,06-May-2025,24,12.5,11.5,1,Report
+Mechatronics Intermediate,Eva Jain,Shashank Bhosale,05-February-2026,24,12,10.5,1.5,Report
+Mechatronics Intermediate,Kush Tyagi,Shashank Bhosale,26-December-2025,24,10,10,0,Report
+Mechatronics Intermediate,MUDIT SHAH,Shashank Bhosale,16-November-2025,24,12.5,12.5,0,Report
+Mechatronics Intermediate,Ridhaan Modi,Shashank Bhosale,19-September-2025,24,10.5,9,1.5,Report
+Mechatronics Intermediate,Riyan Mangal,Shashank Bhosale,02-April-2026,24,25.5,14.5,11,Report
+Mechatronics Intermediate,Rudra Goel,Shashank Bhosale,01-June-2026,24,24,17.5,6.5,Report
+Mechatronics Intermediate,Sara GANDHI,Shashank Bhosale,09-July-2025,24,1.5,0,1.5,Report
+Mechatronics Intermediate,Shanaya Gupta,Shashank Bhosale,08-May-2025,24,13.5,13.5,0,Report
+Mechatronics Intermediate,Shaurya Kathuria,Shashank Bhosale,02-June-2025,24,10,8,2,Report
+Mechatronics Intermediate,Sohum Mehta,Shashank Bhosale,08-November-2025,24,10.5,10.5,0,Report
+Mechatronics Intermediate,SWAR SANJAY RAJOLE,Shashank Bhosale,20-August-2025,24,14,11,3,Report
+Mechatronics Intermediate,Vivaan Sanghavi,Shashank Bhosale,01-June-2025,24,15,15,0,Report
+Mechatronics Intermediate,Vyom Kamat,Shashank Bhosale,12-February-2026,24,10,10,0,Report
+NI Advanced 40 Hours,Sparrsh Gupta,Shashank Bhosale,22-July-2025,40,3.5,3.5,0,Report
+Design Foundation,Armaan Kothari,Shashank Ganvir,25-November-2025,15,7.75,7.75,0,Report
+Electronics Junior,Eissa Shaikh,Shashank Ganvir,26-May-2026,15,17,15,2,Report
+Mechatronics Intermediate,Madhav Jalan,Shashank Ganvir,21-April-2025,24,13.5,13.5,0,Report
+Mechatronics Intermediate,Nivaan  Mashru,Shashank Ganvir,27-October-2025,24,1.5,1.5,0,Report
+Design Foundation,Ananta Bajaj,Shivam Rane,15-June-2026,15,15,15,0,Report
+Design Foundation,Aria Podar,Shivam Rane,15-June-2026,15,18,12,6,Report
+Design Foundation,Hridhaan Sundesha,Shivam Rane,17-May-2026,15,12,12,0,Report
+Design Foundation,Keyaan Shah,Shivam Rane,06-May-2026,15,13.5,9,4.5,Report
+Design Foundation,Nyra Chakka,Shivam Rane,07-May-2026,15,15,5,10,Report
+Design Foundation,Shivansh Rai,Shivam Rane,23-June-2026,15,15,7.5,7.5,Report
+Electronics Junior,Arav Goyal,Shivam Rane,15-June-2026,15,15,3,12,Report
+3D CAD,Ridharv Shankar,Shubham Mehta,07-January-2026,24,7.5,7.5,0,Report
+Design Foundation,Ranveer sehgal,Shubham Mehta,05-January-2026,15,13,13,0,Report
+Design Foundation,Shivom DESAI,Shubham Mehta,23-December-2025,15,6,6,0,Report
+Electronics Junior,Ayaan Sunny Shah,Shubham Mehta,06-January-2026,15,13.5,12,1.5,Report
+Electronics Junior,Ranveer sehgal,Shubham Mehta,25-November-2025,15,1.5,0,1.5,Report
+Electronics Junior,Vir Govani,Shubham Mehta,03-January-2026,15,15,13.5,1.5,Report
+Electronics Senior - Arduino,Hridaan Jain,Shubham Mehta,13-October-2025,24,8,4,4,Report
+Mechatronics Intermediate,Kush Tyagi,Shubham Mehta,26-December-2025,24,6,6,0,Report
+3D CAD,Neha Mishra,Shweta Garje,25-April-2025,24,16,0,16,Report
+Design Foundation,Shivom DESAI,Shweta Garje,23-December-2025,15,1,1,0,Report
+Electronics Junior,Nyra Chakka,Siddhesh Murudkar,28-October-2025,15,3,3,0,Report
+Electronics Junior,Shivom DESAI,Siddhesh Murudkar,17-June-2025,15,4,4,0,Report
+Electronics Junior,Tashi Gupta,Siddhesh Murudkar,30-May-2025,15,3,3,0,Report
+Electronics Senior - Arduino,Aayan Asthana,Siddhesh Murudkar,23-June-2025,24,0.5,0.5,0,Report
+Electronics Senior - Arduino,Agastya Desai,Siddhesh Murudkar,08-September-2025,24,24,24,0,Report
+Mechatronics Intermediate,Aliya Agarwal,Siddhesh Murudkar,15-April-2025,24,8.5,8.5,0,Report
+Mechatronics Intermediate,Avantika Soni,Siddhesh Murudkar,31-July-2025,24,8,8,0,Report
+Mechatronics Intermediate,Dazstaan  Rai,Siddhesh Murudkar,02-July-2025,24,3,3,0,Report
+Mechatronics Intermediate,Mihir Cooper,Siddhesh Murudkar,13-June-2025,24,2,2,0,Report
+Mechatronics Intermediate,Nirvaan Mehta,Siddhesh Murudkar,16-September-2025,24,24,24,0,Report
+Mechatronics Intermediate,Riddhi Shankar,Siddhesh Murudkar,17-July-2025,24,24,24,0,Report
+Mechatronics Intermediate,Shrey Joshi,Siddhesh Murudkar,29-May-2025,24,11,11,0,Report
+Mechatronics Intermediate,Vihaan Chheda,Siddhesh Murudkar,01-August-2025,24,12,12,0,Report
+NI Junior,Rahyl Deshmukh,Siddhesh Murudkar,14-May-2025,30,30,30,0,Report
+NI Junior,Riaan Deshmukh,Siddhesh Murudkar,14-May-2025,30,30,30,0,Report
+Python Programming - Beginner,Kian Trehan,Siddhesh Murudkar,30-October-2025,24,12,10.5,1.5,Report
+WRO 2026 - Future Innovators (Cohort of 2),Rahyl Deshmukh,Siddhesh Murudkar,31-March-2026,45,43.83,43.83,0,Report
+WRO 2026 - Future Innovators (Cohort of 2),Riaan Deshmukh,Siddhesh Murudkar,31-March-2026,45,43.83,43.83,0,Report
+AI - Machine Learning,Noel Juby Chandy,Srikant Venkatraman,12-June-2025,30,22,22,0,Report
+Java Programming Course,Aarna Haria,Srikant Venkatraman,08-May-2025,24,3,3,0,Report
+Java Programming Course,Ayush Rao,Srikant Venkatraman,03-June-2025,24,24,22,2,Report
+Python Programming - Beginner,Viaan Bakliwal,Srikant Venkatraman,16-July-2025,24,9,1.5,7.5,Report
+3D CAD,Krishiv Desai,Subhrajyoti Meher,22-June-2026,24,24,10,14,Report
+Electronics Junior,Jay Shah,Sujal Patil,23-June-2025,15,1.5,1.5,0,Report
+FRC Java Skill Building,Ishaan  Panicker,Sujal Patil,04-June-2026,24,12,8,4,Report
+Java Programming Course,Aarav Pandya,Sujal Patil,14-April-2026,24,19,16,3,Report
+Java Programming Course,Ahaan Dalmia,Sujal Patil,01-July-2025,24,16,8,8,Report
+Java Programming Course,Ishaan  Mookim,Sujal Patil,10-June-2025,24,24,20,4,Report
+Python Programming - Beginner,Samaira Punamia,Sujal Patil,05-August-2025,24,4.5,0,4.5,Report
+Python Programming - Beginner,Viaan Bakliwal,Sujal Patil,16-July-2025,24,13.5,7.5,6,Report
+WRO Future Engineers (2026),Rehaan Dhandhia,Sujal Patil,18-March-2026,110,25,24,1,Report
+WRO Future Engineers (2026),Shaurya  Sule,Sujal Patil,24-March-2026,110,25,23,2,Report
+WRO Future Engineers (2026),Zeus Wadia,Sujal Patil,16-March-2026,110,25,25,0,Report
+Electronics Junior,Jay Shah,Tanishka Sachdeva,23-June-2025,15,1.5,1.5,0,Report
+Electronics Junior,Zian Padia,Tanishka Sachdeva,18-July-2025,15,1.5,1.5,0,Report
+3D CAD,Kian  Gaziani,Utkarsh Kankaria,25-June-2025,24,10,10,0,Report
+3D CAD,Neha Mishra,Utkarsh Kankaria,25-April-2025,24,0.92,0,0.92,Report
+Design Foundation,Nivaan  Mashru,Utkarsh Kankaria,29-July-2025,15,12,12,0,Report
+Design Foundation,Trikay Kapoor Agarwal,Utkarsh Kankaria,18-June-2025,15,12,12,0,Report
+Electronics Junior,Ammaar Ali,Utkarsh Kankaria,30-May-2025,15,13,13,0,Report
+Electronics Junior,Nyra Chakka,Utkarsh Kankaria,28-October-2025,15,13,9,4,Report
+Mechatronics Intermediate,Abir  Chhatwal,Utkarsh Kankaria,27-June-2025,24,13.5,13.5,0,Report
+Mechatronics Intermediate,Adi  Pavoor,Utkarsh Kankaria,05-October-2025,24,1.25,1.25,0,Report
+Mechatronics Intermediate,Ayaan Harlalka,Utkarsh Kankaria,02-May-2025,24,10.5,9,1.5,Report
+Mechatronics Intermediate,Nivaan  Mashru,Utkarsh Kankaria,27-October-2025,24,3,3,0,Report
+Mechatronics Intermediate,rayaan maloo,Utkarsh Kankaria,29-July-2025,24,1.5,1.5,0,Report
+Mechatronics Intermediate,Sunvir  Lakhani,Utkarsh Kankaria,22-July-2025,24,29.5,26.5,3,Report
+Mechatronics Intermediate,Vir Gupta,Utkarsh Kankaria,02-May-2025,24,10.5,9,1.5,Report
+Mechatronics Intermediate,Zayne Malkani,Utkarsh Kankaria,28-July-2025,24,3.75,3.75,0,Report
+Internet of Things Advanced,Anay Bhandari,Vaishnavi Bodke,25-February-2026,24,3,3,0,Report
+Internet of Things Advanced,Kanishk Chainani,Vaishnavi Bodke,05-March-2026,24,1.5,1.5,0,Report
+AI Junior,Abram Vardhan,Vaishnavi Bodke,25-February-2026,24,27.42,24.42,3,Report
+AI Junior,Aryan Bakshi,Vaishnavi Bodke,23-September-2025,24,22.5,21,1.5,Report
+AI Junior,Avik Prasad,Vaishnavi Bodke,17-June-2025,24,24,22.5,1.5,Report
+AI Junior,Ayaan Shikari,Vaishnavi Bodke,15-November-2025,24,22.5,19.5,3,Report
+AI Junior,Krishiv Desai,Vaishnavi Bodke,11-June-2025,24,21.5,19.5,2,Report
+AI Junior,Neil  Gupte,Vaishnavi Bodke,09-July-2025,24,24,24,0,Report
+AI Junior,Rayaan  Patel,Vaishnavi Bodke,12-February-2026,24,24,21,3,Report
+AI Junior,Sahana Vijay,Vaishnavi Bodke,16-October-2025,24,28.5,25.5,3,Report
+Design Foundation,Anishka  Biyani,Vaishnavi Bodke,26-June-2025,15,15,15,0,Report
+Design Foundation,Hunar Lamba,Vaishnavi Bodke,26-November-2025,15,14.5,11.5,3,Report
+Design Foundation,Jahan Sukhia,Vaishnavi Bodke,08-May-2026,15,5,2.5,2.5,Report
+Design Foundation,Kavir Mehta,Vaishnavi Bodke,14-July-2025,15,15,15,0,Report
+Design Foundation,Laksh Jain,Vaishnavi Bodke,02-February-2026,15,1.5,1.5,0,Report
+Electronics Junior,Abeer Prakash Agarwal,Vaishnavi Bodke,28-August-2025,15,1.5,1.5,0,Report
+Electronics Junior,Adit Parikh,Vaishnavi Bodke,04-April-2025,15,1.5,1.5,0,Report
+Electronics Junior,Arjun Dani,Vaishnavi Bodke,23-June-2025,15,13.5,9,4.5,Report
+Electronics Junior,Aryan Swaminathan,Vaishnavi Bodke,16-June-2026,15,14,1,13,Report
+Electronics Junior,Ayaan  Merchant,Vaishnavi Bodke,01-August-2025,15,15,15,0,Report
+Electronics Junior,Hunar Lamba,Vaishnavi Bodke,20-August-2025,15,16.5,16.5,0,Report
+Electronics Junior,Jaiveer Mahadevia,Vaishnavi Bodke,17-September-2025,15,15,15,0,Report
+Electronics Junior,Jaksh Aggarwal,Vaishnavi Bodke,19-May-2026,15,13.5,13.5,0,Report
+Electronics Junior,Jianna Vasa,Vaishnavi Bodke,11-April-2026,15,17.5,15,2.5,Report
+Electronics Junior,Kriti Beswal,Vaishnavi Bodke,12-June-2025,15,13.5,13.5,0,Report
+Electronics Junior,Rishi Deshmukh,Vaishnavi Bodke,24-February-2026,15,10.5,10.5,0,Report
+Electronics Junior,Shaurya Mehta,Vaishnavi Bodke,08-March-2026,15,13.5,7.5,6,Report
+Electronics Junior,Shivansh Vora,Vaishnavi Bodke,06-June-2026,15,12,4.5,7.5,Report
+Electronics Junior,Zahra Hajee,Vaishnavi Bodke,12-August-2025,15,1.5,1.5,0,Report
+Electronics Junior - AI Extension,Kabir Chheda,Vaishnavi Bodke,29-September-2025,15,9,9,0,Report
+Electronics Junior - AI Extension,Sahana Vijay,Vaishnavi Bodke,18-July-2025,15,15,15,0,Report
+Electronics Junior - AI Extension,Zahra Memon,Vaishnavi Bodke,19-July-2025,15,15,13.5,1.5,Report
+Electronics Senior - Arduino,Ishaan Jatia,Vaishnavi Bodke,31-March-2026,24,6.5,6.5,0,Report
+Mechatronics Advance,Yash Bhatia,Vaishnavi Bodke,01-June-2026,24,20,4.5,15.5,Report
+Mechatronics Intermediate,Aayansh Rav,Vaishnavi Bodke,17-May-2025,24,12,12,0,Report
+Mechatronics Intermediate,Advit Himatsingka,Vaishnavi Bodke,05-March-2026,24,9,9,0,Report
+Mechatronics Intermediate,Anay Siraslewala,Vaishnavi Bodke,31-March-2026,24,14.5,12,2.5,Report
+Mechatronics Intermediate,Arsh Ahuja,Vaishnavi Bodke,01-October-2025,24,2.5,2.5,0,Report
+Mechatronics Intermediate,Avir Oberoi,Vaishnavi Bodke,21-July-2025,24,2,0,2,Report
+Mechatronics Intermediate,Diya Chandarana,Vaishnavi Bodke,19-June-2025,24,10,10,0,Report
+Mechatronics Intermediate,Hunar Lamba,Vaishnavi Bodke,16-March-2026,24,22,9,13,Report
+Mechatronics Intermediate,Ishita Shah,Vaishnavi Bodke,19-September-2025,24,1.5,1.5,0,Report
+Mechatronics Intermediate,Kabir Chheda,Vaishnavi Bodke,28-January-2026,24,1.5,1.5,0,Report
+Mechatronics Intermediate,Krishiv Roongta,Vaishnavi Bodke,12-August-2025,24,25.5,25.5,0,Report
+Mechatronics Intermediate,Nishkka Siraslewala,Vaishnavi Bodke,31-March-2026,24,14.5,12,2.5,Report
+Mechatronics Intermediate,Nivaan  Tanna,Vaishnavi Bodke,15-September-2025,24,3,3,0,Report
+Mechatronics Intermediate,Shourya Mehta,Vaishnavi Bodke,21-July-2025,24,5.5,5.5,0,Report
+Mechatronics Intermediate,Yuvaan Vora,Vaishnavi Bodke,04-September-2025,24,26,23,3,Report
+Mechatronics Intermediate,Yuvraj Jhaveri,Vaishnavi Bodke,21-January-2026,24,9,7.5,1.5,Report
+Mechatronics Intermediate,Zera Parekh,Vaishnavi Bodke,31-May-2025,24,9,9,0,Report
+NI Advanced 40 Hours,Armaan Murthy,Vaishnavi Bodke,29-July-2025,40,22.5,22.5,0,Report
+NI Advanced 40 Hours,SHREY SHAH,Vaishnavi Bodke,03-April-2026,40,8,2,6,Report
+NI Advanced 50 Hours,Naavya garg,Vaishnavi Bodke,20-August-2025,50,13,10,3,Report
+NI Junior (20 hours),Arjun Dedhia,Vaishnavi Bodke,02-May-2026,20,10,10,0,Report
+Python Programming - Beginner,Aditya Khandge,Vaishnavi Bodke,25-June-2026,24,24,0,24,Report
+Python Programming - Beginner,KAVISH MAHESHWARI,Vaishnavi Bodke,21-April-2026,24,29,8,21,Report
+Python Programming - Beginner,Om Chaitanya Vadkhalkar,Vaishnavi Bodke,04-May-2026,24,3,3,0,Report
+Visual Programming,Avyana Damani,Vaishnavi Bodke,22-May-2026,15,17.25,14.25,3,Report
+WRO 2026 - Future Innovators (Cohort of 2),Sahana Vijay,Vaishnavi Bodke,08-April-2026,45,18.5,14.5,4,Report
+WRO 2026 - Future Innovators (Cohort of 2),Zahra Memon,Vaishnavi Bodke,15-April-2026,45,18.5,14.5,4,Report
+WRO 2026 - Future Innovators (Cohort of 3),Ayaan  Merchant,Vaishnavi Bodke,10-January-2026,45,30.75,29.25,1.5,Report
+WRO 2026 - Future Innovators (Cohort of 3),Ivaan  Sundesha,Vaishnavi Bodke,10-January-2026,45,30.75,30.75,0,Report
+WRO 2026 - Future Innovators (Cohort of 3),Jaiveer Mahadevia,Vaishnavi Bodke,10-January-2026,45,30.75,30.75,0,Report
+FRC Java Skill Building,Ishaan  Panicker,Varshil Jain,04-June-2026,24,12,0,12,Report
+FRC Java Skill Building - DAIS,Aarush Maroo,Varshil Jain,29-July-2025,24,14,0,14,Report
+FRC Java Skill Building - DAIS,Anisha Goyal,Varshil Jain,24-July-2025,24,14,0,14,Report
+FRC Java Skill Building - DAIS,Anoushka Tandon,Varshil Jain,26-July-2025,24,14,0,14,Report
+FRC Java Skill Building - DAIS,Arnav Jagetiya,Varshil Jain,24-July-2025,24,14,0,14,Report
+FRC Java Skill Building - DAIS,Aryav  Shenoy,Varshil Jain,25-July-2025,24,14,0,14,Report
+FRC Java Skill Building - DAIS,Ishaan Subramanian,Varshil Jain,01-August-2025,24,14,0,14,Report
+FRC Java Skill Building - DAIS,Trissha Rupani,Varshil Jain,26-July-2025,24,14,0,14,Report
+FRC Java Skill Building - DAIS,Vedant Nair,Varshil Jain,24-July-2025,24,14,0,14,Report
+3D CAD,Kabeer Chaudhary,Vedant Patel,26-March-2026,24,24,20,4,Report
+3D CAD,Kian  Gaziani,Vedant Patel,25-June-2025,24,11,11,0,Report
+3D CAD,Shanaya Gupta,Vedant Patel,04-August-2025,24,22.5,22.5,0,Report
+3D CAD,Viaanraj Singh,Vedant Patel,05-November-2025,24,24.5,24.5,0,Report
+Design Foundation,Amaira Nawany,Vedant Patel,03-June-2026,15,15,3,12,Report
+Design Foundation,Arav Goyal,Vedant Patel,10-March-2026,15,15,15,0,Report
+Design Foundation,Armaan Kothari,Vedant Patel,25-November-2025,15,7.75,7.75,0,Report
+Design Foundation,Ayaan Sunny Shah,Vedant Patel,26-March-2026,15,15,13.5,1.5,Report
+Design Foundation,Ranveer sehgal,Vedant Patel,05-January-2026,15,1,1,0,Report
+Design Foundation,Samara Lawande,Vedant Patel,30-June-2026,15,15,0,15,Report
+Design Foundation,Shivom DESAI,Vedant Patel,23-December-2025,15,7,7,0,Report
+Design Foundation,Vihaan Poddar,Vedant Patel,28-February-2026,15,13,13,0,Report
+Electronics Junior,Azai Bajaj,Vedant Patel,08-August-2025,15,15,15,0,Report
+Electronics Junior,Kavya Kumar,Vedant Patel,22-July-2025,15,9,9,0,Report
+Electronics Junior,Vikram Samtani,Vedant Patel,19-July-2025,15,1.5,1.5,0,Report
+Electronics Senior - Arduino,Viaanraj Singh,Vedant Patel,12-February-2026,24,1.5,1.5,0,Report
+Mechatronics Advance,Arnav Bansal,Vedant Patel,11-September-2025,24,12,12,0,Report
+Mechatronics Intermediate,Aanya Waghela,Vedant Patel,05-July-2025,24,3,3,0,Report
+Mechatronics Intermediate,Azai Bajaj,Vedant Patel,11-November-2025,24,13.5,13.5,0,Report
+Mechatronics Intermediate,Dazstaan  Rai,Vedant Patel,02-July-2025,24,10,10,0,Report
+Mechatronics Intermediate,Neev Shetye,Vedant Patel,15-October-2025,24,12,10.5,1.5,Report
+Mechatronics Intermediate,Nirvaan Dasgupta,Vedant Patel,01-July-2025,24,12,12,0,Report
+Mechatronics Intermediate,Nivaan  Mashru,Vedant Patel,27-October-2025,24,12,10.5,1.5,Report
+Mechatronics Intermediate,Nysa Shetye,Vedant Patel,15-October-2025,24,12,12,0,Report
+Mechatronics Intermediate,Parth jain,Vedant Patel,28-November-2025,24,10.5,10.5,0,Report
+Mechatronics Intermediate,Rajveer Kothari,Vedant Patel,13-August-2025,24,12,12,0,Report
+Mechatronics Intermediate,rayaan maloo,Vedant Patel,29-July-2025,24,7.5,7.5,0,Report
+Mechatronics Intermediate,SAARTH KARKERA,Vedant Patel,06-June-2025,24,13.5,13.5,0,Report
+Mechatronics Intermediate,Shanaya Gupta,Vedant Patel,08-May-2025,24,1.5,1.5,0,Report
+Mechatronics Intermediate,Srousha  Bisht,Vedant Patel,20-June-2025,24,13.5,13.5,0,Report
+Mechatronics Intermediate,Viaan Shrenik Khandhar,Vedant Patel,21-February-2026,24,12,10,2,Report
+Mechatronics Intermediate,Viaanraj Singh,Vedant Patel,13-May-2025,24,13.5,13.5,0,Report
+Mechatronics Intermediate,Zayne Malkani,Vedant Patel,28-July-2025,24,11.25,11.25,0,Report
+NI Advanced 40 Hours,Aditya Bhura,Vedant Patel,22-July-2025,40,4,4,0,Report
+NI Advanced 40 Hours,Ahaan Kapadia,Vedant Patel,18-April-2026,40,9.5,9.5,0,Report
+NI Advanced 40 Hours,Anoshka Kulkarni,Vedant Patel,26-December-2025,40,37,31,6,Report
+NI Advanced 40 Hours,Aryamann Somani,Vedant Patel,28-April-2026,40,21.5,11.5,10,Report
+NI Advanced 40 Hours,Avinandan Sarkar,Vedant Patel,14-June-2025,40,6,6,0,Report
+NI Advanced 40 Hours,Ishaan Talati,Vedant Patel,19-March-2026,40,3.5,3.5,0,Report
+NI Advanced 40 Hours,JAINAM KAWEDIA,Vedant Patel,30-March-2026,40,4,4,0,Report
+NI Advanced 40 Hours,Kiros Kamaal,Vedant Patel,27-December-2025,40,52.5,31.5,21,Report
+NI Advanced 40 Hours,Nandini Agrawal,Vedant Patel,03-October-2025,40,45,24,21,Report
+NI Advanced 40 Hours,Rewa Parmar,Vedant Patel,24-October-2025,40,42.5,38.5,4,Report
+NI Advanced 40 Hours,Rihaan Sodhani,Vedant Patel,30-August-2025,40,1.5,1.5,0,Report
+NI Advanced 40 Hours,Rivaan Dalal,Vedant Patel,24-September-2025,40,1,1,0,Report
+NI Advanced 40 Hours,Sparrsh Gupta,Vedant Patel,22-July-2025,40,5.5,5.5,0,Report
+NI Advanced 40 Hours,Vedant Agarwal,Vedant Patel,27-September-2025,40,32.5,28,4.5,Report
+NI Advanced 40 Hours,Venesha Bharwada,Vedant Patel,23-June-2025,40,1.5,1.5,0,Report
+NI Advanced 50 Hours,Paarth Somani,Vedant Patel,29-January-2026,50,1.5,1.5,0,Report
+NI Advanced 50 Hours,Riya Asthana,Vedant Patel,05-September-2025,50,6,6,0,Report
+NI Advanced 50 Hours,Shivang Jajodia,Vedant Patel,02-January-2026,50,7,7,0,Report
+NI Advanced 50 Hours,Vyom Shah,Vedant Patel,21-August-2025,50,4,4,0,Report
+NI Junior,Avyan Bhojnagarwala,Vedant Patel,26-May-2026,30,8,8,0,Report
+NI Junior (10 Hours),Srousha  Bisht,Vedant Patel,25-April-2026,10,2.5,2.5,0,Report
+WRO 2026 - Future Innovators (Cohort of 2),Aarav Gupta,Vedant Patel,02-March-2026,45,5,5,0,Report
+WRO 2026 - Future Innovators (Cohort of 2),Shanaya Gupta,Vedant Patel,02-March-2026,45,5,5,0,Report
+WRO 2026 - Future Innovators (Cohort of 3),Nivaan  Mashru,Vedant Patel,18-February-2026,45,3,3,0,Report
+WRO 2026 - Future Innovators (Cohort of 3),Ridhaan Modi,Vedant Patel,26-February-2026,45,3,2,1,Report
+WRO 2026 - Future Innovators (Cohort of 3),Ridharv Shankar,Vedant Patel,19-February-2026,45,3,3,0,Report
+Electronics Junior,Advait Adukia,Vedant Raut,29-April-2026,15,3,3,0,Report
+Electronics Junior,Ammaar Ali,Vedant Raut,30-May-2025,15,1.5,1.5,0,Report
+Electronics Junior,Arjun Mehra,Vedant Raut,18-April-2026,15,1.5,1.5,0,Report
+Electronics Junior,Veer Vikram Sharma,Vedant Raut,27-March-2026,15,12,10.5,1.5,Report
+Electronics Senior - Arduino,Agniv Roy,Vedant Raut,18-May-2026,24,1,1,0,Report
+Electronics Senior - Arduino,Veer Mehta,Vedant Raut,18-April-2026,24,24,22,2,Report
+Mechatronics Intermediate,Agastya Marfatia,Vedant Raut,02-February-2026,24,12,12,0,Report
+Mechatronics Intermediate,Azai Bajaj,Vedant Raut,11-November-2025,24,12,12,0,Report
+Mechatronics Intermediate,Nirvaan Dasgupta,Vedant Raut,01-July-2025,24,15,15,0,Report
+Mechatronics Intermediate,Sohum Mehta,Vedant Raut,08-November-2025,24,9.5,3.5,6,Report
+Mechatronics Intermediate,Viaan Shrenik Khandhar,Vedant Raut,21-February-2026,24,12,12,0,Report
+Mechatronics Intermediate,Shreyas Kallapur,Vignesh C,10-December-2025,24,24,20,4,Report
+Robotics Foundation Program,Abel Mario Joseph,Vignesh C,28-September-2025,40,30,0,30,Report
+Robotics Foundation Program,Adhvay Satish,Vignesh C,02-October-2025,40,30,0,30,Report
+Robotics Foundation Program,Aditya Rao,Vignesh C,24-September-2025,40,30,0,30,Report
+Robotics Foundation Program,Akshat Vangala,Vignesh C,27-September-2025,40,30,0,30,Report
+Robotics Foundation Program,Ansh Khandelwal,Vignesh C,25-September-2025,40,30,0,30,Report
+Robotics Foundation Program,Anvay Rajan,Vignesh C,25-September-2025,40,30,0,30,Report
+Robotics Foundation Program,Anya Patnaik,Vignesh C,02-October-2025,40,30,0,30,Report
+Robotics Foundation Program,Aria Nandi,Vignesh C,26-September-2025,40,30,0,30,Report
+Robotics Foundation Program,Arth Swaroop,Vignesh C,25-September-2025,40,30,0,30,Report
+Robotics Foundation Program,Daksh Singh,Vignesh C,25-September-2025,40,30,0,30,Report
+Robotics Foundation Program,Dhriti Mani,Vignesh C,26-September-2025,40,30,0,30,Report
+Robotics Foundation Program,Dia Tarun,Vignesh C,01-October-2025,40,30,0,30,Report
+Robotics Foundation Program,Divit Pradhan,Vignesh C,02-October-2025,40,30,0,30,Report
+Robotics Foundation Program,Krishnav Mohanty,Vignesh C,25-September-2025,40,30,0,30,Report
+Robotics Foundation Program,Kyra Shewani,Vignesh C,28-September-2025,40,30,0,30,Report
+Robotics Foundation Program,Nabhya Gupta,Vignesh C,02-October-2025,40,30,0,30,Report
+Robotics Foundation Program,Pranay Mehta,Vignesh C,26-September-2025,40,30,0,30,Report
+Robotics Foundation Program,Rishi Kommineni,Vignesh C,24-September-2025,40,30,0,30,Report
+Robotics Foundation Program,Ryan Oberoi,Vignesh C,01-October-2025,40,30,0,30,Report
+Robotics Foundation Program,Shreya Jindia,Vignesh C,08-October-2025,40,30,0,30,Report
+Robotics Foundation Program,SIDDHANTH PATHI AJAY,Vignesh C,29-September-2025,40,30,0,30,Report
+WRO 2026 - Future Innovators (Cohort of 3),Dhrish Shah,Vignesh C,13-March-2026,45,0.5,0.5,0,Report
+WRO 2026 - Future Innovators (Cohort of 3),Ishaan Thakurta,Vignesh C,13-March-2026,45,0.5,0.5,0,Report
+WRO 2026 - Future Innovators (Cohort of 3),Kavir Mehta,Vignesh C,13-March-2026,45,0.5,0.5,0,Report
+AI  - Data Science,Udit Mishra,Vishesh Mistry,24-June-2025,30,30.5,29,1.5,Report
+AI Essential Training,Rivaan Dalal,Vishesh Mistry,14-August-2025,40,39,39,0,Report
+AI Essentials 2025-26,Arav Vinod Kumar,Vishesh Mistry,22-February-2026,60,8,8,0,Report
+AI Essentials 2025-26,Arjan Desai,Vishesh Mistry,04-December-2025,60,48,48,0,Report
+AI Essentials 2025-26,Mitra Desai,Vishesh Mistry,04-December-2025,60,48,48,0,Report
+AI Essentials 2025-26,Rishaan Mour,Vishesh Mistry,02-February-2026,60,8,8,0,Report
+Electronics Junior - AI Extension,Rudra Goel,Vishesh Mistry,23-June-2025,15,11,11,0,Report
+NI Advanced 10 Hours,Abir  Chhatwal,Vishesh Mistry,15-November-2025,10,9.5,9.5,0,Report
+NI Advanced 40 Hours,Avinandan Sarkar,Vishesh Mistry,14-June-2025,40,10.5,10.5,0,Report
+NI Advanced 40 Hours,Rivaan Dalal,Vishesh Mistry,24-September-2025,40,29.5,28,1.5,Report
+NI Advanced 40 Hours,Venesha Bharwada,Vishesh Mistry,23-June-2025,40,40,40,0,Report
+NI Advanced 50 Hours,Shivang Jajodia,Vishesh Mistry,02-January-2026,50,2,2,0,Report
+NI Advanced 50 Hours,Vedant Lakhani,Vishesh Mistry,12-August-2025,50,44,36,8,Report
+NI Advanced 50 Hours,Vyom Shah,Vishesh Mistry,21-August-2025,50,32,32,0,Report
+Python Programming - Beginner,Abir  Chhatwal,Vishesh Mistry,08-October-2025,24,28.5,28.5,0,Report
+Python Programming - Beginner,Arianna Khemani,Vishesh Mistry,18-June-2025,24,24,21,3,Report
+Python Programming - Beginner,Aryamann Somani,Vishesh Mistry,25-August-2025,24,30.5,29,1.5,Report
+Python Programming - Beginner,Avishi Jain,Vishesh Mistry,10-May-2025,24,16.5,15,1.5,Report
+Python Programming - Beginner,Fateh viir Bedi,Vishesh Mistry,28-November-2025,24,7.5,7.5,0,Report
+Python Programming - Beginner,Kian Trehan,Vishesh Mistry,30-October-2025,24,14,12.5,1.5,Report
+Python Programming - Beginner,Mehek Jhaveri,Vishesh Mistry,16-June-2025,24,24,24,0,Report
+Python Programming - Beginner,NIRVAAN THINGBAIJAM,Vishesh Mistry,01-September-2025,24,13.5,13.5,0,Report
+Python Programming - Beginner,Nyla Bajaj,Vishesh Mistry,25-June-2025,24,14,10,4,Report
+Python Programming - Beginner,Radhika Iyer,Vishesh Mistry,12-June-2025,24,12,12,0,Report
+Python Programming - Beginner,Sanjali  Hiranandani,Vishesh Mistry,26-August-2025,24,11.75,11.75,0,Report
+Python Programming - Beginner,Sarthak Sekhsaria,Vishesh Mistry,14-January-2026,24,21.25,19.25,2,Report
+Python Programming - Beginner,Vihaan Rai,Vishesh Mistry,01-July-2025,24,16.5,16.5,0,Report
+Python Programming - Intermediate,Shaurya Shah,Vishesh Mistry,25-February-2026,24,6.5,6.5,0,Report
+Design Foundation,Rudra Goel,Zaid Shaikh,24-October-2025,15,16,16,0,Report
+Mechatronics Intermediate,Dev Dwarkadas,Zaid Shaikh,06-October-2025,24,13,13,0,Report

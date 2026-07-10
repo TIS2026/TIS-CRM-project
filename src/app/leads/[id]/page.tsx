@@ -11,24 +11,33 @@ export default function StudentProfilePage() {
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [result, setResult] = useState<any>(null);
+  
+  const [availableBuckets, setAvailableBuckets] = useState<string[]>([]);
+  const [availableStages, setAvailableStages] = useState<string[]>([]);
+  const [availableLeadSources, setAvailableLeadSources] = useState<string[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [leadRes, customFieldsRes, usersRes] = await Promise.all([
+        const [leadRes, customFieldsRes, usersRes, filtersRes] = await Promise.all([
           fetch(`/api/leads/${id}`),
           fetch('/api/custom-fields'),
-          fetch('/api/users')
+          fetch('/api/users'),
+          fetch('/api/filters')
         ]);
         
         const leadData = await leadRes.json();
         const cfData = await customFieldsRes.json();
         const uData = await usersRes.json();
+        const filtersData = await filtersRes.json();
 
         setLead(leadData);
         setOpportunities(leadData.opportunities || []);
         setCustomFields(cfData);
         setUsers(uData);
+        setAvailableBuckets(filtersData.buckets || []);
+        setAvailableStages(filtersData.stages || []);
+        setAvailableLeadSources(filtersData.leadSources || []);
       } catch (e) {
         console.error(e);
       } finally {
@@ -157,22 +166,20 @@ export default function StudentProfilePage() {
               <div>
                 <label>Stage</label>
                 <select value={opp.stage || ''} onChange={e => handleOppChange(opp.id, 'stage', e.target.value)}>
-                  <option value="New">New</option>
-                  <option value="Attempted">Attempted</option>
-                  <option value="Connected">Connected</option>
-                  <option value="Qualified">Qualified</option>
-                  <option value="Won">Won</option>
-                  <option value="Lost">Lost</option>
+                  <option value="">Select Stage...</option>
+                  {availableStages.map((stage, idx) => (
+                    <option key={idx} value={stage}>{stage}</option>
+                  ))}
                 </select>
               </div>
               <div>
                 <label>Bucket</label>
-                <input value={opp.bucket || ''} onChange={e => handleOppChange(opp.id, 'bucket', e.target.value)} placeholder="e.g. Hot" list="bucket-suggestions-prof" />
-                <datalist id="bucket-suggestions-prof">
-                  <option value="Hot" />
-                  <option value="Warm" />
-                  <option value="Cold" />
-                </datalist>
+                <select value={opp.bucket || ''} onChange={e => handleOppChange(opp.id, 'bucket', e.target.value)}>
+                  <option value="">Select Bucket...</option>
+                  {availableBuckets.map((bucket, idx) => (
+                    <option key={idx} value={bucket}>{bucket}</option>
+                  ))}
+                </select>
               </div>
               <div>
                 <label>Owner</label>
@@ -182,7 +189,12 @@ export default function StudentProfilePage() {
               </div>
               <div>
                 <label>Lead Source</label>
-                <input value={opp.leadSource || ''} onChange={e => handleOppChange(opp.id, 'leadSource', e.target.value)} />
+                <select value={opp.leadSource || ''} onChange={e => handleOppChange(opp.id, 'leadSource', e.target.value)}>
+                  <option value="">Select Lead Source...</option>
+                  {availableLeadSources.map((source, idx) => (
+                    <option key={idx} value={source}>{source}</option>
+                  ))}
+                </select>
               </div>
               <div>
                 <label>Enrollment Date</label>

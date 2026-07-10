@@ -25,6 +25,11 @@ export default function Dashboard() {
   const [bulkBucket, setBulkBucket] = useState('');
   const [bulkLoading, setBulkLoading] = useState(false);
   const [customFields, setCustomFields] = useState<any[]>([]);
+  
+  const [availableStages, setAvailableStages] = useState<string[]>([]);
+  const [availableLeadSources, setAvailableLeadSources] = useState<string[]>([]);
+  const [availableBuckets, setAvailableBuckets] = useState<string[]>([]);
+
   // --- Module B State ---
   const [pasteText, setPasteText] = useState('');
   const [pasteMode, setPasteMode] = useState('Parent Contact Number Only');
@@ -56,22 +61,26 @@ export default function Dashboard() {
 
   const fetchCoursesAndStudents = async () => {
     try {
-      const [coursesRes, studentsRes, usersRes, customFieldsRes] = await Promise.all([
+      const [coursesRes, studentsRes, usersRes, customFieldsRes, filtersRes] = await Promise.all([
         fetch('/api/courses'),
         fetch('/api/students'),
         fetch('/api/users'),
-        fetch('/api/custom-fields')
+        fetch('/api/custom-fields'),
+        fetch('/api/filters')
       ]);
       const coursesData = await coursesRes.json();
       const studentsData = await studentsRes.json();
       const usersData = await usersRes.json();
       const cfData = await customFieldsRes.json();
+      const filtersData = await filtersRes.json();
+      
       setAvailableCourses(coursesData);
       setAvailableStudents(studentsData);
       setUsers(usersData);
       setCustomFields(cfData);
-      setAvailableStudents(studentsData);
-      setUsers(usersData);
+      setAvailableBuckets(filtersData.buckets || []);
+      setAvailableStages(filtersData.stages || []);
+      setAvailableLeadSources(filtersData.leadSources || []);
     } catch (e) {
       console.error(e);
     }
@@ -279,11 +288,9 @@ export default function Dashboard() {
                 <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Stage</label>
                 <select value={filterStage} onChange={e => setFilterStage(e.target.value)} style={{ width: '100%' }}>
                   <option value="">All Stages</option>
-                  <option value="New">New</option>
-                  <option value="Attempted">Attempted</option>
-                  <option value="Connected">Connected</option>
-                  <option value="Qualified">Qualified</option>
-                  <option value="Lost">Lost</option>
+                  {availableStages.map((stage, idx) => (
+                    <option key={idx} value={stage}>{stage}</option>
+                  ))}
                 </select>
               </div>
               <div>
@@ -297,30 +304,19 @@ export default function Dashboard() {
                 <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Lead Source</label>
                 <select value={filterLeadSource} onChange={e => setFilterLeadSource(e.target.value)} style={{ width: '100%' }}>
                   <option value="">All Sources</option>
-                  <option value="Referral">Referral</option>
-                  <option value="Walk-in">Walk-in</option>
-                  <option value="Website Inquiry">Website Inquiry</option>
-                  <option value="Ad Campaign">Ad Campaign</option>
-                  <option value="Repeat - Inbound">Repeat - Inbound</option>
-                  <option value="Agent Outreach">Agent Outreach</option>
-                  <option value="Event/Workshop">Event/Workshop</option>
-                  <option value="Other">Other</option>
+                  {availableLeadSources.map((source, idx) => (
+                    <option key={idx} value={source}>{source}</option>
+                  ))}
                 </select>
               </div>
               <div>
                 <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Bucket</label>
-                <input 
-                  value={filterBucket}
-                  onChange={e => setFilterBucket(e.target.value)}
-                  placeholder="e.g. Hot"
-                  list="bucket-suggestions-filter"
-                  style={{ width: '100%' }}
-                />
-                <datalist id="bucket-suggestions-filter">
-                  <option value="Hot" />
-                  <option value="Warm" />
-                  <option value="Cold" />
-                </datalist>
+                <select value={filterBucket} onChange={e => setFilterBucket(e.target.value)} style={{ width: '100%' }}>
+                  <option value="">All Buckets</option>
+                  {availableBuckets.map((bucket, idx) => (
+                    <option key={idx} value={bucket}>{bucket}</option>
+                  ))}
+                </select>
               </div>
             </div>
           )}
@@ -331,11 +327,9 @@ export default function Dashboard() {
               <div style={{ width: '1px', height: '24px', background: 'rgba(255,255,255,0.2)' }}></div>
               <select value={bulkStage} onChange={e => setBulkStage(e.target.value)}>
                 <option value="">Change Stage...</option>
-                <option value="New">New</option>
-                <option value="Attempted">Attempted</option>
-                <option value="Connected">Connected</option>
-                <option value="Qualified">Qualified</option>
-                <option value="Lost">Lost</option>
+                {availableStages.map((stage, idx) => (
+                  <option key={idx} value={stage}>{stage}</option>
+                ))}
               </select>
               <select value={bulkOwner} onChange={e => setBulkOwner(e.target.value)}>
                 <option value="">Change Owner...</option>
@@ -343,9 +337,9 @@ export default function Dashboard() {
               </select>
               <select value={bulkBucket} onChange={e => setBulkBucket(e.target.value)}>
                 <option value="">Change Bucket...</option>
-                <option value="Hot">Hot</option>
-                <option value="Warm">Warm</option>
-                <option value="Cold">Cold</option>
+                {availableBuckets.map((bucket, idx) => (
+                  <option key={idx} value={bucket}>{bucket}</option>
+                ))}
               </select>
               <input 
                 placeholder="Change Course..." 
