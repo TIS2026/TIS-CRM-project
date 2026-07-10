@@ -9,7 +9,10 @@ export async function GET(request: Request, { params }: { params: Promise<{ id: 
       include: {
         opportunities: {
           orderBy: { createdDate: 'desc' },
-          include: { owner: true }
+          include: { 
+            owner: true,
+            calls: { orderBy: { scheduledDate: 'desc' }, include: { owner: true } }
+          }
         }
       }
     });

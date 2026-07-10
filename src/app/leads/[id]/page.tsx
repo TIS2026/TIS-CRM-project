@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
+import CallManager from './CallManager';
 
 export default function StudentProfilePage() {
   const { id } = useParams();
@@ -229,6 +230,21 @@ export default function StudentProfilePage() {
                 </div>
               </div>
             )}
+            
+            <CallManager 
+              oppId={opp.id} 
+              initialCalls={opp.calls} 
+              ownerId={opp.ownerId} 
+              onCallUpdated={() => {
+                // simple reload pattern to fetch fresh data
+                fetch(`/api/leads/${id}`)
+                  .then(r => r.json())
+                  .then(data => {
+                    setLead(data);
+                    setOpportunities(data.opportunities || []);
+                  });
+              }}
+            />
             
           </div>
         ))}
