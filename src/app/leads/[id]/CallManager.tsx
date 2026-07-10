@@ -2,7 +2,7 @@
 import { useState } from 'react';
 
 export default function CallManager({ oppId, initialCalls = [], ownerId, onCallUpdated }: any) {
-  const [calls, setCalls] = useState(initialCalls);
+  const calls = initialCalls;
   const [activeCall, setActiveCall] = useState<any>(null); // Call being logged
   const [outcome, setOutcome] = useState('');
   const [disposition, setDisposition] = useState('');
@@ -120,6 +120,25 @@ export default function CallManager({ oppId, initialCalls = [], ownerId, onCallU
               </li>
             ))}
           </ul>
+        </div>
+      )}
+
+      {calls.length === 0 && (
+        <div style={{ marginBottom: '1.5rem', padding: '1rem', background: 'rgba(255,255,255,0.02)', borderRadius: '4px' }}>
+          <p style={{ marginBottom: '1rem' }}>No calls have been scheduled for this opportunity yet.</p>
+          <button 
+            onClick={async () => {
+              await fetch('/api/calls', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ opportunityId: oppId, callType: 'Sales Call', ownerId })
+              });
+              onCallUpdated();
+            }}
+            style={{ padding: '0.5rem 1rem', background: 'var(--accent)', border: 'none', color: '#fff', borderRadius: '4px', cursor: 'pointer' }}
+          >
+            Schedule Initial Sales Call
+          </button>
         </div>
       )}
 
