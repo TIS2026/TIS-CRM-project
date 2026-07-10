@@ -89,7 +89,22 @@ export default function CallManager({ oppId, initialCalls = [], ownerId, onCallU
 
   return (
     <div style={{ marginTop: '1.5rem', paddingTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-      <h3 style={{ marginBottom: '1rem', color: 'var(--accent)' }}>Call History & Next Actions</h3>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+        <h3 style={{ margin: 0, color: 'var(--accent)' }}>Call History & Next Actions</h3>
+        <button 
+          onClick={async () => {
+             await fetch('/api/calls', {
+               method: 'POST',
+               headers: { 'Content-Type': 'application/json' },
+               body: JSON.stringify({ opportunityId: oppId, callType: 'Sales Call', ownerId })
+             });
+             onCallUpdated();
+          }}
+          style={{ padding: '0.5rem 1rem', background: 'var(--accent)', border: 'none', color: '#fff', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold' }}
+        >
+          + Schedule New Sales Call
+        </button>
+      </div>
 
       {scheduledCalls.length > 0 && (
         <div style={{ marginBottom: '1.5rem' }}>
@@ -125,20 +140,7 @@ export default function CallManager({ oppId, initialCalls = [], ownerId, onCallU
 
       {calls.length === 0 && (
         <div style={{ marginBottom: '1.5rem', padding: '1rem', background: 'rgba(255,255,255,0.02)', borderRadius: '4px' }}>
-          <p style={{ marginBottom: '1rem' }}>No calls have been scheduled for this opportunity yet.</p>
-          <button 
-            onClick={async () => {
-              await fetch('/api/calls', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ opportunityId: oppId, callType: 'Sales Call', ownerId })
-              });
-              onCallUpdated();
-            }}
-            style={{ padding: '0.5rem 1rem', background: 'var(--accent)', border: 'none', color: '#fff', borderRadius: '4px', cursor: 'pointer' }}
-          >
-            Schedule Initial Sales Call
-          </button>
+          <p style={{ margin: 0 }}>No calls have been logged for this opportunity yet.</p>
         </div>
       )}
 
