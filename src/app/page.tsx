@@ -454,20 +454,51 @@ export default function Dashboard() {
             </table>
           </div>
 
-          <div style={{ padding: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(255,255,255,0.02)', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+          <div style={{ padding: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(255,255,255,0.02)', borderTop: '1px solid rgba(255,255,255,0.05)', flexWrap: 'wrap', gap: '1rem' }}>
             <div style={{ color: 'var(--text-secondary)' }}>
-              Showing {opportunities.length} of {totalRecords} records (Page {page} of {totalPages || 1})
+              Showing {totalRecords === 0 ? 0 : (page - 1) * 50 + 1}-{Math.min(page * 50, totalRecords)} of {totalRecords} records
             </div>
-            <div style={{ display: 'flex', gap: '1rem' }}>
+            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
               <button 
                 className="btn btn-secondary" 
+                style={{ padding: '0.25rem 0.75rem' }}
                 disabled={page <= 1 || loadingA}
                 onClick={() => fetchModuleA(page - 1)}
               >
-                Previous
+                Prev
               </button>
+              
+              {/* Page Numbers */}
+              <div style={{ display: 'flex', gap: '0.25rem' }}>
+                {Array.from({ length: Math.min(5, totalPages) }, (_, i) => {
+                  let pageNum = page - 2 + i;
+                  if (page <= 3) pageNum = i + 1;
+                  else if (page >= totalPages - 2) pageNum = totalPages - 4 + i;
+                  
+                  if (pageNum > 0 && pageNum <= totalPages) {
+                    return (
+                      <button
+                        key={pageNum}
+                        className={`btn ${pageNum === page ? 'btn-primary' : 'btn-secondary'}`}
+                        style={{ padding: '0.25rem 0.75rem', background: pageNum === page ? 'var(--accent)' : '' }}
+                        onClick={() => fetchModuleA(pageNum)}
+                        disabled={loadingA}
+                      >
+                        {pageNum}
+                      </button>
+                    );
+                  }
+                  return null;
+                })}
+              </div>
+
+              <span style={{ color: 'var(--text-secondary)', margin: '0 0.5rem' }}>
+                / {totalPages || 1}
+              </span>
+
               <button 
                 className="btn btn-secondary" 
+                style={{ padding: '0.25rem 0.75rem' }}
                 disabled={page >= totalPages || loadingA}
                 onClick={() => fetchModuleA(page + 1)}
               >
