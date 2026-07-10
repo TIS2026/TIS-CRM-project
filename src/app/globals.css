@@ -68,7 +68,11 @@ body {
   border: 1px solid var(--glass-border);
 }
 .btn-secondary:hover {
-  background: var(--bg-highlight);
+  background: var(--bg-highlight-strong);
+}
+
+.nav-link:hover {
+  background: var(--bg-highlight) !important;
 }
 
 input, select, textarea {
