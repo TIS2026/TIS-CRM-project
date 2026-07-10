@@ -35,7 +35,7 @@ export async function processCallOutcome(
 
     await prisma.opportunity.update({
       where: { id: call.opportunityId },
-      data: { stage: 'Lost', lostReason: 'Invalid Number', lostAtStage: call.callType },
+      data: { stage: 'Invalid', lostReason: 'Invalid Number', lostAtStage: call.callType },
     });
     return;
   }

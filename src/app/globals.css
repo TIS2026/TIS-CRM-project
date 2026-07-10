@@ -129,4 +129,5 @@ tr:hover td {
 
 .badge-won { background: #d1fae5; color: var(--success); }
 .badge-lost { background: #fee2e2; color: var(--danger); }
+.badge-invalid { background: #fee2e2; color: var(--danger); }
 .badge-new { background: #dbeafe; color: var(--accent-primary); }
