@@ -89,6 +89,11 @@ export default function Dashboard() {
     }
   };
 
+  // --- User Identity State ---
+  const [currentUser, setCurrentUser] = useState<any>(null);
+  const [showIdentityModal, setShowIdentityModal] = useState(false);
+  const [selectedIdentityId, setSelectedIdentityId] = useState('');
+
   const fetchCoursesAndStudents = async () => {
     try {
       const [coursesRes, studentsRes, usersRes, customFieldsRes, filtersRes] = await Promise.all([
@@ -111,6 +116,19 @@ export default function Dashboard() {
       setAvailableBuckets(filtersData.buckets || []);
       setAvailableStages(filtersData.stages || []);
       setAvailableLeadSources(filtersData.leadSources || []);
+
+      // Check local session
+      const storedId = localStorage.getItem('crm_current_user');
+      if (storedId) {
+        const user = usersData.find((u: any) => u.id === storedId);
+        if (user) {
+          setCurrentUser(user);
+          setPendingCallOwnerFilter(user.id);
+          setFilterOwner(user.id);
+        }
+      } else {
+        setShowIdentityModal(true);
+      }
     } catch (e) {
       console.error(e);
     }
@@ -356,8 +374,67 @@ a.click();
     window.URL.revokeObjectURL(url);
   };
 
+  const saveIdentity = () => {
+    if (!selectedIdentityId) {
+      localStorage.removeItem('crm_current_user');
+      setCurrentUser(null);
+      setPendingCallOwnerFilter('');
+      setFilterOwner('');
+    } else {
+      localStorage.setItem('crm_current_user', selectedIdentityId);
+      const user = users.find(u => u.id === selectedIdentityId);
+      setCurrentUser(user);
+      setPendingCallOwnerFilter(user.id);
+      setFilterOwner(user.id);
+    }
+    setShowIdentityModal(false);
+  };
+
+  const clearIdentity = () => {
+    localStorage.removeItem('crm_current_user');
+    setCurrentUser(null);
+    setPendingCallOwnerFilter('');
+    setFilterOwner('');
+    setSelectedIdentityId('');
+  };
+
   return (
     <>
+      {showIdentityModal && (
+        <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.8)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 10000, backdropFilter: 'blur(4px)' }}>
+          <div className="glass-panel" style={{ padding: '2.5rem', maxWidth: '500px', width: '100%', background: 'var(--bg)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.1)' }}>
+            <h2 style={{ marginBottom: '1rem', color: 'var(--accent)', textAlign: 'center' }}>Welcome to CRM!</h2>
+            <p style={{ textAlign: 'center', marginBottom: '2rem', color: 'var(--text-secondary)' }}>Please select your identity to pre-filter your dashboard data.</p>
+            
+            <div style={{ marginBottom: '2rem' }}>
+              <select 
+                value={selectedIdentityId} 
+                onChange={e => setSelectedIdentityId(e.target.value)}
+                style={{ width: '100%', padding: '1rem', fontSize: '1.1rem', borderRadius: '8px' }}
+              >
+                <option value="">-- Select Your Name --</option>
+                {users.map(u => <option key={u.id} value={u.id}>{u.name}</option>)}
+              </select>
+            </div>
+
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
+              <button 
+                className="btn btn-secondary"
+                onClick={() => setShowIdentityModal(false)}
+              >
+                Skip for now
+              </button>
+              <button 
+                className="btn"
+                onClick={saveIdentity}
+              >
+                Save Identity
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {schedulingCallFor && (
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
           <div className="glass-panel" style={{ padding: '2rem', maxWidth: '500px', width: '100%', background: 'var(--bg-secondary)' }}>
@@ -422,7 +499,21 @@ a.click();
 
       <div className="glass-panel" style={{ padding: '2rem' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '1rem' }}>
-        <h1 style={{ margin: 0, fontWeight: 600 }}>CRM Dashboard</h1>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+            <h1 style={{ margin: 0, fontWeight: 600 }}>CRM Dashboard</h1>
+            {currentUser && (
+              <div style={{ fontSize: '0.9rem', padding: '0.4rem 0.8rem', background: 'rgba(255,255,255,0.05)', borderRadius: '20px', display: 'flex', alignItems: 'center', gap: '0.5rem', border: '1px solid rgba(255,255,255,0.1)' }}>
+                <span style={{ color: 'var(--text-secondary)' }}>Viewing as:</span> 
+                <strong style={{ color: 'var(--accent)' }}>{currentUser.name}</strong>
+                <button 
+                  onClick={() => setShowIdentityModal(true)}
+                  style={{ background: 'none', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer', textDecoration: 'underline', fontSize: '0.8rem', marginLeft: '0.5rem' }}
+                >
+                  (Change)
+                </button>
+              </div>
+            )}
+          </div>
         <div style={{ display: 'flex', gap: '0.5rem' }}>
           <button className={`btn ${activeTab === 'pendingCalls' ? '' : 'btn-secondary'}`} onClick={() => setActiveTab('pendingCalls')}>
             Pending Calls

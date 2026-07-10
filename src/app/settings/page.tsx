@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 
 export default function SettingsPage() {
   const [users, setUsers] = useState<any[]>([]);
+  const [selectedUserId, setSelectedUserId] = useState('');
   const [newName, setNewName] = useState('');
   const [newRole, setNewRole] = useState('Agent');
   const [loading, setLoading] = useState(false);
@@ -122,37 +123,43 @@ export default function SettingsPage() {
       <div style={{ marginBottom: '2rem', background: 'rgba(255,255,255,0.02)', padding: '1.5rem', borderRadius: '8px' }}>
         <h2 style={{ marginBottom: '1rem', color: 'var(--accent)' }}>System Owners</h2>
         
-        <table style={{ marginBottom: '1.5rem' }}>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Role</th>
-              <th>System ID</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {users.map(user => (
-              <tr key={user.id}>
-                <td style={{ fontWeight: 500 }}>{user.name}</td>
-                <td><span className={`badge badge-${user.role.toLowerCase()}`}>{user.role}</span></td>
-                <td style={{ opacity: 0.5, fontSize: '0.85rem' }}>{user.id}</td>
-                <td>
-                  <button 
-                    onClick={() => handleDeleteUser(user.id)} 
-                    style={{ background: 'transparent', color: 'var(--danger)', border: '1px solid var(--danger)', padding: '0.2rem 0.5rem', borderRadius: '4px', cursor: 'pointer', fontSize: '0.85rem' }}
-                    disabled={loading}
-                  >
-                    Remove
-                  </button>
-                </td>
-              </tr>
-            ))}
-            {users.length === 0 && (
-              <tr><td colSpan={3} style={{ textAlign: 'center' }}>No owners found.</td></tr>
-            )}
-          </tbody>
-        </table>
+        <div style={{ marginBottom: '1.5rem', display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
+          <div style={{ flex: 1, minWidth: '250px' }}>
+            <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 500 }}>Select Owner to View/Manage</label>
+            <select 
+              style={{ width: '100%', padding: '0.75rem', borderRadius: '4px' }}
+              value={selectedUserId}
+              onChange={(e) => setSelectedUserId(e.target.value)}
+            >
+              <option value="">-- Choose an Owner --</option>
+              {users.map(user => (
+                <option key={user.id} value={user.id}>{user.name}</option>
+              ))}
+            </select>
+          </div>
+        </div>
+        
+        {selectedUserId && users.find(u => u.id === selectedUserId) && (
+          <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '8px', marginBottom: '1.5rem', border: '1px solid rgba(255,255,255,0.1)' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+              <div>
+                <h3 style={{ margin: '0 0 0.5rem 0', color: 'var(--accent)' }}>{users.find(u => u.id === selectedUserId)?.name}</h3>
+                <p style={{ margin: '0 0 0.25rem 0' }}><strong>Role:</strong> <span className={`badge badge-${users.find(u => u.id === selectedUserId)?.role.toLowerCase()}`}>{users.find(u => u.id === selectedUserId)?.role}</span></p>
+                <p style={{ margin: 0, fontSize: '0.85rem', opacity: 0.6 }}><strong>System ID:</strong> {selectedUserId}</p>
+              </div>
+              <button 
+                onClick={() => {
+                  handleDeleteUser(selectedUserId);
+                  setSelectedUserId('');
+                }} 
+                style={{ background: 'transparent', color: 'var(--danger)', border: '1px solid var(--danger)', padding: '0.5rem 1rem', borderRadius: '4px', cursor: 'pointer', fontSize: '0.9rem' }}
+                disabled={loading}
+              >
+                Remove Owner
+              </button>
+            </div>
+          </div>
+        )}
 
         <h3 style={{ marginBottom: '1rem', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '1.5rem' }}>Add New Owner</h3>
         <form onSubmit={handleAddUser} style={{ display: 'flex', gap: '1rem', alignItems: 'flex-end' }}>
