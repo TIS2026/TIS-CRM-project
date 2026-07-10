@@ -37,6 +37,7 @@ export default function Dashboard() {
   const [availableBuckets, setAvailableBuckets] = useState<string[]>([]);
   const [pendingCalls, setPendingCalls] = useState<any[]>([]);
   const [loadingCalls, setLoadingCalls] = useState(false);
+  const [callingOppId, setCallingOppId] = useState<string | null>(null);
 
   // --- Module B State ---
   const [pasteText, setPasteText] = useState('');
@@ -582,18 +583,25 @@ export default function Dashboard() {
                       <td>{opp.leadSource}</td>
                       <td>
                         <button 
-                          onClick={async () => {
-                             await fetch('/api/calls', {
-                               method: 'POST',
-                               headers: { 'Content-Type': 'application/json' },
-                               body: JSON.stringify({ opportunityId: opp.id, callType: 'Sales Call', ownerId: opp.ownerId })
-                             });
-                             fetchModuleA(page);
-                             fetchPendingCalls();
+                          onClick={async (e) => {
+                             e.stopPropagation();
+                             setCallingOppId(opp.id);
+                             try {
+                               await fetch('/api/calls', {
+                                 method: 'POST',
+                                 headers: { 'Content-Type': 'application/json' },
+                                 body: JSON.stringify({ opportunityId: opp.id, callType: 'Sales Call', ownerId: opp.ownerId })
+                               });
+                               await fetchModuleA(page);
+                               await fetchPendingCalls();
+                             } finally {
+                               setCallingOppId(null);
+                             }
                           }}
-                          style={{ padding: '0.25rem 0.5rem', background: 'var(--accent)', border: 'none', color: '#fff', borderRadius: '4px', cursor: 'pointer', fontSize: '0.85rem' }}
+                          disabled={callingOppId === opp.id}
+                          style={{ padding: '0.4rem 0.8rem', background: 'var(--accent)', border: 'none', color: '#fff', borderRadius: '4px', cursor: callingOppId === opp.id ? 'not-allowed' : 'pointer', fontSize: '0.85rem', opacity: callingOppId === opp.id ? 0.7 : 1 }}
                         >
-                          + Call
+                          {callingOppId === opp.id ? 'Scheduling...' : '+ Call'}
                         </button>
                       </td>
                     </tr>
