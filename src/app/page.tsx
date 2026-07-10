@@ -271,38 +271,42 @@ export default function Dashboard() {
 
   return (
     <div className="glass-panel" style={{ padding: '2rem' }}>
-      <h1 style={{ marginBottom: '1.5rem', fontWeight: 600 }}>CRM Dashboard</h1>
-      
-      <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
-        <button 
-          className={`btn ${activeTab === 'moduleA' ? '' : 'btn-secondary'}`}
-          onClick={() => setActiveTab('moduleA')}
-        >
-          Module A: Filter Search
-        </button>
-        <button 
-          className={`btn ${activeTab === 'moduleB' ? '' : 'btn-secondary'}`}
-          onClick={() => setActiveTab('moduleB')}
-        >
-          Module B: Paste-to-Search
-        </button>
-        
-        {activeTab === 'moduleA' && (
-          <div style={{ marginLeft: 'auto', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-            <select className="btn btn-secondary" style={{ padding: '0.5rem', background: 'transparent', cursor: 'pointer' }} value={viewMode} onChange={e => setViewMode(e.target.value as any)}>
-              <option value="opportunities">Opportunities View</option>
-              <option value="leads">Unique Leads View</option>
-            </select>
-            <button className="btn btn-secondary" onClick={() => setSortOrder(sortOrder === 'newest' ? 'az' : 'newest')}>
-              {sortOrder === 'newest' ? 'Sort: Newest First' : 'Sort: Alphabetical (A-Z)'}
-            </button>
-          </div>
-        )}
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '1rem' }}>
+        <h1 style={{ margin: 0, fontWeight: 600 }}>CRM Dashboard</h1>
+        <div style={{ display: 'flex', gap: '0.5rem' }}>
+          <button className={`btn ${activeTab === 'moduleA' ? '' : 'btn-secondary'}`} onClick={() => setActiveTab('moduleA')}>
+            Data View
+          </button>
+          <button className={`btn ${activeTab === 'moduleB' ? '' : 'btn-secondary'}`} onClick={() => setActiveTab('moduleB')}>
+            Paste-to-Search
+          </button>
+        </div>
       </div>
 
       {activeTab === 'moduleA' && (
         <div>
-          <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem' }}>
+          {/* Main Controls Row */}
+          <div style={{ display: 'flex', gap: '1rem', marginBottom: '1rem', flexWrap: 'wrap', padding: '1rem', background: 'var(--bg-highlight)', borderRadius: '8px', border: '1px solid var(--border-light)', alignItems: 'center' }}>
+            <select className="btn btn-secondary" style={{ padding: '0.5rem', background: 'var(--bg-secondary)', cursor: 'pointer' }} value={viewMode} onChange={e => setViewMode(e.target.value as any)}>
+              <option value="opportunities">View: Opportunities</option>
+              <option value="leads">View: Unique Leads</option>
+            </select>
+            <button className="btn btn-secondary" onClick={() => setSortOrder(sortOrder === 'newest' ? 'az' : 'newest')} style={{ background: 'var(--bg-secondary)' }}>
+              {sortOrder === 'newest' ? 'Sort: Newest First' : 'Sort: A-Z'}
+            </button>
+            <div style={{ marginLeft: 'auto', display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+              <button className="btn btn-secondary" onClick={() => setShowCustomFilters(!showCustomFilters)} style={{ background: 'var(--bg-secondary)' }}>
+                {showCustomFilters ? 'Hide Advanced Filters' : 'Advanced Filters'}
+              </button>
+              <button className="btn" onClick={() => fetchModuleA(1)} disabled={loadingA}>Search</button>
+              <button className="btn btn-secondary" onClick={handleDownloadCSV} disabled={opportunities.length === 0} style={{ background: 'var(--bg-secondary)' }}>
+                Export CSV
+              </button>
+            </div>
+          </div>
+
+          {/* Quick Filters Row */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1.5rem' }}>
             <div>
               <input 
                 placeholder="Filter by Student Name" 
@@ -333,7 +337,6 @@ export default function Dashboard() {
               <select 
                 value={filterBucket} 
                 onChange={e => setFilterBucket(e.target.value)} 
-                style={{ height: '100%', padding: '0.5rem', borderRadius: '4px', border: '1px solid var(--glass-border)', background: 'var(--bg-secondary)', color: 'var(--text-primary)' }}
               >
                 <option value="">All Buckets</option>
                 {availableBuckets.map((bucket, idx) => (
@@ -341,13 +344,6 @@ export default function Dashboard() {
                 ))}
               </select>
             </div>
-            <button className="btn btn-secondary" onClick={() => setShowCustomFilters(!showCustomFilters)}>
-              {showCustomFilters ? 'Hide Custom Filters' : 'Custom Filters'}
-            </button>
-            <button className="btn" onClick={() => fetchModuleA(1)} disabled={loadingA}>Search</button>
-            <button className="btn btn-secondary" onClick={handleDownloadCSV} disabled={opportunities.length === 0}>
-              Download CSV
-            </button>
           </div>
 
           {showCustomFilters && (
