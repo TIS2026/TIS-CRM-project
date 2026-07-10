@@ -129,6 +129,7 @@ export default function Dashboard() {
       const data = await res.json();
       setPasteMatches(data.matches);
       setPasteOrphans(data.orphans);
+      setSelectedRows(data.matches.map((o: any) => o.id));
     } catch (e) {
       console.error(e);
     } finally {
@@ -148,28 +149,51 @@ export default function Dashboard() {
     }
   };
 
-  const handleBulkUpdate = async () => {
+  const toggleAllPasteMatches = () => {
+    const allSelected = pasteMatches.length > 0 && pasteMatches.every((opp: any) => selectedRows.includes(opp.id));
+    if (allSelected) {
+      const matchIds = pasteMatches.map((o: any) => o.id);
+      setSelectedRows(prev => prev.filter(id => !matchIds.includes(id)));
+    } else {
+      const matchIds = pasteMatches.map((o: any) => o.id);
+      setSelectedRows(prev => Array.from(new Set([...prev, ...matchIds])));
+    }
+  };
+
+  const handleBulkCreate = async () => {
     if (selectedRows.length === 0) return;
+    
+    if (!bulkOwner || !bulkBucket) {
+      alert("Please select both an Owner and a Bucket before creating opportunities.");
+      return;
+    }
+
     setBulkLoading(true);
     try {
-      const updates: any = {};
-      if (bulkStage) updates.stage = bulkStage;
-      if (bulkOwner) updates.ownerId = bulkOwner;
-      if (bulkCourse) updates.courseName = bulkCourse;
-      if (bulkBucket) updates.bucket = bulkBucket;
+      const opportunityData: any = {};
+      if (bulkStage) opportunityData.stage = bulkStage;
+      opportunityData.ownerId = bulkOwner;
+      if (bulkCourse) opportunityData.courseName = bulkCourse;
+      opportunityData.bucket = bulkBucket;
 
-      await fetch('/api/opportunities/bulk', {
-        method: 'PUT',
+      await fetch('/api/opportunities/bulk-create', {
+        method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ opportunityIds: selectedRows, updates })
+        body: JSON.stringify({ leadIds: selectedRows, opportunityData })
       });
       
-      // Refresh and reset
+      // Refresh module A
       await fetchModuleA();
+
+      // Reset bulk inputs and selection
       setBulkStage('');
       setBulkOwner('');
       setBulkCourse('');
       setBulkBucket('');
+      setSelectedRows([]);
+      setPasteMatches([]); // Clear paste matches after creation
+      setPasteOrphans([]);
+      setPasteText('');
     } catch (e) {
       console.error(e);
     } finally {
@@ -590,28 +614,94 @@ export default function Dashboard() {
               onChange={e => setPasteText(e.target.value)}
               style={{ marginBottom: '1rem' }}
             />
-            <button className="btn" onClick={handlePasteSearch} disabled={loadingB}>Parse & Search</button>
+            <button className="btn" onClick={handlePasteSearch} disabled={loadingB}>
+              {loadingB ? 'Searching...' : 'Parse & Search'}
+            </button>
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginTop: '2rem' }}>
-            <div>
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
               <h3 style={{ marginBottom: '1rem', color: 'var(--success)' }}>Table Alpha: Matches ({pasteMatches.length})</h3>
+              
+              {selectedRows.length > 0 && pasteMatches.length > 0 && (
+                <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem', padding: '1rem', background: 'var(--bg-highlight-strong)', borderRadius: '8px', alignItems: 'center', flexWrap: 'wrap' }}>
+                  <span style={{ fontWeight: 600, color: 'var(--accent)' }}>{selectedRows.filter(id => pasteMatches.some((lead: any) => lead.id === id)).length} selected here</span>
+                  <div style={{ width: '1px', height: '24px', background: 'var(--border-light)' }}></div>
+                  <select value={bulkStage} onChange={e => setBulkStage(e.target.value)}>
+                    <option value="">Change Stage...</option>
+                    {availableStages.map((stage, idx) => (
+                      <option key={idx} value={stage}>{stage}</option>
+                    ))}
+                  </select>
+                  <select value={bulkOwner} onChange={e => setBulkOwner(e.target.value)}>
+                    <option value="">Change Owner...</option>
+                    {users.map(u => <option key={u.id} value={u.id}>{u.name}</option>)}
+                  </select>
+                  <select value={bulkBucket} onChange={e => setBulkBucket(e.target.value)}>
+                    <option value="">Change Bucket...</option>
+                    {availableBuckets.map((bucket, idx) => (
+                      <option key={idx} value={bucket}>{bucket}</option>
+                    ))}
+                  </select>
+                  <input 
+                    placeholder="Change Course..." 
+                    value={bulkCourse}
+                    onChange={e => setBulkCourse(e.target.value)}
+                    list="course-suggestions-paste"
+                  />
+                  <datalist id="course-suggestions-paste">
+                    {availableCourses.map((c, i) => <option key={i} value={c} />)}
+                  </datalist>
+                  <button 
+                    className="btn" 
+                    onClick={handleBulkCreate} 
+                    disabled={bulkLoading || (!bulkStage && !bulkOwner && !bulkCourse && !bulkBucket)}
+                  >
+                    {bulkLoading ? 'Creating...' : 'Create Opportunities'}
+                  </button>
+                  <button 
+                    className="btn" 
+                    onClick={handleBulkDelete} 
+                    disabled={bulkDeleteLoading}
+                    style={{ marginLeft: 'auto', background: 'var(--danger, #dc3545)', color: 'white' }}
+                  >
+                    {bulkDeleteLoading ? 'Deleting...' : 'Delete Selected'}
+                  </button>
+                </div>
+              )}
+
               <div className="glass-panel" style={{ padding: '1rem', overflowX: 'auto' }}>
                 {pasteMatches.length > 0 ? (
                    <table>
                    <thead>
                      <tr>
+                       <th style={{ width: '40px' }}>
+                         <input 
+                           type="checkbox" 
+                           checked={pasteMatches.length > 0 && pasteMatches.every((lead: any) => selectedRows.includes(lead.id))}
+                           onChange={toggleAllPasteMatches}
+                         />
+                       </th>
                        <th>Student</th>
-                       <th>Course</th>
-                       <th>Stage</th>
+                       <th>Parent Contact</th>
+                       <th>School</th>
+                       <th>Grade</th>
                      </tr>
                    </thead>
                    <tbody>
-                     {pasteMatches.map(opp => (
-                       <tr key={opp.id}>
-                         <td>{opp.lead?.studentName || '-'}</td>
-                         <td>{opp.courseName || '-'}</td>
-                         <td><span className={`badge badge-${opp.stage.toLowerCase().replace(' ', '-')}`}>{opp.stage}</span></td>
+                     {pasteMatches.map((lead: any) => (
+                       <tr key={lead.id} style={{ background: selectedRows.includes(lead.id) ? '#eff6ff' : 'transparent' }}>
+                         <td>
+                           <input 
+                             type="checkbox"
+                             checked={selectedRows.includes(lead.id)}
+                             onChange={() => toggleRow(lead.id)}
+                           />
+                         </td>
+                         <td>{lead.studentName || '-'}</td>
+                         <td>{lead.parentContactNumber || '-'}</td>
+                         <td>{lead.school || '-'}</td>
+                         <td>{lead.studentGrade || '-'}</td>
                        </tr>
                      ))}
                    </tbody>
