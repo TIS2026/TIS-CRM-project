@@ -447,12 +447,17 @@ export default function Dashboard() {
                 <option value="">Change Owner...</option>
                 {users.map(u => <option key={u.id} value={u.id}>{u.name}</option>)}
               </select>
-              <select value={bulkBucket} onChange={e => setBulkBucket(e.target.value)}>
-                <option value="">Change Bucket...</option>
+              <input 
+                placeholder="Type or select Bucket..." 
+                value={bulkBucket}
+                onChange={e => setBulkBucket(e.target.value)}
+                list="bucket-suggestions-module-a"
+              />
+              <datalist id="bucket-suggestions-module-a">
                 {availableBuckets.map((bucket, idx) => (
                   <option key={idx} value={bucket}>{bucket}</option>
                 ))}
-              </select>
+              </datalist>
               <input 
                 placeholder="Change Course..." 
                 value={bulkCourse}
@@ -667,12 +672,17 @@ export default function Dashboard() {
                     <option value="">Change Owner...</option>
                     {users.map(u => <option key={u.id} value={u.id}>{u.name}</option>)}
                   </select>
-                  <select value={bulkBucket} onChange={e => setBulkBucket(e.target.value)}>
-                    <option value="">Change Bucket...</option>
+                  <input 
+                    placeholder="Type or select Bucket..." 
+                    value={bulkBucket}
+                    onChange={e => setBulkBucket(e.target.value)}
+                    list="bucket-suggestions"
+                  />
+                  <datalist id="bucket-suggestions">
                     {availableBuckets.map((bucket, idx) => (
                       <option key={idx} value={bucket}>{bucket}</option>
                     ))}
-                  </select>
+                  </datalist>
                   <input 
                     placeholder="Change Course..." 
                     value={bulkCourse}

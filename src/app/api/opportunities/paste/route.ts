@@ -74,5 +74,15 @@ export async function POST(request: Request) {
     }
   }
 
-  return NextResponse.json({ matches, orphans });
+  // Deduplicate matches to prevent the same lead from showing multiple times
+  const uniqueMatches = [];
+  const seenIds = new Set();
+  for (const m of matches) {
+    if (!seenIds.has(m.id)) {
+      seenIds.add(m.id);
+      uniqueMatches.push(m);
+    }
+  }
+
+  return NextResponse.json({ matches: uniqueMatches, orphans });
 }
