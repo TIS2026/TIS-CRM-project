@@ -89,13 +89,14 @@ export async function POST(request: Request) {
   }
 
   // Deduplicate matches to prevent the same lead from showing multiple times
-  // We deduplicate by both lead ID and a normalized dedupKey to handle cases 
-  // where the database might have slight variations of the same lead.
+  // We deduplicate by both lead ID and a newly generated normalized dedupKey. 
+  // We intentionally IGNORE m.dedupKey from the database because older imports 
+  // used a different format (e.g. `|` vs `_`, different casing), which caused duplicates.
   const uniqueMatches = [];
   const seenIds = new Set();
   const seenDedup = new Set();
   for (const m of matches) {
-    const dedup = m.dedupKey || generateDedupKey(m.parentContactNumber || '', m.studentName || '');
+    const dedup = generateDedupKey(m.parentContactNumber || '', m.studentName || '');
     if (!seenIds.has(m.id) && !seenDedup.has(dedup)) {
       seenIds.add(m.id);
       seenDedup.add(dedup);
