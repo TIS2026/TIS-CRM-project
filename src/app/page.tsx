@@ -436,7 +436,7 @@ a.click();
               <div key={c.id} style={{ background: 'var(--bg-highlight)', padding: '1rem', borderRadius: '4px', border: '1px solid var(--border-light)' }}>
                 <div style={{ fontWeight: 600, color: 'var(--accent)', marginBottom: '0.5rem' }}>{c.callType}</div>
                 <div style={{ marginBottom: '0.25rem' }}>
-                  <strong>Student:</strong> <Link href={`/leads/${c.opportunity?.leadId}`} style={{ textDecoration: 'underline' }}>{c.opportunity?.lead?.studentName || 'Unknown'}</Link>
+                  <strong>Student:</strong> <Link href={`/leads/${c.opportunity?.leadId}`} style={{ textDecoration: 'underline', color: 'var(--accent)' }}>{c.opportunity?.lead?.studentName || 'Unknown'}</Link>
                 </div>
                 <div style={{ marginBottom: '0.25rem' }}>
                   <strong>Course:</strong> {c.opportunity?.courseName || '-'}
@@ -444,9 +444,16 @@ a.click();
                 <div style={{ marginBottom: '0.5rem' }}>
                   <strong>Owner:</strong> {c.owner?.name || '-'}
                 </div>
-                <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+                <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>
                   Scheduled: {new Date(c.scheduledDate).toLocaleString()}
                 </div>
+                <Link 
+                  href={`/leads/${c.opportunity?.leadId}`} 
+                  className="btn" 
+                  style={{ display: 'flex', width: '100%', justifyContent: 'center', textDecoration: 'none', padding: '0.5rem', fontSize: '0.9rem' }}
+                >
+                  Log Call ➔
+                </Link>
               </div>
             ))}
           </div>
