@@ -2,9 +2,10 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import LogCallModal from '@/components/LogCallModal';
+import AnalyticsTab from '@/components/AnalyticsTab';
 
 export default function Dashboard() {
-  const [activeTab, setActiveTab] = useState<'pendingCalls' | 'moduleA' | 'moduleB'>('pendingCalls');
+  const [activeTab, setActiveTab] = useState<'pendingCalls' | 'moduleA' | 'moduleB' | 'analytics'>('pendingCalls');
 
   const [opportunities, setOpportunities] = useState<any[]>([]);
   const [leads, setLeads] = useState<any[]>([]);
@@ -524,8 +525,15 @@ a.click();
           <button className={`btn ${activeTab === 'moduleB' ? '' : 'btn-secondary'}`} onClick={() => setActiveTab('moduleB')}>
             Paste-to-Search
           </button>
+          <button className={`btn ${activeTab === 'analytics' ? '' : 'btn-secondary'}`} onClick={() => setActiveTab('analytics')}>
+            Analytics
+          </button>
         </div>
       </div>
+
+      {activeTab === 'analytics' && (
+        <AnalyticsTab />
+      )}
 
       {activeTab === 'pendingCalls' && (
         <div style={{ marginBottom: '2rem', padding: '1.5rem', background: pendingCalls.length > 0 ? 'rgba(255, 0, 0, 0.05)' : 'var(--bg-highlight)', borderRadius: '8px', borderLeft: pendingCalls.length > 0 ? '4px solid var(--danger)' : '4px solid var(--border-light)' }}>
