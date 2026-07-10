@@ -35,6 +35,8 @@ export default function Dashboard() {
   const [availableStages, setAvailableStages] = useState<string[]>([]);
   const [availableLeadSources, setAvailableLeadSources] = useState<string[]>([]);
   const [availableBuckets, setAvailableBuckets] = useState<string[]>([]);
+  const [pendingCalls, setPendingCalls] = useState<any[]>([]);
+  const [loadingCalls, setLoadingCalls] = useState(false);
 
   // --- Module B State ---
   const [pasteText, setPasteText] = useState('');
@@ -116,7 +118,21 @@ export default function Dashboard() {
 
   useEffect(() => {
     fetchCoursesAndStudents();
+    fetchPendingCalls();
   }, []);
+
+  const fetchPendingCalls = async () => {
+    setLoadingCalls(true);
+    try {
+      const res = await fetch('/api/calls/pending?t=' + Date.now());
+      const data = await res.json();
+      setPendingCalls(data.calls || []);
+    } catch (e) {
+      console.error(e);
+    } finally {
+      setLoadingCalls(false);
+    }
+  };
 
   const handlePasteSearch = async () => {
     setLoadingB(true);
@@ -339,6 +355,31 @@ export default function Dashboard() {
           </button>
         </div>
       </div>
+
+      {pendingCalls.length > 0 && (
+        <div style={{ marginBottom: '2rem', padding: '1.5rem', background: 'rgba(255, 0, 0, 0.05)', borderRadius: '8px', borderLeft: '4px solid var(--danger)' }}>
+          <h2 style={{ marginBottom: '1rem', color: 'var(--danger)', fontSize: '1.2rem' }}>Action Required: Pending Calls ({pendingCalls.length})</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1rem' }}>
+            {pendingCalls.map(c => (
+              <div key={c.id} style={{ background: 'var(--bg-highlight)', padding: '1rem', borderRadius: '4px', border: '1px solid var(--border-light)' }}>
+                <div style={{ fontWeight: 600, color: 'var(--accent)', marginBottom: '0.5rem' }}>{c.callType}</div>
+                <div style={{ marginBottom: '0.25rem' }}>
+                  <strong>Student:</strong> <Link href={`/leads/${c.opportunity?.leadId}`} style={{ textDecoration: 'underline' }}>{c.opportunity?.lead?.studentName || 'Unknown'}</Link>
+                </div>
+                <div style={{ marginBottom: '0.25rem' }}>
+                  <strong>Course:</strong> {c.opportunity?.courseName || '-'}
+                </div>
+                <div style={{ marginBottom: '0.5rem' }}>
+                  <strong>Owner:</strong> {c.owner?.name || '-'}
+                </div>
+                <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+                  Scheduled: {new Date(c.scheduledDate).toLocaleString()}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {activeTab === 'moduleA' && (
         <div>
