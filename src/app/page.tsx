@@ -7,7 +7,7 @@ export default function Dashboard() {
 
   const [opportunities, setOpportunities] = useState<any[]>([]);
   const [leads, setLeads] = useState<any[]>([]);
-  const [viewMode, setViewMode] = useState<'opportunities' | 'leads'>('leads');
+  const [viewMode, setViewMode] = useState<'opportunities' | 'leads'>('opportunities');
   const [sortOrder, setSortOrder] = useState<'newest' | 'az'>('newest');
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
@@ -615,13 +615,14 @@ export default function Dashboard() {
                     <th>Type</th>
                     <th>Created Source</th>
                     <th>Total Opportunities</th>
+                    <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
                   {leads.map(lead => (
                     <tr key={lead.id}>
                       <td>
-                        <Link href={`/leads/${lead.id}`} style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
+                        <Link href={`/leads/${lead.id}`} style={{ color: 'var(--accent)', textDecoration: 'underline', fontWeight: 'bold' }}>
                           {lead.studentName || '-'}
                         </Link>
                       </td>
@@ -632,6 +633,11 @@ export default function Dashboard() {
                       <td><span className={`badge badge-${lead.leadType.toLowerCase()}`}>{lead.leadType}</span></td>
                       <td>{lead.createdSource}</td>
                       <td>{lead._count?.opportunities || 0}</td>
+                      <td>
+                        <Link href={`/leads/${lead.id}`} style={{ padding: '0.4rem 0.8rem', background: 'var(--accent)', color: '#fff', textDecoration: 'none', borderRadius: '4px', fontSize: '0.85rem' }}>
+                          Schedule Call &rarr;
+                        </Link>
+                      </td>
                     </tr>
                   ))}
                   {leads.length === 0 && (
