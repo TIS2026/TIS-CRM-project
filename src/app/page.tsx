@@ -108,8 +108,11 @@ export default function Dashboard() {
   };
 
   useEffect(() => {
-    fetchModuleA(1);
-  }, [viewMode, sortOrder]);
+    const timer = setTimeout(() => {
+      fetchModuleA(1);
+    }, 400);
+    return () => clearTimeout(timer);
+  }, [viewMode, sortOrder, filterStudentName, filterCourseName, filterBucket, filterStage, filterOwner, filterLeadSource]);
 
   useEffect(() => {
     fetchCoursesAndStudents();
