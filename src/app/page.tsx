@@ -7,7 +7,7 @@ export default function Dashboard() {
 
   const [opportunities, setOpportunities] = useState<any[]>([]);
   const [leads, setLeads] = useState<any[]>([]);
-  const [viewMode, setViewMode] = useState<'opportunities' | 'leads'>('opportunities');
+  const [viewMode, setViewMode] = useState<'opportunities' | 'leads'>('leads');
   const [sortOrder, setSortOrder] = useState<'newest' | 'az'>('newest');
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
@@ -288,8 +288,8 @@ export default function Dashboard() {
           {/* Main Controls Row */}
           <div style={{ display: 'flex', gap: '1rem', marginBottom: '1rem', flexWrap: 'wrap', padding: '1rem', background: 'var(--bg-highlight)', borderRadius: '8px', border: '1px solid var(--border-light)', alignItems: 'center' }}>
             <select className="btn btn-secondary" style={{ padding: '0.5rem', background: 'var(--bg-secondary)', cursor: 'pointer' }} value={viewMode} onChange={e => setViewMode(e.target.value as any)}>
-              <option value="opportunities">View: Opportunities</option>
               <option value="leads">View: Unique Leads</option>
+              <option value="opportunities">View: Opportunities</option>
             </select>
             <button className="btn btn-secondary" onClick={() => setSortOrder(sortOrder === 'newest' ? 'az' : 'newest')} style={{ background: 'var(--bg-secondary)' }}>
               {sortOrder === 'newest' ? 'Sort: Newest First' : 'Sort: A-Z'}
