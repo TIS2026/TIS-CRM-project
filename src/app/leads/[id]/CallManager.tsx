@@ -186,10 +186,14 @@ export default function CallManager({ oppId, initialCalls = [], ownerId, onCallU
             )}
 
             {((outcome && !['Connected', 'Invalid Number'].includes(outcome)) || (disposition && disposition.startsWith('Schedule'))) && (
-              <div style={{ marginBottom: '1rem' }}>
-                <label>Next Scheduled Date/Time *</label>
-                <input type="datetime-local" value={nextScheduledDate} onChange={e => setNextScheduledDate(e.target.value)} style={{ width: '100%', padding: '0.5rem' }} />
-                <small style={{ opacity: 0.6 }}>{outcome !== 'Connected' ? 'Mandatory follow-up because call was not connected.' : 'Mandatory follow-up for next step.'}</small>
+              <div style={{ marginBottom: '1.5rem', padding: '1rem', background: 'rgba(255, 165, 0, 0.1)', border: '2px solid orange', borderRadius: '8px' }}>
+                <label style={{ color: 'orange', fontWeight: 'bold', fontSize: '1.1rem', marginBottom: '0.5rem', display: 'block' }}>
+                  {outcome !== 'Connected' ? '⚠️ PROMPT: Mandatory Follow-up Required' : '⚠️ PROMPT: Schedule Next Step'}
+                </label>
+                <p style={{ margin: '0 0 1rem 0', fontSize: '0.9rem', opacity: 0.9 }}>
+                  Please select the date and time for the follow-up call to proceed.
+                </p>
+                <input type="datetime-local" value={nextScheduledDate} onChange={e => setNextScheduledDate(e.target.value)} style={{ width: '100%', padding: '0.75rem', fontSize: '1rem', border: '1px solid orange', borderRadius: '4px' }} />
               </div>
             )}
 
