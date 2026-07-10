@@ -123,10 +123,17 @@ export default function Dashboard() {
   useEffect(() => {
     fetchCoursesAndStudents();
     fetchPendingCalls();
+
+    // Aggressively poll pending calls to bypass Next.js aggressive client-side router caching
+    const interval = setInterval(() => {
+      fetchPendingCalls(false); // pass false to avoid loading spinner
+    }, 5000);
+
+    return () => clearInterval(interval);
   }, []);
 
-  const fetchPendingCalls = async () => {
-    setLoadingCalls(true);
+  const fetchPendingCalls = async (showLoader = true) => {
+    if (showLoader) setLoadingCalls(true);
     try {
       const res = await fetch('/api/calls/pending?t=' + Date.now());
       const data = await res.json();
@@ -134,7 +141,7 @@ export default function Dashboard() {
     } catch (e) {
       console.error(e);
     } finally {
-      setLoadingCalls(false);
+      if (showLoader) setLoadingCalls(false);
     }
   };
 
