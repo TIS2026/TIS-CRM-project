@@ -37,7 +37,7 @@ export async function POST(request: Request) {
     for (let i = 0; i < leadIds.length; i += chunkSize) {
       const chunk = leadIds.slice(i, i + chunkSize);
       
-      const results = await Promise.all(chunk.map(leadId => 
+      const results = await Promise.all(chunk.map((leadId: string) => 
         prisma.opportunity.create({
           data: {
             leadId,

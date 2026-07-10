@@ -16,7 +16,7 @@ export async function POST(request: Request) {
   for (let i = 0; i < rows.length; i += chunkSize) {
     const chunk = rows.slice(i, i + chunkSize);
     
-    const results = await Promise.all(chunk.map(async (row) => {
+    const results = await Promise.all(chunk.map(async (row: string) => {
       let cols = row.split('\t').map((c: string) => c.trim());
       
       // Fallback: If user pasted space-separated data instead of tabs for Two Columns mode

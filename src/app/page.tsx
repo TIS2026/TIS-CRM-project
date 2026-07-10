@@ -160,6 +160,36 @@ export default function Dashboard() {
     }
   };
 
+  const handleBulkUpdate = async () => {
+    if (selectedRows.length === 0) return;
+    setBulkLoading(true);
+    try {
+      const updates: any = {};
+      if (bulkStage) updates.stage = bulkStage;
+      if (bulkOwner) updates.ownerId = bulkOwner;
+      if (bulkCourse) updates.courseName = bulkCourse;
+      if (bulkBucket) updates.bucket = bulkBucket;
+
+      await fetch('/api/opportunities/bulk', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ opportunityIds: selectedRows, updates })
+      });
+      
+      await fetchModuleA();
+
+      setBulkStage('');
+      setBulkOwner('');
+      setBulkCourse('');
+      setBulkBucket('');
+      setSelectedRows([]);
+    } catch (e) {
+      console.error(e);
+    } finally {
+      setBulkLoading(false);
+    }
+  };
+
   const handleBulkCreate = async () => {
     if (selectedRows.length === 0) return;
     
