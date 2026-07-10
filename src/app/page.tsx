@@ -38,6 +38,9 @@ export default function Dashboard() {
   const [pendingCalls, setPendingCalls] = useState<any[]>([]);
   const [loadingCalls, setLoadingCalls] = useState(false);
   const [callingOppId, setCallingOppId] = useState<string | null>(null);
+  const [schedulingCallFor, setSchedulingCallFor] = useState<any>(null);
+  const [newCallDate, setNewCallDate] = useState('');
+  const [newCallType, setNewCallType] = useState('Sales Call');
 
   // --- Module B State ---
   const [pasteText, setPasteText] = useState('');
@@ -339,13 +342,76 @@ export default function Dashboard() {
     const a = document.createElement('a');
     a.href = url;
     a.download = `crm_export_${new Date().getTime()}.csv`;
-    a.click();
+a.click();
     window.URL.revokeObjectURL(url);
   };
 
   return (
-    <div className="glass-panel" style={{ padding: '2rem' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '1rem' }}>
+    <>
+      {schedulingCallFor && (
+        <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
+          <div className="glass-panel" style={{ padding: '2rem', maxWidth: '500px', width: '100%', background: 'var(--bg-secondary)' }}>
+            <h3 style={{ marginBottom: '1rem', color: 'var(--accent)' }}>Schedule Call for {schedulingCallFor.lead?.studentName || 'Student'}</h3>
+            
+            <div style={{ marginBottom: '1rem' }}>
+              <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 500 }}>Call Type</label>
+              <select value={newCallType} onChange={e => setNewCallType(e.target.value)}>
+                <option value="Sales Call">Sales Call</option>
+                <option value="Assessment Call">Assessment Call</option>
+                <option value="Payment Confirmation Call">Payment Confirmation Call</option>
+              </select>
+            </div>
+
+            <div style={{ marginBottom: '1rem' }}>
+              <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 500 }}>Scheduled Date & Time *</label>
+              <input 
+                type="datetime-local" 
+                value={newCallDate} 
+                onChange={e => setNewCallDate(e.target.value)} 
+              />
+            </div>
+
+            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '1rem', marginTop: '2rem' }}>
+              <button 
+                className="btn btn-secondary"
+                onClick={() => setSchedulingCallFor(null)}
+              >
+                Cancel
+              </button>
+              <button 
+                className="btn"
+                disabled={!newCallDate || callingOppId === schedulingCallFor.id}
+                onClick={async () => {
+                  setCallingOppId(schedulingCallFor.id);
+                  try {
+                    await fetch('/api/calls', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({ 
+                        opportunityId: schedulingCallFor.id, 
+                        callType: newCallType, 
+                        ownerId: schedulingCallFor.ownerId,
+                        scheduledDate: newCallDate
+                      })
+                    });
+                    setSchedulingCallFor(null);
+                    setNewCallDate('');
+                    fetchModuleA(page);
+                    fetchPendingCalls();
+                  } finally {
+                    setCallingOppId(null);
+                  }
+                }}
+              >
+                {callingOppId === schedulingCallFor.id ? 'Scheduling...' : 'Confirm Schedule'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <div className="glass-panel" style={{ padding: '2rem' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '1rem' }}>
         <h1 style={{ margin: 0, fontWeight: 600 }}>CRM Dashboard</h1>
         <div style={{ display: 'flex', gap: '0.5rem' }}>
           <button className={`btn ${activeTab === 'moduleA' ? '' : 'btn-secondary'}`} onClick={() => setActiveTab('moduleA')}>
@@ -583,25 +649,13 @@ export default function Dashboard() {
                       <td>{opp.leadSource}</td>
                       <td>
                         <button 
-                          onClick={async (e) => {
+                          onClick={(e) => {
                              e.stopPropagation();
-                             setCallingOppId(opp.id);
-                             try {
-                               await fetch('/api/calls', {
-                                 method: 'POST',
-                                 headers: { 'Content-Type': 'application/json' },
-                                 body: JSON.stringify({ opportunityId: opp.id, callType: 'Sales Call', ownerId: opp.ownerId })
-                               });
-                               await fetchModuleA(page);
-                               await fetchPendingCalls();
-                             } finally {
-                               setCallingOppId(null);
-                             }
+                             setSchedulingCallFor(opp);
                           }}
-                          disabled={callingOppId === opp.id}
-                          style={{ padding: '0.4rem 0.8rem', background: 'var(--accent)', border: 'none', color: '#fff', borderRadius: '4px', cursor: callingOppId === opp.id ? 'not-allowed' : 'pointer', fontSize: '0.85rem', opacity: callingOppId === opp.id ? 0.7 : 1 }}
+                          style={{ padding: '0.4rem 0.8rem', background: 'var(--accent)', border: 'none', color: '#fff', borderRadius: '4px', cursor: 'pointer', fontSize: '0.85rem' }}
                         >
-                          {callingOppId === opp.id ? 'Scheduling...' : '+ Call'}
+                          + Call
                         </button>
                       </td>
                     </tr>
@@ -847,5 +901,6 @@ export default function Dashboard() {
         </div>
       )}
     </div>
+    </>
   );
 }

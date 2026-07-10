@@ -26,13 +26,15 @@ export async function POST(request: Request) {
   try {
     const data = await request.json();
     
+    const scheduledDate = data.scheduledDate ? new Date(data.scheduledDate) : new Date();
+
     // Auto-create a call
     const call = await prisma.call.create({
       data: {
         opportunityId: data.opportunityId,
         callType: data.callType || 'Sales Call',
         status: data.status || 'Scheduled',
-        scheduledDate: new Date(data.scheduledDate),
+        scheduledDate,
         ownerId: data.ownerId
       }
     });
