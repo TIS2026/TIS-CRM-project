@@ -10,6 +10,8 @@ export async function GET(request: Request) {
   const ownerId = searchParams.get('ownerId');
   const leadSource = searchParams.get('leadSource');
   const bucket = searchParams.get('bucket');
+  const page = parseInt(searchParams.get('page') || '1');
+  const limit = parseInt(searchParams.get('limit') || '50');
 
   const where: any = {};
   
@@ -24,15 +26,21 @@ export async function GET(request: Request) {
   if (leadSource) where.leadSource = leadSource;
   if (bucket) where.bucket = bucket;
 
-  const opportunities = await prisma.opportunity.findMany({
-    where,
-    include: {
-      lead: true,
-      owner: true,
-    },
-    orderBy: { createdDate: 'desc' },
-    take: 50,
-  });
+  const skip = (page - 1) * limit;
 
-  return NextResponse.json(opportunities);
+  const [opportunities, total] = await Promise.all([
+    prisma.opportunity.findMany({
+      where,
+      include: {
+        lead: true,
+        owner: true,
+      },
+      orderBy: { createdDate: 'desc' },
+      skip,
+      take: limit,
+    }),
+    prisma.opportunity.count({ where })
+  ]);
+
+  return NextResponse.json({ opportunities, total, page, limit });
 }

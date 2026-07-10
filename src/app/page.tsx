@@ -5,8 +5,10 @@ import Link from 'next/link';
 export default function Dashboard() {
   const [activeTab, setActiveTab] = useState<'moduleA' | 'moduleB'>('moduleA');
 
-  // --- Module A State ---
   const [opportunities, setOpportunities] = useState<any[]>([]);
+  const [page, setPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+  const [totalRecords, setTotalRecords] = useState(0);
   const [filterStudentName, setFilterStudentName] = useState('');
   const [filterCourseName, setFilterCourseName] = useState('');
   const [availableCourses, setAvailableCourses] = useState<string[]>([]);
@@ -38,9 +40,10 @@ export default function Dashboard() {
   const [pasteOrphans, setPasteOrphans] = useState<string[]>([]);
   const [loadingB, setLoadingB] = useState(false);
 
-  const fetchModuleA = async () => {
+  const fetchModuleA = async (pageOverride?: number) => {
     setLoadingA(true);
     setSelectedRows([]); // Clear selections on new search
+    const targetPage = pageOverride || page;
     try {
       const params = new URLSearchParams();
       if (filterStudentName) params.append('studentName', filterStudentName);
@@ -49,10 +52,15 @@ export default function Dashboard() {
       if (filterOwner) params.append('ownerId', filterOwner);
       if (filterLeadSource) params.append('leadSource', filterLeadSource);
       if (filterBucket) params.append('bucket', filterBucket);
+      params.append('page', targetPage.toString());
+      params.append('limit', '50');
 
       const res = await fetch(`/api/opportunities?${params.toString()}`);
       const data = await res.json();
-      setOpportunities(data);
+      setOpportunities(data.opportunities || []);
+      setTotalPages(Math.ceil((data.total || 0) / 50));
+      setTotalRecords(data.total || 0);
+      setPage(targetPage);
     } catch (e) {
       console.error(e);
     } finally {
@@ -88,7 +96,7 @@ export default function Dashboard() {
   };
 
   useEffect(() => {
-    fetchModuleA();
+    fetchModuleA(1);
     fetchCoursesAndStudents();
   }, []);
 
@@ -309,7 +317,7 @@ export default function Dashboard() {
             <button className="btn btn-secondary" onClick={() => setShowCustomFilters(!showCustomFilters)}>
               {showCustomFilters ? 'Hide Custom Filters' : 'Custom Filters'}
             </button>
-            <button className="btn" onClick={fetchModuleA} disabled={loadingA}>Search</button>
+            <button className="btn" onClick={() => fetchModuleA(1)} disabled={loadingA}>Search</button>
             <button className="btn btn-secondary" onClick={handleDownloadCSV} disabled={opportunities.length === 0}>
               Download CSV
             </button>
@@ -444,6 +452,28 @@ export default function Dashboard() {
                 )}
               </tbody>
             </table>
+          </div>
+
+          <div style={{ padding: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(255,255,255,0.02)', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+            <div style={{ color: 'var(--text-secondary)' }}>
+              Showing {opportunities.length} of {totalRecords} records (Page {page} of {totalPages || 1})
+            </div>
+            <div style={{ display: 'flex', gap: '1rem' }}>
+              <button 
+                className="btn btn-secondary" 
+                disabled={page <= 1 || loadingA}
+                onClick={() => fetchModuleA(page - 1)}
+              >
+                Previous
+              </button>
+              <button 
+                className="btn btn-secondary" 
+                disabled={page >= totalPages || loadingA}
+                onClick={() => fetchModuleA(page + 1)}
+              >
+                Next
+              </button>
+            </div>
           </div>
 
         </div>
