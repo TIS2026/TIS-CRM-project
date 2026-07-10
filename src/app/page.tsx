@@ -787,7 +787,7 @@ a.click();
                       <td>{opp.lead?.parentContactNumber}</td>
                       <td>{opp.courseName || '-'}</td>
                       <td><span className={`badge badge-${opp.stage.toLowerCase().replace(' ', '-')}`}>{opp.stage}</span></td>
-                      <td>{opp.bucket ? <span style={{background: '#fff', color: '#000', padding: '0.2rem 0.5rem', borderRadius: '4px', border: '1px solid rgba(0,0,0,0.1)', fontSize: '0.85rem', fontWeight: 500}}>{opp.bucket}</span> : '-'}</td>
+                      <td>{opp.bucket || '-'}</td>
                       <td>{opp.remarks || '-'}</td>
                       {customFields.map(cf => <td key={cf.id}>{opp.customFields?.[cf.id] || '-'}</td>)}
                       <td>{opp.owner?.name}</td>
