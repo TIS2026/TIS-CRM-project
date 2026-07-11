@@ -95,6 +95,7 @@ export async function GET(request: Request) {
           name: key,
           total,
           won,
+          other: total - won,
           winRate: total > 0 ? ((won / total) * 100).toFixed(1) : 0
         };
       }).sort((a, b) => b.won - a.won);

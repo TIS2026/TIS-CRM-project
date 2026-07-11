@@ -148,8 +148,8 @@ export default function AnalyticsTab() {
                 <YAxis dataKey="name" type="category" stroke="#888" width={200} tick={{ fontSize: 12 }} />
                 <Tooltip cursor={{ fill: 'rgba(255,255,255,0.05)' }} contentStyle={{ background: '#1a1a1a', border: '1px solid #333' }} />
                 <Legend />
-                <Bar dataKey="total" name="Total Opps" fill="#8884d8" />
-                <Bar dataKey="won" name="Won Opps" fill="#00C49F" />
+                <Bar dataKey="won" name="Won Opps" stackId="a" fill="#00C49F" />
+                <Bar dataKey="other" name="Lost/Open Opps" stackId="a" fill="#8884d8" />
               </BarChart>
             </ResponsiveContainer>
           </div>
