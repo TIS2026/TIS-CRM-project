@@ -143,13 +143,25 @@ export default function AnalyticsTab() {
           <h4 style={{ marginBottom: '1rem', color: 'var(--accent)' }}>Top Lead Sources</h4>
           <div style={{ height: '300px' }}>
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={data.sources} layout="vertical" margin={{ left: 20, right: 20 }} barGap="-100%">
+              <BarChart data={data.sources} layout="vertical" margin={{ left: 0, right: 20 }}>
                 <XAxis type="number" stroke="#888" />
-                <YAxis dataKey="name" type="category" stroke="#888" width={120} tick={{ fontSize: 12 }} tickFormatter={(val) => val.length > 15 ? val.substring(0, 15) + '...' : val} />
-                <Tooltip cursor={{ fill: 'rgba(255,255,255,0.05)' }} contentStyle={{ background: '#1a1a1a', border: '1px solid #333' }} />
+                <YAxis dataKey="name" type="category" stroke="#888" width={180} tick={{ fontSize: 12 }} tickFormatter={(val) => (val.length > 25 ? val.substring(0, 25) + '...' : val).replace(/ /g, '\u00A0')} />
+                <Tooltip cursor={{ fill: 'rgba(255,255,255,0.05)' }} content={({ active, payload }: any) => {
+                  if (active && payload && payload.length) {
+                    const d = payload[0].payload;
+                    return (
+                      <div style={{ background: '#1a1a1a', border: '1px solid #333', padding: '10px', borderRadius: '4px' }}>
+                        <p style={{ margin: '0 0 5px 0', color: '#fff', fontWeight: 600 }}>{d.name}</p>
+                        <p style={{ margin: 0, color: '#8884d8' }}>Total Opps: {d.total}</p>
+                        <p style={{ margin: 0, color: '#00C49F' }}>Won Opps: {d.won}</p>
+                      </div>
+                    );
+                  }
+                  return null;
+                }} />
                 <Legend />
-                <Bar dataKey="total" name="Total Opps" fill="#8884d8" barSize={20} />
-                <Bar dataKey="won" name="Won Opps" fill="#00C49F" barSize={20} />
+                <Bar dataKey="won" name="Won Opps" stackId="a" fill="#00C49F" barSize={20} />
+                <Bar dataKey="other" name="Total Opps" stackId="a" fill="#8884d8" barSize={20} />
               </BarChart>
             </ResponsiveContainer>
           </div>
