@@ -167,10 +167,14 @@ export default function AnalyticsTab() {
         {/* 4. Lead Sources */}
         <div className="glass-panel" style={{ padding: '1.5rem' }}>
           <h4 style={{ marginBottom: '1rem', color: 'var(--accent)' }}>Top Lead Sources</h4>
-          <div style={{ height: '300px' }}>
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={data.sources.filter((s: any) => s.name !== 'Bulk Upload' && s.name !== 'Unknown - Historical')} layout="vertical" margin={{ left: 0, right: 20 }}>
-                <XAxis type="number" stroke="#888" />
+          {(() => {
+            const filteredSources = data.sources.filter((s: any) => s.name !== 'Bulk Upload' && s.name !== 'Unknown - Historical');
+            const dynamicHeight = Math.max(300, filteredSources.length * 35);
+            return (
+              <div style={{ height: `${dynamicHeight}px` }}>
+                <ResponsiveContainer width="100%" height="100%">
+                  <BarChart data={filteredSources} layout="vertical" margin={{ left: 0, right: 20 }}>
+                    <XAxis type="number" stroke="#888" />
                 <YAxis dataKey="name" type="category" stroke="#888" width={180} tick={{ fontSize: 12 }} tickFormatter={(val) => (val.length > 25 ? val.substring(0, 25) + '...' : val).replace(/ /g, '\u00A0')} />
                 <Tooltip cursor={{ fill: 'rgba(255,255,255,0.05)' }} content={({ active, payload }: any) => {
                   if (active && payload && payload.length) {
@@ -191,6 +195,8 @@ export default function AnalyticsTab() {
               </BarChart>
             </ResponsiveContainer>
           </div>
+            );
+          })()}
         </div>
 
         {/* 5. Bucket Effectiveness */}
