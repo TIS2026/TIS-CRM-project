@@ -100,20 +100,12 @@ export async function GET(request: Request) {
       }).sort((a, b) => b.won - a.won);
     };
 
-    // 5. Loss Analysis
-    const lossData = await prisma.opportunity.groupBy({
-      by: ['lostReason'],
-      where: { ...oppWhereClause, stage: 'Lost', lostReason: { not: null } },
-      _count: { id: true }
-    });
-
     return NextResponse.json({
       pipeline: pipelineData.map(p => ({ name: p.stage, value: p._count.id })),
       callOutcomes: callData.map(c => ({ name: c.callOutcome, value: c._count.id })),
       teamPerformance,
       sources: processGroupedData(sourceData, 'leadSource'),
-      buckets: processGroupedData(bucketData, 'bucket'),
-      losses: lossData.map(l => ({ name: l.lostReason, value: l._count.id })).sort((a,b) => b.value - a.value)
+      buckets: processGroupedData(bucketData, 'bucket')
     });
 
   } catch (error) {

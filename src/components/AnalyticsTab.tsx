@@ -143,9 +143,9 @@ export default function AnalyticsTab() {
           <h4 style={{ marginBottom: '1rem', color: 'var(--accent)' }}>Top Lead Sources</h4>
           <div style={{ height: '300px' }}>
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={data.sources} layout="vertical" margin={{ left: 40 }}>
+              <BarChart data={data.sources} layout="vertical" margin={{ left: 0, right: 20 }}>
                 <XAxis type="number" stroke="#888" />
-                <YAxis dataKey="name" type="category" stroke="#888" width={100} />
+                <YAxis dataKey="name" type="category" stroke="#888" width={200} tick={{ fontSize: 12 }} />
                 <Tooltip cursor={{ fill: 'rgba(255,255,255,0.05)' }} contentStyle={{ background: '#1a1a1a', border: '1px solid #333' }} />
                 <Legend />
                 <Bar dataKey="total" name="Total Opps" fill="#8884d8" />
@@ -160,11 +160,11 @@ export default function AnalyticsTab() {
           <h4 style={{ marginBottom: '1rem', color: 'var(--accent)' }}>Bucket Conversion Rates</h4>
           <div style={{ height: '300px' }}>
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={data.buckets} margin={{ top: 20 }}>
-                <XAxis dataKey="name" stroke="#888" />
+              <BarChart data={data.buckets} margin={{ top: 20, right: 30, left: 20, bottom: 60 }}>
+                <XAxis dataKey="name" stroke="#888" angle={-45} textAnchor="end" height={80} tick={{ fontSize: 12 }} />
                 <YAxis stroke="#888" />
                 <Tooltip cursor={{ fill: 'rgba(255,255,255,0.05)' }} contentStyle={{ background: '#1a1a1a', border: '1px solid #333' }} />
-                <Legend />
+                <Legend verticalAlign="top" height={36}/>
                 <Bar dataKey="total" name="Total Opps" fill="#FFBB28" />
                 <Bar dataKey="won" name="Won Opps" fill="#00C49F" />
               </BarChart>
@@ -172,23 +172,6 @@ export default function AnalyticsTab() {
           </div>
         </div>
 
-        {/* 6. Loss Analysis */}
-        <div className="glass-panel" style={{ padding: '1.5rem' }}>
-          <h4 style={{ marginBottom: '1rem', color: 'var(--accent)' }}>Lost Reasons</h4>
-          <div style={{ height: '300px' }}>
-            <ResponsiveContainer width="100%" height="100%">
-              <PieChart>
-                <Pie data={data.losses} dataKey="value" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={100} label>
-                  {data.losses.map((entry: any, index: number) => (
-                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                  ))}
-                </Pie>
-                <Tooltip contentStyle={{ background: '#1a1a1a', border: '1px solid #333' }} />
-                <Legend />
-              </PieChart>
-            </ResponsiveContainer>
-          </div>
-        </div>
       </div>
 
     </div>
