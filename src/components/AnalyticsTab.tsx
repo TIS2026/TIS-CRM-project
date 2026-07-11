@@ -58,6 +58,32 @@ export default function AnalyticsTab() {
 
       {loading && <div style={{ color: 'var(--text-secondary)', textAlign: 'center' }}>Updating...</div>}
 
+      {/* Top Level Summary Cards */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem' }}>
+        {(() => {
+          const bulkUploadSource = data.sources.find((s: any) => s.name === 'Bulk Upload');
+          if (!bulkUploadSource) return null;
+          return (
+            <div className="glass-panel" style={{ padding: '1.5rem', textAlign: 'center' }}>
+              <h4 style={{ color: 'var(--text-secondary)', margin: '0 0 0.5rem 0', fontSize: '0.9rem' }}>Bulk Uploads</h4>
+              <div style={{ fontSize: '2rem', fontWeight: 'bold', color: 'var(--accent)' }}>{bulkUploadSource.total}</div>
+              <div style={{ fontSize: '0.9rem', color: 'var(--success)' }}>{bulkUploadSource.won} Won</div>
+            </div>
+          );
+        })()}
+        {(() => {
+          const historicalSource = data.sources.find((s: any) => s.name === 'Unknown - Historical');
+          if (!historicalSource) return null;
+          return (
+            <div className="glass-panel" style={{ padding: '1.5rem', textAlign: 'center' }}>
+              <h4 style={{ color: 'var(--text-secondary)', margin: '0 0 0.5rem 0', fontSize: '0.9rem' }}>Unknown - Historical</h4>
+              <div style={{ fontSize: '2rem', fontWeight: 'bold', color: 'var(--accent)' }}>{historicalSource.total}</div>
+              <div style={{ fontSize: '0.9rem', color: 'var(--success)' }}>{historicalSource.won} Won</div>
+            </div>
+          );
+        })()}
+      </div>
+
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
         
         {/* 1. Pipeline Breakdown */}
@@ -143,7 +169,7 @@ export default function AnalyticsTab() {
           <h4 style={{ marginBottom: '1rem', color: 'var(--accent)' }}>Top Lead Sources</h4>
           <div style={{ height: '300px' }}>
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={data.sources} layout="vertical" margin={{ left: 0, right: 20 }}>
+              <BarChart data={data.sources.filter((s: any) => s.name !== 'Bulk Upload' && s.name !== 'Unknown - Historical')} layout="vertical" margin={{ left: 0, right: 20 }}>
                 <XAxis type="number" stroke="#888" />
                 <YAxis dataKey="name" type="category" stroke="#888" width={180} tick={{ fontSize: 12 }} tickFormatter={(val) => (val.length > 25 ? val.substring(0, 25) + '...' : val).replace(/ /g, '\u00A0')} />
                 <Tooltip cursor={{ fill: 'rgba(255,255,255,0.05)' }} content={({ active, payload }: any) => {
