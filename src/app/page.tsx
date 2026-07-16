@@ -575,7 +575,7 @@ a.click();
           {loadingCalls && pendingCalls.length === 0 ? (
             <div style={{ padding: '2rem', textAlign: 'center', color: 'var(--text-muted)' }}>Loading...</div>
           ) : pendingCalls.filter(c => !pendingCallOwnerFilter || c.ownerId === pendingCallOwnerFilter).length > 0 ? (
-            <div style={{ overflowX: 'auto' }}>
+            <div style={{ overflowX: 'auto', overflowY: 'auto', maxHeight: 'calc(100vh - 280px)' }}>
               <table>
                 <thead>
                   <tr>
@@ -789,7 +789,7 @@ a.click();
             {loadingA && <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Refreshing…</span>}
           </div>
 
-          <div className="glass-panel" style={{ overflowX: 'auto', padding: 0 }}>
+          <div className="glass-panel" style={{ overflowX: 'auto', overflowY: 'auto', maxHeight: 'calc(100vh - 220px)', padding: 0 }}>
             {viewMode === 'opportunities' ? (
               <table>
                 <thead>
@@ -1010,7 +1010,7 @@ a.click();
                 </div>
               )}
 
-              <div className="glass-panel" style={{ padding: '1rem', overflowX: 'auto' }}>
+              <div className="glass-panel" style={{ padding: '1rem', overflowX: 'auto', overflowY: 'auto', maxHeight: 'calc(100vh - 350px)' }}>
                 {pasteMatches.length > 0 ? (
                    <table>
                    <thead>

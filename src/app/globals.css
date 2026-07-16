@@ -271,22 +271,22 @@ table {
 }
 
 thead {
-  position: sticky;
-  top: var(--nav-height);
-  z-index: 10;
+  /* No sticky here, moved to th */
 }
 
 th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   text-align: left;
-  padding: 0.875rem 1rem;
-  color: var(--text-secondary);
-  font-weight: 600;
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  border-bottom: 2px solid var(--glass-border);
-  background: #f8fafc;
+  padding: 1rem 1.25rem;
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-bottom: 2px solid var(--border-light);
+  background: var(--bg-secondary);
   white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02);
 }
 
 th:first-child { border-radius: var(--radius-sm) 0 0 0; }

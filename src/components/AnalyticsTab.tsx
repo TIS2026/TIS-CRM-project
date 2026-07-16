@@ -127,7 +127,7 @@ export default function AnalyticsTab() {
       {/* 3. Team Performance */}
       <div className="glass-panel" style={{ padding: '1.5rem' }}>
         <h4 style={{ marginBottom: '1rem', color: 'var(--accent)' }}>Team Performance</h4>
-        <div style={{ overflowX: 'auto' }}>
+        <div style={{ overflowX: 'auto', overflowY: 'auto', maxHeight: '400px' }}>
           <table style={{ width: '100%' }}>
             <thead>
               <tr>
