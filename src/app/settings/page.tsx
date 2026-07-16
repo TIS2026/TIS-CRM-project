@@ -15,6 +15,10 @@ export default function SettingsPage() {
   const [cfLoading, setCfLoading] = useState(false);
   const [cfResult, setCfResult] = useState<any>(null);
 
+  const [adminEmails, setAdminEmails] = useState('');
+  const [emailLoading, setEmailLoading] = useState(false);
+  const [emailResult, setEmailResult] = useState<any>(null);
+
   const fetchUsers = async () => {
     try {
       const res = await fetch('/api/users');
@@ -43,7 +47,44 @@ export default function SettingsPage() {
   useEffect(() => {
     fetchUsers();
     fetchCustomFields();
+    fetchSettings();
   }, []);
+
+  const fetchSettings = async () => {
+    try {
+      const res = await fetch('/api/settings');
+      const data = await res.json();
+      if (data && data.adminEmails) {
+        setAdminEmails(data.adminEmails);
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
+  const handleSaveEmails = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setEmailLoading(true);
+    setEmailResult(null);
+
+    try {
+      const response = await fetch('/api/settings', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ adminEmails }),
+      });
+      const data = await response.json();
+      if (response.ok) {
+        setEmailResult({ success: true });
+      } else {
+        setEmailResult({ success: false, error: data.error });
+      }
+    } catch (error: any) {
+      setEmailResult({ success: false, error: error.message });
+    } finally {
+      setEmailLoading(false);
+    }
+  };
 
   const handleAddUser = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -254,6 +295,39 @@ export default function SettingsPage() {
               <span style={{ color: 'var(--success)' }}>Successfully added new data field!</span>
             ) : (
               <span style={{ color: 'var(--danger)' }}>Error: {cfResult.error}</span>
+            )}
+          </div>
+        )}
+      </div>
+
+      <div style={{ marginBottom: '2rem', background: 'rgba(255,255,255,0.02)', padding: '1.5rem', borderRadius: '8px' }}>
+        <h2 style={{ marginBottom: '1rem', color: 'var(--accent)' }}>Automated Backups</h2>
+        <p style={{ marginBottom: '1.5rem', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+          The system will automatically generate a full CSV backup of your database every day at 5:30 AM IST (Midnight UTC) and email it to the addresses below.
+        </p>
+
+        <form onSubmit={handleSaveEmails} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          <div>
+            <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 500 }}>Admin Email Addresses (comma-separated)</label>
+            <textarea 
+              value={adminEmails}
+              onChange={e => setAdminEmails(e.target.value)}
+              placeholder="admin@example.com, manager@example.com"
+              rows={3}
+              style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', background: 'rgba(255,255,255,0.05)', color: 'var(--text-primary)', border: '1px solid rgba(255,255,255,0.2)' }}
+            />
+          </div>
+          <button type="submit" className="btn" disabled={emailLoading} style={{ alignSelf: 'flex-start' }}>
+            {emailLoading ? 'Saving...' : 'Save Configuration'}
+          </button>
+        </form>
+
+        {emailResult && (
+          <div style={{ marginTop: '1rem', padding: '1rem', borderRadius: '8px', background: 'rgba(255,255,255,0.05)' }}>
+            {emailResult.success ? (
+              <span style={{ color: 'var(--success)' }}>Settings saved successfully!</span>
+            ) : (
+              <span style={{ color: 'var(--danger)' }}>Error: {emailResult.error}</span>
             )}
           </div>
         )}

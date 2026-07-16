@@ -96,3 +96,9 @@ model Call {
   ownerId       String
   owner         User        @relation(fields: [ownerId], references: [id])
 }
+
+model SystemSetting {
+  id          String   @id @default("default")
+  adminEmails String   @default("") // Comma-separated list
+  updatedAt   DateTime @updatedAt
+}
