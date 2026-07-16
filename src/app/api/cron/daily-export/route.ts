@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
-import nodemailer from 'nodemailer';
+import { Resend } from 'resend';
 import Papa from 'papaparse';
 
 export const dynamic = 'force-dynamic';
@@ -57,37 +57,33 @@ export async function GET(request: Request) {
 
     // 4. Convert to CSV string
     const csvString = Papa.unparse(csvData);
+    const base64Csv = Buffer.from(csvString).toString('base64');
 
-    // 5. Send Email via NodeMailer (Microsoft SMTP)
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST || 'smtp.office365.com',
-      port: Number(process.env.SMTP_PORT) || 587,
-      secure: false, // true for 465, false for other ports
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
-      },
-    });
+    // 5. Send Email via Resend
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
-    const mailOptions = {
-      from: process.env.SMTP_FROM || process.env.SMTP_USER,
+    const { data, error } = await resend.emails.send({
+      from: 'CRM Automated Backup <onboarding@resend.dev>',
       to: emailList,
       subject: `Daily CRM Backup - ${new Date().toLocaleDateString()}`,
       text: `Hello,\n\nPlease find attached the daily automated backup of your CRM Database as of ${new Date().toLocaleString()}.\n\nTotal Opportunities Exported: ${csvData.length}\n\nRegards,\nYour CRM System`,
       attachments: [
         {
           filename: `crm_backup_${new Date().toISOString().split('T')[0]}.csv`,
-          content: csvString
+          content: base64Csv
         }
       ]
-    };
+    });
 
-    await transporter.sendMail(mailOptions);
+    if (error) {
+      throw new Error(`Resend Error: ${error.message}`);
+    }
 
     return NextResponse.json({ 
       success: true, 
-      message: 'Backup generated and emailed successfully.',
-      records: csvData.length
+      message: 'Backup generated and emailed successfully via Resend.',
+      records: csvData.length,
+      resendId: data?.id
     });
 
   } catch (error: any) {
