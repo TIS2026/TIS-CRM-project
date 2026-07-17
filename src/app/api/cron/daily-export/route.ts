@@ -116,7 +116,7 @@ export async function GET(request: Request) {
     return NextResponse.json({ 
       success: true, 
       message: 'Backup generated and emailed successfully via Resend.',
-      records: csvData.length,
+      records: csvDataOpps.length,
       resendId: data?.id
     });
 

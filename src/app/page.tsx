@@ -880,7 +880,6 @@ a.click();
                     <th>Type</th>
                     <th>Created Source</th>
                     <th>Total Opportunities</th>
-                    <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -898,11 +897,6 @@ a.click();
                       <td><span className={`badge badge-${lead.leadType.toLowerCase()}`}>{lead.leadType}</span></td>
                       <td>{lead.createdSource}</td>
                       <td>{lead._count?.opportunities || 0}</td>
-                      <td>
-                        <Link href={`/leads/${lead.id}`} style={{ padding: '0.4rem 0.8rem', background: 'var(--accent)', color: '#fff', textDecoration: 'none', borderRadius: '4px', fontSize: '0.85rem' }}>
-                          Schedule Call &rarr;
-                        </Link>
-                      </td>
                     </tr>
                   ))}
                   {leads.length === 0 && !loadingA && (
