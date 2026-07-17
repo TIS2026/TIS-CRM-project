@@ -37,8 +37,19 @@ export async function GET(request: Request) {
       }
     });
 
+    const rawCalls = await prisma.call.findMany({
+      include: {
+        opportunity: {
+          include: {
+            lead: true
+          }
+        },
+        owner: true
+      }
+    });
+
     // 3. Flatten the data for CSV
-    const csvData = rawOpps.map(opp => ({
+    const csvDataOpps = rawOpps.map(opp => ({
       'Opportunity ID': opp.id,
       'Created Date': new Date(opp.createdDate).toLocaleDateString(),
       'Stage': opp.stage,
@@ -55,9 +66,28 @@ export async function GET(request: Request) {
       'Remarks': opp.remarks || ''
     }));
 
+    const csvDataCalls = rawCalls.map(call => ({
+      'Call ID': call.id,
+      'Opportunity ID': call.opportunityId,
+      'Call Type': call.callType,
+      'Status': call.status,
+      'Scheduled Date': new Date(call.scheduledDate).toLocaleDateString(),
+      'Completed Date': call.completedDate ? new Date(call.completedDate).toLocaleDateString() : '',
+      'Call Outcome': call.callOutcome || '',
+      'Disposition': call.disposition || '',
+      'Owner': call.owner.name,
+      'Student Name': call.opportunity.lead.studentName || '',
+      'Parent Contact': call.opportunity.lead.parentContactNumber,
+      'Course': call.opportunity.courseName || '',
+      'Stage': call.opportunity.stage
+    }));
+
     // 4. Convert to CSV string
-    const csvString = Papa.unparse(csvData);
-    const base64Csv = Buffer.from(csvString).toString('base64');
+    const csvStringOpps = Papa.unparse(csvDataOpps);
+    const base64CsvOpps = Buffer.from(csvStringOpps).toString('base64');
+
+    const csvStringCalls = Papa.unparse(csvDataCalls);
+    const base64CsvCalls = Buffer.from(csvStringCalls).toString('base64');
 
     // 5. Send Email via Resend
     const resend = new Resend(process.env.RESEND_API_KEY);
@@ -66,11 +96,15 @@ export async function GET(request: Request) {
       from: 'CRM Automated Backup <onboarding@resend.dev>',
       to: emailList,
       subject: `Daily CRM Backup - ${new Date().toLocaleDateString()}`,
-      text: `Hello,\n\nPlease find attached the daily automated backup of your CRM Database as of ${new Date().toLocaleString()}.\n\nTotal Opportunities Exported: ${csvData.length}\n\nRegards,\nYour CRM System`,
+      text: `Hello,\n\nPlease find attached the daily automated backup of your CRM Database as of ${new Date().toLocaleString()}.\n\nTotal Opportunities Exported: ${csvDataOpps.length}\nTotal Calls Exported: ${csvDataCalls.length}\n\nRegards,\nYour CRM System`,
       attachments: [
         {
-          filename: `crm_backup_${new Date().toISOString().split('T')[0]}.csv`,
-          content: base64Csv
+          filename: `crm_opportunities_backup_${new Date().toISOString().split('T')[0]}.csv`,
+          content: base64CsvOpps
+        },
+        {
+          filename: `crm_calls_backup_${new Date().toISOString().split('T')[0]}.csv`,
+          content: base64CsvCalls
         }
       ]
     });

@@ -563,12 +563,26 @@ a.click();
                 </div>
               </div>
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <label style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', whiteSpace: 'nowrap' }}>Filter owner:</label>
-              <select value={pendingCallOwnerFilter} onChange={e => setPendingCallOwnerFilter(e.target.value)} style={{ width: 'auto', minWidth: '150px' }}>
-                <option value="">All Owners</option>
-                {users.map(u => <option key={u.id} value={u.id}>{u.name}</option>)}
-              </select>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <label style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', whiteSpace: 'nowrap' }}>Filter owner:</label>
+                <select value={pendingCallOwnerFilter} onChange={e => setPendingCallOwnerFilter(e.target.value)} style={{ width: 'auto', minWidth: '150px' }}>
+                  <option value="">All Owners</option>
+                  {users.map(u => <option key={u.id} value={u.id}>{u.name}</option>)}
+                </select>
+              </div>
+              <button 
+                className="btn btn-outline" 
+                onClick={() => window.open('/api/export/calls', '_blank')}
+                style={{ fontSize: '0.8rem', padding: '0.4rem 0.8rem' }}
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginRight: '4px', verticalAlign: 'middle' }}>
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Export All Calls
+              </button>
             </div>
           </div>
 
